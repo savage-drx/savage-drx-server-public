@@ -1,0 +1,151 @@
+objSet objclass "weapon"
+objSet description "Surge"
+objSet race "beast"
+objSet shopIdOnly -2
+objSet drawTeamIcon 1
+objSet drawName 1
+objSet drawHealth 1
+objSet model "/models/beast/weapons/ranged/entropy_staff_third.model"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet handModel "/models/beast/weapons/ranged/entropy_staff2.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect "weapon_entropy2_trail"
+objSet trailPeriod 8 8
+objSet flybyEffect ""
+objSet icon "/models/beast/weapons/ranged/icons/surge"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Channels the destructive powers of nature through the caster and into a continuous stream of energy."
+objSet builder1 "beast_entropy_shrine"
+objSet builder2 ""
+objSet requirement1 "beast_entropy_shrine"
+objSet requirement2 "beast_entropy1"
+objSet needTechPoints 0
+objSet needBasePoints 2
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet canBeSilenced 1
+objSet techType "entropy"
+objSet ammoName ""
+objSet velocity 1000.000000 1000.000000
+objSet vertVelocity 0.000000 0.000000
+objSet count 1 1
+objSet accuracy 0.950000
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 50
+objSet fireDelay 0
+objSet backfireTime 500
+objSet ammoMax 0
+objSet ammoStart 0
+objSet ammoGroup 1
+objSet ammoCost 0
+objSet twangAmount 0.000000
+objSet twangTime 0.500000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 0.000000
+objSet gravity 0.000000
+objSet bounce 0.000000
+objSet accelerate 0.000000
+objSet fuseTime 0 0
+objSet muzzleRightOffset 0.700000
+objSet muzzleFwdOffset 2.500000
+objSet muzzleUpOffset -1.000000
+objSet weapPointValue 1
+objSet startFuseAtCharge 0
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet damage 14
+objSet radius 30.000000 30.000000
+objSet unitpierce 1.000000
+objSet bldpierce 0.600000
+objSet siegepierce 1.000000
+objSet repeat 1
+objSet continuous 1
+objSet continuousBeamShader "/textures/effects/beams/t_1_nl_entropybeam.tga"
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 6
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 300
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 30000
+objSet playerCost 250
+objSet attachBone "_boneRangedR"
+objSet damageFlags +energy -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 1
+objSet manaCost 1
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet fullHealth 0
+objSet weapon ""
+objSet scanRange 0.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 1
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "weapon_entropy1_death"
+objSet weaponFireEffect ""
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound "/sound/beast/weapons/surge_loop.wav"
+objSet itemSleepSound ""
+objSet itemActiveSound ""
+
+// XR Additions
+objset canpickup 1
+objset pickupGive beast_entropy2

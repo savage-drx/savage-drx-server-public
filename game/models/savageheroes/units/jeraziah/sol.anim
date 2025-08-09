@@ -1,0 +1,31 @@
+// Third Person Anim Events
+
+makeanim item_active sol.clip 0 30 15 1
+makeanim idle sol.clip 0 30 15 1
+
+
+// Sound Events
+// NOT WORKING!
+
+animevent item_active 0 "effect hero_jeraziah_sun"
+animevent item_active 2 "effect hero_jeraziah_sun"
+animevent item_active 4 "effect hero_jeraziah_sun"
+animevent item_active 6 "effect hero_jeraziah_sun"
+animevent item_active 8 "effect hero_jeraziah_sun"
+animevent item_active 10 "effect hero_jeraziah_sun"
+animevent item_active 12 "effect hero_jeraziah_sun"
+animevent item_active 14 "effect hero_jeraziah_sun"
+animevent item_active 16 "effect hero_jeraziah_sun"
+animevent item_active 18 "effect hero_jeraziah_sun"
+animevent item_active 20 "effect hero_jeraziah_sun"
+animevent item_active 22 "effect hero_jeraziah_sun"
+animevent item_active 24 "effect hero_jeraziah_sun"
+animevent item_active 26 "effect hero_jeraziah_sun"
+animevent item_active 28 "effect hero_jeraziah_sun"
+animevent item_active 30 "effect hero_jeraziah_sun"
+
+animevent idle 20 "effect hero_ophelia_beacon"
+animevent item_active 10 "effect hero_ophelia_beacon"
+animevent item_active 5 "effect behemoth_footstep"
+animevent item_active 5 "sound /sound/human/units/legionnaire/attack_2.wav"
+

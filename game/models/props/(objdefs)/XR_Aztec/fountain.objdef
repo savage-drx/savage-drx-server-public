@@ -1,0 +1,9 @@
+beginObjdef blocker fountain
+  obj_editorCategory XR_Aztec
+  obj_model models/props/xr_props/aztec/fountain.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+  obj_sound /sound/environment/ambient_creek.ogg
+  obj_soundVolume 1.5
+  obj_soundMinFalloff 700
+endObjdef fountain

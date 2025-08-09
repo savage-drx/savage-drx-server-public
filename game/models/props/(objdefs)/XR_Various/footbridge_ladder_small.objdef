@@ -1,0 +1,6 @@
+beginObjdef blocker footbridge_ladder_small
+  obj_editorCategory XR_Various
+  obj_model models/props/xr_props/misc/footbridge/footbridge_ladder_small.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+endObjdef footbridge_ladder_small

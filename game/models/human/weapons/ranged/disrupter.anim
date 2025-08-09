@@ -1,0 +1,16 @@
+// Disrupter
+
+// First Person Anim Events
+
+makeanim idle disrupter.clip 62 20 15 1
+makeanim wpstate_switch disrupter.clip
+makeanim wpstate_charge disrupter.clip 7 30
+makeanim wpstate_spinup disrupter.clip 0 6
+makeanim wpstate_spindown disrupter.clip
+makeanim wpstate_overheat disrupter.clip
+makeanim wpstate_fire disrupter.clip 38 23
+
+// Sound Events
+
+//animevent wpstate_fire 0 "sound /sound/human/weapons/bow_release.wav"
+//animevent wpstate_spinup 0 "sound /sound/human/weapons/bow_pull.wav"

@@ -1,0 +1,8 @@
+beginObjdef blocker palmtree2
+  obj_editorCategory General_Trees
+  obj_model palmtree2.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef palmtree2

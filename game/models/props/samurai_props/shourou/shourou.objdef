@@ -1,0 +1,6 @@
+beginObjdef blocker shourou
+  obj_editorCategory Samurai_Props
+  obj_model shourou.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef shourou

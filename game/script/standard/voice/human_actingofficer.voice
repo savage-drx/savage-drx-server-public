@@ -1,0 +1,380 @@
+//voice chats are specified first by issuing a category name, then listing individual items
+//syntax:
+//voiceCategory <Number> <Description>
+//voiceItem <Number> <Description>
+//voiceSound <WavFile> <ChatText>
+//voiceMore <Number> <Description> <CategoryNumber>
+//voiceFlag <team | global> [blip]
+
+//voiceSound may be specified up to 4 times for the same item (for multiple versions of the same voice chat)
+//voiceItem can be specified up to 10 times per voiceCategory
+//voiceMore allows sub menus to be specified
+//voiceFlag specifies team or global chat
+
+
+voiceDirectory /sound/human/player/male/	//base directory to look for WAV files (specify once per file)
+
+
+voiceCategory 0
+
+
+//
+// Observation
+//
+
+voiceCategory 1
+
+voiceItem 1 "Creature spotted" 
+voiceSound creature_spotted_1.ogg "Creature spotted"
+
+voiceItem 2 "Resources spotted"
+voiceSound resources_spotted_1.ogg "Resources spotted"
+
+voiceItem 3 "Enemy spotted"
+voiceSound enemy_spotted_1.ogg "Enemy spotted"
+voiceSound incoming_enemies_1.ogg "Incoming enemies!"
+
+voiceItem 4 "Enemy marksman spotted"
+voiceSound marksman_spotted_1.ogg "Enemy Marksman spotted"
+
+voiceItem 5 "They have constructed a Garrison!" 
+voiceSound constructed_garrison_1.ogg "They have constructed a Garrison!"
+
+voiceItem 6 "They have constructed a Sub Lair!" 
+voiceSound constructed_sublair_1.ogg "They have constructed a Sub Lair!"
+
+voiceItem 7 "Enemy siege weapon spotted"
+voiceSound siege_spotted_1.ogg "Enemy Siege Weapon spotted"
+
+voiceItem 8 "All clear"
+voiceSound all_clear_1.ogg "All clear"
+
+voiceItem 9 "I need gold!"
+voiceSound need_gold_1.ogg "I need gold!"
+voiceSound need_gold_2.ogg "I need gold!"
+voiceSound need_gold_3.ogg "I need gold!"
+
+voiceItem 0 "I need this weapon!"
+voiceSound need_weapon_1.ogg "I need this weapon!"
+voiceSound need_weapon_2.ogg "I need this weapon!"
+
+//
+// Basic
+//
+
+voiceCategory 2
+
+voiceItem 1 "Your orders?"
+voiceSound your_orders_1.ogg "Your orders?"
+voiceSound your_orders_1.ogg "Your orders?"
+voiceSound what_order_1.ogg "What is your order?"
+voiceSound need_orders_1.ogg "I need orders"
+voiceSound give_command_1.ogg "Give me your command!"
+
+voiceItem 2 "Yes!"
+voiceSound yes_1.ogg "Yes!"
+voiceSound yes_1.ogg "Yes!"
+voiceSound yes_2.ogg "Yes!"
+voiceSound right_away_1.ogg "Right away!"
+voiceSound absolutely_1.ogg "Absolutely!"
+voiceSound command_understood_1.ogg "Command understood!"
+voiceSound with_pleasure_1.ogg "With pleasure!"
+voiceSound with_pleasure_1.ogg "With pleasure!"
+
+voiceItem 3 "No!"
+voiceSound no_1.ogg "No!"
+voiceSound impossible_1.ogg "Impossible!"
+
+voiceItem 4 "Hello!"
+voiceSound hello_1.ogg "Hello"
+voiceSound hello_2.ogg "Hello!"
+
+voiceItem 5 "Thank you"
+voiceSound thank_you_1.ogg "Thank you"
+voiceSound thank_you_2.ogg "Thank you"
+
+voiceItem 6 "Help!!!"
+voiceSound help_1.ogg "Help!!!"
+
+voiceItem 7 "For the Legion"
+voiceSound for_legion_1.ogg "For the Legion!"
+voiceSound jaraziah_leader_1.ogg "Jaraziah is my leader"
+
+voiceItem 8 "I need a healer!"
+voiceSound need_healer_1.ogg "I need healing!"
+voiceSound need_healer_2.ogg "Please heal me!"
+voiceSound need_healer_3.ogg "I need a Chaplain!"
+
+voiceItem 9 "I need a powerup!"
+voiceSound need_powerup_1.ogg "I need a powerup!"
+voiceFlag team
+
+voiceItem 0 "I'm on my way!"
+voiceSound on_way_1.ogg "I'm on my way!"
+
+//
+// Tactics
+//
+
+voiceCategory 3
+
+voiceItem 1 "Attack my target"
+voiceSound attack_1.ogg "Attack!"
+voiceSound attack_here_4.ogg "Attack my target"
+voiceSound attack_here_4.ogg "Attack my target"
+
+voiceItem 2 "Move!"
+voiceSound move_1.ogg "Move!"
+
+voiceItem 3 "Follow me!"
+voiceSound follow_me_1.ogg "Follow me!"
+
+voiceItem 4 "Cover me!"
+voiceSound cover_me_1.ogg "Cover me!"
+
+voiceItem 5 "Capture the spawn flag"
+voiceSound capture_flag_1.ogg "Capture the spawn flag"
+
+voiceItem 6 "Wait here for reinforcements"
+voiceSound wait_reinforcements_1.ogg "Wait here for reinforcements"
+voiceSound wait_reinforcements_1.ogg "Wait here for reinforcements"
+voiceSound hold_position_1.ogg "Hold position!"
+
+voiceItem 7 "I'm in position!"
+voiceSound in_position_1.ogg "I'm in position!"
+
+voiceItem 8 "Be careful!"
+voiceSound be_careful_1.ogg "Be careful!"
+
+voiceItem 9 "Spread out!"
+voiceSound spread_out_1.ogg "Spread out!"
+
+voiceItem 0 "Retreat!"
+voiceSound retreat_1.ogg "Retreat!"
+
+//
+// Offense
+//
+
+voiceCategory 4
+
+voiceItem 1 "I'm fighting on offense"
+voiceSound im_offense_1.ogg "I'm fighting on offense"
+
+voiceItem 2 "Attack!"
+voiceSound attack_1.ogg "Attack!"
+
+voiceItem 3 "Charge!!"
+voiceSound charge_1.ogg "Charge!!"
+
+voiceItem 4 "Attack their workers!"
+voiceSound attack_workers_1.ogg "Attack their Workers!"
+
+voiceItem 5 "Attack the enemy Stronghold"
+voiceSound attack_stronghold_1.ogg "Attack the enemy Stronghold"
+
+voiceItem 6 "Attack the enemy Lair"
+voiceSound attack_lair_1.ogg "Attack the enemy Lair"
+
+voiceItem 7 "Attack the enemy structure"
+voiceSound attack_structure_1.ogg "Attack the enemy structure"
+
+voiceItem 8 "Protect the siege units"
+voiceSound protect_siege_1.ogg "Protect the Siege units"
+
+voiceItem 9 "Protect the officer"
+voiceSound protect_officer_1.ogg "Protect the Officer"
+
+voiceItem 0 "Build a Garrison here!"
+voiceSound build_garrison_1.ogg "Build a Garrison here!"
+
+//
+// Defense
+//
+
+voiceCategory 5
+
+voiceItem 1 "I'm on defense"
+voiceSound im_defense_1.ogg "I'm on defense"
+
+voiceItem 2 "Defend the Stronghold"
+voiceSound defend_stronghold_1.ogg "Defend the Stronghold"
+
+voiceItem 3 "Defend this structure"
+voiceSound defend_structure_1.ogg "Defend this structure"
+
+voiceItem 4 "Defend this mine"
+voiceSound defend_mine_1.ogg "Defend this Mine"
+
+voiceItem 5 "Protect the workers"
+voiceSound protect_workers_1.ogg "Protect the Workers"
+
+voiceItem 6 "Our workers are under attack!"
+voiceSound workers_attack_1.ogg "Our workers are under attack!"
+
+voiceItem 7 "Build defenses here"
+voiceSound build_defenses_1.ogg "Build defenses here"
+
+voiceItem 8 "Enemy in our base"
+voiceSound enemy_base_1.ogg "Enemy in our base"
+voiceSound base_overrun_1.ogg "Our base is overrun"
+
+voiceItem 9 "Incoming siege!"
+voiceSound incoming_siege_1.ogg "Incoming siege!"
+
+voiceItem 0 "Base is secure"
+voiceSound base_secure_1.ogg "Base is secure"
+
+//
+// Battle Report
+//
+
+voiceCategory 6
+
+voiceItem 1 "We have destroyed the enemy structure"
+voiceSound destroyed_structure_1.ogg "We have destroyed the enemy structure"
+
+voiceItem 2 "We are attacking their Garrison!"
+voiceSound attacking_garrison_1.ogg "We are attacking their Garrison!"
+
+voiceItem 3 "We are attacking their Sub Lair!"
+voiceSound attacking_sublair_1.ogg "We are attacking their Sub Lair!"
+
+voiceItem 4 "We are damaging their Stronghold!"
+voiceSound damaging_stronghold_1.ogg "We are damaging their Stronghold!"
+
+voiceItem 5 "We are damaging their Lair!"
+voiceSound damaging_lair_1.ogg "We are damaging their Lair!"
+
+voiceItem 6 "Their Stronghold is burning!"
+voiceSound stronghold_burning_1.ogg "Their Stronghold is burning!"
+
+voiceItem 7 "Their Lair is burning!"
+voiceSound lair_burning_1.ogg "Their Lair is burning!"
+
+voiceItem 8 "Their stronghold is nearly destroyed!"
+voiceSound stronghold_nearly_destroyed_1.ogg "Their Stronghold is nearly destroyed!"
+
+voiceItem 9 "Their Lair is nearly destroyed!"
+voiceSound lair_nearly_destroyed_1.ogg "Their Lair is nearly destroyed!"
+
+voiceItem 0 "Wait for my command!"
+voiceSound wait_command_1.ogg "Wait for my command!"
+
+//
+// Global
+//
+
+voiceCategory 7
+
+voiceItem 1 "Cower!"
+voiceSound cower_legion_1.ogg "Cower before the might of the Legion"
+voiceFlag global
+
+voiceItem 2 "Yes!"
+voiceSound yes_1.ogg "Yes!"
+voiceSound yes_1.ogg "Yes!"
+voiceSound yes_2.ogg "Yes!"
+voiceSound absolutely_1.ogg "Absolutely!"
+voiceFlag global
+
+voiceItem 3 "No!"
+voiceSound no_1.ogg "No!"
+voiceFlag global
+
+voiceItem 4 "Hello!"
+voiceSound hello_1.ogg "Hello!"
+voiceSound hello_2.ogg "Hello!"
+voiceFlag global
+
+voiceItem 5 "Thank you"
+voiceSound thank_you_1.ogg "Thank you"
+voiceSound thank_you_2.ogg "Thank you"
+voiceFlag global
+
+voiceItem 6 "Good game"
+voiceSound good_game_1.ogg "Good game"
+voiceSound good_game_2.ogg "Good game"
+voiceSound good_game_3.ogg "Good game"
+voiceFlag global
+
+voiceItem 7 "For the Legion"
+voiceSound for_legion_1.ogg "For the Legion!"
+voiceSound jaraziah_leader_1.ogg "Jaraziah is my leader"
+voiceFlag global
+
+voiceItem 8 "I would be honored."
+voiceSound honored_1.ogg "I would be honored."
+voiceFlag global
+
+//
+// Acting Officer
+//
+
+voiceCategory 8
+
+voiceItem 1 "Destroy the Enemy Lair" 
+voiceSound destroy_lair_1.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_2.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_3.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_4.ogg "Destroy the Enemy Lair"
+
+voiceItem 2 "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_1.ogg "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_2.ogg "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_3.ogg "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_4.ogg "Destroy the enemy Stronghold"
+
+voiceItem 3 "Capture the spawn flag"
+voiceSound capture_flag_1ac.ogg "Capture the Spawn Flag"
+
+voiceItem 4 "Return to base"
+voiceSound return_base_1.ogg "Return to base"
+voiceSound return_base_2.ogg "Return to base"
+voiceSound return_base_3.ogg "Return to base"
+
+voiceItem 5 "Scout for resources" 
+voiceSound scout_resources_1.ogg "Scout for resources"
+voiceSound scout_resources_2.ogg "Scout for resources"
+voiceSound scout_resources_3.ogg "Scout for resources"
+
+voiceItem 6 "Scout for enemies" 
+voiceSound scout_enemies_1.ogg "Scout for enemies"
+voiceSound scout_enemies_2.ogg "Scout for enemies"
+
+voiceItem 7 "We need more gold"
+voiceSound need_gold_1ac.ogg "We need more Gold"
+voiceSound need_gold_2ac.ogg "We need more Gold"
+
+voiceItem 8 "We need more redstone"
+voiceSound need_redstone_1ac.ogg "We need more Redstone"
+voiceSound need_redstone_2ac.ogg "We need more Redstone"
+
+voiceItem 9 "Cancel orders"
+voiceSound nevermind_1.ogg "Nevermind"
+voiceSound nevermind_2.ogg "Nevermind"
+voicesound disregard_order_1.ogg "Disregard that order"
+voicesound disregard_order_2.ogg "Disregard that order"
+
+voiceItem 0 "Well done"
+voiceSound well_done_1.ogg "Well done"
+voiceSound well_done_2.ogg "Well done"
+voiceSound well_done_3.ogg "Excellent work"
+voiceSound well_done_4.ogg "Excellent work"
+
+//
+// MAIN
+//
+
+//each voice config must have a 0 category set in order to display the initial voice chat menu
+
+voiceCategory 0
+
+voiceMore 1 "Observation" 1
+voiceMore 2 "Basic" 2
+voiceMore 3 "Tactics" 3
+voiceMore 4 "Offense" 4
+voiceMore 5 "Defense" 5
+voiceMore 6 "Battle Report" 6
+voiceMore 7 "Global" 7
+voiceMore 8 "Acting Officer" 8

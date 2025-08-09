@@ -1,0 +1,20 @@
+makeanim death_generic clip/redstone_mine.clip 0 70 25 0
+
+//Sound Events
+animevent death_generic 0 "sound /sound/effects/bridge_collapse.ogg"
+animevent death_generic 10 "sound /sound/effects/fire_2.ogg"
+animevent death_generic 20 "sound /sound/effects/fire_2.ogg"
+animevent death_generic 45 "sound /sound/effects/fire_2.ogg"
+animevent death_generic 65 "sound /sound/effects/fire_2.ogg"
+
+//Anim Effects
+animevent death_generic 0 "effect mine_death _boneParticles"
+animevent death_generic 6 "effect mine_death _boneParticles"
+animevent death_generic 12 "effect mine_death _boneParticles"
+animevent death_generic 20 "effect mine_death _boneParticles"
+animevent death_generic 27 "effect mine_death _boneParticles"
+animevent death_generic 35 "effect mine_death _boneParticles"
+animevent death_generic 47 "effect mine_death _boneParticles"
+animevent death_generic 55 "effect mine_death _boneParticles"
+animevent death_generic 67 "effect mine_death _boneParticles"
+animevent death_generic 70 "effect mine_death _boneParticles"

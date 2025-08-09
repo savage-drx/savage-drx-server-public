@@ -1,0 +1,8 @@
+beginObjdef blocker infirmary
+  obj_editorCategory Reference_Objects
+  obj_model infirmary.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 0.750000
+  obj_reference 1
+endObjdef infirmary

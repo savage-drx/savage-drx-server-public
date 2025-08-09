@@ -1,0 +1,6 @@
+beginObjdef blocker western_fence
+  obj_editorCategory Tombstone_Western
+  obj_model fence.model
+  obj_editorScaleRangeLo 0.75
+  obj_editorScaleRangeHi 0.75
+endObjdef western_fence

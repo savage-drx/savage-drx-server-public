@@ -1,0 +1,63 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle clip/idle.clip
+
+// Melee Combat
+
+makeanim melee_1 clip/melee_1.clip
+makeanim melee_move_1 clip/melee_1.clip
+
+// General Character Animation
+
+makeanim walk_fwd clip/run_fwd.clip 
+makeanim run_fwd clip/run_fwd.clip
+makeanim walk_with_bag clip/walk_with_bag.clip
+
+makeanim mine clip/mine.clip 0 0 30 1
+makeanim repair clip/mine.clip 0 0 30 1
+makeanim construct clip/mine.clip 0 0 30 1
+
+makeanim death_generic clip/death_generic.clip
+makeanim death_left clip/death_generic.clip
+makeanim death_right clip/death_generic.clip
+makeanim death_fwd clip/death_generic.clip
+makeanim death_back clip/death_generic.clip
+
+makeanim wounded_left clip/idle.clip 0 1
+makeanim wounded_right clip/idle.clip 0 1
+makeanim wounded_fwd clip/idle.clip 0 1
+makeanim wounded_back clip/idle.clip 0 1
+
+
+// Sound Events
+
+animevent run_left 7 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_left 19 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_right 7 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_right 19 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_fwd 7 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_fwd 19 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_back 7 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent run_back 19 "randsound 8 /sound/general/footsteps/beast/grass_light"
+
+animevent sprint_fwd 1 "randsound 8 /sound/general/footsteps/beast/grass_light"
+animevent sprint_fwd 10 "randsound 8 /sound/general/footsteps/beast/grass_light"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent mine 15 "effect beast_mineresources"
+animevent repair 15 "effect beast_repair"
+animevent construct 15 "effect beast_repair"
+
+animevent death_generic 0 "sound /sound/beast/units/worker/death.wav"
+animevent death_left 0 "sound /sound/beast/units/worker/death.wav"
+animevent death_right 0 "sound /sound/beast/units/worker/death.wav"
+animevent death_fwd 0 "sound /sound/beast/units/worker/death.wav"
+animevent death_back 0 "sound /sound/beast/units/worker/death.wav"

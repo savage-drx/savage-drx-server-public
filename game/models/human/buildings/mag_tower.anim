@@ -1,0 +1,11 @@
+makeanim idle mag_tower.clip 0 30 30 1
+makeanim death_generic mag_tower.clip 30 24 10 
+
+
+
+
+//buildings
+makeanim construct_1 clip/construct_1.clip
+makeanim construct_2 clip/construct_2.clip
+makeanim construct_3 clip/construct_3.clip
+makeanim construct_final clip/construct_final.clip

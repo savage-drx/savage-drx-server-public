@@ -1,0 +1,8 @@
+beginObjdef blocker lumber_pile_2500_stand
+  obj_editorCategory Tombstone_Western
+  obj_reference 0
+  obj_model lumber_pile_stand_1.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.375
+  obj_editorScaleRangeHi 0.375
+endObjdef lumber_pile_2500_stand

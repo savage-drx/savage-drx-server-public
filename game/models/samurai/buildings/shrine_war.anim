@@ -1,0 +1,22 @@
+makeanim idle clip/shrine_war.clip 0 36 10 1
+makeanim death_generic clip/shrine_war.clip 40 30 22 0
+
+//buildingsmakeanim construct_1 clip/construct_1.clip
+makeanim construct_2 clip/construct_2.clip
+makeanim construct_3 clip/construct_3.clip
+makeanim construct_final clip/construct_final.clip
+
+//Anim Effects
+animevent idle 0 "effect shrine_war _boneParticles"
+animevent idle 3 "effect shrine_war _boneParticles"
+animevent idle 6 "effect shrine_war _boneParticles"
+animevent idle 9 "effect shrine_war _boneParticles"
+animevent idle 12 "effect shrine_war _boneParticles"
+animevent idle 15 "effect shrine_war _boneParticles"
+animevent idle 18 "effect shrine_war _boneParticles"
+animevent idle 21 "effect shrine_war _boneParticles"
+animevent idle 24 "effect shrine_war _boneParticles"
+animevent idle 27 "effect shrine_war _boneParticles"
+animevent idle 30 "effect shrine_war _boneParticles"
+animevent idle 33 "effect shrine_war _boneParticles"
+animevent idle 36 "effect shrine_war _boneParticles"

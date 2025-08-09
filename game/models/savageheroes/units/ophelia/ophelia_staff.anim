@@ -1,0 +1,12 @@
+// Ophelia Staff
+
+// Third Person Anim Events
+
+makeanim wpstate_fire ophelia_staff.clip 0 1
+makeanim idle ophelia_staff.clip 0 1
+
+// Sound Events
+
+
+
+

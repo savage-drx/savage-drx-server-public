@@ -1,0 +1,6 @@
+beginObjdef blocker outpost
+  obj_editorCategory Tombstone_Western
+  obj_model outpost.model
+  obj_editorScaleRangeLo 0.7000
+  obj_editorScaleRangeHi 0.7000
+endObjdef outpost

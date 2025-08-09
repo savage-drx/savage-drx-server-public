@@ -1,0 +1,8 @@
+beginObjdef blocker deadtree_burntsnow
+  obj_editorCategory Tombstone_Trees
+  obj_model deadtree_burntsnow.model
+  obj_editorScaleRangeLo 0.75
+  obj_editorScaleRangeHi 0.75
+  obj_isNature 1
+endObjdef deadtree_burntsnow
+

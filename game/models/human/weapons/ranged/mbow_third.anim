@@ -1,0 +1,11 @@
+// Bow
+
+// Third Person Anim Events
+
+makeanim idle bow_third.clip 0 1 
+makeanim wpstate_charge bow_third.clip 0 37
+makeanim wpstate_fire bow_third.clip 38 23
+
+// Sound Events
+
+animevent wpstate_spinup 4 "sound /sound/human/weapons/bow_pull.wav"

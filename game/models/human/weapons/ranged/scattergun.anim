@@ -1,0 +1,10 @@
+// Scattergun
+
+// First Person Anim Events
+
+makeanim idle scattergun.clip 69 0 
+makeanim wpstate_fire scattergun.clip 0 50
+makeanim wp_anim_idle 0 1 20 1
+
+// Sound Events
+

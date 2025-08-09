@@ -1,0 +1,8 @@
+// AK47
+
+// Third Person Anim Events
+
+makeanim idle ak47_3rd.clip 12 0 
+makeanim wpstate_fire ak47_3rd.clip 0 9
+
+// Sound Events

@@ -1,0 +1,17 @@
+skinName squad1
+skinRef Rectangle01 flag1.s2g
+
+skinName squad2
+skinRef Rectangle01 flag2.s2g
+
+skinName squad3
+skinRef Rectangle01 flag3.s2g
+
+skinName squad4
+skinRef Rectangle01 flag4.s2g
+
+skinName squad5
+skinRef Rectangle01 flag5.s2g
+
+skinName squad6
+skinRef Rectangle01 flag6.s2g

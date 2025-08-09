@@ -1,0 +1,6 @@
+beginObjdef blocker mercantile
+  obj_editorCategory Tombstone_Western
+  obj_model mercantile.model
+  obj_editorScaleRangeLo 0.7400
+  obj_editorScaleRangeHi 0.7400
+endObjdef mercantile

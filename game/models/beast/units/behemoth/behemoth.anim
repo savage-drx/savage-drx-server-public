@@ -1,0 +1,77 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle clip/idle.clip 0 0 30 1
+
+// Melee Combat
+
+makeanim melee_1 clip/melee_1.clip
+makeanim melee_move_1 clip/melee_1.clip
+
+// General Character Animation
+
+makeanim walk_left clip/run_left.clip
+makeanim walk_right clip/run_right.clip
+makeanim walk_fwd clip/run_fwd.clip 0 0 10
+makeanim walk_back clip/run_back.clip 0 0 30 1
+
+makeanim sprint_left clip/run_left.clip
+makeanim sprint_right clip/run_right.clip 
+makeanim sprint_fwd clip/run_fwd.clip 0 0 40 1
+makeanim sprint_back clip/run_back.clip 0 0 40 1
+
+makeanim run_left clip/run_left.clip 0 0 50 1
+makeanim run_right clip/run_right.clip 0 0 50 1
+makeanim run_fwd clip/run_fwd.clip 0 0 30 1
+makeanim run_back clip/run_back.clip 0 0 30 1
+
+makeanim wounded_left clip/wounded.clip
+makeanim wounded_right clip/wounded.clip
+makeanim wounded_fwd clip/wounded.clip
+makeanim wounded_back clip/wounded.clip
+
+makeanim death_generic clip/death_generic.clip
+
+// Sound Events
+
+animevent melee_1 71 "effect behemoth_footstep _bonetip"
+animevent melee_move_1 71 "effect behemoth_footstep _bonetip"
+
+animevent run_left 0 "effect behemoth_footstep Bip01 L Foot" 
+animevent run_left 15 "effect behemoth_footstep Bip01 R Foot" 
+
+
+animevent run_right 0 "effect behemoth_footstep Bip01 L Foot" 
+animevent run_right 15 "effect behemoth_footstep Bip01 R Foot"
+
+
+animevent run_fwd 0 "effect behemoth_footstep Bip01 L Foot" 
+animevent run_fwd 20 "effect behemoth_footstep Bip01 R Foot" 
+
+animevent sprint_fwd 0 "effect behemoth_footstep Bip01 L Foot" 
+animevent sprint_fwd 20 "effect behemoth_footstep Bip01 R Foot" 
+
+
+animevent walk_back 0 "effect behemoth_footstep Bip01 L Foot" 
+animevent walk_back 20 "effect behemoth_footstep Bip01 R Foot"
+
+
+animevent melee_1 26 "sound /sound/beast/units/behemoth/attack_1.wav"
+animevent melee_1 27 "sound /sound/beast/units/behemoth/attack_grunt_2.wav"
+animevent melee_1 70 "effect behemoth_impact"
+
+animevent melee_move_1 26 "sound /sound/beast/units/behemoth/attack_1.wav"
+animevent melee_move_1 27 "sound /sound/beast/units/behemoth/attack_grunt_2.wav"
+animevent melee_move_1 70 "effect behemoth_impact"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent death_generic 0 "sound /sound/beast/units/behemoth/death.wav"
+animevent death_generic 30 "sound /sound/beast/units/behemoth/body_fall.wav"
+animevent death_generic 53 "sound /sound/beast/units/behemoth/body_fall.wav"

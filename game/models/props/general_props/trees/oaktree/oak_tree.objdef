@@ -1,0 +1,8 @@
+beginObjdef blocker oak_tree
+  obj_editorCategory General_Trees
+  obj_model oak_tree.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.700000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef oak_tree

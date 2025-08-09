@@ -1,0 +1,7 @@
+beginObjdef blocker fence
+  obj_editorCategory General_Structures
+  obj_model fence.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+endObjdef fence

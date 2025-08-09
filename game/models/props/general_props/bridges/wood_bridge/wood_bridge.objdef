@@ -1,0 +1,8 @@
+beginObjdef blocker wood_bridge
+  obj_editorCategory General_Bridges
+  obj_model wood_bridge.model
+  obj_skin wood_bridge.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef wood_bridge

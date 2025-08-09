@@ -1,0 +1,7 @@
+beginObjdef blocker planks_platform_small
+  obj_editorCategory XR_Modular
+  obj_model models/props/wooden/planks_platform_small.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef planks_platform_small

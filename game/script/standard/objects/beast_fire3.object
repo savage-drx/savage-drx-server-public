@@ -1,0 +1,150 @@
+objSet objclass "weapon"
+objSet description "Fireball"
+objSet race "beast"
+objSet shopIdOnly -2
+objSet drawTeamIcon 1
+objSet model "/models/beast/weapons/ranged/fire_staff_third.model"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet handModel "/models/beast/weapons/ranged/fire_staff3.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect "weapon_fire1_trail"
+objSet trailPeriod 20 20
+objSet flybyEffect "flyby_fire"
+objSet icon "/models/beast/weapons/ranged/icons/fireball"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Allows the caster to launch explosive fireballs.  The longer this spell is charged before release, the faster and stronger the fireball will be."
+objSet builder1 "beast_fire_shrine"
+objSet builder2 ""
+objSet requirement1 "beast_fire_shrine"
+objSet requirement2 "beast_fire2"
+objSet needTechPoints 0
+objSet needBasePoints 3
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet canBeSilenced 1
+objSet techType "fire"
+objSet ammoName ""
+objSet velocity 1200.000000 1200.000000
+objSet vertVelocity 0.000000 0.000000
+objSet count 1 1
+objSet accuracy 0.950000
+objSet chargeFlags +velocity +damage -range -accuracy -fusetime +blastradius +blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 2250
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 250
+objSet fireDelay 0
+objSet backfireTime 500
+objSet ammoMax 0
+objSet ammoStart 0
+objSet ammoGroup 1
+objSet ammoCost 0
+objSet twangAmount 0.000000
+objSet twangTime 0.500000
+objSet twangPingPong 1
+objSet minVelocity 500.000000
+objSet maxVelocity 0.000000
+objSet gravity 0.500000
+objSet bounce 0.000000
+objSet accelerate 0.000000
+objSet fuseTime 1500 1500
+objSet muzzleRightOffset 2.500000
+objSet muzzleFwdOffset 3.000000
+objSet muzzleUpOffset -3.000000
+objSet weapPointValue 1
+objSet startFuseAtCharge 0
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet damage 230
+objSet radius 42.000000 42.000000
+objSet unitpierce 1.10000
+objSet bldpierce 1.70000
+objSet siegepierce 1.30000
+objSet repeat 0
+objSet continuous 0
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 2
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 400
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 40000
+objSet playerCost 500
+objSet attachBone "_boneRangedR"
+objSet damageFlags +energy -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 1
+objSet manaCost 10
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet fullHealth 0
+objSet weapon "0"
+objSet scanRange 0.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 1
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "fire_explosion2"
+objSet weaponFireEffect "weapon_fireball_fire"
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""
+
+// XR Additions
+objset canpickup 1
+objset pickupGive beast_fire3
+objSet fireDamage 1

@@ -1,0 +1,59 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle chiprel_footy.clip 0 100 10 0
+
+// Melee Combat
+
+//makeanim melee_1 chiprel.clip 30 40 30 0
+
+//makeanim melee_move_1 chiprel.30 40 30 0
+
+//makeanim block clip/block.clip
+
+// General Character Animation
+
+//makeanim walk_left chiprel.clip 70 17 30 1
+//makeanim walk_right chiprel.clip 70 17 30 1
+//makeanim walk_fwd chiprel.clip 70 17 30 1
+//makeanim walk_back chiprel.clip 70 17 30 1
+
+//makeanim run_left chiprel.clip 70 17 30 1
+//makeanim run_right chiprel.clip 70 17 30 1
+//makeanim run_fwd chiprel.clip 70 17 30 1
+//makeanim run_back chiprel.clip 70 17 30 1
+
+//makeanim wounded_left chiprel.clip 86 18
+//makeanim wounded_right chiprel.clip 86 18
+//makeanim wounded_fwd chiprel.clip 86 18
+//makeanim wounded_back chiprel.clip 86 18
+
+//makeanim death_generic chiprel.clip 104 39
+//makeanim death_left chiprel.clip 104 39
+//makeanim death_right chiprel.clip 104 39
+//makeanim death_fwd chiprel.clip 104 39
+//makeanim death_back chiprel.clip 104 39
+
+// Suicide
+
+//makeanim suicide suicide.clip 0 10 30 1
+
+// Sound Events
+
+animevent melee_1 0 "randsound 3 /sound/npc/squirrel_attack"
+
+animevent melee_move_1 0 "randsound 3 /sound/npc/squirrel_attack"
+
+animevent wounded_left 0 "sound /sound/npc/squirrel_attack_1.wav"
+animevent wounded_right 0 "sound /sound/npc/squirrel_attack_1.wav"
+animevent wounded_fwd 0 "sound /sound/npc/squirrel_attack_1.wav"
+animevent wounded_back 0 "sound /sound/npc/squirrel_attack_1.wav"
+
+animevent death_generic 0 "sound /sound/npc/squirrel_attack_2.wav"
+animevent death_left 0 "sound /sound/npc/squirrel_attack_2.wav"
+animevent death_right 0 "sound /sound/npc/squirrel_attack_2.wav"
+animevent death_fwd 0 "sound /sound/npc/squirrel_attack_2.wav"
+animevent death_back 0 "sound /sound/npc/squirrel_attack_2.wav"

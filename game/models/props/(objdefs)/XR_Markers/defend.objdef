@@ -1,0 +1,6 @@
+beginObjdef blocker defend
+  obj_editorCategory XR_Markers
+  obj_model models/props/markers/defend.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef defend

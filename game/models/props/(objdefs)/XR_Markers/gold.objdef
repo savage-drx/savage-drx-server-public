@@ -1,0 +1,6 @@
+beginObjdef blocker gold
+  obj_editorCategory XR_Markers
+  obj_model models/props/markers/gold.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef gold

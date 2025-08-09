@@ -1,0 +1,8 @@
+beginObjdef blocker npc_gerkat
+  obj_editorCategory General_NPCs
+  obj_model /models/npc/gerkat/gerkat.model
+  obj_skin /models/npc/gerkat/gerkat.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_reference 1
+endObjdef npc_gerkat

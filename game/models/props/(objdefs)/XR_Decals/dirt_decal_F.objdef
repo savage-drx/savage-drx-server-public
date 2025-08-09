@@ -1,0 +1,6 @@
+beginObjdef blocker dirt_decal_F
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/dirt_decal_F.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef dirt_decal_F

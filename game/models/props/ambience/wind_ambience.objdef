@@ -1,0 +1,8 @@
+beginObjdef blocker Wind
+  obj_editorCategory Ambience_Generic
+  obj_model null.model
+  obj_invisibleToGame 1
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_sound /sound/environment/ambient_wind.wav
+endObjdef Wind

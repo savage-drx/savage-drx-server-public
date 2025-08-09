@@ -1,0 +1,15 @@
+// Frost Bolts
+
+// First Person Anim Events
+
+makeanim wpstate_fire ophelia_staff_1st.clip 88 32 26
+makeanim idle ophelia_staff_1st.clip 122 78 30 1
+makeanim wpstate_charge ophelia_staff_1st.clip 41 47
+makeanim wpstate_spinup ophelia_staff_1st.clip 0 40
+
+// Sound Events
+
+
+
+
+

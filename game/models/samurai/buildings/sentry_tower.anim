@@ -1,0 +1,7 @@
+makeanim idle clip/sentry_tower.clip 0 1 10 0
+makeanim death_generic clip/sentry_tower.clip 1 149 35 0
+
+//buildingsmakeanim construct_1 clip/construct_1.clip
+makeanim construct_2 clip/construct_2.clip
+makeanim construct_3 clip/construct_3.clip
+makeanim construct_final clip/construct_final.clip

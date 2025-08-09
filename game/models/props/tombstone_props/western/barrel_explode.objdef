@@ -1,0 +1,8 @@
+beginObjdef blocker barrel_explode
+  obj_editorCategory Tombstone_Western
+  obj_model barrel_explode.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 0.750000
+  obj_reference 1
+endObjdef barrel_explode

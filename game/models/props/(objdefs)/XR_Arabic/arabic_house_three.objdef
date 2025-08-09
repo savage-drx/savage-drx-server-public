@@ -1,0 +1,6 @@
+beginObjdef blocker arabic_house_three
+  obj_editorCategory XR_Arabic
+  obj_model models/props/xr_props/arabic/arabic_house_three.model
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 0.800000
+endObjdef arabic_house_three

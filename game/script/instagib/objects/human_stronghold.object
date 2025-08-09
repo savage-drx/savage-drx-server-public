@@ -1,0 +1,125 @@
+objSet objclass "building"
+objSet description "Spawn point"
+objSet race "human"
+objSet drawTeamIcon 0
+
+//objSet model "/models/null.model"
+//objSet model "/models/human/buildings/stronghold.model"
+objSet model "/models/instagib/spawn_point/red_ball.model"
+
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 2.0000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet icon "/models/human/buildings/icons/stronghold"
+objSet selectionIcon "/models/human/buildings/icons/selectionstronghold.tga"
+
+
+objSet mapIcon "/gui/standard/map_stronghold.s2g"
+
+
+objSet tooltip "The main structure of any of the Legion of Man's bases.  Defend this at all costs!"
+objSet selectionSound "/sound/human/buildings/stronghold.wav"
+objSet gridmenu "/gridmenus/human/layout_stronghold.cfg"
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 50.000000
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 0
+objSet techPointValue 0
+objSet basePointValue 1
+objSet alwaysAvailable 0
+objSet techType "NULL"
+objSet accuracy 1.000000
+objSet refreshTime 500
+objSet cost NULL 0
+objSet cost stone 2000
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 0
+objSet playerCost 0
+objSet viewHeight 25.000000
+objSet maxPopulation 0
+objSet fullHealth 25000
+objSet weapon ""
+objSet radiusState "state0"
+objSet targetProjectiles 0
+objSet isMine 0
+objSet isClaimable 0
+objSet mineType "stone"
+objSet mineAmount 100000
+objSet generate -NULL -stone -gold -electric -magnetic -chemical -fire -strata -entropy 
+objSet store NULL 0
+objSet store stone 50000
+objSet store gold 50000
+objSet store electric 0
+objSet store magnetic 0
+objSet store chemical 0
+objSet store fire 0
+objSet store strata 0
+objSet store entropy 0
+objSet dropoff 1
+objSet commandCenter 1
+objSet spawnFrom 1
+objSet canEnter 0
+objSet scanRange 0.000000
+objSet healthStage1 75
+objSet healthStage2 50
+objSet healthStage3 25
+objSet healthStage1Effect "fire_large"
+objSet healthStage2Effect "fire_large"
+objSet healthStage3Effect "fire_large"
+objSet healthStage1Period 120 120
+objSet healthStage2Period 40 40
+objSet healthStage3Period 20 20
+objSet linked 0
+objSet selfBuild 0
+objSet canBeRepaired 1
+objSet lifeSpan 0
+objSet anchorRange 1800.000000
+objSet needsAnchor 0
+objSet expMult 1.000000
+objSet thornDamage 0
+objSet shiftProjAccel 0.000000
+objSet shiftProjGrav 0.000000
+objSet alwaysWaypoint 0
+objSet isVulnerable 1
+objSet meleeOnlyVulnerable 0
+objSet revealHidden 0
+objSet spawnEffect ""
+objSet deathEffect "large_explosion"
+objSet fizzleEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

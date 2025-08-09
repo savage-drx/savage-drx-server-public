@@ -1,0 +1,8 @@
+beginObjdef blocker redstone_mine
+  obj_editorCategory Reference_Objects
+  obj_reference 1
+  obj_model redstone_mine.model
+  obj_skin default
+  obj_editorScaleRangeLo 1
+  obj_editorScaleRangeHi 1
+endObjdef redstone_mine

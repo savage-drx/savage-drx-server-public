@@ -1,0 +1,7 @@
+beginObjdef blocker small_rock_04_10
+  obj_editorCategory XR_Small_Rocks
+  obj_model models/props/xr_props/rocks/Rock_10.model
+  obj_skin small_rock_04_10
+  obj_editorScaleRangeLo 10.000000
+  obj_editorScaleRangeHi 20.000000
+endObjdef small_rock_04_10

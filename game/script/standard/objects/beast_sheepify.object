@@ -1,0 +1,147 @@
+objSet objclass "item"
+objSet description "Sheepify"
+objSet race "beast"
+objSet shopIdOnly -2
+objSet playerCost -1
+objSet drawTeamIcon 0
+objSet model "/models/savageheroes/items/sphere_projectile.model"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 60.000000
+objSet yaw -10.000000 30.000000
+objSet pitch 10.000000 20.000000
+objSet roll 0.000000 0.000000
+objSet handModel "/models/beast/weapons/ranged/medic_heal.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet rightMeleeModel "/models/beast/weapons/ranged/medic_staff_third.model"
+objSet trailEffect ""
+objSet trailPeriod 100 100
+objSet flybyEffect ""
+objSet icon "/models/savageheroes/units/sheep/sheepify"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Silence of the lambs"
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 0.000000
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 "beast_sanctuary"
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 1
+objSet canBeSilenced 1
+objSet techType ""
+objSet useWeaponFire 1
+objSet ammoName "ammo"
+objSet velocity 500.000000 500.000000
+objSet vertVelocity 100.000000 100.000000
+objSet count 1 1
+objSet accuracy 1.000000
+objSet chargeFlags +velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 800
+objSet spinupTime 475
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 1000
+objSet fireDelay 100
+objSet backfireTime 50
+objSet ammoMax 20
+objSet ammoStart 20
+objSet ammoGroup 1
+objSet ammoCost 10
+objSet twangAmount 2.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 1000.000000
+objSet gravity 0.800000
+objSet bounce 0.650000
+objSet accelerate 0.000000
+objSet fuseTime 1500 1500
+objSet muzzleRightOffset 8.000000
+objSet muzzleFwdOffset 10.000000
+objSet muzzleUpOffset -10.000000
+objSet startFuseAtCharge 0
+objSet hitBuilding "bounce"
+objSet hitUnit "die"
+objSet hitWorld "bounce"
+objSet damage 0
+objSet radius 0.000000 0.000000
+objSet unitpierce 1.000000
+objSet bldpierce 1.000000
+objSet siegepierce 1.000000
+objSet repeat 0
+objSet continuous 0
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 1
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 300
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 35000
+objSet attachBone "_boneRangedR"
+objSet damageFlags -energy -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet fullHealth 0
+objSet weapon "0"
+objSet scanRange 0.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 20
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "sheepify_impact"
+objSet weaponFireEffect "throw"
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

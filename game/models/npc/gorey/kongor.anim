@@ -1,0 +1,99 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+
+
+makeanim idle idle.clip 0 200 15 1
+
+// Melee Combat
+
+makeanim melee_1 hook.clip 0 50 30
+makeanim melee_2 hammer.clip 0 160 80
+
+makeanim melee_move_1 hook.clip 0 50 30
+makeanim melee_move_2 hammer.clip 0 160 80
+
+
+// General Character Animation
+
+makeanim walk_left walk.clip 0 60 30 1
+makeanim walk_right walk.clip 0 60 30 1
+makeanim walk_fwd walk.clip 0 60 45 1
+makeanim walk_back walk.clip  0 60 30 1
+
+makeanim run_left walk.clip 0 60 45 1
+makeanim run_right walk.clip 0 60 45 1
+makeanim run_fwd walk.clip 0 60 60 1
+makeanim run_back walk.clip 0 60 45 1
+
+makeanim sprint_left walk.clip 0 60 60 1
+makeanim sprint_right walk.clip 0 60 60 1
+makeanim sprint_fwd walk.clip 0 60 75 1
+makeanim sprint_back walk.clip 0 60 60 1
+
+//makeanim weapon_fire_1 kongor.clip 106 45 30 1
+
+//makeanim crouch_idle kongor.clip 0 87 25 1
+
+makeanim wounded_left wound.clip 0 10 30 
+makeanim wounded_right wound.clip 0 10 30 
+makeanim wounded_fwd wound.clip 0 10 30
+makeanim wounded_back wound.clip 0 10 30
+
+makeanim death_generic  death.clip 0 80 15
+makeanim death_left  death.clip 0 80 15
+makeanim death_right  death.clip 0 80 15
+makeanim death_fwd  death.clip 0 80 15
+makeanim death_back  death.clip 0 80 15
+
+
+
+// Sound Events
+
+animevent idle 10 "sound /sound/npc/gorilla_idle_1.wav"
+animevent idle 70 "sound /models/npc/gorey/kongor_howl.wav"
+animevent idle 75 "sound /models/npc/gorey/kongor_thud.wav"
+animevent idle 85 "sound /models/npc/gorey/kongor_thud.wav"
+animevent idle 160 "sound /sound/npc/gorilla_idle_2.wav"
+
+animevent death_generic 40 "sound /models/npc/gorey/kongor_death.wav"
+animevent death_generic 75 "sound /sound/beast/units/behemoth/body_fall.wav"
+
+animevent wounded_left 0 "sound /models/npc/gorey/kongor_wound.wav"
+animevent wounded_right 0 "sound /models/npc/gorey/kongor_wound.wav"
+animevent wounded_fwd 0 "sound /models/npc/gorey/kongor_wound.wav"
+animevent wounded_back 0 "sound /models/npc/gorey/kongor_wound.wav"
+
+animevent melee_1 6 "sound /models/npc/gorey/kongor_hammer.wav"
+animevent melee_1 25 "sound /models/npc/gorey/kongor_attack_1.wav"
+animevent melee_2 65 "sound /models/npc/gorey/kongor_hook.wav"
+animevent melee_2 100 "sound /models/npc/gorey/kongor_attack_2.wav"
+
+animevent melee_move_1 6 "sound /models/npc/gorey/kongor_hammer.wav"
+animevent melee_move_1 25 "sound /models/npc/gorey/kongor_attack_1.wav"
+animevent melee_move_2 65 "sound /models/npc/gorey/kongor_hook.wav"
+animevent melee_move_2 100 "sound /models/npc/gorey/kongor_attack_2.wav"
+
+animevent walk_left 30 "sound /models/npc/gorey/kongor_run_1.wav" 
+animevent walk_right 30 "sound /models/npc/gorey/kongor_run_1.wav" 
+animevent walk_fwd 30 "sound /models/npc/gorey/kongor_run_1.wav" 
+animevent walk_back 30 "sound /models/npc/gorey/kongor_run_1.wav"
+
+animevent walk_left 60 "sound /models/npc/gorey/kongor_run_2.wav" 
+animevent walk_right 60 "sound /models/npc/gorey/kongor_run_2.wav" 
+animevent walk_fwd 60 "sound /models/npc/gorey/kongor_run_2.wav" 
+animevent walk_back 60 "sound /models/npc/gorey/kongor_run_2.wav"
+
+animevent run_left 30 "sound /models/npc/gorey/kongor_run_1.wav" 
+animevent run_right 30 "sound /models/npc/gorey/kongor_run_1.wav" 
+animevent run_fwd 30 "sound /models/npc/gorey/kongor_run_1.wav" 
+animevent run_back 30 "sound /models/npc/gorey/kongor_run_1.wav"
+
+animevent run_left 60 "sound /models/npc/gorey/kongor_run_2.wav" 
+animevent run_right 60 "sound /models/npc/gorey/kongor_run_2.wav" 
+animevent run_fwd 60 "sound /models/npc/gorey/kongor_run_2.wav" 
+animevent run_back 60 "sound /models/npc/gorey/kongor_run_2.wav"
+//fixed by Mchief

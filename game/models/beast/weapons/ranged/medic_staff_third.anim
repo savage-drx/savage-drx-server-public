@@ -1,0 +1,13 @@
+// Medic Staff
+
+// Third Person Anim Events
+
+makeanim wpstate_fire medic_staff_third.clip 0 1
+makeanim idle medic_staff_third.clip 0 1
+makeanim wpstate_charge medic_staff_third.clip 0 1
+
+// Sound Events
+
+
+
+

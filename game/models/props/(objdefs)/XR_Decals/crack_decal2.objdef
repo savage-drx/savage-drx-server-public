@@ -1,0 +1,6 @@
+beginObjdef blocker crack_decal2
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/crack_decal2.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef crack_decal2

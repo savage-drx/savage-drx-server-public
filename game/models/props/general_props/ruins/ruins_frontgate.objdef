@@ -1,0 +1,7 @@
+beginObjdef blocker ruins_frontgate
+  obj_editorCategory General_Ruins
+  obj_model ruins_frontgate.model
+  obj_skin 
+  obj_editorScaleRangeLo .75
+  obj_editorScaleRangeHi .75
+endObjdef ruins_frontgate

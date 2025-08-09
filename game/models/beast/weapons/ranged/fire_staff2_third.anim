@@ -1,0 +1,12 @@
+// Blaze
+
+// Third Person Anim Events
+
+makeanim wpstate_fire fire_staff_third.clip 88 32
+makeanim idle fire_staff_third.clip 0 0 0 1
+makeanim wpstate_charge fire_staff_third.clip 0 88
+
+// Sound Events
+
+
+

@@ -1,0 +1,98 @@
+//syntax:
+
+//makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+//common
+makeanim idle idle.clip 0 0 40
+
+//melee combat
+makeanim melee_1 melee_1.clip 0 0 40
+
+makeanim melee_move_1 melee_move_1.clip 0 0 50
+
+makeanim weapon_fire_1 weapon.clip 0 0 60
+makeanim weapon_fire_2 weapon.clip 0 0 60
+makeanim weapon_fire_3 weapon.clip 0 0 60
+makeanim weapon_fire_4 weapon.clip 0 0 60
+
+makeanim death_generic death.clip
+
+makeanim wounded_left wounded.clip 0 0 120
+makeanim wounded_right wounded.clip 0 0 120
+makeanim wounded_fwd wounded.clip 0 0 120
+makeanim wounded_back wounded.clip 0 0 120
+
+makeanim run_left fly.clip 0 0 50
+makeanim run_right fly.clip 0 0 50
+makeanim run_fwd fly.clip 0 0 60
+makeanim run_back fly.clip 0 0 60
+
+makeanim sprint_left fly.clip 0 0 80
+makeanim sprint_right fly.clip 0 0 80
+makeanim sprint_fwd fly.clip 0 0 80
+makeanim sprint_back fly.clip 0 0 80
+
+makeanim walk_left fly.clip 0 0 40
+makeanim walk_right fly.clip 0 0 40
+makeanim walk_fwd fly.clip 0 0 40
+makeanim walk_back fly.clip 0 0 80
+
+makeanim jump_start_left jump.clip 0 1
+makeanim jump_start_right jump.clip 0 1
+makeanim jump_start_fwd leap.clip 0 1
+makeanim jump_start_back jump.clip 0 1
+
+makeanim jump_mid_left jump.clip 1 1
+makeanim jump_mid_right jump.clip 2 1
+makeanim jump_mid_fwd leap.clip 1 1
+makeanim jump_mid_back jump.clip 1 1
+  
+makeanim jump_end_left jump.clip 2 1
+makeanim jump_end_right jump.clip 2 1
+makeanim jump_end_fwd leap.clip 2 1
+makeanim jump_end_back jump.clip 2 1
+
+makeanim jump_up_start jump.clip 0 1
+makeanim jump_up_mid jump.clip 1 1
+makeanim jump_up_end jump.clip 2 1
+makeanim jump_land jump.clip 3 1 
+
+makeanim dodge_start_left jump.clip 0 1
+makeanim dodge_start_right jump.clip 0 1
+makeanim dodge_start_fwd dodge.clip 0 1
+makeanim dodge_start_back jump.clip 0 1
+
+makeanim dodge_mid_left jump.clip 1 1
+makeanim dodge_mid_right jump.clip 1 1
+makeanim dodge_mid_fwd dodge.clip 1 1
+makeanim dodge_mid_back jump.clip 1 1
+  
+makeanim dodge_end_left jump.clip 2 1
+makeanim dodge_end_right jump.clip 2 1
+makeanim dodge_end_fwd dodge.clip 2 1
+makeanim dodge_end_back jump.clip 2 1
+
+//ANIM EVENTS =====================================
+animevent sprint_fwd 2 "sound /models/beast/units/glider/glider_sprint.ogg"
+animevent walk_fwd 5 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent walk_back 5 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent walk_left 15 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent walk_right 15 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent run_left 15 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent run_right 15 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent run_back 5 "sound /models/beast/units/glider/glider_fly.ogg"
+animevent run_fwd 5 "sound /models/beast/units/glider/glider_fly.ogg"
+
+animevent melee_1 0 "sound /models/beast/units/glider/glider_swipe.ogg"
+
+animevent melee_move_1 0 "sound /models/beast/units/glider/glider_swipe.ogg"
+
+animevent weapon_fire_1 0 "sound /models/beast/units/glider/glider_spray.ogg"
+animevent weapon_fire_2 0 "sound /models/beast/units/glider/glider_spray.ogg"
+animevent weapon_fire_3 0 "sound /models/beast/units/glider/glider_spray.ogg"
+animevent weapon_fire_4 0 "sound /models/beast/units/glider/glider_spray.ogg"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"

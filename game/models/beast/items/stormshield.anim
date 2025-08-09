@@ -1,0 +1,16 @@
+// Stormshield
+
+// First Person Anim Events
+
+makeanim idle stormshield.clip 0 74 30 1 
+makeanim wpstate_switch stormshield.clip
+makeanim wpstate_charge stormshield.clip 
+makeanim wpstate_spinup stormshield.clip 
+makeanim wpstate_spindown stormshield.clip
+makeanim wpstate_overheat stormshield.clip
+makeanim wpstate_fire stormshield.clip 75 24
+
+// Sound Events
+
+animevent wpstate_fire 0 "sound /sound/beast/items/storm_shield_use.wav"
+

@@ -1,0 +1,12 @@
+beginObjdef blocker ladder
+  obj_editorCategory General_Structures
+  obj_model ladder.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_bmin_x -31.269464
+  obj_bmin_y -289.262378
+  obj_bmin_z -59.305280
+  obj_bmax_x 28.837259
+  obj_bmax_y 281.317480
+  obj_bmax_z 50.908051
+endObjdef ladder

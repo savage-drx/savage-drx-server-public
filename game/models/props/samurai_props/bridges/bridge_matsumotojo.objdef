@@ -1,0 +1,6 @@
+beginObjdef blocker bridge_matsumotojo
+  obj_editorCategory Samurai_Props
+  obj_model bridge_matsumotojo.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef bridge_matsumotojo

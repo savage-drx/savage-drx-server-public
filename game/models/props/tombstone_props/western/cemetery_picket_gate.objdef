@@ -1,0 +1,7 @@
+beginObjdef blocker cemetery_picket_gate
+  obj_editorCategory Tombstone_Western
+  obj_model cemetery_picket_gate.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef cemetery_picket_gate

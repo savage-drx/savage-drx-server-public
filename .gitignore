@@ -1,0 +1,15 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+# IntelliJ Idea
+.idea
+*.iml
+*.log
+
+# Savage
+/game/python/logs
+silverback.bin
+/game/game64.so
+
+# Python
+*.pyc
+venv

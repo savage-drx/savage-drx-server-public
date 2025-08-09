@@ -1,0 +1,16 @@
+// Regen 
+
+// First Person Anim Events
+
+makeanim idle regen.clip 62 20 15 1
+makeanim wpstate_switch regen.clip
+makeanim wpstate_charge regen.clip 7 30
+makeanim wpstate_spinup regen.clip 0 6
+makeanim wpstate_spindown regen.clip
+makeanim wpstate_overheat regen.clip
+makeanim wpstate_fire regen.clip 38 23
+
+// Sound Events
+
+animevent wpstate_fire 0 "sound /sound/human/units/medic/regen_vial_throw.wav"
+animevent wpstate_charge 9 "sound /sound/human/units/medic/regen__vial_open.wav"

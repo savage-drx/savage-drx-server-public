@@ -1,0 +1,58 @@
+// syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// common
+
+makeanim idle clip/ballista.clip 20 1  
+
+// Melee Combat
+
+makeanim weapon_fire_1 clip/ballista.clip 20 18
+makeanim weapon_fire_2 clip/ballista.clip 20 1 
+makeanim weapon_fire_3 clip/ballista.clip 20 1 
+
+makeanim weapon_idle_2 clip/ballista.clip 20 1 
+makeanim weapon_idle_3 clip/ballista.clip 20 1
+
+makeanim weapon_charge_2 clip/ballista.clip 20 1
+makeanim weapon_charge_3 clip/ballista.clip 115 20 10
+
+makeanim melee_1 clip/ballista.clip
+makeanim melee_2 clip/ballista.clip
+makeanim melee_3 clip/ballista.clip
+makeanim melee_4 clip/ballista.clip
+
+makeanim melee_move_1 clip/ballista.clip
+makeanim melee_move_2 clip/ballista.clip
+makeanim melee_move_3 clip/ballista.clip
+makeanim melee_move_4 clip/ballista.clip
+
+makeanim block clip/block.clip
+
+// General Character Animation
+
+makeanim walk_left clip/sidestep_left.clip
+makeanim walk_right clip/sidestep_right.clip
+makeanim walk_fwd clip/ballista.clip 59 14 15
+makeanim walk_back clip/ballista.clip 39 18 15
+
+makeanim run_left clip/sidestep_left.clip
+makeanim run_right clip/sidestep_right.clip
+makeanim run_fwd clip/ballista.clip 59 14 15
+makeanim run_back clip/ballista.clip 39 18 15
+
+makeanim death_generic clip/ballista.clip 75 114 10
+makeanim death_left clip/ballista.clip 75 114 30
+makeanim death_right clip/ballista.clip 75 114 30
+makeanim death_fwd clip/ballista.clip 75 114 30
+makeanim death_back clip/ballista.clip 75 114 30
+
+// Sound Events
+
+animevent walk_back 0 "randsound 4 /sound/general/footsteps/human/ballista_light"
+animevent walk_fwd 0 "randsound 4 /sound/general/footsteps/human/ballista_light"
+
+animevent weapon_fire_1 0 "sound /sound/human/weapons/ballista_fire.wav"
+animevent weapon_fire_1 18 "sound /sound/human/weapons/ballista_reload.wav"
+

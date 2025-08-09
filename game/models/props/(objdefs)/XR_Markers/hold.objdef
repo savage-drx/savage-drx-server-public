@@ -1,0 +1,6 @@
+beginObjdef blocker hold
+  obj_editorCategory XR_Markers
+  obj_model models/props/markers/hold.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef hold

@@ -1,0 +1,55 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle bearloth.clip 88 20 30 1
+
+// Melee Combat
+
+makeanim melee_1 bearloth.clip 46 20
+
+makeanim melee_move_1 bearloth.46 20
+
+makeanim block clip/block.clip
+
+// General Character Animation
+
+makeanim walk_left bearloth.clip 22 21 
+makeanim walk_right bearloth.clip 22 21 
+makeanim walk_fwd bearloth.clip 22 21 
+makeanim walk_back bearloth.clip 22 21 
+
+makeanim run_left bearloth.clip 22 21 
+makeanim run_right bearloth.clip 22 21
+makeanim run_fwd bearloth.clip 22 21
+makeanim run_back bearloth.clip 22 21 
+
+makeanim wounded_left bearloth.clip 67 20
+makeanim wounded_right bearloth.clip 67 20
+makeanim wounded_fwd bearloth.clip 67 20
+makeanim wounded_back bearloth.clip 67 20
+
+makeanim death_generic bearloth.clip 109 33
+makeanim death_left bearloth.clip 109 33
+makeanim death_right bearloth.clip 109 33
+makeanim death_fwd bearloth.clip 109 33
+makeanim death_back bearloth.clip 109 33
+
+// Sound Events
+
+animevent melee_1 0 "sound /sound/npc/snowbeast_attack.wav"
+
+animevent melee_move_1 0 "sound /sound/npc/snowbeast_attack.wav"
+
+animevent wounded_left 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+animevent wounded_right 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+animevent wounded_fwd 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+animevent wounded_back 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+
+animevent death_generic 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_left 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_right 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_fwd 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_back 0 "sound /sound/npc/snowbeast_death.wav"

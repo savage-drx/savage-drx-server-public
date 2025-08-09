@@ -1,0 +1,8 @@
+beginObjdef blocker npc_shrull
+  obj_editorCategory XR_NPCs
+  obj_model models/npc/shrull/shrull.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.200000
+  obj_editorScaleRangeHi 0.200000
+  obj_reference 1
+endObjdef npc_shrull

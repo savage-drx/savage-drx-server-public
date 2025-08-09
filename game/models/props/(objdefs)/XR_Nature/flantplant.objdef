@@ -1,0 +1,7 @@
+beginObjdef blocker flatplant
+  obj_editorCategory XR_Nature
+  obj_model models/props/xr_props/nature/flatplant.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+  obj_isNature 1
+endObjdef flatplant

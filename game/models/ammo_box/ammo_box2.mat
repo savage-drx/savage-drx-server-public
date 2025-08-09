@@ -1,0 +1,8 @@
+set mat_shininess 1.000000
+set mat_specular 0.200000 0.2000000 0.2000000
+set mat_doubleSided 0
+set mat_terrain_overblend 0
+//set mat_shader nm_gm
+set mat_normalmap /models/ammo_box/ammo_box_NORM.tga
+set mat_glossmap /models/ammo_box/ammo_box_GM.tga
+

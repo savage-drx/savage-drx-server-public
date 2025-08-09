@@ -1,0 +1,6 @@
+beginObjdef blocker cart
+  obj_editorCategory Samurai_Props
+  obj_model cart.model
+  obj_editorScaleRangeLo 1.500000
+  obj_editorScaleRangeHi 1.500000
+endObjdef cart

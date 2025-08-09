@@ -1,0 +1,6 @@
+beginObjdef blocker shadow1round
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/shadow1round.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef shadow1round

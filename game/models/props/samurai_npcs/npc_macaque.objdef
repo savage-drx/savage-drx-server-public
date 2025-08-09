@@ -1,0 +1,8 @@
+beginObjdef blocker npc_macaque
+  obj_editorCategory Samurai_NPCs
+  obj_model /models/npc/macaque/macaque.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_reference 1
+endObjdef npc_macaque

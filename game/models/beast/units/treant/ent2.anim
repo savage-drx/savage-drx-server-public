@@ -1,0 +1,68 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle ent2.clip 60 60 30 1
+
+// Melee Combat
+
+makeanim melee_1 ent2.clip 220 45 30 
+makeanim melee_2 ent2.clip 270 50 30 
+makeanim melee_3 ent2.clip 420 45 30 
+
+// General Character Animation
+
+makeanim walk_fwd ent2.clip 185 30 30 1
+makeanim run_fwd ent2.clip 185 30 35 1
+makeanim walk_with_bag ent2.clip 185 30 30 1
+
+makeanim repair ent2.clip 690 23 5 1
+makeanim construct ent2.clip 690 23 5 1
+
+// Fake Anims
+makeanim mine ent2.clip 690 23 5 1
+
+makeanim wounded_left ent2.clip 765 8 40 
+makeanim wounded_right ent2.clip 765 8 40 
+makeanim wounded_fwd ent2.clip 765 8 40 
+makeanim wounded_back ent2.clip 765 8 40 
+
+makeanim death_generic ent2.clip 830 106
+makeanim death_left ent2.clip 830 106
+makeanim death_right ent2.clip 830 106
+makeanim death_fwd ent2.clip 830 106
+makeanim death_back ent2.clip 830 106
+
+// Sound Events
+
+animevent melee_1 20 "sound /sound/beast/units/treant/melee_1.ogg"
+animevent melee_2 20 "sound /sound/beast/units/treant/melee_2.ogg"
+animevent melee_3 14 "sound /sound/beast/units/treant/melee_3.ogg"
+animevent melee_3 26 "effect treant_impact"
+
+animevent walk_fwd 3 "randsound 4 /sound/beast/units/treant/step"
+animevent walk_fwd 18 "randsound 4 /sound/beast/units/treant/step"
+animevent run_fwd 3 "randsound 4 /sound/beast/units/treant/step"
+animevent run_fwd 18 "randsound 4 /sound/beast/units/treant/step"
+animevent walk_with_bag 3 "randsound 4 /sound/beast/units/treant/step"
+animevent walk_with_bag 18 "randsound 4 /sound/beast/units/treant/step"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent mine 15 "effect beast_mineresources"
+//animevent mine 24 "effect beast_mineresources"
+animevent repair 15 "effect beast_repair"
+//animevent repair 24 "effect beast_repair"
+animevent construct 15 "effect beast_repair"
+//animevent construct 24 "effect beast_repair"
+
+animevent death_generic 48 "sound /sound/beast/units/treant/death_1.ogg"
+animevent death_generic 55 "effect treant_impact"
+animevent death_generic 55 "sound /sound/beast/units/behemoth/body_fall.wav"
+animevent death_generic 60 "effect treant_impact"
+animevent death_generic 60 "sound /sound/beast/units/behemoth/body_fall.wav"

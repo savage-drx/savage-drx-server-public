@@ -1,0 +1,7 @@
+beginObjdef blocker log_sharp_corner_8x
+  obj_editorCategory XR_Lego_Logs
+  obj_model models/props/wooden/log_sharp_corner_8x.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef log_sharp_corner_8x

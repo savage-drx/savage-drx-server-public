@@ -1,0 +1,6 @@
+beginObjdef blocker bomb
+  obj_editorCategory XR_Markers
+  obj_model models/props/markers/bomb.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef bomb

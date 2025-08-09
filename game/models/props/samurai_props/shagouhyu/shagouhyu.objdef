@@ -1,0 +1,6 @@
+beginObjdef blocker shagouhyu
+  obj_editorCategory Samurai_Props
+  obj_model shagouhyu.model
+  obj_editorScaleRangeLo 1.400000
+  obj_editorScaleRangeHi 1.400000
+endObjdef shagouhyu

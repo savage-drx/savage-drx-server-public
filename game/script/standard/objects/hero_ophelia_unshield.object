@@ -1,0 +1,151 @@
+objSet objclass "weapon"
+objSet description "Torch"
+objSet race "beast"
+objSet shopIdOnly -2
+objSet drawTeamIcon 1
+objSet playerCost -1
+objSet drawName 1
+objSet drawHealth 1
+objSet alwaysAvailable 1
+objSet canBeSilenced 1
+objSet model "/models/savageheroes/units/ophelia/ophelia_stafff.model"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 0.5000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet handModel "/models/savageheroes/units/ophelia/ophelia_staff_2nd.model"
+objSet handSkin "fire"
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect "hero_ophelia_unshield_trail"
+objSet trailPeriod 1 1
+objSet flybyEffect ""
+objSet icon "/models/savageheroes/icons/ophelia_unshield"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Ophelia focuses her powerful magic into a concentrated stream of fire, which reduces the magnetic shielding of buildings it hits. ^y(2 ^ymana, ^y20 dmg)"
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet techType "entropy"
+objSet ammoName ""
+objSet velocity 850.000000 850.000000
+objSet vertVelocity 0.000000 0.000000
+objSet count 1 1
+objSet accuracy 0.950000
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 50
+objSet fireDelay 0
+objSet backfireTime 500
+objSet ammoMax 0
+objSet ammoStart 0
+objSet ammoGroup 1
+objSet ammoCost 0
+objSet twangAmount 0.000000
+objSet twangTime 0.500000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 0.000000
+objSet gravity 0.000000
+objSet bounce 0.000000
+objSet accelerate 0.000000
+objSet fuseTime 0 0
+objSet muzzleRightOffset 0.750000
+objSet muzzleFwdOffset 2.500000
+objSet muzzleUpOffset -0.6500000
+objSet weapPointValue 0
+objSet startFuseAtCharge 0
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die_noeffect"
+objSet damage 10
+objSet radius 0.000000 0.000000
+objSet unitpierce 1.000000
+objSet bldpierce 1.00000
+objSet siegepierce 1.000000
+objSet repeat 1
+objSet continuous 1
+objSet continuousBeamShader "/models/savageheroes/units/ophelia/t_1_nl_ophelia_beam_0000.tga"
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 1
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 300
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 30000
+objSet attachBone "Bip01 R Hand"
+objSet damageFlags +energy -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 1
+objSet manaCost 2
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet fullHealth 0
+objSet weapon ""
+objSet scanRange 0.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 1
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "hero_ophelia_unshield_death"
+objSet weaponFireEffect ""
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound "/sound/beast/weapons/surge_loop.wav"
+objSet itemSleepSound ""
+objSet itemActiveSound ""
+
+// XR Additions
+objset canpickup 1
+objset pickupGive beast_entropy2

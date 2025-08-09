@@ -1,0 +1,14 @@
+beginObjdef blocker teleport
+  obj_editorCategory XR_Interactive
+  obj_model models/props/xr_interactive/teleport/teleport_base.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_attachObject teleport_node
+  obj_attachOffsetZ 200.000000
+  obj_trigSetType psphere
+  obj_trigSetControl obj_client onEnter
+  obj_trigSetBehaviour 40.000000
+  obj_trigSetScript teleport_trigger.gs
+  obj_trigSetParent next
+  obj_trigOffsetZ 170.000000
+endObjdef teleport

@@ -1,0 +1,8 @@
+beginObjdef blocker mushrooms
+  obj_editorCategory Tombstone_Nature
+  obj_model mushrooms.model
+  obj_skin 
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef mushrooms

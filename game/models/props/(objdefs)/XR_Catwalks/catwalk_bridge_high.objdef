@@ -1,0 +1,7 @@
+beginObjdef blocker catwalk_bridge_high
+  obj_editorCategory XR_Catwalks
+  obj_model models/props/wooden/catwalk_bridge_high.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef catwalk_bridge_high

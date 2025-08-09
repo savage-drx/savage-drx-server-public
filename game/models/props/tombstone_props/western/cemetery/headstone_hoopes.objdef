@@ -1,0 +1,7 @@
+beginObjdef blocker headstone_hoopes  
+  obj_editorCategory Tombstone_Western
+  obj_model headstone_hoopes.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 1.000000
+endObjdef headstone_hoopes

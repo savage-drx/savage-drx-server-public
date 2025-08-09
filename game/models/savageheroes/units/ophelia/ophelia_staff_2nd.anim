@@ -1,0 +1,10 @@
+// Ophelia Fire Staff
+
+// First Person Anim Events
+
+makeanim wpstate_fire ophelia_staff_1st.clip 90 2 
+makeanim idle ophelia_staff_1st.clip 122 78 30 1
+makeanim wpstate_charge ophelia_staff_1st.clip 0 88
+
+// Sound Events
+

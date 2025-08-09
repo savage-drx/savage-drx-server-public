@@ -1,0 +1,7 @@
+beginObjdef blocker catwalk_4xroad
+  obj_editorCategory XR_Catwalks
+  obj_model models/props/wooden/catwalk_4xroad.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef catwalk_4xroad

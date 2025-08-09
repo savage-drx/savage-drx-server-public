@@ -1,0 +1,183 @@
+objSet objclass "item"
+objSet description "Magnetic Cache"
+objSet race "human"
+objSet shopDeathMode 0
+objSet canBeRepaired 1
+objSet allowSiege 0
+objSet useSurfs 1
+objSet isShopId 1
+objSet canEnter 1
+objSet isSolid 2
+objSet canPickup 0
+objSet techType "magnetic"
+objSet drawTeamIcon 1
+objSet cmdrScale 2.000000
+objSet cmdrSelectionScaleAdjust 1.8
+objSet model "/models/human/buildings/cache_mag.model"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 0.80000000
+objSet yaw 0.000000 0.000000
+objSet pitch 180.000000 180.000000
+objSet roll 0.000000 0.000000
+objSet handModel ""
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect ""
+objSet trailPeriod 200 200
+objSet flybyEffect ""
+objSet icon "/models/human/buildings/icons/cache_mag_icon.tga"
+objSet selectionIcon "/models/human/buildings/icons/cache_mag_icon"
+objSet mapIcon ""
+objSet tooltip "A field supply cache that allows Humans to equip magnetic weapons and items."
+objSet gridmenu "/gridmenus/layout_item.cfg"
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 0.000000
+objSet builder1 "human_heavy_transport"
+objSet builder2 ""
+objSet requirement1 "human_magnetic_factory"
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet useWeaponFire 0
+objSet ammoName "ammo"
+objSet velocity 1000.000000 1000.000000
+objSet vertVelocity 0.000000 0.000000
+objSet count 1 1
+objSet accuracy 1.000000
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 500
+objSet fireDelay 0
+objSet backfireTime 500
+objSet ammoMax 2
+objSet ammoStart 1
+objSet ammoGroup 2
+objSet ammoCost 10
+objSet twangAmount 2.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 1000.000000
+objSet gravity 1.000000
+objSet bounce 0.000000
+objSet accelerate 0.000000
+objSet fuseTime 5000 5000
+objSet muzzleRightOffset 2.500000
+objSet muzzleFwdOffset 3.000000
+objSet muzzleUpOffset -3.000000
+objSet startFuseAtCharge 0
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet damage 0
+objSet radius 0.000000 0.000000
+objSet unitpierce 1.000000
+objSet bldpierce 1.000000
+objSet siegepierce 1.000000
+objSet repeat 1
+objSet continuous 0
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 5
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 50
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 50
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 0
+objSet playerCost -1
+objSet attachBone "_boneRangedR"
+objSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 0
+objSet manaCost 0
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet bmin_x -20.000000
+objSet bmin_y -20.000000
+objSet bmin_z 0.000000
+objSet bmax_x 20.000000
+objSet bmax_y 20.000000
+objSet bmax_z 50.000000
+objSet fullHealth 1500
+objSet weapon ""
+objSet spawnFrom 0
+objSet expMult 1.000000
+objSet thornDamage 0
+objSet alwaysWaypoint 0
+objSet giveAmmo 0
+objSet giveMana 0
+objSet maxHold 1
+objSet delayEffect ""
+objSet delayPeriod 0
+objSet activeEffect ""
+objSet activeEffectPeriod 0
+objSet isActivated 0
+objSet isVulnerable 1
+objSet meleeOnlyVulnerable 0
+objSet revealHidden 0
+objSet pickupGive ""
+objSet pickupRespawn 20000
+objSet manaRegenAdd 0
+objSet manaRateMult 1.000000
+objSet isVolatile 0
+objSet maxDeployment 3
+objSet deathLinger 5000
+objSet isSelectable 1
+objSet targetFlags -enemy -ally -neutral -unit -building -item -world -team -same_type 
+objSet woundedEffect ""
+objSet spawnEffect ""
+objSet deathEffect "small_explosion"
+objSet use_itemEffect ""
+objSet activateItemEffect ""
+objSet sleepItemEffect ""
+objSet idleItemEffect ""
+objSet backfireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

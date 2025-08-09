@@ -1,0 +1,17 @@
+skinName squad1
+skinRef Object01 armband1.s2g
+
+skinName squad2
+skinRef Object01 armband2.s2g
+
+skinName squad3
+skinRef Object01 armband3.s2g
+
+skinName squad4
+skinRef Object01 armband4.s2g
+
+skinName squad5
+skinRef Object01 armband5.s2g
+
+skinName squad6
+skinRef Object01 armband6.s2g

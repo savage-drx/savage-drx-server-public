@@ -1,0 +1,6 @@
+beginObjdef blocker plane_bar_1H
+  obj_editorCategory XR_Doors
+  obj_model models/props/doors/plane_bar_1H.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef plane_bar_1H

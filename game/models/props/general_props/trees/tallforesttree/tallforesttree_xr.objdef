@@ -1,0 +1,7 @@
+beginObjdef blocker tallforesttree_xr
+  obj_editorCategory XR_Nature
+  obj_model tallforesttree_xr.model
+  obj_editorScaleRangeLo 0.300000
+  obj_editorScaleRangeHi 1.000000
+  obj_isNature 1
+endObjdef tallforesttree_xr

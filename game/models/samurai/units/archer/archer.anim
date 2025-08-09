@@ -1,0 +1,151 @@
+//syntax:
+
+//makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+//common
+
+makeanim idle clip/archer_idle.clip
+
+//melee combat
+
+makeanim melee_1 clip/archer_katana_attack.clip 0 16
+makeanim melee_move_1 clip/archer_katana_attack.clip 0 16
+
+makeanim block clip/archer_block.clip
+
+//general character animation
+
+makeanim walk_left clip/archer_strafe_left.clip
+makeanim walk_right clip/archer_strafe_right.clip
+makeanim walk_fwd clip/archer_walk.clip
+makeanim walk_back clip/archer_walkbackward.clip
+
+makeanim run_left clip/archer_strafe_left.clip
+makeanim run_right clip/archer_strafe_right.clip
+makeanim run_fwd clip/archer_run.clip 
+makeanim run_back clip/archer_walkbackward.clip
+
+makeanim sprint_left clip/archer_strafe_left.clip
+makeanim sprint_right clip/archer_strafe_right.clip
+makeanim sprint_fwd clip/archer_sprint.clip 
+makeanim sprint_back clip/archer_runbackward.clip
+
+makeanim jump_start_left clip/archer_jump.clip 0 1
+makeanim jump_start_right clip/archer_jump.clip 0 1
+makeanim jump_start_fwd clip/archer_jump.clip 0 1
+makeanim jump_start_back clip/archer_jump.clip 0 1
+
+makeanim jump_mid_left clip/archer_jump.clip 1 1
+makeanim jump_mid_right clip/archer_jump.clip 1 1
+makeanim jump_mid_fwd clip/archer_jump.clip 1 1
+makeanim jump_mid_back clip/archer_jump.clip 1 1
+	
+makeanim jump_end_left clip/archer_jump.clip 2 1
+makeanim jump_end_right clip/archer_jump.clip 2 1
+makeanim jump_end_fwd clip/archer_jump.clip 2 1
+makeanim jump_end_back clip/archer_jump.clip 2 1
+	
+makeanim jump_up_start clip/archer_jump.clip 0 1
+makeanim jump_up_mid clip/archer_jump.clip 1 1
+makeanim jump_up_end clip/archer_jump.clip 2 1
+makeanim jump_land clip/archer_jump.clip 3 1
+
+makeanim crouch_idle clip/archer_idle.clip
+
+makeanim crouch_left clip/archer_idle.clip
+makeanim crouch_right clip/archer_idle.clip
+makeanim crouch_fwd clip/archer_idle.clip
+makeanim crouch_back clip/archer_idle.clip
+
+makeanim walk_with_bag clip/archer_idle.clip
+
+makeanim mine clip/construct.clip
+makeanim repair clip/construct.clip
+makeanim construct clip/construct.clip
+
+makeanim wounded_left clip/damage_front.clip
+makeanim wounded_right clip/damage_front.clip
+makeanim wounded_fwd clip/damage_front.clip
+makeanim wounded_back clip/damage_front.clip
+
+makeanim death_generic clip/archer_death2.clip
+makeanim death_left clip/archer_death2.clip
+makeanim death_right clip/archer_death2.clip
+makeanim death_fwd clip/archer_death2.clip
+makeanim death_back clip/archer_death1.clip
+
+//player holding weapon animations
+makeanim weapon_idle_1 clip/archer_idle.clip
+makeanim weapon_idle_2 clip/archer_firebow.clip 0 1
+makeanim weapon_idle_3 clip/archer_aimmusket.clip 0 1
+makeanim weapon_idle_4 clip/weapon_idle_4.clip
+
+makeanim weapon_charge_1 clip/archer_idle.clip
+makeanim weapon_charge_2 clip/archer_firebow.clip 0 25
+makeanim weapon_charge_3 clip/archer_aimmusket.clip
+makeanim weapon_charge_4 clip/throw.clip 15 22
+makeanim weapon_charge_5 clip/weapon_charge_5.clip 
+
+makeanim weapon_fire_1 clip/archer_idle.clip
+makeanim weapon_fire_2 clip/archer_firebow.clip 26 14
+makeanim weapon_fire_3 clip/archer_firemusket.clip
+makeanim weapon_fire_4 clip/throw.clip 37 50
+makeanim weapon_fire_5 clip/drop.clip 
+
+makeanim weapon_reload_1 clip/weapon_reload_1.clip
+makeanim weapon_reload_2 clip/weapon_reload_2.clip
+makeanim weapon_reload_3 clip/weapon_reload_3.clip
+makeanim weapon_reload_4 clip/weapon_reload_4.clip
+
+makeanim resurrected  clip/resurrected.clip
+
+// Sound Events
+
+animevent run_left 7 "footstepleft"
+animevent run_left 14 "footstepright"
+
+animevent run_right 7 "footstepleft"
+animevent run_right 14 "footstepright"
+
+animevent run_fwd 7 "footstepleft"
+animevent run_fwd 19 "footstepright"
+
+animevent walk_back 7 "footstepleft"
+animevent walk_back 13 "footstepright"
+
+animevent run_back 7 "footstepleft"
+animevent run_back 13 "footstepright"
+
+animevent sprint_fwd 1 "footstepleft"
+animevent sprint_fwd 10 "footstepright"
+
+animevent sprint_left 2 10 "randsound 8 /sound/general/footsteps/human/grass_light"
+animevent sprint_left 2 10 "randsound 8 /sound/general/footsteps/human/grass_light"
+animevent sprint_right 4 14 "randsound 8 /sound/general/footsteps/human/grass_light"
+animevent sprint_right 4 14 "randsound 8 /sound/general/footsteps/human/grass_light"
+
+animevent sprint_back 7 19 "randsound 8 /sound/general/footsteps/human/grass_light"
+
+animevent melee_1 0 "sound /sound/human/units/nomad/attack_1.wav"
+animevent melee_2 0 "sound /sound/human/units/nomad/attack_2.wav"
+animevent melee_3 0 "sound /sound/human/units/nomad/attack_3.wav"
+animevent melee_4 0 "sound /sound/human/units/nomad/attack_4.wav"
+
+animevent melee_1 1 "randsound 4 /sound/human/units/nomad/attack_grunt"
+
+animevent melee_move_1 0 "sound /sound/human/units/nomad/attack_1.wav"
+animevent melee_move_2 0 "sound /sound/human/units/nomad/attack_2.wav"
+animevent melee_move_3 0 "sound /sound/human/units/nomad/attack_3.wav"
+animevent melee_move_4 0 "sound /sound/human/units/nomad/attack_4.wav"
+
+animevent melee_move_1 1 "randsound 4 /sound/human/units/nomad/attack_grunt"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent wounded_left 1 "randsound 3 /sound/human/units/nomad/grunt"
+animevent wounded_right 1 "randsound 3 /sound/human/units/nomad/grunt"
+animevent wounded_fwd 1 "randsound 3 /sound/human/units/nomad/grunt"
+animevent wounded_back 1 "randsound 3 /sound/human/units/nomad/grunt"

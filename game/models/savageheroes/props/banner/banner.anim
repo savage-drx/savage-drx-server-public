@@ -1,0 +1,6 @@
+makeanim idle banner.clip 0 54 10 1
+makeanim death_generic death.clip 0 5
+//makeanim item_active spikes.clip banner.clip 0 45 30 0
+
+animevent idle 0 "sound /models/savageheroes/props/banner/banner.wav"
+

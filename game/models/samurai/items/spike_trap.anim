@@ -1,0 +1,7 @@
+// Spike Trap
+// Anim Events
+makeanim item_sleep spike_trap.clip 0 50 60 0
+makeanim idle spike_trap.clip 49 1 1 0
+makeanim item_active spike_trap.clip 50 10 35 0
+
+//Sound Effects

@@ -1,0 +1,13 @@
+skinName default
+skinRef Box004 /models/human/units/catapult/catapult.tga
+skinRef Box015 /models/props/doors/metal_gate_bars.tga
+skinRef Box014 /models/human/buildings/t_woodplank_02.tga
+skinRef Cylinder001 /models/ammo_box/1_nl_blueglow.tga
+skinRef Plane001 roof_tarp_64x64.tga
+
+skinName team2
+skinRef Box004 /models/human/units/catapult/catapult.tga
+skinRef Box015 /models/props/doors/metal_gate_bars.tga
+skinRef Box014 /models/human/buildings/t_woodplank_02.tga
+skinRef Cylinder001 /models/ammo_box/1_nl_blueglow.tga
+skinRef Plane001 roof_tarp_64x64_team2.tga

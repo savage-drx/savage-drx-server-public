@@ -1,0 +1,6 @@
+beginObjdef blocker snow_village_left
+  obj_editorCategory General_Structures
+  obj_model snow_village_left.model
+  obj_editorScaleRangeLo .75
+  obj_editorScaleRangeHi .75
+endObjdef snow_village_left

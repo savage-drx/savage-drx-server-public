@@ -1,0 +1,18 @@
+// boomerang_1st
+
+// First Person Anim Events
+
+makeanim idle boomerang_1st.clip 0 1 30 1
+makeanim wpstate_switch boomerang_1st.clip
+makeanim wpstate_charge boomerang_1st.clip 16 22
+makeanim wpstate_spinup boomerang_1st.clip 1 15
+makeanim wpstate_spindown boomerang_1st.clip
+makeanim wpstate_overheat boomerang_1st.clip
+makeanim wpstate_fire boomerang_1st.clip 38 7 18
+
+// Sound Events
+
+animevent wpstate_fire 0 "sound /sound/human/items/boomerang_1st_throw.wav"
+animevent wpstate_spinup 13 "sound /sound/human/items/boomerang_1st_charge.wav"
+animevent wpstate_spinup 14 "sound /sound/human/items/boomerang_1st_arm.wav"
+

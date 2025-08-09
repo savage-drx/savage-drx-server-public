@@ -1,0 +1,36 @@
+makeanim idle clip/shrine_wind.clip 0 36 10 1
+makeanim death_generic clip/shrine_wind.clip 40 30 22 0
+
+//buildingsmakeanim construct_1 clip/construct_1.clip
+makeanim construct_2 clip/construct_2.clip
+makeanim construct_3 clip/construct_3.clip
+makeanim construct_final clip/construct_final.clip
+
+//Anim Effects
+animevent idle 0 "effect shrine_wind _boneParticles01"
+animevent idle 3 "effect shrine_wind _boneParticles01"
+animevent idle 6 "effect shrine_wind _boneParticles01"
+animevent idle 9 "effect shrine_wind _boneParticles01"
+animevent idle 12 "effect shrine_wind _boneParticles01"
+animevent idle 15 "effect shrine_wind _boneParticles01"
+animevent idle 18 "effect shrine_wind _boneParticles01"
+animevent idle 21 "effect shrine_wind _boneParticles01"
+animevent idle 24 "effect shrine_wind _boneParticles01"
+animevent idle 27 "effect shrine_wind _boneParticles01"
+animevent idle 30 "effect shrine_wind _boneParticles01"
+animevent idle 33 "effect shrine_wind _boneParticles01"
+animevent idle 36 "effect shrine_wind _boneParticles01"
+
+animevent idle 1 "effect shrine_wind _boneParticles02"
+animevent idle 2 "effect shrine_wind _boneParticles02"
+animevent idle 5 "effect shrine_wind _boneParticles02"
+animevent idle 8 "effect shrine_wind _boneParticles02"
+animevent idle 11 "effect shrine_wind _boneParticles02"
+animevent idle 14 "effect shrine_wind _boneParticles02"
+animevent idle 17 "effect shrine_wind _boneParticles02"
+animevent idle 20 "effect shrine_wind _boneParticles02"
+animevent idle 23 "effect shrine_wind _boneParticles02"
+animevent idle 26 "effect shrine_wind _boneParticles02"
+animevent idle 29 "effect shrine_wind _boneParticles02"
+animevent idle 32 "effect shrine_wind _boneParticles02"
+animevent idle 35 "effect shrine_wind _boneParticles02"

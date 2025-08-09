@@ -1,0 +1,55 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle mudent.clip 0 20 20 1 
+
+// Melee Combat
+
+makeanim melee_1 mudent.clip 64 20
+
+makeanim melee_move_1 mudent.64 20
+
+makeanim block clip/block.clip
+
+// General Character Animation
+
+makeanim walk_left mudent.clip 42 20
+makeanim walk_right mudent.clip 42 20
+makeanim walk_fwd mudent.clip 42 20
+makeanim walk_back mudent.clip 42 20
+
+makeanim run_left mudent.clip 42 20
+makeanim run_right mudent.clip 42 20
+makeanim run_fwd mudent.clip 42 20
+makeanim run_back mudent.clip 42 20
+
+makeanim wounded_left mudent.clip 85 20
+makeanim wounded_right mudent.clip 85 20
+makeanim wounded_fwd mudent.clip 85 20
+makeanim wounded_back mudent.clip 85 20
+
+makeanim death_generic mudent.clip 106 29
+makeanim death_left mudent.clip 106 29
+makeanim death_right mudent.clip 106 29
+makeanim death_fwd mudent.clip 106 29
+makeanim death_back mudent.clip 106 29
+
+// Sound Events
+
+animevent melee_1 0 "sound  /sound/npc/panther_attack_1.wav"
+
+animevent melee_move_1 0 "sound  /sound/npc/panther_attack_1.wav"
+
+animevent wounded_left 0 "sound /sound/npc/panther_wounded_1.wav"
+animevent wounded_right 0 "sound /sound/npc/panther_wounded_1.wav"
+animevent wounded_fwd 0 "sound /sound/npc/panther_wounded_1.wav"
+animevent wounded_back 0 "sound /sound/npc/panther_wounded_1.wav"
+
+animevent death_generic 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_left 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_right 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_fwd 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_back 0 "sound /sound/npc/panther_attack_2.wav"

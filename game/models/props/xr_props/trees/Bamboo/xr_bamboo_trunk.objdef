@@ -1,0 +1,9 @@
+beginObjdef blocker bamboo_trunk_xr
+  obj_editorCategory XR_Nature
+  obj_model xr_bamboo_trunk.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef bamboo_trunk_xr
+

@@ -1,0 +1,15 @@
+// Medic Staff
+
+// First Person Anim Events
+
+makeanim wpstate_spinup medic_staff.clip 88 14 
+makeanim wpstate_fire medic_staff.clip 98 3 30 1 
+makeanim idle medic_staff.clip 122 86 30 1
+makeanim wpstate_charge medic_staff.clip 0 88
+
+// Sound Events
+
+
+
+
+

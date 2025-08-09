@@ -1,0 +1,7 @@
+beginObjdef blocker riverleftarc
+  obj_editorCategory General_Water
+  obj_model riverleftarc.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef riverleftarc

@@ -1,0 +1,6 @@
+beginObjdef blocker wood_ladder_long
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/wood_ladder_long.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef wood_ladder_long

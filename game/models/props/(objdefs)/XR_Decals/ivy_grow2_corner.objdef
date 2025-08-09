@@ -1,0 +1,6 @@
+beginObjdef blocker ivy_grow2_corner
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/ivy_grow2_corner.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef ivy_grow2_corner

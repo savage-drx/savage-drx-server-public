@@ -1,0 +1,13 @@
+beginObjdef blocker Rock_1
+  obj_editorCategory General_Nature
+  obj_model rock.model
+  obj_skin rock.skin
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.500000
+  obj_bmin_x -18.208446
+  obj_bmin_y -21.360155
+  obj_bmin_z -0.082245
+  obj_bmax_x 26.508994
+  obj_bmax_y 27.094724
+  obj_bmax_z 36.766101
+endObjdef Rock_1

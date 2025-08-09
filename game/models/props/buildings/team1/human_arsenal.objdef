@@ -1,0 +1,8 @@
+beginObjdef blocker human_arsenal
+obj_editorCategory Buildings_Team1
+obj_team 1
+obj_reference 1
+obj_model /models/human/buildings/arsenal.model
+obj_editorScaleRangeLo 1.0
+obj_editorScaleRangeHi 1.0
+endObjdef human_arsenal

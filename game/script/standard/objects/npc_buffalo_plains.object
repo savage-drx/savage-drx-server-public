@@ -1,0 +1,86 @@
+objSet objclass "unit"
+objSet description "Plains Buffalo"
+objSet race "race0"
+objSet model "/models/npc/buffalo_plains/buffalo_plains.model"
+objSet tooltip "tooltip"
+objSet techType "NULL"
+objSet cmdrScale 2.000000
+objSet isWorker 1
+objSet isStampedeUnit 1
+objSet blockArc 0.448074
+objSet speed 4.000000
+objSet jumpHeight 0.000000
+objSet stepHeight 1.000000
+objSet viewHeight 25.000000
+objSet bmin_x -23.000000
+objSet bmin_y -23.000000
+objSet bmax_x 23.000000
+objSet bmax_y 23.000000
+objSet bmax_z 30.000000
+objSet killGoldReward 4000
+objSet level 8
+objSet totalLives 0
+objSet turnRate 8.000000
+objSet cloakFadeIn 0.200000
+objSet cloakFadeOut 0.600000
+objSet attackMeleeChance 1.000000
+objSet attackSuicideDelay 500.000000 1000.000000
+objSet attackSuicideRange 30.000000 60.000000
+objSet dodgeDistance 30.000000 60.000000
+objSet aggressionChance 1.000000
+objSet aggressionRange 100.000000 250.000000
+objSet aggressionInterval 500.000000 1000.000000
+objSet packRange 300.000000
+objSet packSize 0 10
+objSet stampedeVelocity 60 120
+objSet stampedeDamage 200 10926
+objSet stampedeSpeedBoost 7.000000 7.000000
+objSet stampedeSpeedIncrease 6.000000 0.000000
+objSet stampedeSlowdownDistance 0 1536
+objSet fullHealth 700
+objSet forceInventory0 "npc_melee"
+objSet allowInventory0 +none +weapon +building +unit +item +upgrade +melee 
+objSet allowInventory1 +none +weapon +building +unit +item +upgrade +melee 
+objSet allowInventory2 +none +weapon +building +unit +item +upgrade +melee 
+objSet allowInventory3 +none +weapon +building +unit +item +upgrade +melee 
+objSet allowInventory4 +none +weapon +building +unit +item +upgrade +melee 
+objSet jumpLandEffect "buffalo_land_dust"
+objSet bloodEffect1 ""
+objSet bloodEffect2 ""
+objSet bloodEffect3 ""
+
+//Attacks:
+atkEdit melee_1
+atkSet time 666
+atkSet impact 333 333
+atkSet damage 125
+atkSet range 30
+atkSet restTime 200 1500
+
+atkEdit melee_2
+atkSet restTime 0 0
+
+atkEdit melee_3
+atkSet restTime 0 0
+
+atkEdit melee_4
+atkSet restTime 0 0
+
+atkEdit alt_melee_1
+atkSet restTime 0 0
+
+atkEdit alt_melee_2
+atkSet restTime 0 0
+
+atkEdit alt_melee_3
+atkSet restTime 0 0
+
+atkEdit alt_melee_4
+atkSet restTime 0 0
+
+atkEdit melee_charge
+atkSet restTime 0 0
+
+atkEdit melee_release
+atkSet restTime 0 0
+

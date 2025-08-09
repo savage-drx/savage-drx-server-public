@@ -1,0 +1,280 @@
+objSet objclass "item"
+objSet description "Fire Ward"
+//objSet description "Boom Shrooms"
+objSet race "beast"
+objSet drawTeamIcon 1
+objSet drawName 1
+objSet drawHealth 1
+objSet shopIdOnly -2
+objSet model "/models/beast/items/fireward_projectile.model"
+//objSet model "/models/savageheroes/items/mushrooms/mushrooms_projectile.model"
+objSet skin ""
+objSet shader ""
+objSet skinflavors 1
+objSet effect ""
+objSet effectPeriod 100 100
+objSet scale 1.000000
+objSet miniscale -1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet deathTime -1
+objSet noRender 0
+objSet handModel "/models/beast/items/fireward.model"
+//objSet handModel "/models/savageheroes/items/mushrooms/mushrooms.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet isAllyWeapon 0
+objSet isLandMine 1
+objSet projectileModel "/models/beast/items/fireward_projectile.model"
+//objSet projectileModel "/models/savageheroes/items/mushrooms/mushrooms_projectile.model"
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect ""
+objSet trailPeriod 0 0
+objSet flybyEffect ""
+objSet cacheProjectileEffect 0
+objSet icon "/models/beast/items/icons/fireward"
+//objSet icon "/models/savageheroes/items/mushrooms/mushrooms_icon"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Places an enchantment on a small area that will erupt into a firey explosion if an enemy approaches it."
+//objSet tooltip "Places a fine selection of glowing mushrooms that get peeps high."
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 0.000000
+objSet builder1 "beast_arcana"
+objSet builder2 ""
+objSet requirement1 "beast_fire_shrine"
+objSet requirement2 ""
+objSet requirement3 ""
+objSet partialRequirement1 ""
+objSet partialRequirement2 ""
+objSet partialRequirement3 ""
+objSet partialRequirement4 ""
+objSet partialRequirement5 ""
+objSet partialRequirement6 ""
+objSet partialRequired 0
+objSet partialCountAll 0
+objSet partialText ""
+objSet invertPartial 0
+objSet requirement1b ""
+objSet requirement2b ""
+objSet requirement3b ""
+objSet partialRequirement1B ""
+objSet partialRequirement2B ""
+objSet partialRequirement3B ""
+objSet partialRequirement4B ""
+objSet partialRequirement5B ""
+objSet partialRequirement6B ""
+objSet partialRequiredB 0
+objSet partialCountAllB 0
+objSet partialTextB ""
+objSet invertPartialB 0
+objSet requirement1c ""
+objSet requirement2c ""
+objSet requirement3c ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet canBeSilenced 1
+objSet techType "fire"
+objSet damage 500
+objSet refreshTime 500
+objSet radius 0.000000 0.000000
+objSet unitpierce 1.000000
+objSet bldpierce 1.000000
+objSet siegepierce 1.000000
+objSet count 1 1
+objSet accuracy 1.000000
+objSet repeat 1
+objSet continuous 0
+objSet useWeaponFire 0
+objSet velocity 1000.000000 1000.000000
+objSet accelerate 0.000000
+objSet vertVelocity 0.000000 0.000000
+objSet attachBone2 "_boneRangedR"
+objSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 0
+objSet manaCost 0
+objSet ammoName "ammo"
+objSet ammoMax 5
+objSet ammoStart 1
+objSet ammoPerHit 1
+objSet ammoGroup 1
+objSet ammoCost 10
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet minHeatFlagsMult 0.000000
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet canOverheat 1
+objSet fireDelay 0
+objSet backfireTime 500
+objSet twangAmount 2.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 1000.000000
+objSet gravity 1.000000
+objSet bounce 0.000000
+objSet fuseTime 5000 5000
+objSet muzzleRightOffset 2.500000
+objSet muzzleFwdOffset 3.000000
+objSet muzzleUpOffset -3.000000
+objSet startFuseAtCharge 0
+objSet muzzleXFromOrigin 0.000000
+objSet needUnitType ""
+objSet pickGoldReward 50
+objSet pickExpReward 1.000000
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet KnockbackMult 1.000000
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 4
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 200
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 25000
+objSet playerCost 500
+objSet repaircost NULL 0
+objSet repaircost stone 0
+objSet repaircost gold 0
+objSet repaircost electric 0
+objSet repaircost magnetic 0
+objSet repaircost chemical 0
+objSet repaircost fire 0
+objSet repaircost strata 0
+objSet repaircost entropy 0
+objSet attachBone "_boneRangedR"
+objSet causesMeleeState "state0"
+objSet MeleeStateDuration 0
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet maxHeight 0.000000
+objSet useImpactSound 1
+objSet impactFrequency 0
+objSet stopOldImpact 1
+objSet impactSound ""
+objSet impactSound2 ""
+objSet impactSound3 ""
+objSet forcedWeaponScale 0.000000
+objSet forcedFPSWeaponScale 0.000000
+objSet cmdrScale 5.000000
+objSet bmin_x -4.000000
+objSet bmin_y -4.000000
+objSet bmin_z -4.000000
+objSet bmax_x 4.000000
+objSet bmax_y 4.000000
+objSet bmax_z 4.000000
+objSet fullHealth 0
+objSet weapon ""
+objSet backmodel ""
+objSet backskin ""
+objSet backbone "bip01 spine2"
+objSet TODEffMin1 0
+objSet TODEffMax1 0
+objSet TODEffect1 ""
+objSet TODEffMin2 0
+objSet TODEffMax2 0
+objSet TODEffect2 ""
+objSet TODEffMin3 0
+objSet TODEffMax3 0
+objSet TODEffect3 ""
+objSet TODEffMin4 0
+objSet TODEffMax4 0
+objSet TODEffect4 ""
+objSet TODEffMin5 0
+objSet TODEffMax5 0
+objSet TODEffect5 ""
+objSet TODEffMin6 0
+objSet TODEffMax6 0
+objSet TODEffect6 ""
+objSet spawnFrom 0
+objSet expMult 1.000000
+objSet thornDamage 0
+objSet electricDamage 0
+objSet explosionDamage 0
+objSet explosionRange 0
+objSet alwaysWaypoint 0
+objSet giveAmmo 0
+objSet giveMana 0
+objSet maxHold 1
+objSet delayEffect ""
+objSet delayPeriod 0
+objSet activeEffect ""
+objSet activeEffectPeriod 0
+objSet isSolid 0
+objSet isActivated 1
+objSet isVulnerable 0
+objSet meleeOnlyVulnerable 0
+objSet revealHidden 0
+objSet canPickup 0
+objSet pickupGive ""
+objSet pickupRespawn 20000
+objSet manaRegenAdd 0
+objSet manaRateMult 1.000000
+objSet isVolatile 1
+objSet maxDeployment 25
+objSet deathLinger 0
+objSet isSelectable 1
+objSet linkToOwner 0
+objSet targetFlags +enemy -ally +neutral +unit -building -item -world -team -same_type 
+objSet woundedEffect ""
+objSet spawnEffect ""
+objSet deathEffect "fire_explosion2"
+objSet deathSilverEffect ""
+objSet deathSpecialEffect ""
+objSet use_itemEffect "item_fireward_place"
+objSet activateItemEffect ""
+objSet sleepItemEffect ""
+objSet idleItemEffect ""
+objSet backfireEffect ""
+objSet bloodEffect1 "blood"
+objSet bloodEffect2 "blood2"
+objSet bloodEffect3 "blood3"
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""
+objSet fireDamage 1

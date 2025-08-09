@@ -1,0 +1,11 @@
+// Mortar
+
+// First Person Anim Events
+
+makeanim run mortar.clip 0 40
+makeanim wpstate_fire mortar.clip 40 46 
+makeanim idle mortar.clip 0 1
+
+// Sound Events
+
+animevent wpstate_fire 6 "sound /sound/human/weapons/mortar_reload.wav"

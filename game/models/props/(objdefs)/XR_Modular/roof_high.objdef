@@ -1,0 +1,6 @@
+beginObjdef blocker roof_high
+  obj_editorCategory XR_Modular
+  obj_model models/props/wooden/roof_high.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef roof_high

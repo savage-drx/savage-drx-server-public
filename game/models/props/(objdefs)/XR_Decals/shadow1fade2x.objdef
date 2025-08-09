@@ -1,0 +1,6 @@
+beginObjdef blocker shadow1fade2x
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/shadow1fade2x.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef shadow1fade2x

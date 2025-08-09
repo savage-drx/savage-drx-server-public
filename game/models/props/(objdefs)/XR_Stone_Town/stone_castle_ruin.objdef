@@ -1,0 +1,6 @@
+beginObjdef blocker stone_castle_ruin
+  obj_editorCategory XR_Stone_Town
+  obj_model models/props/stone/stone_castle_ruin.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef stone_castle_ruin

@@ -1,0 +1,6 @@
+beginObjdef blocker kawafune
+  obj_editorCategory Samurai_Props
+  obj_model kawafune.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef kawafune

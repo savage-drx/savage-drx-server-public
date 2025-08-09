@@ -1,0 +1,56 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle lucy.clip 478 22 6 1
+
+// Melee Combat
+
+makeanim melee_1 lucy.clip 250 83 83 0
+
+makeanim melee_move_1 lucy.clip 320 80 80 0
+
+makeanim block clip/block.clip
+
+// General Character Animation
+
+makeanim walk_left lucy.clip 0 120
+makeanim walk_right lucy.clip 0 120
+makeanim walk_fwd lucy.clip 0 120
+makeanim walk_back lucy.clip 0 120
+
+makeanim run_left lucy.clip 150 60 60
+makeanim run_right lucy.clip 150 60 60
+makeanim run_fwd lucy.clip 150 60 60
+makeanim run_back lucy.clip 150 60 60
+
+makeanim wounded_left lucy.clip 478 22
+makeanim wounded_right lucy.clip 478 22
+makeanim wounded_fwd lucy.clip 478 22
+makeanim wounded_back lucy.clip 478 22
+
+
+makeanim death_generic lucy.clip 565 85 50 0
+makeanim death_left lucy.clip 500 50 50 0
+makeanim death_right lucy.clip 500 50 50 0
+makeanim death_fwd lucy.clip 500 50 50 0
+makeanim death_back lucy.clip 500 50 50 0
+
+// Sound Events
+
+animevent melee_1 0 "randsound 3 /sound/npc/panther_attack"
+
+animevent melee_move_1 0 "randsound 3 /sound/npc/panther_attack"
+
+//animevent wounded_left 0 "randsound 3 /sound/npc/monkit_wounded"
+//animevent wounded_right 0 "randsound 3 /sound/npc/monkit_wounded"
+//animevent wounded_fwd 0 "randsound 3 /sound/npc/monkit_wounded"
+//animevent wounded_back 0 "randsound 3 /sound/npc/monkit_wounded"
+
+//animevent death_generic 0 "sound /sound/npc/monkit_attack_2.wav"
+//animevent death_left 0 "sound /sound/npc/monkit_attack_2.wav"
+//animevent death_right 0 "sound /sound/npc/monkit_attack_2.wav"
+//animevent death_fwd 0 "sound /sound/npc/monkit_attack_2.wav"
+//animevent death_back 0 "sound /sound/npc/monkit_attack_2.wav"

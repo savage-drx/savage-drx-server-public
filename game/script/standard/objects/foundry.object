@@ -1,0 +1,19 @@
+objSet objclass "building"
+objSet description "Foundry"
+objSet race "race0"
+objSet model "/models/props/tombstone_props/western/foundry.model"
+objSet skin "default"
+objSet tooltip "The world's first smoke factory!"
+objSet proximityMessage ""
+objSet techPointValue 1
+objSet techType "stone"
+objSet viewHeight 25.000000
+objSet fullHealth 100000
+objSet radiusState ""
+objSet isClaimable 0
+objSet mineType "stone"
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objSet isVulnerable 0
+objSet drawName 0
+objSet drawHealth 0

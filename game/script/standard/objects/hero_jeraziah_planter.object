@@ -1,0 +1,180 @@
+objSet objclass "item"
+objSet description "Sun's Blessing"
+objSet race "human"
+objSet shopIdOnly -2
+objSet animGroup 3
+objSet playerCost -1
+objSet drawTeamIcon 1
+objSet alwaysAvailable 1
+objSet canBeSilenced 1
+objSet allowFirstPerson 0
+objSet useWeaponFire 1
+objSet model ""
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 2.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet useDefaultMeleeModel 1
+objSet doubleWeapon 1
+objSet attachBone2 "Bip01 L Forearm"
+objSet handModel "/models/beast/items/manast.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel "/models/beast/items/manast_projectile.model"
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect ""
+objSet trailPeriod 200 200
+objSet flybyEffect ""
+objSet icon "/models/savageheroes/icons/jera_glow2
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "The Sun's presence materializes on Newerth, to bestow a mass blessing in a magical spot where resurrections and mana replenishments reward the most devout of believers. ^y(45 ^ymana, ^y45s ^ycooldown, ^y10 ^ymana/s)"
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 0.000000
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet techType "NULL"
+objSet ammoName "ammo"
+objSet velocity 100.000000 100.000000
+objSet vertVelocity 80.000000 80.000000
+objSet count 1 1
+objSet accuracy 1.000000
+objSet chargeFlags +velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 1000
+objSet fireDelay 230
+objSet rechargeTime 45000
+objSet backfireTime 50
+objSet ammoMax 1
+objSet ammoStart 1
+objSet ammoGroup 1
+objSet ammoCost 10
+objSet twangAmount 2.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 1000.000000
+objSet gravity 0.900000
+objSet bounce 0.650000
+objSet accelerate 0.000000
+objSet fuseTime 0 0
+objSet muzzleRightOffset 8.000000
+objSet muzzleFwdOffset 20.000000
+objSet muzzleUpOffset -6.000000
+objSet startFuseAtCharge 1
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet damage 0
+objSet radius 115.000000 115.000000
+objSet unitpierce 1.000000
+objSet bldpierce 0.100000
+objSet siegepierce 1.000000
+objSet repeat 0
+objSet continuous 0
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 200
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 25000
+objSet damageFlags +no_knockback -no_air -no_ground +no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 1
+objSet manaCost 45
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet cmdrScale 3.000000
+objSet bmin_x -2.000000
+objSet bmin_y -2.000000
+objSet bmin_z -2.000000
+objSet bmax_x 10.000000
+objSet bmax_y 10.000000
+objSet bmax_z 30.000000
+objSet fullHealth 0
+objSet weapon ""
+objSet spawnFrom 0
+objSet expMult 1.000000
+objSet thornDamage 0
+objSet alwaysWaypoint 0
+objSet giveAmmo 0
+objSet giveMana 0
+objSet maxHold 1
+objSet delayEffect ""
+objSet delayPeriod 1000
+objSet activeEffect ""
+objSet activeEffectPeriod 0
+objSet isActivated 1
+objSet isVulnerable 0
+objSet meleeOnlyVulnerable 0
+objSet revealHidden 0
+objSet canPickup 0
+objSet pickupGive ""
+objSet pickupRespawn 20000
+objSet manaRegenAdd 0
+objSet manaRateMult 1.000000
+objSet isVolatile 0
+objSet maxDeployment 0
+objSet deathLinger 0
+objSet isSelectable 1
+objSet targetFlags -enemy -ally -neutral -unit -building -item -world -team -same_type 
+objSet woundedEffect ""
+objSet spawnEffect ""
+objSet deathEffect ""
+objSet use_itemEffect ""
+objSet activateItemEffect ""
+objSet sleepItemEffect ""
+objSet idleItemEffect ""
+objSet backfireEffect "/sound/beast/items/mana_crystal.ogg"
+objSet projectileSound "/sound/human/items/disrupter_loop.wav"
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound "/sound/human/items/disrupter_loop.wav"
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound "/sound/human/items/disrupter_throw.wav"
+objSet itemSleepSound ""
+objSet itemActiveSound ""

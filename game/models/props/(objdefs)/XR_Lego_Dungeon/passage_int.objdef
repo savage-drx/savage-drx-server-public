@@ -1,0 +1,7 @@
+beginObjdef blocker passage_int
+  obj_navBridge 1
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/passage_int.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef passage_int

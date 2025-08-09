@@ -1,0 +1,7 @@
+beginObjdef blocker RailBridgeStraight
+  obj_editorCategory Tombstone_Railway
+  obj_model RailBridgeStraight.model
+  obj_skin 
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef RailBridgeStraight

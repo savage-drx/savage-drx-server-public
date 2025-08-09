@@ -1,0 +1,65 @@
+//voice chat config for human commander
+
+//voice chats are specified first by issuing a category name, then listing individual items
+
+//syntax:
+//voiceCategory <Number> <Description>
+//voiceItem <Number> <Description>
+//voiceSound <WavFile> <ChatText>
+//voiceMore <Number> <Description> <CategoryNumber>
+//voiceFlag <team | global>
+
+//voiceSound may be specified up to 4 times for the same item (for multiple versions of the same voice chat)
+//voiceItem can be specified up to 10 times per voiceCategory
+//voiceMore allows sub menus to be specified
+//voiceFlag specifies team or global chat
+
+voiceSquad human		//specifies that this is the squad voice chat menu belonging to the human race
+
+voiceDirectory sound/human/commander	//base directory to look for WAV files (specify once per file)
+
+//
+// SQUAD MISSIONS
+//
+
+voiceCategory 0
+
+voiceItem 1 "Destroy the Enemy Lair" 
+voiceSound destroy_lair_1.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_2.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_3.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_4.ogg "Destroy the Enemy Lair"
+
+voiceItem 2 "Capture the spawn flag"
+voiceSound capture_flag_1.ogg "Capture the Spawn Flag"
+
+voiceItem 3 "Return to base"
+voiceSound return_base_1.ogg "Return to base"
+voiceSound return_base_2.ogg "Return to base"
+voiceSound return_base_3.ogg "Return to base"
+
+voiceItem 4 "Scout for enemies" 
+voiceSound scout_enemies_1.ogg "Scout for enemies"
+voiceSound scout_enemies_2.ogg "Scout for enemies"
+
+voiceItem 5 "We need more gold"
+voiceSound need_gold_1.ogg "We need more Gold"
+voiceSound need_gold_2.ogg "We need more Gold"
+
+voiceItem 6 "We need more redstone"
+voiceSound need_redstone_1.ogg "We need more Redstone"
+voiceSound need_redstone_2.ogg "We need more Redstone"
+
+voiceItem 7 "Deploy landmines"
+voiceSound deploy_landmines_1.ogg "Deploy Landmines"
+
+voiceItem 8 "Deploy Sensors"
+voiceSound deploy_sensors_1.ogg "Deploy Sensors"
+
+voiceItem 9 "Report your situation"
+voiceSound report_situation_1.ogg "Report your situation"
+
+voiceItem 0 "Wait for my command!"
+voiceSound wait_command_1.ogg "Wait for my command!"
+voiceSound wait_command_1.ogg "Wait for my command!"
+voiceSound wait_command_2.ogg "Wait for my command!"

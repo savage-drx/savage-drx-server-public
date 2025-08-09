@@ -1,0 +1,6 @@
+beginObjdef blocker bamboo_h
+  obj_editorCategory Samurai_Props
+  obj_model bamboo_h.model
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.300000
+endObjdef bamboo_h

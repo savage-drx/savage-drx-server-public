@@ -1,0 +1,8 @@
+beginObjdef blocker spawnflag
+  obj_editorCategory Reference_Objects
+  obj_reference 1
+  obj_model /models/mine_flag/mine_flag.model
+  obj_skin default
+  obj_editorScaleRangeLo 1
+  obj_editorScaleRangeHi 1
+endObjdef spawnflag

@@ -1,0 +1,6 @@
+beginObjdef blocker snowrock
+  obj_editorCategory General_Nature
+  obj_model snowrock.model
+  obj_editorScaleRangeLo 0.300000
+  obj_editorScaleRangeHi 1.000000
+endObjdef snowrock

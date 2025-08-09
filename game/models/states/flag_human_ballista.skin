@@ -1,0 +1,4 @@
+skinRef flag01 /models/states/clothe.png
+
+skinName flag1
+skinRef flag01 /models/states/clothe.png

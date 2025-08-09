@@ -1,0 +1,6 @@
+beginObjdef blocker ruins_ramp
+  obj_editorCategory General_Ruins
+  obj_model ruins_ramp.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef ruins_ramp

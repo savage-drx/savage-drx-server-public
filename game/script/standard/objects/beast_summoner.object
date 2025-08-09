@@ -1,0 +1,407 @@
+objSet objclass "unit"
+objSet description "Summoner"
+objSet race "beast"
+objSet shopIdOnly -2
+objSet drawTeamIcon 1
+objSet model "/models/beast/units/shaman/shaman.model"
+objSet squadFlagBone "Bip01 R UpperArm"
+objSet officerFlagBone "Bip01 Spine2"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.500000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet voiceMenu "beast_player_male"
+objSet icon "/models/beast/units/shaman/icon"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "The smallest of the beast's warriors, this reptilian descendant is not much for physical combat, but wields powerful magic."
+objSet selectionSound ""
+objSet gridmenu "/gridmenus/beast/layout_siege.cfg"
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 0.000000
+objSet builder1 "beast_charmshrine"
+objSet builder2 ""
+objSet requirement1 "beast_charmshrine"
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 2
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet techType "NULL"
+objSet rightMeleeModel ""
+objSet leftMeleeModel ""
+objSet unitpierce 1.000000
+objSet bldpierce 1.000000
+objSet siegepierce 1.000000
+objSet cost NULL 0
+objSet cost stone 500
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 40000
+objSet playerCost 5500
+objSet e3noblend 0
+objSet npcTarget 1
+objSet cmdrScale 3.000000
+objSet footstepType "light"
+objSet bobSpeedRun 12.000000
+objSet bobSpeedSprint 16.000000
+objSet bobAmount 1.000000
+objSet isWorker 0
+objSet isVehicle 0
+objSet canRide 0
+objSet canEject 0
+objSet ejectUnit ""
+objSet maxRiders 10
+objSet blockPower 0.000000
+objSet blockArc 0.000000
+objSet speed 1.28000
+objSet jumpHeight 3.000000
+objSet stepHeight 15.000000
+objSet airControl 6.000000
+objSet friction 5.000000
+objSet viewHeight 25.000000
+objSet distOffset 15
+objSet maxCarry NULL 0
+objSet maxCarry stone 0
+objSet maxCarry gold 0
+objSet maxCarry electric 0
+objSet maxCarry magnetic 0
+objSet maxCarry chemical 0
+objSet maxCarry fire 0
+objSet maxCarry strata 0
+objSet maxCarry entropy 0
+objSet bmin_x -6.000000
+objSet bmin_y -6.000000
+objSet bmin_z 0.000000
+objSet bmax_x 6.000000
+objSet bmax_y 6.000000
+objSet bmax_z 27.000000
+objSet killGoldReward 6000
+objSet killResourceReward NULL 0
+objSet killResourceReward stone 0
+objSet killResourceReward gold 0
+objSet killResourceReward electric 0
+objSet killResourceReward magnetic 0
+objSet killResourceReward chemical 0
+objSet killResourceReward fire 0
+objSet killResourceReward strata 0
+objSet killResourceReward entropy 0
+objSet attackProbability 1.000000
+objSet level 1
+objSet totalLives 0
+objSet respawnTime 10000.000000
+objSet extraRespawnTime 10000.000000
+objSet fixedPitch -45.000000
+objSet turnRate 3.000000
+objSet buildingGoldIncomeMult 2.000000
+objSet maxPopulation 0
+objSet mineRate 0
+objSet repairRate 0
+objSet buildRate 0
+objSet isScared 0
+objSet spawnAtStartNum 0
+objSet isPassive 0
+objSet minAimX 0.000000
+objSet maxAimX 1.000000
+objSet minAimY 0.000000
+objSet maxAimY 1.000000
+objSet viewDistance 900.000000
+objSet healAmount 2
+objSet healRate 5000
+objSet canPurchase 0
+objSet allowFirstPerson 0
+objSet canDodge 1
+objSet isSiegeWeapon 1
+objSet maxMana 120
+objSet manaRegenRate 400
+objSet manaRegenAmount 10
+objSet canSprint 0
+objSet maxStamina 2500
+objSet staminaRegenRate 1.000000
+objSet mass 180.000000
+objSet maxWeapPoints 1
+objSet revivable 0
+objSet knockBackMult 5
+objSet attackMeleeChance 0.000000
+objSet attackMissileChance 0.000000
+objSet attackPoundChance 0.000000
+objSet attackSuicideChance 0.000000
+objSet attackSuicideDelay 500.000000 1000.000000
+objSet attackSuicideRange 30.000000 60.000000
+objSet attackSuicideRadius 60.000000
+objSet attackSuicideDamage 100.000000
+objSet fleeChance 1.000000
+objSet fleeThreshhold 0.500000
+objSet dodgeChance 1.000000
+objSet dodgeRestTime 0 0
+objSet dodgeDistance 30.000000 60.000000
+objSet aggressionChance 0.000000
+objSet aggressionRange 0.000000 0.000000
+objSet aggressionInterval 500.000000 1000.000000
+objSet packRange 0.000000
+objSet packSize 0 0
+objSet fullHealth 330
+objSet forceInventory0 "beast_summoner_weapon"
+objSet forceInventory1 ""
+objSet forceInventory2 ""
+objSet forceInventory3 ""
+objSet forceInventory4 ""
+objSet forceInventory5 ""
+objSet forceInventory6 ""
+objSet forceInventory7 ""
+objSet forceInventory8 ""
+objSet forceInventory9 ""
+objSet forceInventory10 ""
+objSet forceInventory11 ""
+objSet forceInventory12 ""
+objSet forceInventory13 ""
+objSet forceInventory14 ""
+objSet forceInventory15 ""
+objSet allowInventory0 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory1 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory2 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory3 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory4 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory5 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory6 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory7 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory8 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory9 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory10 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory11 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory12 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory13 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory14 -none -weapon -building -unit -item -upgrade -melee 
+objSet allowInventory15 -none -weapon -building -unit -item -upgrade -melee 
+objSet expMult 1.000000
+objSet thornDamage 0
+objSet alwaysWaypoint 0
+objSet isVulnerable 1
+objSet meleeOnlyVulnerable 0
+objSet revealHidden 0
+objSet targetFlags -enemy -ally -neutral -unit -building -item -world -team -same_type 
+objSet woundedEffect ""
+objSet resurrectedEffect ""
+objSet deflectedEffect ""
+objSet dropoffEffect ""
+objSet levelUpEffect "beast_levelup"
+objSet spawnEffect "beast_respawn"
+objSet deathEffect "player_predator_death"
+objSet dazedEffect ""
+objSet mineEffect ""
+objSet dropoffEffect ""
+objSet task_finishedEffect ""
+objSet resourceFullEffect ""
+objSet goodiePickupEffect ""
+objSet jumpLandEffect "beast_light_jumpland"
+objSet jumpEffect "player_predator_jump"
+objSet splodeyDeathEffect ""
+objSet selectionEffect ""
+objSet attackPoundEffect ""
+objSet attackSuicideEffect ""
+objSet fizzleEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""
+
+//Attacks:
+atkEdit melee_1
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit melee_2
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit melee_3
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit melee_4
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit alt_melee_1
+atkSet time 1235
+atkSet impact 560 700
+atkSet impact 950 1100
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground +no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 50
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit alt_melee_2
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit alt_melee_3
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit alt_melee_4
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit melee_charge
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+
+atkEdit melee_release
+atkSet time 0
+atkSet impact 0 0
+atkSet lunge 0
+atkSet lungeTime 0
+atkSet flurry 0
+atkSet flurryTime 0
+atkSet damage 0
+atkSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+atkSet xLunge 0
+atkSet yLunge 0
+atkSet range 0
+atkSet horzKick 0.000000
+atkSet vertKick 0.000000
+atkSet speed 1.000000
+atkSet restTime 0 0
+

@@ -1,0 +1,8 @@
+// Coilrifle
+
+// First Person Anim Events
+
+makeanim idle musket_hand.clip 51 30
+makeanim wpstate_fire musket_hand.clip 0 50
+
+// Sound Events

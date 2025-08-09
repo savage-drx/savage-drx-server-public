@@ -1,0 +1,236 @@
+objSet objclass "weapon"
+objSet description "Heal"
+objSet race "beast"
+objSet drawTeamIcon 1
+objSet drawName 1
+objSet drawHealth 1
+objSet model "/models/beast/weapons/ranged/medic_staff_third.model"
+objSet skin ""
+objSet shader "/models/human/weapons/1_nl_pulse.tga"
+objSet skinflavors 1
+objSet effect ""
+objSet effectPeriod 100 100
+objSet scale 1.000000
+objSet miniscale -1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet deathTime -1
+objSet noRender 0
+objSet handModel "/models/beast/weapons/ranged/medic_heal.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet isAllyWeapon 1
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+objSet trailEffect "shaman_heal_trail"
+objSet trailPeriod 2000 2000
+objSet flybyEffect ""
+objSet cacheProjectileEffect 0
+objSet icon "/models/beast/weapons/ranged/icons/heal"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Restore the health of nearby teammates."
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet requirement3 ""
+objSet partialRequirement1 ""
+objSet partialRequirement2 ""
+objSet partialRequirement3 ""
+objSet partialRequirement4 ""
+objSet partialRequirement5 ""
+objSet partialRequirement6 ""
+objSet partialRequired 0
+objSet partialCountAll 0
+objSet partialText ""
+objSet invertPartial 0
+objSet requirement1b ""
+objSet requirement2b ""
+objSet requirement3b ""
+objSet partialRequirement1B ""
+objSet partialRequirement2B ""
+objSet partialRequirement3B ""
+objSet partialRequirement4B ""
+objSet partialRequirement5B ""
+objSet partialRequirement6B ""
+objSet partialRequiredB 0
+objSet partialCountAllB 0
+objSet partialTextB ""
+objSet invertPartialB 0
+objSet requirement1c ""
+objSet requirement2c ""
+objSet requirement3c ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 1
+objSet canBeSilenced 1
+objSet techType ""
+objSet damage 0
+objSet refreshTime 850
+objSet radius 0.000000 0.000000
+objSet unitpierce 0.000000
+objSet bldpierce 0.000000
+objSet siegepierce 0.000000
+objSet count 1 1
+objSet accuracy 1.000000
+objSet repeat 1
+objSet continuous 0
+objSet velocity 1200.000000 1200.000000
+objSet accelerate 0.000000
+objSet vertVelocity 0.000000 0.000000
+objSet DoubleWeapon 0
+objSet AlternateDelay 100
+objSet attachBone "_boneMeleeR"
+objSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 1
+objSet manaCost 20
+objSet ammoName ""
+objSet ammoMax 0
+objSet ammoStart 0
+objSet ammoPerHit 1
+objSet ammoGroup 1
+objSet ammoCost 0
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet minHeatFlagsMult 0.000000
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet canOverheat 1
+objSet fireDelay 0
+objSet backfireTime 500
+objSet twangAmount 0.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 0.000000
+objSet gravity 0.000000
+objSet bounce 0.000000
+objSet fuseTime 0 0
+objSet muzzleRightOffset 2.500000
+objSet muzzleFwdOffset 3.000000
+objSet muzzleUpOffset -3.000000
+objSet weapPointValue 0
+objSet startFuseAtCharge 0
+objSet muzzleXFromOrigin 0.000000
+objSet needUnitType ""
+objSet pickGoldReward 50
+objSet pickExpReward 1.000000
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet KnockbackMult 1.000000
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 1
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 0
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 0
+objSet playerCost -1
+objSet repaircost NULL 0
+objSet repaircost stone 0
+objSet repaircost gold 0
+objSet repaircost electric 0
+objSet repaircost magnetic 0
+objSet repaircost chemical 0
+objSet repaircost fire 0
+objSet repaircost strata 0
+objSet repaircost entropy 0
+objSet attachBone "_boneMeleeR"
+objSet SilverKillable 0
+objSet UsesRangedMAD 0
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 0.900000
+objSet maxHeight 0.000000
+objSet useImpactSound 1
+objSet impactFrequency 0
+objSet stopOldImpact 1
+objSet impactSound ""
+objSet impactSound2 ""
+objSet impactSound3 ""
+objSet forcedWeaponScale 0.000000
+objSet forcedFPSWeaponScale 0.000000
+objSet fullHealth 0
+objSet weapon ""
+objSet backmodel ""
+objSet backskin ""
+objSet backbone "bip01 spine2"
+objSet TODEffMin1 0
+objSet TODEffMax1 0
+objSet TODEffect1 ""
+objSet TODEffMin2 0
+objSet TODEffMax2 0
+objSet TODEffect2 ""
+objSet TODEffMin3 0
+objSet TODEffMax3 0
+objSet TODEffect3 ""
+objSet TODEffMin4 0
+objSet TODEffMax4 0
+objSet TODEffect4 ""
+objSet TODEffMin5 0
+objSet TODEffMax5 0
+objSet TODEffect5 ""
+objSet TODEffMin6 0
+objSet TODEffMax6 0
+objSet TODEffect6 ""
+objSet scanRange 200.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 1
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "beast_heal_impact"
+objSet deathSilverEffect ""
+objSet deathSpecialEffect ""
+objSet weaponFireEffect ""
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet weaponBeginFireEffect ""
+objSet weaponEndFireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

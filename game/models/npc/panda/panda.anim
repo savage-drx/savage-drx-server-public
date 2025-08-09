@@ -1,0 +1,53 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle panda.clip 0 48 15 1
+
+// Melee Combat
+
+makeanim melee_1 panda.clip 143 31 20 0
+
+makeanim melee_move_1 panda.clip 143 31 20 0
+
+// General Character Animation
+
+makeanim walk_left panda.clip 90 48 40 1 
+makeanim walk_right panda.clip 90 48 40 1 
+makeanim walk_fwd panda.clip 90 48 40 1 
+makeanim walk_back panda.clip 90 48 40 1 
+
+makeanim run_left panda.clip 90 48 40 1 
+makeanim run_right panda.clip 90 48 40 1
+makeanim run_fwd panda.clip 90 48 40 1
+makeanim run_back panda.clip 90 48 40 1 
+
+makeanim wounded_left panda.clip 174 11
+makeanim wounded_right panda.clip 174 11
+makeanim wounded_fwd panda.clip 174 11
+makeanim wounded_back panda.clip 174 11
+
+makeanim death_generic panda.clip 185 15 15
+makeanim death_left panda.clip 185 15 15
+makeanim death_right panda.clip 185 15 15
+makeanim death_fwd panda.clip 185 15 15
+makeanim death_back panda.clip 185 15 15
+
+// Sound Events
+
+animevent melee_1 0 "sound /sound/npc/snowbeast_attack.wav"
+
+animevent melee_move_1 0 "sound /sound/npc/snowbeast_attack.wav"
+
+animevent wounded_left 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+animevent wounded_right 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+animevent wounded_fwd 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+animevent wounded_back 0 "sound /sound/npc/snowbeast_wounded_1.wav"
+
+animevent death_generic 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_left 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_right 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_fwd 0 "sound /sound/npc/snowbeast_death.wav"
+animevent death_back 0 "sound /sound/npc/snowbeast_death.wav"

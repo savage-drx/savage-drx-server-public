@@ -1,0 +1,8 @@
+beginObjdef blocker snowtreedead
+  obj_editorCategory General_Trees
+  obj_model snowtreedead.model
+  obj_skin snowtreedead.skin
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef snowtreedead

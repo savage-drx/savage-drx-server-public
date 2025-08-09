@@ -1,0 +1,6 @@
+beginObjdef blocker wood_beam_support
+  obj_editorCategory XR_Modular
+  obj_model models/props/wooden/woden_beam_support.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef wood_beam_support

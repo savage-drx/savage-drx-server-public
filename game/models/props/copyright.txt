@@ -1,0 +1,28 @@
+The contents of the following folders are created by the staff developing Savage XR, hosted by www.Newerth.com:
+
+cottages
+decals
+doors
+markers
+plaster
+stone
+wooden
+xr_interactive
+xr_modular
+xr_props
+
+The files contained within cannot be distributed, traded, sold, modified, used in any other way, including
+(but not limited to) exporting into different formats, compressed files and different platforms (like CDs,
+DVDs, Blu Ray disks, memory sticks, internet etc.).
+
+The only allowed instance is within the official Savage XR distribution. If you use these electronic products
+in any projects or items, these projects or items will be subject to the same Terms and Conditions that the
+material posted in this file, even though heavily modified. Any subsequent use of these projects or items
+like re-selling, inclusion in other projects or items, re-distribution, is forbidden.
+
+Explicitly, these files cannot be used in video games that generate direct or indirect benefits. These files
+cannot be used in free video games, whenever they don't generate direct or indirect profits. These images 
+cannot be used in any demos (video games) for developing purposes either, whenever they`re not included in 
+any commercial version that doesn't generate any direct or indirect profits. 
+
+www.Newerth.com

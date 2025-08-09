@@ -1,0 +1,25 @@
+objSet objclass "building"
+objSet description "Bridge"
+objSet race "race0"
+objSet drawTeamIcon 0
+objSet drawHealth 0
+objSet model "/models/props/tombstone_props/bridges/whiskeygulch_bridge.model"
+objSet skin "default"
+objSet tooltip "info 177"
+objSet selectionSound "/sound/effects/bridge_creak.wav"
+objSet proximitySound "/sound/effects/bridge_creak.wav"
+objSet proximity 100.000000
+objSet techType "NULL"
+objSet viewHeight 25.000000
+objSet fullHealth 12000
+objSet radiusState "state0"
+objSet mineType ""
+objSet healthStage1 75
+objSet healthStage3 25
+objSet healthStage1Period 4000 4000
+objSet healthStage2Period 300 500
+objSet healthStage3Period 100 150
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objSet deathEffect "bridge_explosion"
+objSet idleSound "/sound/effects/bridge_creak.ogg"

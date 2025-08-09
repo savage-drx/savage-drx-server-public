@@ -1,0 +1,10 @@
+beginObjdef blocker Rockambientmonkitsound
+  obj_editorCategory General_Nature
+  obj_model rock.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.500000
+  obj_sound /sound/environment/ambient_monkit.wav
+  obj_soundVolume 0.6
+  obj_soundMinFalloff 320
+endObjdef Rockambientmonkitsound

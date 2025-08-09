@@ -1,0 +1,8 @@
+beginObjdef blocker dense_tree_dark_xr
+  obj_editorCategory XR_Nature
+  obj_model dense_tree_dark.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef dense_tree_dark_xr

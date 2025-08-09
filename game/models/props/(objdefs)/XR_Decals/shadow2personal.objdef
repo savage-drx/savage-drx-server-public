@@ -1,0 +1,6 @@
+beginObjdef blocker shadow2personal
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/shadow2personal.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef shadow2personal

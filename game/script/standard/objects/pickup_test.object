@@ -1,0 +1,75 @@
+objSet objclass "item"
+objSet description "Pickup Test"
+objSet race "human"
+objSet model "/items/resources/electric_eye.model"
+objSet skin "/items/resources/electric_eye.skin"
+objSet shader ""
+objSet scale 1.000000
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet trailEffect ""
+objSet trailPeriod 200 200
+objSet icon "/items/icons/electric_eye"
+objSet tooltip "Place on the map to spy on an area"
+objSet builder1 "human_research_center"
+objSet builder2 ""
+objSet requirement1 "human_electric_factory"
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 2
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet ammoMax -1
+objSet ammoStart 0
+objSet ammoGroup 1
+objSet ammoCost 10
+objSet damage 0
+objSet cost stone 100
+objSet cost gold 100
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 25000
+objSet playerCost 250
+objSet bmin_x -10.000000
+objSet bmin_y -10.000000
+objSet bmin_z 0.000000
+objSet bmax_x 10.000000
+objSet bmax_y 10.000000
+objSet bmax_z 25.000000
+objSet fullHealth 500
+objSet healthChange 0.000000
+objSet isDeployed 1
+objSet maxHold 3
+objSet ammoMult 1.000000
+objSet delayTime 0
+objSet delayEffect ""
+objSet delayPeriod 500
+objSet activeTime -1
+objSet activeEffect "beep"
+objSet activeEffectPeriod 2000
+objSet activeRadius 0
+objSet activeState "state0"
+objSet activeStateDuration 0
+objSet isActivated 1
+objSet tossVelocity 20.000000
+objSet isTriggered 0
+objSet triggerRange 0.000000
+objSet isVulnerable 1
+objSet revealHidden 0
+objSet dropToGround 1
+objSet stripStates 0
+objSet canPickup 1
+objSet pickupGive "human_sniperbow"
+objSet pickupRespawn 20000
+objSet use_itemEffect ""
+objSet activateItemEffect ""
+objSet woundedEffect "spark"
+objSet spawnEffect ""
+objSet deathEffect ""

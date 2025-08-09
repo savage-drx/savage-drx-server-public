@@ -1,0 +1,8 @@
+beginObjdef blocker jump_pad
+  obj_editorCategory XR_Interactive
+  obj_model models/props/xr_interactive/jump_pad/jump_pad.model
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 0.800000
+  obj_attachObject jump_pad_pointer
+  obj_attachOffsetZ 7
+endObjdef jump_pad

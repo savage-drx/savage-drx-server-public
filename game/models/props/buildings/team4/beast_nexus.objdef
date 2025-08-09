@@ -1,0 +1,8 @@
+beginObjdef blocker beast_nexus_t4
+obj_editorCategory Buildings_Team4
+obj_team 4
+obj_reference 1
+obj_model /models/beast/buildings/nexus.model
+obj_editorScaleRangeLo 1.0
+obj_editorScaleRangeHi 1.0
+endObjdef beast_nexus_t4

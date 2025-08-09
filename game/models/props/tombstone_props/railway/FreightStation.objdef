@@ -1,0 +1,7 @@
+beginObjdef blocker FreightStation
+  obj_editorCategory Tombstone_Railway
+  obj_model FreightStation.model
+  obj_skin 
+  obj_editorScaleRangeLo 0.600000
+  obj_editorScaleRangeHi 0.600000
+endObjdef FreightStation

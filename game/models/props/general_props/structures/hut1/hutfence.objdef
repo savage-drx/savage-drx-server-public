@@ -1,0 +1,6 @@
+beginObjdef blocker hutfence
+  obj_editorCategory General_Structures
+  obj_model hutfence.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef hutfence

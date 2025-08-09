@@ -1,0 +1,11 @@
+
+makeanim death_generic arsenal.clip 0 24 15 
+
+
+
+
+//buildings
+makeanim construct_1 clip/construct_1.clip
+makeanim construct_2 clip/construct_2.clip
+makeanim construct_3 clip/construct_3.clip
+makeanim construct_final clip/construct_final.clip

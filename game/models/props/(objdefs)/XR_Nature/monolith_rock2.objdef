@@ -1,0 +1,7 @@
+beginObjdef blocker monolith_rock2
+  obj_editorCategory XR_Nature
+  obj_model models/props/xr_props/nature/monolith.model
+  obj_skin monolith_rock2
+  obj_editorScaleRangeLo 2.000000
+  obj_editorScaleRangeHi 2.000000
+endObjdef monolith_rock2

@@ -1,0 +1,38 @@
+human_3_kills 			3 kills in a row!
+human_5_kills 			5 kills in a row!
+human_10_kills 			10 kills in a row!
+human_15_kills 			15 kills in a row!
+human_3_kills_other 		honors his tribe with 3 kills
+human_5_kills_other 		honors his tribe with 5 kills
+human_10_kills_other 		is a hero with 10 kills!
+human_15_kills_other 		is a legend with 15 kills!
+human_skillful 			Skillful shot!
+human_unmatched 			Your skill is unmatched!
+human_unmatched_other 		's skill is unmatched!
+
+beast_3_kills 			3 kills in a row!
+beast_5_kills 			5 kills in a row!
+beast_10_kills 			10 kills in a row!
+beast_15_kills 			15 kills in a row!
+beast_3_kills_other 		honors his tribe with 3 kills
+beast_5_kills_other 		honors his tribe with 5 kills
+beast_10_kills_other 		is a hero with 10 kills!
+beast_15_kills_other 		is a legend with 15 kills!
+beast_skillful 			Skillful shot!
+beast_unmatched 			Your skill is unmatched!
+beast_unmatched_other 		's skill is unmatched!
+
+dropoff_resources		You gave the team
+
+notice_rtss_victory		Your team has achieved victory!
+notice_rtss_defeat		Your team has been defeated!
+
+notice_deathmatch_winner	You have won the match!
+notice_deathmatch_loser		has won the match!
+
+//UT_time 		5000 cl_var now
+UT_first 		^009FIRST^900BLOOD!
+UT_2_kills 		^307DOUBLEKILL!!
+UT_3_kills 		^505MULTIKILL!!!
+UT_4_kills 		^703ULTRAKILL!!!
+UT_5_kills 		^900M O N S T E R K I L L !

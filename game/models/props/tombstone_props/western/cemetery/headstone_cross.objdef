@@ -1,0 +1,7 @@
+beginObjdef blocker headstone_cross  
+  obj_editorCategory Tombstone_Western
+  obj_model headstone_cross.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 1.000000
+endObjdef headstone_cross

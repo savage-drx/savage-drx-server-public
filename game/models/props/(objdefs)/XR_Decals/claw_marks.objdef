@@ -1,0 +1,6 @@
+beginObjdef blocker claw_marks
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/claw_marks.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef claw_marks

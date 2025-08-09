@@ -1,0 +1,128 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+
+
+makeanim idle kongor.clip 0 87 25 1
+
+// Melee Combat
+
+
+
+makeanim melee_1 kongor.clip 106 45 30 1
+
+
+makeanim melee_move_1 kongor.clip 106 45 30 1
+
+
+
+// General Character Animation
+
+
+
+makeanim walk_left kongor.clip 86 20 30 1
+
+makeanim walk_right kongor.clip 86 20 30 1
+
+makeanim walk_fwd kongor.clip 86 20 30 1
+
+makeanim walk_back kongor.clip  86 20 30 1
+
+
+
+makeanim run_left kongor.clip 86 20 30 1
+
+makeanim run_right kongor.clip 86 20 30 1
+
+makeanim run_fwd kongor.clip 86 20 30 1
+
+makeanim run_back kongor.clip 86 20 30 1
+
+
+makeanim sprint_left  kongor.clip 86 20 30 1
+makeanim sprint_right  kongor.clip 86 20 30 1
+makeanim sprint_fwd  kongor.clip 86 20 30 1
+makeanim sprint_back  kongor.clip 86 20 30 1
+
+makeanim weapon_fire_1 kongor.clip 106 45 30 1
+makeanim weapon_fire_2 kongor.clip 106 45 30 1
+makeanim weapon_fire_3 kongor.clip 106 45 30 1
+makeanim weapon_fire_4 kongor.clip 106 45 30 1
+makeanim weapon_fire_5 kongor.clip 106 45 30 1
+
+makeanim crouch_idle kongor.clip 0 87 25 1
+
+makeanim wounded_left kongor.clip 144 12 25
+makeanim wounded_right kongor.clip 144 12 25 
+makeanim wounded_fwd kongor.clip 144 12 25 
+makeanim wounded_back kongor.clip 144 12 25
+
+
+makeanim death_generic  kongor.clip 159 115 25  
+makeanim death_left  kongor.clip 159 115 25 
+makeanim death_right  kongor.clip 159 115 25 
+makeanim death_fwd  kongor.clip 159 115 25 
+makeanim death_back  kongor.clip 159 115 25 
+
+
+
+// Sound Events
+
+animevent idle 0 "sound /sound/npc/gorilla_idle_2.wav"
+
+animevent melee_1 0 "randsound 2 /sound/npc/gorilla_idle"
+
+animevent melee_move_1 0 "randsound 2 /sound/npc/gorilla_idle"
+
+animevent walk_left 0 "effect npc_gorilla_footsteps" 
+animevent walk_right 0 "effect npc_gorilla_footsteps" 
+animevent walk_fwd 0 "effect npc_gorilla_footsteps" 
+animevent walk_back 0 "effect npc_gorilla_footsteps"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//fixed by Mchief

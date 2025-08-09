@@ -1,0 +1,8 @@
+beginObjdef blocker gold_autominer
+  obj_editorCategory Reference_Objects
+  obj_reference 1
+  obj_model gold_autominer.model
+  obj_skin default
+  obj_editorScaleRangeLo 1
+  obj_editorScaleRangeHi 1
+endObjdef gold_autominer

@@ -1,0 +1,8 @@
+// Chicken
+
+// Third Person Anim Events
+
+makeanim idle chicken_3rd.clip 0 360 30 1 
+//makeanim wpstate_fire ak47_3rd.clip 0 9
+
+// Sound Events

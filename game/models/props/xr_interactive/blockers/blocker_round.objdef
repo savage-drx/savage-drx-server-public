@@ -1,0 +1,7 @@
+beginObjdef blocker blocker_round
+  obj_editorCategory XR_Interactive
+  obj_model blocker_round.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_invisibleToGame 1
+endObjdef blocker_round

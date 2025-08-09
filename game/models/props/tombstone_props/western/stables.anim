@@ -1,0 +1,2 @@
+makeanim idle stables_idle.clip 0 0 24 1
+makeanim death_generic stables_destroyed.clip 0 0 30

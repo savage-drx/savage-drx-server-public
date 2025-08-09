@@ -1,0 +1,50 @@
+// syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// common
+
+makeanim idle clip/cannon_idle.clip
+
+// Melee Combat
+
+makeanim weapon_fire_1 clip/cannon_fire.clip
+
+makeanim melee_1 clip/cannon_fire.clip
+makeanim melee_2 clip/cannon_fire.clip
+makeanim melee_3 clip/cannon_fire.clip
+makeanim melee_4 clip/cannon_fire.clip
+
+makeanim melee_move_1 clip/cannon_fire.clip
+makeanim melee_move_2 clip/cannon_fire.clip
+makeanim melee_move_3 clip/cannon_fire.clip
+makeanim melee_move_4 clip/cannon_fire.clip
+
+//makeanim block clip/block.clip
+
+// General Character Animation
+
+//makeanim walk_left clip/sidestep_left.clip
+//makeanim walk_right clip/sidestep_right.clip
+makeanim walk_fwd clip/cannon_walk.clip
+makeanim walk_back clip/cannon_walk.clip
+
+//makeanim run_left clip/sidestep_left.clip
+//makeanim run_right clip/sidestep_right.clip
+makeanim run_fwd clip/cannon_walk.clip
+makeanim run_back clip/cannon_walk.clip
+
+makeanim death_generic clip/cannon_death.clip
+makeanim death_left clip/cannon_death.clip
+makeanim death_right clip/cannon_death.clip
+makeanim death_fwd clip/cannon_death.clip
+makeanim death_back clip/cannon_death.clip
+
+// Sound Events
+
+animevent walk_back 0 "randsound 4 /sound/general/footsteps/human/ballista_light"
+animevent walk_fwd 0 "randsound 4 /sound/general/footsteps/human/ballista_light"
+
+animevent weapon_fire_1 0 "sound /sound/human/weapons/ballista_reload.wav"
+animevent weapon_fire_1 25 "sound /sound/human/weapons/ballista_fire.wav"
+

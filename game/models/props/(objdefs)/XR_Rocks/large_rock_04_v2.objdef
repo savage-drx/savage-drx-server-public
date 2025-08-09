@@ -1,0 +1,8 @@
+beginObjdef blocker large_rock_04_v2
+  obj_editorCategory XR_Large_Rocks
+  obj_model models/props/xr_props/large_rocks/Rock_04.model
+  obj_skin large_rock_04_v2
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.500000
+endObjdef large_rock_04_v2
+          

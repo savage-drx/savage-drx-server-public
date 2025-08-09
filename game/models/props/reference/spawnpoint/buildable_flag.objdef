@@ -1,0 +1,8 @@
+beginObjdef blocker buildable_flag
+  obj_editorCategory Reference_Objects
+  obj_reference 1
+  obj_model /models/mine_flag/buildable_flag.model
+  obj_skin default
+  obj_editorScaleRangeLo 5
+  obj_editorScaleRangeHi 5
+endObjdef buildable_flag

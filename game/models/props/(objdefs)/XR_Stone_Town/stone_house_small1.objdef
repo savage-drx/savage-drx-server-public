@@ -1,0 +1,6 @@
+beginObjdef blocker stone_house_small1
+  obj_editorCategory XR_Stone_Town
+  obj_model models/props/stone/stone_house_small1.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef stone_house_small1

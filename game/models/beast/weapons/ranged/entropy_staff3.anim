@@ -1,0 +1,14 @@
+// Rupture
+
+// First Person Anim Events
+
+makeanim wpstate_fire entropy_staff.clip 88 32
+makeanim idle entropy_staff.clip 0 0 0 1
+makeanim wpstate_charge entropy_staff.clip 0 88
+
+// Sound Events
+
+
+
+
+

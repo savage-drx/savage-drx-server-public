@@ -1,0 +1,13 @@
+commander_icon	textures/icons/waypoint_default.tga
+selection_indicator_small textures/icons/nl_indicator_small.tga
+selection_indicator_large textures/icons/nl_indicator_large.tga
+
+friend_death	skull_red
+enemy_death	skull_green
+
+victory		gui/standard/victory.tga
+defeat		gui/standard/defeat.tga
+
+siege_crosshair	gui/standard/crosshairs/grenade_xhair.tga
+fp_crosshair	gui/standard/crosshairs/grenade_xhair.tga
+tp_crosshair	gui/standard/crosshairs/thirdperson_xhair.tga

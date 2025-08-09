@@ -1,0 +1,76 @@
+objSet objclass "upgrade"
+objSet description "Eject"
+objSet race "human"
+objSet drawTeamIcon 1
+objSet model ""
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet icon "/gui/standard/gridmenus/icons/eject_icon"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Eject the rider of this vehicle (if population limit permits)"
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 1
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 1
+objSet techType "NULL"
+objSet cost NULL 0
+objSet cost stone 0
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 25000
+objSet playerCost 300
+objSet fullHealth 100
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet duration 10000
+objSet activateCost NULL 0
+objSet activateCost stone 0
+objSet activateCost gold 0
+objSet activateCost electric 0
+objSet activateCost magnetic 0
+objSet activateCost chemical 0
+objSet activateCost fire 0
+objSet activateCost strata 0
+objSet activateCost entropy 0
+objSet targetFlags -enemy +ally -neutral +unit -building -item -world -team -same_type 
+objSet spawnEffect ""
+objSet deathEffect ""
+objSet powerupEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

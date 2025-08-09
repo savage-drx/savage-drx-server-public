@@ -1,0 +1,14 @@
+beginObjdef blocker dyn_crate_box_plain
+  obj_editorCategory XR_Physics
+  obj_reference 1
+  obj_model models/props/dynamic/crates/crate_box_plain.model
+  obj_editorScaleRangeLo 0.900000
+  obj_editorScaleRangeHi 0.900000
+  obj_physicsDynamic 1  
+  obj_physicsMass 12.0
+  obj_physicsGrab 1
+  obj_physicsThrow 1
+  obj_physicsPush 0
+  obj_physicsFlammable 1
+  obj_physicsGrabOffsetZ 7.5    
+endObjdef dyn_crate_box_plain

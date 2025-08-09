@@ -1,0 +1,94 @@
+//common
+
+makeanim idle clip/worker.clip 0 259 30
+
+//melee combat
+
+makeanim melee_1 clip/worker.clip 332 21 30 
+makeanim melee_2 clip/worker.clip 332 21 30 
+makeanim melee_3 clip/worker.clip 332 21 30 
+makeanim melee_4 clip/worker.clip 332 21 30 
+makeanim melee_charge clip/melee_charge.clip
+makeanim melee_release clip/melee_release.clip
+
+makeanim melee_move_1 clip/worker.clip 332 21 30
+makeanim melee_move_2 clip/worker.clip 332 21 30 
+makeanim melee_move_3 clip/worker.clip 332 21 30 
+makeanim melee_move_4 clip/worker.clip 332 21 30 
+makeanim melee_move_charge clip/melee_move_charge.clip
+makeanim melee_move_release clip/melee_move_release.clip
+
+makeanim block clip/block.clip
+
+//general character animation
+
+makeanim walk_left clip/worker.clip 261 30 30 
+makeanim walk_right clip/worker.clip 261 30 30 
+makeanim walk_fwd clip/worker.clip 261 30 30 
+makeanim walk_back clip/worker.clip 261 30 30 
+
+makeanim run_left clip/worker.clip 261 30 30 
+makeanim run_right clip/worker.clip 261 30 30 
+makeanim run_fwd clip/worker.clip 261 30 30 
+makeanim run_back clip/worker.clip 261 30 30 
+
+makeanim sprint_left clip/worker.clip 261 30 30 
+makeanim sprint_right clip/worker.clip 261 30 30 
+makeanim sprint_fwd clip/worker.clip 261 30 30 
+makeanim sprint_back clip/worker.clip 261 30 30 
+
+makeanim jump_start_left clip/jump_start_left.clip
+makeanim jump_start_right clip/jump_start_right.clip
+makeanim jump_start_fwd clip/jump_start_fwd.clip
+makeanim jump_start_back clip/jump_start_back.clip
+
+makeanim jump_mid_left clip/jump_mid_left.clip
+makeanim jump_mid_right clip/jump_mid_right.clip
+makeanim jump_mid_fwd clip/jump_mid_fwd.clip
+makeanim jump_mid_back clip/jump_mid_back.clip
+	
+makeanim jump_end_left clip/jump_end_left.clip
+makeanim jump_end_right clip/jump_end_right.clip
+makeanim jump_end_fwd clip/jump_end_fwd.clip
+makeanim jump_end_back clip/jump_end_back.clip
+	
+makeanim jump_up_start clip/jump_up_start.clip
+makeanim jump_up_mid clip/jump_up_mid.clip
+makeanim jump_up_end clip/jump_up_end.clip
+
+makeanim jump_land clip/jump_land.clip
+
+makeanim crouch_idle clip/crouch_idle.clip
+
+makeanim crouch_left clip/crouch_left.clip
+makeanim crouch_right clip/crouch_right.clip
+makeanim crouch_fwd clip/crouch_fwd.clip
+makeanim crouch_back clip/crouch_back.clip
+
+makeanim walk_with_bag clip/worker.clip 301 30 30 
+
+makeanim mine clip/worker.clip 332 21 30 
+makeanim repair clip/worker.clip 332 21 30 1
+makeanim construct clip/worker.clip 332 21 30 1 
+
+makeanim wounded_left clip/wounded_left.clip
+makeanim wounded_right clip/wounded_right.clip
+makeanim wounded_fwd clip/wounded_fwd.clip
+makeanim wounded_back clip/worker.clip 296 1 30 0
+
+makeanim death_generic clip/worker.clip 355 30 
+makeanim death_left clip/worker.clip 332 21 30 0
+makeanim death_right clip/worker.clip 332 21 30 0
+makeanim death_fwd clip/worker.clip 332 21 30 0
+makeanim death_back clip/worker.clip 332 21 30 0
+
+// Sound Events
+
+animevent mine 15 "effect mineresources"
+animevent repair 15 "effect repair"
+animevent construct 15 "effect repair"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"

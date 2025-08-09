@@ -1,0 +1,6 @@
+beginObjdef blocker plaster_chimney_top
+  obj_editorCategory XR_Plaster_Village
+  obj_model models/props/plaster/plaster_chimney_top.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef plaster_chimney_top

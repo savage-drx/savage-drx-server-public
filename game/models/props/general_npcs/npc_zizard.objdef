@@ -1,0 +1,8 @@
+beginObjdef blocker npc_zizard
+  obj_editorCategory General_NPCs
+  obj_model /models/npc/zizard/zizard.model
+  obj_skin default
+  obj_editorScaleRangeLo 3.000000
+  obj_editorScaleRangeHi 3.000000
+  obj_reference 1
+endObjdef npc_zizard

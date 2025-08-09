@@ -1,0 +1,8 @@
+beginObjdef blocker Cactus
+  obj_editorCategory Tombstone_Nature
+  obj_model Cactus.model
+  obj_skin 
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.750000
+  obj_isNature 1
+endObjdef Cactus

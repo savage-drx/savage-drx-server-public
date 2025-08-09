@@ -1,0 +1,9 @@
+// Scattergun
+
+// Third Person Anim Events
+
+makeanim idle scattergun_third.clip 12 0 
+makeanim wpstate_fire scattergun_third.clip 0 11
+
+// Sound Events
+

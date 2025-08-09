@@ -1,0 +1,17 @@
+skinRef glow 1_nl_goldglow.tga
+
+skinName team2
+skinRef bag bag2.png
+skinRef glow 1_nl_silverglow.tga
+//skinRef glow 1_nl_violetglow.tga
+
+
+skinName team3
+
+skinRef bag bag2.png
+//skinRef glow 1_nl_stamglow.tga
+
+skinName team4
+
+skinRef bag bag2.png
+skinRef glow 1_nl_healglow.tga

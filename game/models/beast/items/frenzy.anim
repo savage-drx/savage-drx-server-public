@@ -1,0 +1,10 @@
+//first person view weapon animations
+makeanim idle frenzy.clip 0 74 30 1 
+makeanim wpstate_switch frenzy.clip
+makeanim wpstate_charge frenzy.clip 
+makeanim wpstate_spinup frenzy.clip 
+makeanim wpstate_spindown frenzy.clip
+makeanim wpstate_overheat frenzy.clip
+makeanim wpstate_fire frenzy.clip 75 24
+
+animevent wpstate_fire 0 "sound /sound/beast/items/frenzy_crystal_shatter.wav"

@@ -1,0 +1,10 @@
+beginObjdef blocker whiskeygulch_bridge_static
+  obj_editorCategory Tombstone_Bridges
+  obj_model whiskeygulch_bridge.model
+  obj_skin 
+  obj_editorScaleRangeLo 0.75
+  obj_editorScaleRangeHi 0.75
+  obj_sound /sound/effects/bridge_creak.ogg
+  obj_soundVolume 0.8
+  obj_soundMinFalloff 320
+endObjdef whiskeygulch_bridge_static

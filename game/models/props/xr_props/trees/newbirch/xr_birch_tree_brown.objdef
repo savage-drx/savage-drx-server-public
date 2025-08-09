@@ -1,0 +1,8 @@
+beginObjdef blocker birch_brown_xr
+  obj_editorCategory XR_Nature
+  obj_model xr_birch_tree_brown.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef birch_brown_xr

@@ -1,0 +1,4 @@
+makeanim idle foundry_idle.clip 0 30 30 1
+
+animevent idle 5 "effect smoke_sawmill _bone Smoke01"
+animevent idle 15 "effect smoke_sawmill _bone Smoke02"

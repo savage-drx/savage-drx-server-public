@@ -1,0 +1,6 @@
+// Spike Trap
+// Anim Events
+makeanim idle clip/spike_trap.clip 0 50 60 0
+makeanim death_generic clip/spike_trap.clip 50 10 35 0
+
+//Sound Effects

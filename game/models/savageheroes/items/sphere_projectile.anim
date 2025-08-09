@@ -1,0 +1,8 @@
+// PURPLE ENERGY SPHERE
+
+// Third Person Anim Events
+
+makeanim idle sphere_projectile.clip 0 30 30 1 
+//makeanim wpstate_fire ak47_3rd.clip 0 9
+
+// Sound Events

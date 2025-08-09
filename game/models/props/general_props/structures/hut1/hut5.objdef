@@ -1,0 +1,6 @@
+beginObjdef blocker xr_hut5
+  obj_editorCategory General_Structures
+  obj_model hut5.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef xr_hut5

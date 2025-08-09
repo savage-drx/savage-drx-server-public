@@ -1,0 +1,6 @@
+beginObjdef blocker whiskeygulch_bridge_support_ladder
+  obj_editorCategory Tombstone_Bridges
+  obj_model whiskeygulch_bridge_support_l.model
+  obj_editorScaleRangeLo 0.75
+  obj_editorScaleRangeHi 0.75
+endObjdef whiskeygulch_bridge_support_ladder

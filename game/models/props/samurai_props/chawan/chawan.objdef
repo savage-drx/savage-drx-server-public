@@ -1,0 +1,6 @@
+beginObjdef blocker chawan
+  obj_editorCategory Samurai_Objects
+  obj_model chawan.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef chawan

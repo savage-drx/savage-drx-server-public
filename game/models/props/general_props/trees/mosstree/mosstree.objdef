@@ -1,0 +1,7 @@
+beginObjdef blocker mosstree
+  obj_editorCategory General_Trees
+  obj_model mosstree.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.500000
+  obj_isNature 1
+endObjdef mosstree

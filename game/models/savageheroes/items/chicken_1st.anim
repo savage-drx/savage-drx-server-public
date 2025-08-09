@@ -1,0 +1,29 @@
+// chicken_first
+
+// First Person Anim Events
+
+makeanim idle chicken_1st.clip 0 360 30 1
+makeanim wpstate_switch boomerang_1st.clip
+makeanim wpstate_charge boomerang_1st.clip 16 22
+makeanim wpstate_spinup chicken_1st.clip 1 15
+makeanim wpstate_spindown boomerang_1st.clip
+makeanim wpstate_overheat boomerang_1st.clip
+makeanim wpstate_fire boomerang_1st.clip 38 7 18
+
+// Sound Events
+
+animevent wpstate_fire 0 "sound /sound/human/items/boomerang_1st_throw.wav"
+animevent idle  60 "sound /models/savageheroes/items/chicken_idle_0.ogg"
+animevent idle  90 "sound /models/savageheroes/items/chicken_idle_1.ogg"
+animevent idle 120 "sound /models/savageheroes/items/chicken_idle_2.ogg"
+animevent idle 150 "sound /models/savageheroes/items/chicken_idle_3.ogg"
+animevent idle 180 "sound /models/savageheroes/items/chicken_idle_4.ogg"
+animevent idle 210 "sound /models/savageheroes/items/chicken_idle_5.ogg"
+animevent idle 240 "sound /models/savageheroes/items/chicken_idle_6.ogg"
+animevent idle 270 "sound /models/savageheroes/items/chicken_idle_7.ogg"
+animevent idle 300 "sound /models/savageheroes/items/chicken_idle_8.ogg"
+animevent idle 330 "sound /models/savageheroes/items/chicken_idle_9.ogg"
+
+
+
+

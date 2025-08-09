@@ -1,0 +1,6 @@
+beginObjdef blocker moss_ladder
+  obj_editorCategory General_Ruins
+  obj_model moss_ladder.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef moss_ladder

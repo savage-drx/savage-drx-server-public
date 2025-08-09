@@ -1,0 +1,6 @@
+beginObjdef blocker moss_decal_A
+  obj_editorCategory XR_Decals
+  obj_model models/props/decals/moss_decal_A.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef moss_decal_A

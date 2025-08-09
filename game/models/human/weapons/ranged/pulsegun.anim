@@ -1,0 +1,9 @@
+// Pulsegun
+
+// First Person Anim Events
+
+makeanim idle pulsegun.clip 30 30 30 1
+makeanim wpstate_fire pulsegun.clip 0 30 60
+
+// Sound Events
+

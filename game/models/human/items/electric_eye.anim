@@ -1,0 +1,10 @@
+// Electric Eye
+
+// First Person Anim Events
+
+makeanim idle electric_eye.clip 0 120 
+makeanim death_generic electric_eye.clip 120 17
+
+// Sound Events
+
+

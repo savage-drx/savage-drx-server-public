@@ -1,0 +1,22 @@
+objSet objclass "building"
+objSet description "Sawmill"
+objSet race "race0"
+objSet model "/models/props/tombstone_props/western/sawmill/sawmill.model"
+objSet skin "default"
+objSet tooltip "If claimed, this sawmill will generate lumber and reduce damage to nearby allies"
+objSet selectionSound "/sound/general/buildings/sawmill_idle.wav"
+objSet proximityMessage ""
+objSet techPointValue 1
+objSet techType "stone"
+objSet viewHeight 25.000000
+objSet fullHealth 100000
+objSet radiusState ""
+objSet isClaimable 1
+objSet mineType "stone"
+objSet mineAmount 12000
+objSet generateamount stone 8
+objSet scanRange 500.000000
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objSet isVulnerable 0
+objSet idleSound "/sound/general/buildings/sawmill_idle.wav"

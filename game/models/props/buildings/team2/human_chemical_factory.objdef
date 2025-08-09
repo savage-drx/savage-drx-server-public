@@ -1,0 +1,8 @@
+beginObjdef blocker human_chemical_factory_t2
+obj_editorCategory Buildings_Team2
+obj_team 2
+obj_reference 1
+obj_model /models/human/buildings/chemical.model
+obj_editorScaleRangeLo 1.0
+obj_editorScaleRangeHi 1.0
+endObjdef human_chemical_factory_t2

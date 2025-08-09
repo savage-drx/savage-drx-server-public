@@ -1,0 +1,14 @@
+skinRef glow 1_nl_faintglow.tga
+//skinRef glow 1_nl_goldglow.tga
+
+skinName team2
+
+skinRef glow 1_nl_violetglow.tga
+
+skinName team3
+
+skinRef glow 1_nl_stamglow.tga
+
+skinName team4
+
+skinRef glow 1_nl_healglow.tga

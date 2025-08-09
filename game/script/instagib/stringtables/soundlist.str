@@ -1,0 +1,688 @@
+// =====================================================================================
+// NOTE: ANY COMMENTED OUT LINES ARE NOT IMPLEMENTED CURRENTLY UNLESS NOTED OTHERWISE!!!
+// NOTE2: ANY LINES THAT ARE COMMENTED OUT AND MARKED WITH *** ARE UNUSED AND SHOULD BE 
+// REMOVED
+// =====================================================================================
+
+// ==============================
+// HUMAN RACE 
+// ==============================
+
+
+human_3_kills 					sound/human/commander/honor_legion:2
+human_5_kills 					sound/human/commander/you_hero:2
+human_10_kills					sound/human/commander/you_legend:2
+human_15_kills 					sound/human/commander/your_story:2
+human_skillful 					sound/human/commander/skillful:2
+human_unmatched 					sound/human/commander/skill_unmatched:1
+
+// Worker Notifications
+
+human_new_building				sound/human/worker/building_constructed:2
+human_garrison_constructed			sound/human/worker/constructed_garrison:2
+human_need_gold 				sound/human/worker/need_gold:2
+human_need_stone 				sound/human/worker/need_stone:1
+human_new_item 					sound/human/worker/new_item:2
+human_new_unit 					sound/human/worker/new_unit:2
+human_new_weapon 				sound/human/worker/new_weapon:2
+
+human_redstone_mine_low				sound/human/worker/redstone_low:2
+human_redstone_mine_low_text			Our Redstone mine is getting low!
+human_redstone_mine_empty			sound/human/worker/redstone_depleted:1
+human_redstone_mine_empty_text			Our Redstone Mine is depleted!
+human_gold_mine_low				sound/human/worker/gold_low:2
+human_gold_mine_low_text			Our Gold mine is getting low!
+human_gold_mine_empty				sound/human/worker/gold_depleted:1
+human_gold_mine_empty_text			Our Gold Mine is depleted!
+
+//mine depleted sounds use the normal building destroyed construct (see building alerts section)
+
+// Worker Feedback
+
+human_worker_select				sound/human/worker/select:8
+human_worker_confirm				sound/human/worker/confirm:7
+human_worker_done				sound/human/worker/done:4
+human_worker_cant				sound/human/worker/cant_do:2
+
+// Generic player selection sounds
+human_nomad_select				sound/human/player/respawn.ogg
+human_savage_select				sound/human/player/respawn.ogg
+human_legionnaire_select			sound/human/player/respawn.ogg
+human_catapult_select				sound/human/player/respawn.ogg
+human_ballista_select				sound/human/player/respawn.ogg
+
+
+// Old Commander variable names, ideally they should be removed and the ones bellow used.
+// I left it just incase, please note that these are dupes of few of the ones bellow.
+
+//***human_announcer_building_complete 		sound/human/commander/building_complete.ogg
+
+//human_announcer_base_under_attack2 		sound/human/commander/stronghold_siege2.ogg
+//human_stronghold_under_attack			sound/human/commander/stronghold_under_attack.ogg
+//***human_announcer_victory 			sound/human/commander/fred.ogg
+//***human_announcer_defeat 			sound/human/commander/fred.ogg
+human_order_cancel 				sound/human/commander/nevermind.ogg
+//human_order_cancel2 				sound/human/commander/nevermind2.ogg
+human_order_mine 				sound/human/commander/mine_here.ogg
+//human_order_mine 				sound/human/commander/mine_here2.ogg
+human_order_follow 				sound/human/commander/follow.ogg
+human_order_defend 				sound/human/commander/defend_area.ogg
+//human_order_defend2 				sound/human/commander/defend_area2.ogg
+//human_order_defend3 				sound/human/commander/defend_area3.ogg
+human_order_move 				sound/human/commander/move_here.ogg
+//human_order_move2 				sound/human/commander/move_here2.ogg
+//human_order_move3 				sound/human/commander/move_here3.ogg
+human_order_build				sound/human/commander/build.ogg
+human_order_repair 				sound/human/commander/repair.ogg
+human_order_dropoff_resources			sound/human/commander/move_here.ogg
+//***human_order_enter_building			sound/human/commander/enter_building.ogg
+//***human_order_enter_transport		sound/human/commander/enter_transport.ogg
+human_need_gold					sound/human/commander/need_gold.ogg
+//human_need_gold2				sound/human/commander/need_gold2.ogg
+human_need_stone				sound/human/commander/need_redstone.ogg
+//human_need_stone2				sound/human/commander/need_redstone2.ogg
+human_start_research				sound/human/commander/repair_building.ogg
+//human_start_research2				sound/human/commander/repair_building2.ogg
+//human_start_research3				sound/human/commander/repair_building3.ogg
+
+// Commander Notifications
+
+human_cmdr_archery_disabled			sound/human/commander/archery_disabled.ogg
+human_cmdr_chemical_disabled			sound/human/commander/chemical_disabled.ogg
+human_cmdr_electric_disabled			sound/human/commander/electric_disabled.ogg
+human_cmdr_magnetic_disabled			sound/human/commander/magnetic_disabled.ogg
+human_cmdr_siege_disabled			sound/human/commander/siege_disabled.ogg
+human_cmdr_enemy_archery			sound/human/commander/disabled_archery.ogg
+human_cmdr_enemy_chemical			sound/human/commander/disabled_chemical.ogg
+human_cmdr_enemy_electric			sound/human/commander/disabled_electric.ogg
+human_cmdr_enemy_entropy			sound/human/commander/disabled_entropy.ogg
+human_cmdr_enemy_fire				sound/human/commander/disabled_fire.ogg
+human_cmdr_enemy_magnetic			sound/human/commander/disabled_magnetic.ogg
+human_cmdr_enemy_melee				sound/human/commander/disabled_melee.ogg
+human_cmdr_enemy_siege				sound/human/commander/disabled_siege.ogg
+human_cmdr_enemy_strata				sound/human/commander/disabled_strata.ogg
+human_cmdr_garrison_attack			sound/human/commander/garrison_attack.ogg
+human_cmdr_garrison_destroyed			sound/human/commander/garrison_destroyed.ogg
+human_cmdr_garrison_destroyed2			sound/human/commander/garrison_destroyed2.ogg
+human_cmdr_need_gold				sound/human/commander/need_gold.ogg
+human_cmdr_need_gold2				sound/human/commander/need_gold2.ogg
+human_cmdr_need_redstone			sound/human/commander/need_redstone.ogg
+human_cmdr_need_redstone2			sound/human/commander/need_redstone2.ogg
+
+
+
+//friendly buildings alerts (enemy attacking our building)
+//
+//these are in the form "friend_race_objectname_warningtype"
+//
+//where "race" is the race of the announcer saying the message
+//
+//valid warningtypes:
+//
+//under_attack
+//half_destroyed
+//nearly_destroyed
+//destroyed
+//destroyed_all		- all buildings of this type are destroyed
+//low			- mine low
+//under_siege		- building being attacked by a siege weapon
+
+friend_human_human_stronghold_half_destroyed		sound/human/commander/stronghold_burning:2
+friend_human_human_stronghold_half_destroyed_text	Our Stronghold is burning!
+friend_human_human_stronghold_under_attack		sound/human/commander/stronghold_damaged:2
+friend_human_human_stronghold_under_attack_text		Our Stronghold has been damaged!
+friend_human_human_stronghold_nearly_destroyed		sound/human/commander/stronghold_nearly:2
+friend_human_human_stronghold_nearly_destroyed_text	Our Stronghold is nearly destroyed!
+friend_human_human_stronghold_under_siege		sound/human/commander/stronghold_siege:2
+friend_human_human_stronghold_under_siege_text		Our Stronghold is under siege!
+friend_human_human_garrison_under_attack		sound/human/commander/garrison_attack:1
+friend_human_human_garrison_under_attack_text		Our Garrison is under attack!
+friend_human_human_garrison_destroyed			sound/human/commander/garrison_destroyed:2
+friend_human_human_garrison_destroyed_text		Our Garrison has been destroyed!
+friend_human_human_chemical_factory_destroyed_all	sound/human/commander/chemical_disabled:1
+friend_human_human_chemical_factory_destroyed_all_text	Our CHEMICAL weapons have been disabled!
+friend_human_human_electric_factory_destroyed_all	sound/human/commander/electric_disabled:1
+friend_human_human_electric_factory_destroyed_all_text	Our ELECTRIC weapons have been disabled!
+friend_human_human_magnetic_factory_destroyed_all	sound/human/commander/magnetic_disabled:1
+friend_human_human_magnetic_factory_destroyed_all_text	Our MAGNETIC weapons have been disabled!
+friend_human_human_arsenal_destroyed_all		sound/human/commander/archery_disabled:1
+friend_human_human_arsenal_destroyed_all_text		Our ARCHERY weapons have been disabled!
+friend_human_human_siege_destroyed_all			sound/human/commander/siege_disabled:1
+friend_human_human_siege_destroyed_all_text		Our SIEGE units have been disabled!
+
+//generic ones:
+enemy_human_building_destroyed			sound/human/player/male/destroyed_structure:1
+enemy_human_building_destroyed_text		We have destroyed an enemy structure
+friend_human_building_destroyed			sound/human/player/male/destroyed_building:1
+friend_human_building_destroyed_text		They have destroyed a building!
+
+
+
+//enemy building alerts (attacking enemy building)
+//
+//these are in the form "enemy_race_objectname_warningtype"
+
+enemy_human_human_stronghold_under_attack		sound/human/player/male/damaging_stronghold:1
+enemy_human_human_stronghold_under_attack_text		We are damaging the enemy Stronghold!
+enemy_human_human_stronghold_half_destroyed		sound/human/player/male/stronghold_burning:1
+enemy_human_human_stronghold_half_destroyed_text	Their Stronghold is burning!
+enemy_human_human_stronghold_nearly_destroyed		sound/human/player/male/stronghold_nearly_destroyed:1
+enemy_human_human_stronghold_nearly_destroyed_text	Their Stronghold is nearly destroyed!
+enemy_human_beast_lair_under_attack			sound/human/player/male/damaging_lair:1
+enemy_human_beast_lair_under_attack_text		We are damaging the enemy Lair!
+enemy_human_beast_lair_half_destroyed			sound/human/player/male/lair_burning:1
+enemy_human_beast_lair_half_destroyed_text		Their Lair is burning!
+enemy_human_beast_lair_nearly_destroyed			sound/human/player/male/lair_nearly_destroyed:1
+enemy_human_beast_lair_nearly_destroyed_text		Their Lair is nearly destroyed!
+enemy_human_beast_sublair_under_attack			sound/human/player/male/attacking_sublair:1
+enemy_human_beast_sublair_under_attack_text		We are attacking their Sub Lair!
+enemy_human_human_garrison_under_attack			sound/human/player/male/attacking_garrison:1
+enemy_human_human_garrison_under_attack_text		We are attacking their Garrison!
+enemy_human_human_chemical_factory_destroyed_all	sound/human/commander/disabled_chemical:1
+enemy_human_human_chemical_factory_destroyed_all_text	We have disabled their Chemical weapons!
+enemy_human_human_electric_factory_destroyed_all	sound/human/commander/disabled_electric:1
+enemy_human_human_electric_factory_destroyed_all_text	We have disabled their Electric weapons!
+enemy_human_human_magnetic_factory_destroyed_all	sound/human/commander/disabled_magnetic:1
+enemy_human_human_magnetic_factory_destroyed_all_text	We have disabled their Magnetic weapons!
+enemy_human_human_arsenal_destroyed_all			sound/human/commander/disabled_archery:1
+enemy_human_human_arsenal_destroyed_all_text		We have disabled their Archery weapons!
+enemy_human_human_siege_destroyed_all			sound/human/commander/disabled_siege:1
+enemy_human_human_siege_destroyed_all_text		We have disabled their Siege units!
+enemy_human_beast_strata_shrine_destroyed_all		sound/human/commander/disabled_strata:1
+enemy_human_beast_strata_shrine_destroyed_all_text	We have disabled their Strata magic!
+enemy_human_beast_entropy_shrine_destroyed_all		sound/human/commander/disabled_entropy:1
+enemy_human_beast_entropy_shrine_destroyed_all_text	We have disabled their Entropy magic!
+enemy_human_beast_fire_shrine_destroyed_all		sound/human/commander/disabled_fire:1
+enemy_human_beast_fire_shrine_destroyed_all_text	We have disabled their Fire magic!
+enemy_human_beast_charmshrine_destroyed_all		sound/human/commander/disabled_siege:1
+enemy_human_beast_charmshrine_destroyed_all_text	We have disabled their Siege units!
+enemy_human_beast_nexus_destroyed_all			sound/human/commander/disabled_melee:1
+enemy_human_beast_nexus_destroyed_all_text		We have disabled their Melee powers!
+
+
+//human_cmdr_stronghold_siege			sound/human/commander/stronghold_siege.ogg
+//human_cmdr_stronghold_siege2			sound/human/commander/stronghold_siege2.ogg
+
+// Commander Feedback
+
+//human_cmdr_disregard_order			sound/human/commander/disregard_order.ogg
+//human_cmdr_disregard_order2			sound/human/commander/disregard_order2.ogg
+//human_cmdr_excelent_work			sound/human/commander/excelent_work.ogg
+//human_cmdr_excelent_work2			sound/human/commander/excelent_work2.ogg
+//human_cmdr_fool_obey				sound/human/commander/fool_obey.ogg
+//human_cmdr_fool_obey2				sound/human/commander/fool_obey2.ogg
+//human_cmdr_gave_command			sound/human/commander/gave_command.ogg
+//human_cmdr_gave_command2			sound/human/commander/gave_command2.ogg
+//human_cmdr_honor_legion			sound/human/commander/honor_legion.ogg
+//human_cmdr_honor_legion2			sound/human/commander/honor_legion2.ogg
+//human_cmdr_lead_honor				sound/human/commander/lead_honor.ogg
+//human_cmdr_lead_honor2			sound/human/commander/lead_honor2.ogg
+//human_cmdr_lead_honor3			sound/human/commander/lead_honor3.ogg
+//human_cmdr_lead_well				sound/human/commander/lead_well.ogg
+//human_cmdr_lead_well2				sound/human/commander/lead_well2.ogg
+//human_cmdr_lead_well3				sound/human/commander/lead_well3.ogg
+//human_cmdr_thank_you				sound/human/commander/thank_you.ogg
+//human_cmdr_thank_you2				sound/human/commander/thank_you2.ogg
+//human_cmdr_well_done				sound/human/commander/well_done.ogg
+//human_cmdr_well_done2				sound/human/commander/well_done2.ogg
+
+
+// Promote / Demote
+
+human_promoted					sound/human/commander/lead_honor:3
+human_promoted2					sound/human/commander/lead_well:2
+human_demoted					sound/human/commander/nevermind:2			
+
+// Commander Orders
+//
+// all "attack" and "defend" orders can be followed by the name of a specific unit if desired
+//
+// 
+
+human_cmdr_order_attack				sound/human/commander/attack_here:3
+human_cmdr_order_attack_siege			sound/human/commander/attack_siege:2
+human_cmdr_order_attack_unit			sound/human/commander/attack_unit:2
+human_cmdr_order_attack_spawnflag		sound/human/commander/capture_flag:1
+human_cmdr_order_build				sound/human/commander/build_here:2
+human_cmdr_order_attack_human_stronghold	sound/human/commander/destroy_stronghold:4
+human_cmdr_order_attack_beast_lair		sound/human/commander/destroy_lair:4
+human_cmdr_order_attack_building		sound/human/commander/destroy_building:2
+human_cmdr_order_mine				sound/human/commander/mine_here:2
+human_cmdr_order_move				sound/human/commander/move_here:3
+human_cmdr_order_repair				sound/human/commander/repair_building:3
+human_cmdr_order_defend				sound/human/commander/defend_area:3
+human_cmdr_order_defend_unit			sound/human/commander/protect_unit:3
+human_cmdr_order_dropoff_resources		sound/human/commander/move_location:3
+human_cmdr_order_cancel				sound/human/commander/nevermind:2
+human_cmdr_order_enter_transport		sound/human/commander/move_location:3
+human_cmdr_order_enter_building			sound/human/commander/move_location:3
+human_cmdr_order_complete			sound/human/commander/well_done:4
+
+// Officer Orders
+// all "attack" and "defend" orders can be followed by the name of a specific unit if desired
+
+human_officer_order_attack			sound/human/player/male/attack_here:4
+human_officer_order_attack_siege		sound/human/player/male/attack:1
+human_officer_order_attack_unit			sound/human/player/male/attack_here:4
+human_officer_order_attack_spawnflag		sound/human/player/male/capture_flag:1
+human_officer_order_build			sound/human/player/male/build_here:1
+human_officer_order_attack_human_stronghold	sound/human/player/male/attack_stronghold:1
+human_officer_order_attack_beast_lair		sound/human/player/male/attack_lair:1
+human_officer_order_attack_building		sound/human/player/male/attack_structure:1
+human_officer_order_attack_human_worker		sound/human/player/male/attack_workers:1
+human_officer_order_attack_beast_worker		sound/human/player/male/attack_workers:1
+human_officer_order_mine			sound/human/player/male/mine_here:1
+human_officer_order_move			sound/human/player/male/move_here:3
+human_officer_order_repair			sound/human/player/male/repair_structure:1
+human_officer_order_defend			sound/human/player/male/defend_area:1
+human_officer_order_defend_unit			sound/human/player/male/protect_unit:1
+human_officer_order_defend_siege		sound/human/player/male/protect_siege:1
+human_officer_order_dropoff_resources		sound/human/player/male/move_here:3
+//human_officer_order_cancel			sound/human/player/male/nevermind:2
+human_officer_order_enter_transport		sound/human/player/male/move_here:3
+human_officer_order_enter_building		sound/human/player/male/move_here:3
+human_officer_order_complete			sound/human/player/male/thank_you:2
+
+
+
+// Generic
+
+//human_building_claimed				sound/general/building_claimed.ogg
+//human_building_stolen				sound/general/building_stolen.ogg
+human_aproved					sound/general/request_approved.ogg
+human_declined					sound/general/request_declined.ogg
+human_expired					sound/general/request_expired.ogg
+
+// ==============================
+// BEAST RACE 
+// ==============================
+
+// Announcer
+
+beast_3_kills 					sound/beast/commander/honor_horde:2
+//beast_3_kills2 					sound/beast/commander/skill_unmatched2.ogg
+beast_5_kills 					sound/beast/commander/you_hero:2
+//beast_5_kills2 					sound/beast/commander/you_hero2.ogg
+beast_10_kills 					sound/beast/commander/you_legend:2
+//beast_10_kills2 					sound/beast/commander/you_legend2.ogg
+beast_15_kills 					sound/beast/commander/your_story:2
+//beast_15_kills2 					sound/beast/commander/your_story2.ogg
+beast_skillful 					sound/beast/commander/skillful:1
+beast_unmatched 					sound/beast/commander/skill_unmatched:2
+
+// Worker Notifications
+
+beast_new_building				sound/beast/worker/building_constructed:2
+beast_sublair_constructed			sound/beast/worker/constructed_sublair:2
+beast_need_gold 				sound/beast/worker/need_gold:2
+beast_need_stone				sound/beast/worker/need_stone:2
+beast_new_item 					sound/beast/worker/new_item:2
+beast_new_unit 					sound/beast/worker/new_unit:2
+beast_new_weapon 				sound/beast/worker/new_weapon:2
+
+beast_redstone_mine_low				sound/beast/worker/redstone_low:2
+beast_redstone_mine_low_text			Our Redstone mine is getting low!
+beast_redstone_mine_empty			sound/beast/worker/redstone_depleted:1
+beast_redstone_mine_empty_text			Our Redstone Mine is depleted!
+beast_gold_mine_low				sound/beast/worker/gold_low:2
+beast_gold_mine_low_text			Our Gold mine is getting low!
+friend_beast_gold_mine_empty			sound/beast/worker/gold_depleted:1
+friend_beast_gold_mine_empty_text		Our Gold Mine is depleted!
+
+// Worker Feedback
+
+beast_worker_select				sound/beast/worker/selection:2
+beast_worker_confirm				sound/beast/worker/confirm:10
+beast_worker_done				sound/beast/worker/done:4
+beast_worker_cant				sound/beast/worker/cant_do:2
+
+// Generic player selection sounds
+beast_scavenger					sound/beast/player/respawn.ogg
+beast_stalker					sound/beast/player/respawn.ogg
+beast_predator					sound/beast/player/respawn.ogg
+beast_behemoth					sound/beast/player/respawn.ogg
+beast_shaman					sound/beast/player/respawn.ogg
+
+// Old commander stuff, very confusing, should be removed asap, i commented out all of them since they // dont seem to work right.  Please implement everything bellow this.
+
+//beast_announcer_base_under_attack 		sound/beast/commander/base_under_attack.ogg
+//beast_announcer_command_center_under_attack 	sound/beast/commander/stronghold_under_attack.ogg
+//beast_announcer_victory 			sound/beast/commander/victory.ogg
+//beast_announcer_defeat 				sound/beast/commander/defeat.ogg
+//beast_order_cancel 				sound/beast/commander/cancel1.ogg
+//beast_order_mine 				sound/beast/commander/mine.ogg
+//beast_order_attack 				sound/beast/commander/attack_here.ogg
+//beast_order_follow 				sound/beast/commander/follow.ogg
+//beast_order_defend 				sound/beast/commander/defend_this_area.ogg
+//beast_order_move 				sound/beast/commander/move_here.ogg
+//beast_order_build 				sound/beast/commander/build.ogg
+//beast_order_repair 				sound/beast/commander/repair.ogg
+//beast_order_dropoff_resources			sound/beast/commander/move_here.ogg
+//beast_order_enter_building			sound/beast/commander/enter_building.ogg
+//beast_order_enter_transport			sound/beast/commander/enter_transport.ogg
+//beast_start_research				sound/beast/commander/repair.ogg
+
+// Commander Notifications
+
+//beast_cmdr_entropy_disabled			sound/beast/commander/entropy_disabled.ogg
+//beast_cmdr_entropy_disabled2			sound/beast/commander/entropy_disabled2.ogg
+//beast_cmdr_fire_disabled			sound/beast/commander/fire_disabled.ogg
+//beast_cmdr_fire_disabled2			sound/beast/commander/fire_disabled2.ogg
+//beast_cmdr_melee_disabled			sound/beast/commander/melee_disabled.ogg
+//beast_cmdr_melee_disabled2			sound/beast/commander/melee_disabled2.ogg
+//beast_cmdr_siege_disabled			sound/beast/commander/siege_disabled.ogg
+//beast_cmdr_siege_disabled2			sound/beast/commander/siege_disabled2.ogg
+//beast_cmdr_enemy_archery			sound/beast/commander/disabled_archery.ogg
+//beast_cmdr_enemy_chemical			sound/beast/commander/disabled_chemical.ogg
+//beast_cmdr_enemy_electric			sound/beast/commander/disabled_electric.ogg
+//beast_cmdr_enemy_entropy			sound/beast/commander/disabled_entropy.ogg
+//beast_cmdr_enemy_fire				sound/beast/commander/disabled_fire.ogg
+//beast_cmdr_enemy_magnetic			sound/beast/commander/disabled_magnetic.ogg
+//beast_cmdr_enemy_melee				sound/beast/commander/disabled_melee.ogg
+//beast_cmdr_enemy_siege				sound/beast/commander/disabled_siege.ogg
+//beast_cmdr_enemy_strata				sound/beast/commander/disabled_strata.ogg
+//beast_cmdr_sublair_attack			sound/beast/commander/sublair_attack.ogg
+//beast_cmdr_sublair_attack2			sound/beast/commander/sublair_attack2.ogg
+//beast_cmdr_sublair_destroyed			sound/beast/commander/sublair_destroyed.ogg
+//beast_cmdr_sublair_destroyed2			sound/beast/commander/sublair_destroyed2.ogg
+//beast_cmdr_need_gold				sound/beast/commander/need_gold.ogg
+//beast_cmdr_need_gold2				sound/beast/commander/need_gold2.ogg
+//beast_cmdr_need_redstone			sound/beast/commander/need_redstone.ogg
+//beast_cmdr_need_redstone			sound/beast/commander/need_redstone2.ogg
+//beast_cmdr_lair_burning			sound/beast/commander/lair_burning.ogg
+//beast_cmdr_lair_burning2			sound/beast/commander/lair_burning2.ogg
+//beast_cmdr_lair_damaged			sound/beast/commander/lair_damaged.ogg
+//beast_cmdr_lair_damaged2			sound/beast/commander/lair_damaged2.ogg
+//beast_cmdr_lair_destroyed			sound/beast/commander/lair_destroyed.ogg
+//beast_cmdr_lair_destroyed2			sound/beast/commander/lair_destroyed2.ogg
+//beast_cmdr_lair_nearly			sound/beast/commander/lair_nearly.ogg
+//beast_cmdr_lair_nearly2			sound/beast/commander/lair_nearly2.ogg
+//beast_cmdr_lair_nearly3			sound/beast/commander/lair_nearly3.ogg
+//beast_cmdr_lair_siege				sound/beast/commander/lair_siege.ogg
+//beast_cmdr_lair_siege2			sound/beast/commander/lair_siege2.ogg
+//beast_cmdr_lair_siege3			sound/beast/commander/lair_siege3.ogg
+
+
+// Promote / Demote
+
+beast_promoted					sound/beast/commander/lead_honor:3
+human_promoted2					sound/beast/commander/lead_well:3
+beast_demoted					sound/beast/commander/no_longer:2
+
+
+// General notifications
+enemy_beast_building_destroyed			sound/beast/player/male/destroyed_structure:1
+enemy_beast_building_destroyed_text		We have destroyed an enemy structure
+friend_beast_building_destroyed			sound/beast/player/male/destroyed_building:1
+friend_beast_building_destroyed_text		They have destroyed a building!
+
+
+//friendly buildings alerts (enemy attacking our building)
+//
+//these are in the form "friend_race_objectname_warningtype"
+//
+//where "race" is the race of the announcer saying the message
+//
+//valid warningtypes:
+//
+//under_attack
+//half_destroyed
+//nearly_destroyed
+//destroyed
+//destroyed_all		- all buildings of this type are destroyed
+//low			- mine low
+//under_siege		- building being attacked by a siege weapon
+
+friend_beast_beast_lair_half_destroyed			sound/beast/commander/lair_burning:2
+friend_beast_beast_lair_half_destroyed_text		Our Lair is burning!
+friend_beast_beast_lair_under_attack			sound/beast/commander/lair_damaged:2
+friend_beast_beast_lair_under_attack_text		Our Lair has been damaged!
+friend_beast_beast_lair_nearly_destroyed		sound/beast/commander/nearly_destroyed:3
+friend_beast_beast_lair_nearly_destroyed_text		Our Lair is nearly destroyed!
+friend_beast_beast_lair_destroyed			sound/beast/commander/lair_destroyed:2
+friend_beast_beast_lair_destroyed_text			Our Lair has been destroyed!
+friend_beast_beast_lair_under_siege			sound/beast/commander/lair_siege:2
+friend_beast_beast_lair_under_siege_text		Our Lair is under siege!
+friend_beast_beast_sublair_under_attack			sound/beast/commander/sublair_attack:2
+friend_beast_beast_sublair_under_attack_text		Our Sub Lair is under attack!
+friend_beast_beast_sublair_destroyed			sound/beast/commander/sublair_destroyed:2
+friend_beast_beast_sublair_destroyed_text		Our Sub Lair has been destroyed!
+friend_beast_beast_strata_shrine_destroyed_all		sound/beast/commander/strata_disabled:2
+friend_beast_beast_strata_shrine_destroyed_all_text	Our STRATA magic has been disabled!
+friend_beast_beast_entropy_shrine_destroyed_all		sound/beast/commander/entropy_disabled:2
+friend_beast_beast_entropy_shrine_destroyed_all_text	Our ENTROPY magic has been disabled!
+friend_beast_beast_fire_shrine_destroyed_all		sound/beast/commander/fire_disabled:2
+friend_beast_beast_fire_shrine_destroyed_all_text	Our FIRE magic has been disabled!
+friend_beast_beast_nexus_destroyed_all			sound/beast/commander/melee_disabled:2
+friend_beast_beast_nexus_destroyed_all_text		Our MELEE ENCHANTMENTS have been disabled!
+friend_beast_beast_charmshrine_destroyed_all		sound/beast/commander/siege_disabled:2
+friend_beast_beast_charmshrine_destroyed_all_text	Our SIEGE UNITS have been disabled!
+
+
+//enemy building alerts (attacking enemy building)
+//
+//these are in the form "enemy_race_objectname_warningtype"
+
+enemy_beast_human_stronghold_under_attack		sound/beast/player/male/damaging_stronghold:1
+enemy_beast_human_stronghold_under_attack_text		We are damaging their Stronghold!
+enemy_beast_human_stronghold_half_destroyed		sound/beast/player/male/stronghold_burning:1
+enemy_beast_human_stronghold_half_destroyed_text	Their Stronghold is burning!
+enemy_beast_human_stronghold_nearly_destroyed		sound/beast/player/male/stronghold_nearly_destroyed:1
+enemy_beast_human_stronghold_nearly_destroyed_text	Their Stronghold is nearly destroyed!
+enemy_beast_beast_lair_under_attack			sound/beast/player/male/damaging_lair:1
+enemy_beast_beast_lair_under_attack_text		We are damaging the enemy lair!
+enemy_beast_beast_lair_half_destroyed			sound/beast/player/male/lair_burning:1
+enemy_beast_beast_lair_half_destroyed_text		Their lair is burning!
+enemy_beast_beast_lair_nearly_destroyed			sound/beast/player/male/lair_nearly_destroyed:1
+enemy_beast_beast_lair_nearly_destroyed_text		Their lair is nearly destroyed!
+enemy_beast_beast_sublair_under_attack			sound/beast/player/male/attacking_sublair:1
+enemy_beast_beast_sublair_under_attack_text		We are attacking their Sub Lair!
+enemy_beast_human_garrison_under_attack			sound/beast/player/male/attacking_garrison:1
+enemy_beast_human_garrison_under_attack_text		We are attacking their Garrison!
+enemy_beast_human_chemical_factory_destroyed_all	sound/beast/commander/disabled_chemical:1
+enemy_beast_human_chemical_factory_destroyed_all_text	We have disabled their Chemical weapons!
+enemy_beast_human_electric_factory_destroyed_all	sound/beast/commander/disabled_electric:1
+enemy_beast_human_electric_factory_destroyed_all_text	We have disabled their Electric weapons!
+enemy_beast_human_magnetic_factory_destroyed_all	sound/beast/commander/disabled_magnetic:1
+enemy_beast_human_magnetic_factory_destroyed_all_text	We have disabled their Magnetic weapons!
+enemy_beast_human_arsenal_destroyed_all			sound/beast/commander/disabled_archery:1
+enemy_beast_human_arsenal_destroyed_all_text		We have disabled their Archery weapons!
+enemy_beast_human_siege_destroyed_all			sound/beast/commander/disabled_siege:1
+enemy_beast_human_siege_destroyed_all_text		We have disabled their Siege units!
+enemy_beast_beast_strata_shrine_destroyed_all		sound/beast/commander/disabled_strata:1
+enemy_beast_beast_strata_shrine_destroyed_all_text	We have disabled their Strata magic!
+enemy_beast_beast_entropy_shrine_destroyed_all		sound/beast/commander/disabled_entropy:1
+enemy_beast_beast_entropy_shrine_destroyed_all_text	We have disabled their Entropy magic!
+enemy_beast_beast_fire_shrine_destroyed_all		sound/beast/commander/disabled_fire:1
+enemy_beast_beast_fire_shrine_destroyed_all_text	We have disabled their Fire magic!
+enemy_beast_beast_charmshrine_destroyed_all		sound/beast/commander/disabled_siege:1
+enemy_beast_beast_charmshrine_destroyed_all_text	We have disabled their Siege units!
+enemy_beast_beast_nexus_destroyed_all			sound/beast/commander/disabled_melee:1
+enemy_beast_beast_nexus_destroyed_all_text		We have disabled their Melee enchantments!
+
+// Commander Feedback
+
+//beast_cmdr_disregard_order			sound/beast/commander/disregard_order.ogg
+//beast_cmdr_disregard_order2			sound/beast/commander/disregard_order2.ogg
+//beast_cmdr_excelent_work			sound/beast/commander/excelent_work.ogg
+//beast_cmdr_excelent_work2			sound/beast/commander/excelent_work2.ogg
+//beast_cmdr_fool_obey				sound/beast/commander/fool_obey.ogg
+//beast_cmdr_fool_obey2				sound/beast/commander/fool_obey2.ogg
+//beast_cmdr_gave_command				sound/beast/commander/gave_command.ogg
+//beast_cmdr_gave_command2			sound/beast/commander/gave_command2.ogg
+//beast_cmdr_honor_horde				sound/beast/commander/honor_horde.ogg
+//beast_cmdr_honor_horde2			sound/beast/commander/honor_horde2.ogg
+//beast_cmdr_horde_depends				sound/beast/commander/horde_depends.ogg
+//beast_cmdr_horde_depends2			sound/beast/commander/horde_depends2.ogg
+//beast_cmdr_lead_honor				sound/beast/commander/lead_honor.ogg
+//beast_cmdr_lead_honor2				sound/beast/commander/lead_honor2.ogg
+//beast_cmdr_lead_honor3				sound/beast/commander/lead_honor3.ogg
+//beast_cmdr_lead_well				sound/beast/commander/lead_well.ogg
+//beast_cmdr_lead_well2				sound/beast/commander/lead_well2.ogg
+//beast_cmdr_lead_well3				sound/beast/commander/lead_well3.ogg
+//beast_cmdr_thank_you				sound/beast/commander/thank_you.ogg
+//beast_cmdr_thank_you2				sound/beast/commander/thank_you2.ogg
+//beast_cmdr_well_done				sound/beast/commander/well_done.ogg
+//beast_cmdr_well_done2				sound/beast/commander/well_done2.ogg
+
+// Commander Orders
+
+beast_cmdr_order_attack				sound/beast/commander/attack_here:3
+beast_cmdr_order_attack_siege			sound/beast/commander/attack_siege:2
+beast_cmdr_order_attack_unit			sound/beast/commander/attack_unit:2
+beast_cmdr_order_build				sound/beast/commander/build_here:2
+beast_cmdr_order_attack_beast_stronghold	sound/beast/commander/destroy_stronghold:4
+beast_cmdr_order_attack_beast_lair		sound/beast/commander/destroy_lair:4
+beast_cmdr_order_attack_building		sound/beast/commander/destroy_building:2
+beast_cmdr_order_mine				sound/beast/commander/mine_here:2
+beast_cmdr_order_move				sound/beast/commander/move_here:3
+beast_cmdr_order_repair				sound/beast/commander/repair_building:3
+beast_cmdr_order_defend				sound/beast/commander/defend_area:3
+beast_cmdr_order_defend_unit			sound/beast/commander/protect_unit:3
+beast_cmdr_order_dropoff_resources		sound/beast/commander/move_location:3
+beast_cmdr_order_cancel				sound/beast/commander/disregard_order:2
+beast_cmdr_order_enter_transport		sound/beast/commander/move_location:3
+beast_cmdr_order_enter_building			sound/beast/commander/move_location:3
+beast_cmdr_order_complete			sound/beast/commander/well_done:5
+
+// Officer Orders
+
+beast_officer_order_attack			sound/beast/player/male/move:1
+beast_officer_order_attack_siege		sound/beast/player/male/attack_target:1
+beast_officer_order_attack_unit			sound/beast/player/male/attack_target:1
+beast_officer_order_attack_spawnflag		sound/beast/player/male/capture_flag:1
+//FIXME: doesn't exist!
+beast_officer_order_build			sound/beast/player/male/move:1
+beast_officer_order_attack_human_stronghold	sound/beast/player/male/attack_stronghold:1
+beast_officer_order_attack_beast_lair		sound/beast/player/male/attack_lair:1
+beast_officer_order_attack_building		sound/beast/player/male/attack_structure:1
+beast_officer_order_attack_human_worker		sound/beast/player/male/attack_workers:1
+beast_officer_order_attack_beast_worker		sound/beast/player/male/attack_workers:1
+beast_officer_order_mine			sound/beast/player/male/move:1
+beast_officer_order_move			sound/beast/player/male/move:1
+beast_officer_order_repair			sound/beast/player/male/defend_structure:1
+//beast_officer_order_defend			sound/beast/player/male/defend_area:3
+beast_officer_order_defend_unit			sound/beast/player/male/protect_unit:1
+beast_officer_order_defend_siege		sound/beast/player/male/protect_siege:1
+//beast_officer_order_dropoff_resources		sound/beast/player/male/move_location:3
+//beast_officer_order_cancel			sound/beast/player/male/nevermind:2
+beast_officer_order_enter_transport		sound/beast/player/male/move:1
+beast_officer_order_enter_building		sound/beast/player/male/move:1
+beast_officer_order_complete			sound/beast/player/male/thank_you:1
+
+
+// Officer Orders
+// all "attack" and "defend" orders can be followed by the name of a specific unit if desired
+
+human_officer_order_attack				sound/human/player/male/attack_here:4
+human_officer_order_attack_siege			sound/human/player/male/attack_siege:2
+human_officer_order_attack_unit			sound/human/player/male/attack_here:4
+human_officer_order_attack_spawnflag		sound/human/player/male/capture_flag:1
+human_officer_order_build				sound/human/player/male/build_here:1
+human_officer_order_attack_human_stronghold	sound/human/player/male/attack_stronghold:1
+human_officer_order_attack_beast_lair		sound/human/player/male/attack_lair:1
+human_officer_order_attack_building		sound/human/player/male/attack_structure:1
+human_officer_order_mine				sound/player/male/mine_here:1
+human_officer_order_move				sound/player/male/move_here:3
+human_officer_order_repair				sound/player/male/repair_structure:1
+human_officer_order_defend				sound/player/male/defend_area:1
+human_officer_order_defend_unit			sound/human/player/male/protect_unit:1
+human_officer_order_defend_siege		sound/human/player/male/protect_siege:1
+human_officer_order_dropoff_resources		sound/human/player/male/move_here:3
+//human_officer_order_cancel				sound/player/male/nevermind:2
+human_officer_order_enter_transport		sound/player/male/move_here:3
+human_officer_order_enter_building			sound/player/male/move_here:3
+//human_officer_order_complete			sound/human/commander/well_done:4
+
+
+// Generic
+
+//beast_building_claimed				sound/general/building_claimed.ogg
+//beast_building_stolen				sound/general/building_stolen.ogg
+beast_aproved					sound/general/request_approved.ogg
+beast_declined					sound/general/request_declined.ogg
+beast_expired					sound/general/request_expired.ogg
+
+// ==============================
+// SHARED
+// ==============================
+
+// These are probably not needed now since each race has its own unless you want an FX to accompany them
+construction_cancel				sound/effects/construction_cancel.ogg
+place_error					sound/general/place_error.ogg
+building_place 					sound/general/building_place.ogg
+under_construction 				sound/human/buildings/construction.ogg
+vote_yes					sound/general/msg_receive.ogg
+vote_no						sound/general/msg_send.ogg
+vote_called					sound/general/vote.ogg
+armor_heavy_1					sound/general/armor/armor_heavy_1.ogg
+armor_heavy_2					sound/general/armor/armor_heavy_2.ogg
+armor_heavy_3					sound/general/armor/armor_heavy_3.ogg
+armor_heavy_4					sound/general/armor/armor_heavy_4.ogg
+armor_light_1					sound/general/armor/armor_light_1.ogg
+armor_light_2					sound/general/armor/armor_light_2.ogg
+armor_light_3					sound/general/armor/armor_light_3.ogg
+armor_light_4					sound/general/armor/armor_light_4.ogg
+friendly_ping					sound/general/friendly_ping.ogg
+enemy_ping					sound/general/enemy_ping.ogg
+msg_send 					sound/gui/msg_send.ogg
+msg_receive 					sound/gui/msg_receive.ogg
+msg_private_receive 				sound/gui/msg_private_receive.ogg
+get_gold 					sound/general/get_gold.ogg
+spend_gold 					sound/general/buy.ogg
+pickup_weapon 					sound/general/buy.ogg
+general_notification 				sound/general/notification2.ogg
+enemy_death					sound/general/enemy_death.ogg
+friend_death					sound/general/friend_death.ogg
+weapon_hit					sound/general/impact/melee/generic_2.ogg
+
+// ==============================
+// FOOTSTEPS
+// ==============================
+
+// Human Footsteps
+
+footstep_grass_heavy_h_1 			sound/general/footsteps/human/grass_heavy_1.ogg
+footstep_grass_heavy_h_2			sound/general/footsteps/human/grass_heavy_2.ogg
+footstep_grass_heavy_h_3 			sound/general/footsteps/human/grass_heavy_3.ogg
+footstep_grass_heavy_h_4 			sound/general/footsteps/human/grass_heavy_4.ogg
+footstep_grass_heavy_h_5 			sound/general/footsteps/human/grass_heavy_5.ogg
+footstep_grass_heavy_h_6 			sound/general/footsteps/human/grass_heavy_6.ogg
+footstep_grass_heavy_h_7 			sound/general/footsteps/human/grass_heavy_7.ogg
+footstep_grass_heavy_h_8 			sound/general/footsteps/human/grass_heavy_8.ogg
+footstep_grass_light_h_1 			sound/general/footsteps/human/grass_light_1.ogg
+footstep_grass_light_h_2			sound/general/footsteps/human/grass_light_2.ogg
+footstep_grass_light_h_3 			sound/general/footsteps/human/grass_light_3.ogg
+footstep_grass_light_h_4 			sound/general/footsteps/human/grass_light_4.ogg
+footstep_grass_light_h_5 			sound/general/footsteps/human/grass_light_5.ogg
+footstep_grass_light_h_6 			sound/general/footsteps/human/grass_light_6.ogg
+footstep_grass_light_h_7 			sound/general/footsteps/human/grass_light_7.ogg
+footstep_grass_light_h_8 			sound/general/footsteps/human/grass_light_8.ogg
+
+// Beast Footsteps
+
+footstep_grass_heavy_b_1 			sound/general/footsteps/beast/grass_heavy_1.ogg
+footstep_grass_heavy_b_2			sound/general/footsteps/beast/grass_heavy_2.ogg
+footstep_grass_heavy_b_3 			sound/general/footsteps/beast/grass_heavy_3.ogg
+footstep_grass_heavy_b_4 			sound/general/footsteps/beast/grass_heavy_4.ogg
+footstep_grass_heavy_b_5 			sound/general/footsteps/beast/grass_heavy_5.ogg
+footstep_grass_heavy_b_6 			sound/general/footsteps/beast/grass_heavy_6.ogg
+footstep_grass_heavy_b_7 			sound/general/footsteps/beast/grass_heavy_7.ogg
+footstep_grass_heavy_b_8 			sound/general/footsteps/beast/grass_heavy_8.ogg
+footstep_grass_light_b_1 			sound/general/footsteps/beast/grass_light_1.ogg
+footstep_grass_light_b_2			sound/general/footsteps/beast/grass_light_2.ogg
+footstep_grass_light_b_3 			sound/general/footsteps/beast/grass_light_3.ogg
+footstep_grass_light_b_4 			sound/general/footsteps/beast/grass_light_4.ogg
+footstep_grass_light_b_5 			sound/general/footsteps/beast/grass_light_5.ogg
+footstep_grass_light_b_6 			sound/general/footsteps/beast/grass_light_6.ogg
+footstep_grass_light_b_7 			sound/general/footsteps/beast/grass_light_7.ogg
+footstep_grass_light_b_8 			sound/general/footsteps/beast/grass_light_8.ogg
+
+UT_start 			sound/UT/prepare.ogg
+UT_first 			sound/UT/firstblood.ogg
+UT_lost 			sound/UT/humiliation.ogg
+UT_2_kills 			sound/UT/doublekill.ogg
+UT_3_kills 			sound/UT/multikill.ogg
+UT_4_kills 			sound/UT/ultrakill.ogg
+UT_5_kills 			sound/UT/monsterkill.ogg
+

@@ -1,0 +1,10 @@
+beginObjdef blocker waterfallskinny
+  obj_editorCategory General_Water
+  obj_model waterfallskinny.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_sound /sound/environment/ambient_waterfall.wav
+  obj_soundVolume 1.00
+  obj_soundMinFalloff 115
+endObjdef waterfallskinny

@@ -1,0 +1,8 @@
+beginObjdef blocker sand_rock_11_3
+  obj_editorCategory XR_Large_Rocks
+  obj_model models/props/xr_props/sand_rocks/Rock11.model
+  obj_skin sand_rock_11_3
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.200000
+endObjdef sand_rock_11_3
+          

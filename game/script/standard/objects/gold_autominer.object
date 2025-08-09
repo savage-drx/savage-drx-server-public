@@ -1,0 +1,22 @@
+objSet objclass "building"
+objSet description "Gold Autominer"
+objSet race "race0"
+objSet model "/models/props/reference/mines/gold_autominer.model"
+objSet skin "default"
+objSet tooltip "If claimed, this Autominer will extract Gold until lost or the mine runs dry."
+objSet selectionSound "/sound/general/buildings/sawmill_idle.wav"
+objSet proximityMessage ""
+objSet techPointValue 1
+objSet techType "gold"
+objSet viewHeight 25.000000
+objSet fullHealth 100000
+objSet radiusState ""
+objSet isClaimable 1
+objSet mineType "stone"
+objSet canBeRepaired 0
+objSet generateamount gold 25
+objSet scanRange 500.000000
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objSet isVulnerable 0
+objSet idleSound "/sound/general/buildings/sawmill_idle.wav"

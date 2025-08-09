@@ -1,0 +1,85 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+makeanim idle gerkat.clip 114 24 30 1
+
+// Melee Combat
+makeanim melee_1 gerkat.clip 67 32 30 1
+makeanim melee_move_1 gerkat.clip 67 32 30 1
+
+// General character Animation
+makeanim walk_left gerkat.clip 101 11 30 1
+makeanim walk_right gerkat.clip 101 11 30 1
+makeanim walk_fwd gerkat.clip 101 11 30 1
+makeanim walk_back gerkat.clip 101 11 30 1
+
+makeanim run_left gerkat.clip 101 11 30 1
+makeanim run_right gerkat.clip 101 11 30 1
+makeanim run_fwd gerkat.clip 101 11 30 1
+makeanim run_back gerkat.clip 101 11 30 1
+
+makeanim sprint_left gerkat.clip 101 11 30 1
+makeanim sprint_right gerkat.clip 101 11 30 1
+makeanim sprint_fwd gerkat.clip 101 11 30 1
+makeanim sprint_back gerkat.clip 101 11 30 1
+
+makeanim wounded_left gerkat.clip 29 10 30
+makeanim wounded_right gerkat.clip 29 10 30
+makeanim wounded_fwd gerkat.clip 29 10 30
+makeanim wounded_back gerkat.clip 29 10 30
+
+makeanim death_generic gerkat.clip 38 29 30
+makeanim death_left gerkat.clip 38 29 30
+makeanim death_right gerkat.clip 38 29 30
+makeanim death_fwd gerkat.clip 38 29 30
+makeanim death_back gerkat.clip 38 29 30
+
+makeanim jump_start_left gerkat.clip 67  11 30 1
+makeanim jump_start_fwd gerkat.clip 67 11 30 1
+makeanim jump_start_back gerkat.clip 67 11 30 1
+
+makeanim jump_start_right gerkat.clip 67  11 30 1
+
+makeanim jump_mid_left gerkat.clip 78 11 30 1
+makeanim jump_mid_right gerkat.clip 78 11 30 1
+makeanim jump_mid_fwd gerkat.clip 78 11 30 1
+makeanim jump_mid_back gerkat.clip 78 11 30 1
+
+makeanim jump_end_left gerkat.clip 114 24 30 1
+makeanim jump_end_right gerkat.clip 114 24 30 1
+makeanim jump_end_fwd gerkat.clip 114 24 30 1
+makeanim jump_end_back gerkat.clip 114 24 30 1
+
+makeanim jump_up_start gerkat.clip 67 11 30 1
+makeanim jump_up_mid gerkat.clip 78 11 30 1
+makeanim jump_up_end gerkat.clip 114 24 30 1
+makeanim jump_land gerkat.clip 114 24 30 1
+
+makeanim weapon_idle_1 gerkat.clip 114 24 30 1
+makeanim weapon_idle_2 gerkat.clip 114 24 30 1
+makeanim weapon_idle_3 gerkat.clip 114 24 30 1
+makeanim weapon_idle_4 gerkat.clip 114 24 30 1
+
+makeanim weapon_fire_1 gerkat.clip 67 32 30 1
+makeanim weapon_fire_2 gerkat.clip 67 32 30 1
+makeanim weapon_fire_3 gerkat.clip 67 32 30 1
+makeanim weapon_fire_4 gerkat.clip 67 32 30 1
+makeanim weapon_fire_5 gerkat.clip 67 32 30 1
+
+// Sound Events
+animevent melee_1 0 "randsound 3 /sound/npc/panther_attack"
+
+animevent melee_move_1 0 "randsound 3 /sound/npc/panther_attack"
+
+animevent wounded_left 0 "randsound 3 /sound/npc/panther_wounded"
+animevent wounded_right 0 "randsound 3 /sound/npc/panther_wounded"
+animevent wounded_fwd 0 "randsound 3 /sound/npc/panther_wounded"
+animevent wounded_back 0 "randsound 3 /sound/npc/panther_wounded"
+
+animevent death_generic 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_left 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_right 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_fwd 0 "sound /sound/npc/panther_attack_2.wav"
+animevent death_back 0 "sound /sound/npc/panther_attack_2.wav"

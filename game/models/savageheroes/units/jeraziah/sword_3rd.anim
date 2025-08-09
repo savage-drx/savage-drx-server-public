@@ -1,0 +1,14 @@
+// Jeraziah Bolt
+
+// Third Person Anim Events
+
+makeanim wpstate_fire sword_3rd.clip 0 60 135 0
+//makeanim wpstate_fire sword_3rd.clip 0 20 45 0
+makeanim idle sword_3rd.clip 0 1
+//makeanim wpstate_charge sword.clip 0 60 45 0
+
+// Sound Events
+
+
+
+

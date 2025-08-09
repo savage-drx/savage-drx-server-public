@@ -1,0 +1,8 @@
+beginObjdef blocker stone_bridge
+  obj_editorCategory General_Bridges
+  obj_model stone_bridge.model
+  obj_skin stone_bridge.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef stone_bridge

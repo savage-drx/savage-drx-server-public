@@ -1,0 +1,8 @@
+beginObjdef blocker npc_buffalo_plains
+  obj_editorCategory Tombstone_NPCs
+  obj_model /models/npc/buffalo_plains/buffalo_plains.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_reference 1
+endObjdef npc_buffalo_plains

@@ -1,0 +1,7 @@
+beginObjdef blocker pier_corner2
+  obj_editorCategory XR_Catwalks
+  obj_model models/props/wooden/pier_corner2.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef pier_corner2

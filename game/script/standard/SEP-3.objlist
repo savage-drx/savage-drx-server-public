@@ -1,0 +1,222 @@
+//human
+//
+
+//buildings
+objload human_stronghold
+objload human_stronghold2
+objload human_stronghold3
+
+objload human_garrison
+
+objload human_arsenal
+objload human_research_center
+
+objload human_chemical_factory
+objload human_electric_factory
+objload human_magnetic_factory
+objload human_monastery
+
+objload human_arrow_tower
+objload human_chemical_tower
+objload human_magnetic_tower
+objload human_electric_tower
+
+objload human_siege
+
+
+//towerweapons
+objload arrow_tower_weapon
+objload elec_tower_weapon
+objload chem_tower_weapon
+
+
+//items
+objload human_medkit
+objload human_motion_sensor
+objload human_disruptor
+objload human_demo_pack
+
+objload human_ammo_pack
+objload human_imobilizer
+objload human_relocater
+objload human_relocater_trigger
+objload human_landmine
+
+
+//units
+objload human_worker
+
+objload human_nomad
+objload human_savage
+objload human_legionnaire
+objload human_medic
+objload human_ballista
+objload human_catapult
+
+
+//seige weapons
+objload catapult_weapon
+objload ballista_weapon
+
+
+//commander powers
+objload human_adrenaline
+objload human_magnetic_shield
+objload human_electrify
+
+
+//weapons
+objload human_bow
+objload human_scattergun
+objload human_discharger
+objload human_incinerator
+
+objload human_crossbow
+objload human_repeater
+objload human_fluxgun
+objload human_mortar
+
+objload human_sniperbow
+objload human_coilrifle
+objload human_pulsegun
+objload human_launcher
+
+objload human_heal
+objload human_potion
+objload human_revive
+
+objload human_nomad_melee
+objload human_savage_melee
+objload human_legionnaire_melee
+objload human_medic_melee
+
+//beast
+//
+
+//buildings
+objload beast_lair
+objload beast_lair2
+objload beast_lair3
+
+objload beast_sublair
+
+objload beast_nexus
+objload beast_arcana
+
+objload beast_entropy_shrine
+objload beast_strata_shrine
+objload beast_fire_shrine
+objload beast_sanctuary
+
+objload beast_spire
+objload spire_weapon
+objload beast_entropy_spire
+objload beast_strata_spire
+objload beast_fire_spire
+objload beast_fire_spire_weapon
+
+objload beast_charmshrine
+
+
+//items
+objload beast_mana_stone
+objload beast_tracking_sense
+objload beast_protect
+objload beast_immolate
+
+objload beast_stamina_boost
+objload beast_snare
+objload beast_camouflage
+objload beast_fire_trap
+
+
+//units
+objload beast_worker
+
+objload beast_scavenger
+objload beast_stalker
+objload beast_predator
+
+objload beast_medic
+
+objload beast_summoner
+objload beast_behemoth
+
+
+//commander powers
+objload beast_fire_shield
+objload beast_gateway
+objload beast_recharge
+
+
+//weapons
+objload beast_poison
+objload beast_entropy1
+objload beast_entropy1b
+objload beast_strata1
+objload beast_fire1
+
+objload beast_rabid
+objload beast_entropy2
+objload beast_strata2
+objload beast_fire2
+
+objload beast_vampire
+objload beast_entropy3
+objload beast_strata3
+objload beast_fire3
+
+objload beast_summoner_weapon
+objload beast_heal
+objload beast_shield
+objload beast_revive
+
+objload beast_scavenger_melee
+objload beast_stalker_melee
+objload beast_predator_melee
+objload beast_medic_melee
+objload beast_behemoth_melee
+
+//non-race-specific
+//
+
+//mines
+//
+objload gold_mine
+objload redstone_mine
+
+
+//npc
+//
+objload npc_kongor
+objload npc_hornman
+objload npc_hunchedbeast
+objload npc_chiprel
+objload npc_monkit
+objload npc_mudent
+objload npc_oschore
+objload npc_gerkat
+objload npc_bearloth
+objload npc_zizard
+
+// npc weapons
+//
+objload npc_boulder
+
+
+//spawnpoints
+//
+objload spawnflag
+
+
+// dynamic props
+objload pot_explode
+objload pot_tumble
+objload ruins_frontgate
+objload wall_prop
+
+
+//goodie bag!
+objload goodiebag
+objload ammo_box
+objload mana_stone

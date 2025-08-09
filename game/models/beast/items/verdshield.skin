@@ -1,0 +1,9 @@
+skinName default 
+
+skinref firespark /models/beast/items/1_nl_espark2.png
+skinref firespark1 /models/beast/items/1_nl_espark1.png
+skinref firespark2 /models/beast/items/1_nl_espark1.png
+skinref firespark03 /models/beast/items/1_nl_espark1.png
+skinref firespark04 /models/beast/items/1_nl_espark1.png
+skinref fireglow /models/beast/items/1_nl_espark2.png
+skinref box03 /models/beast/items/1_nl_espark2.png

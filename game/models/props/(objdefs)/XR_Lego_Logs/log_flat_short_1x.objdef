@@ -1,0 +1,7 @@
+beginObjdef blocker log_flat_short_1x
+  obj_editorCategory XR_Lego_Logs
+  obj_model models/props/wooden/log_flat_short_1x.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef log_flat_short_1x

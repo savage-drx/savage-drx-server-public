@@ -1,0 +1,6 @@
+beginObjdef blocker wooden_stool2_wide
+  obj_editorCategory XR_Wood_Props
+  obj_model models/props/wooden/wooden_stool2_wide.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef wooden_stool2_wide

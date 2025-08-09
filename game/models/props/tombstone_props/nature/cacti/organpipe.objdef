@@ -1,0 +1,8 @@
+beginObjdef blocker organpipe
+  obj_editorCategory Tombstone_Nature
+  obj_model organpipe.model
+  obj_skin 
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 1.250000
+  obj_isNature 1
+endObjdef organpipe

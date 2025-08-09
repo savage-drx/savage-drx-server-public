@@ -1,0 +1,9 @@
+// Incinerator
+
+// Third Person Anim Events
+
+makeanim idle incinerator_third.clip 0 30
+makeanim wpstate_fire incinerator_third.clip 30 10 
+makeanim run incinerator_third.clip 0 0 30 1
+
+// Sound Events

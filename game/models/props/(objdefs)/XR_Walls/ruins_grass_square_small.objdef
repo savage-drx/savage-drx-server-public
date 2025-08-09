@@ -1,0 +1,6 @@
+beginObjdef blocker ruins_grass_square_small
+  obj_editorCategory XR_Walls
+  obj_model models/props/xr_modular/ruins_grass_square_small.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef ruins_grass_square_small

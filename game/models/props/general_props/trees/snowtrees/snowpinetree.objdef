@@ -1,0 +1,8 @@
+beginObjdef blocker snowpinetree
+  obj_editorCategory XR_Nature
+  obj_model snowpinetree.model
+  obj_skin snowpinetree.skin
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef snowpinetree

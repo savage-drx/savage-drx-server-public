@@ -1,0 +1,14 @@
+makeanim idle eyes.clip 0 80 15 1
+
+makeanim walk_fwd eyes.clip 0 80 15 1
+makeanim run_fwd eyes.clip 0 80 15 1
+makeanim sprint_fwd eyes.clip 0 80 15 1
+
+makeanim death_generic eyes.clip 80 30 20
+
+makeanim wounded_left eyes.clip 0 80 15 1
+makeanim wounded_right eyes.clip 0 80 15 1
+makeanim wounded_fwd eyes.clip 0 80 15 1
+makeanim wounded_back eyes.clip 0 80 15 1
+
+ 

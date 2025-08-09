@@ -1,0 +1,7 @@
+beginObjdef blocker fence_segment
+  obj_editorCategory Tombstone_Western
+  obj_model fence_segment.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef fence_segment

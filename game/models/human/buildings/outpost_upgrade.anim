@@ -1,0 +1,11 @@
+makeanim idle outpost_upgrade.clip 0 30 45 1 
+makeanim death_generic outpost_upgrade.clip 30 20 15 
+
+
+
+
+//buildings
+makeanim construct_1 clip/construct_1.clip
+makeanim construct_2 clip/construct_2.clip
+makeanim construct_3 clip/construct_3.clip
+makeanim construct_final clip/construct_final.clip

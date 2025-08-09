@@ -1,0 +1,6 @@
+beginObjdef blocker inari
+  obj_editorCategory Samurai_Props
+  obj_model inari.model
+  obj_editorScaleRangeLo 0.600000
+  obj_editorScaleRangeHi 0.600000
+endObjdef inari

@@ -1,0 +1,15 @@
+// Marksman Bow
+
+// First Person Anim Events
+
+makeanim wpstate_idle sniperbow.clip 141 21 10 1
+makeanim wpstate_switch sniperbow.clip 141 21 10 1
+makeanim wpstate_charge sniperbow.clip 41 43 
+makeanim wpstate_spinup sniperbow.clip 0 40
+makeanim wpstate_spindown clip/wpstate_spindown.clip
+makeanim wpstate_overheat clip/wpstate_overheat.clip
+makeanim wpstate_fire sniperbow.clip 89 34
+
+// Sound Events
+
+animevent wpstate_spinup 0 "sound /sound/human/weapons/marksmanbow_pull.wav"

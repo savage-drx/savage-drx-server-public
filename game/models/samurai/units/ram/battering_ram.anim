@@ -1,0 +1,21 @@
+// Battering Ram
+
+// Anim Events
+
+makeanim idle clip/battering_ram.clip 110 2 30 1
+makeanim death_generic clip/battering_ram.clip 155 45 35 0
+makeanim weapon_fire_1 clip/battering_ram.clip 112 40 30 0
+
+makeanim walk_left clip/battering_ram.clip 0 50 30 1
+makeanim walk_right clip/battering_ram.clip 0 50 30 1
+makeanim walk_fwd clip/battering_ram.clip 0 50 30 1
+makeanim walk_back clip/battering_ram.clip 50 50 30 1
+
+makeanim run_left clip/battering_ram.clip 0 50 40 1
+makeanim run_right clip/battering_ram.clip 0 50 40 1
+makeanim run_fwd clip/battering_ram.clip 50 50 40 1
+makeanim run_back clip/battering_ram.clip 0 50 40 1
+
+// Sound Events
+
+animevent weapon_fire_1 23 "sound /sound/human/weapons/catapult_fire.wav"

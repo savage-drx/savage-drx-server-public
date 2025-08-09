@@ -1,0 +1,160 @@
+//syntax:                                	
+
+//makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+//common
+
+makeanim idle  clip/idle.clip
+//makeanim push  clip/push.clip
+//makeanim grab  clip/grab.clip
+//makeanim throw clip/throw.clip
+
+makeanim taunt_1 clip/dance.clip 0 68 25 1
+makeanim taunt_2 clip/taunt.clip 0 70 20 1
+
+//melee combat
+
+makeanim melee_1 clip/melee_4f.clip 0 85 42
+makeanim melee_2 clip/melee_1f.clip 30 90 36
+makeanim melee_3 clip/melee_2f.clip 13 85 36
+makeanim melee_4 clip/melee_3f.clip 30 90 36
+
+makeanim melee_move_1 clip/melee_4f.clip 0 85 42
+makeanim melee_move_2 clip/melee_1f.clip 30 90 36
+makeanim melee_move_3 clip/melee_2f.clip 13 85 36
+makeanim melee_move_4 clip/melee_3f.clip 30 90 36
+
+makeanim block clip/block.clip 0 17 72 0
+
+//general character animation
+
+makeanim walk_left clip/run_left.clip 0 0 20 1
+makeanim walk_right clip/run_right.clip 0 0 20 1
+makeanim walk_fwd clip/run_shield.clip 0 0 15 1
+makeanim walk_back clip/run_back.clip 0 0 20 1
+
+makeanim run_left clip/run_left.clip 0 0 30 1
+makeanim run_right clip/run_right.clip 0 0 30 1
+makeanim run_fwd clip/run_shield.clip 0 26 40 1
+makeanim run_back clip/run_back.clip 0 0 30 1
+
+makeanim sprint_left clip/run_left.clip 0 0 40 1
+makeanim sprint_right clip/run_right.clip 0 0 40 1
+makeanim sprint_fwd clip/sprint_fwd.clip
+makeanim sprint_back clip/run_back.clip 0 0 30 1
+
+makeanim jump_start_left clip/jump.clip 0 1
+makeanim jump_start_right clip/jump.clip 0 1
+makeanim jump_start_fwd clip/jump.clip 0 1
+makeanim jump_start_back clip/jump.clip 0 1
+
+makeanim jump_mid_left clip/jump.clip 1 1
+makeanim jump_mid_right clip/jump.clip 1 1
+makeanim jump_mid_fwd clip/jump.clip 1 1
+makeanim jump_mid_back clip/jump.clip 1 1
+  
+makeanim jump_end_left clip/jump.clip 2 1
+makeanim jump_end_right clip/jump.clip 2 1
+makeanim jump_end_fwd clip/jump.clip 2 1
+makeanim jump_end_back clip/jump.clip 2 1
+  
+makeanim jump_up_start clip/jump.clip 0 1
+makeanim jump_up_mid clip/jump.clip 1 1
+makeanim jump_up_end clip/jump.clip 2 1
+makeanim jump_land clip/jump.clip 3 1
+
+makeanim wounded_left clip/wounded.clip
+makeanim wounded_right clip/wounded.clip
+makeanim wounded_fwd clip/wounded.clip
+makeanim wounded_back clip/wounded.clip
+
+makeanim death_generic clip/death.clip
+makeanim resurrected clip/stand_up.clip
+
+
+//player holding weapon animations
+
+makeanim weapon_idle_1 clip/weapon_idle.clip
+makeanim weapon_idle_2 clip/bash.clip
+makeanim weapon_idle_3 clip/casting.clip
+makeanim weapon_idle_4 clip/channeling.clip
+
+makeanim weapon_charge_1 clip/weapon_idle.clip
+makeanim weapon_charge_2 clip/bash.clip
+makeanim weapon_charge_3 clip/casting.clip
+makeanim weapon_charge_4 clip/channeling.clip
+makeanim weapon_charge_5 clip/shoot.clip
+makeanim weapon_charge_6 clip/drop.clip
+
+makeanim weapon_fire_1 clip/weapon_idle.clip
+makeanim weapon_fire_2 clip/bash.clip
+makeanim weapon_fire_3 clip/casting.clip
+makeanim weapon_fire_4 clip/channeling.clip 
+makeanim weapon_fire_5 clip/shoot.clip 0 20 45
+makeanim weapon_fire_6 clip/drop.clip
+
+makeanim weapon_reload_1 clip/weapon_reload_1.clip
+makeanim weapon_reload_2 clip/weapon_reload_2.clip
+makeanim weapon_reload_3 clip/weapon_reload_3.clip
+makeanim weapon_reload_4 clip/weapon_reload_4.clip
+
+// Sound Events
+
+animevent grab   0  "randsound 4 /sound/physics/grab_throw"
+animevent throw 0  "randsound 4 /sound/physics/grab_throw"
+animevent push  0  "sound /models/savageheroes/units/jeraziah/sound/grunt_1.wav"
+
+animevent run_left 10 "footstepleft"
+animevent run_left 15 "footstepright"
+
+animevent run_right 9 "footstepleft"
+animevent run_right 22 "footstepright"
+
+animevent run_fwd 8 "footstepleft"
+animevent run_fwd 22 "footstepright"
+
+animevent run_back 8 "footstepleft"
+animevent run_back 16 "footstepright"
+
+animevent walk_back 8 "footstepleft"
+animevent walk_back 16 "footstepright"
+
+animevent sprint_fwd 1 "footstepleft"
+animevent sprint_fwd 10 "footstepright"
+
+//animevent weapon_fire_2 5 "sound /models/savageheroes/units/jeraziah/sound/grunt_1.wav"
+animevent weapon_fire_2 5 "sound /models/savageheroes/units/jeraziah/sound/jump_1.wav"
+animevent weapon_fire_2 35 "sound /models/savageheroes/units/jeraziah/sound/jera_blessing.wav"
+animevent weapon_fire_2 28 "sound /models/savageheroes/units/jeraziah/sound/slash_1.wav"
+
+animevent weapon_fire_3 10 "sound /models/savageheroes/units/jeraziah/sound/jera_resurrect.wav"
+
+animevent weapon_fire_4 52 "sound /models/savageheroes/units/jeraziah/sound/jera_incandescence.wav"
+animevent weapon_fire_4 13 "sound /models/savageheroes/units/jeraziah/sound/incandescence.wav"
+animevent weapon_fire_4 42 "sound /models/savageheroes/units/jeraziah/sound/slash_2.wav"
+
+animevent melee_1 20 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+animevent melee_2 0 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+animevent melee_3 0 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+animevent melee_4 0 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+
+animevent melee_1 15 "randsound 4 /models/savageheroes/units/jeraziah/sound/attack"
+
+animevent melee_move_1 20 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+animevent melee_move_2 0 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+animevent melee_move_3 5 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+animevent melee_move_4 0 "randsound 5 /models/savageheroes/units/jeraziah/sound/sword"
+
+animevent melee_move_1 15 "randsound 4 /models/savageheroes/units/jeraziah/sound/attack"
+
+animevent taunt_2 7 "sound /models/savageheroes/units/jeraziah/sound/scream_1.wav"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent wounded_left 1 "randsound 2 /models/savageheroes/units/jeraziah/sound/wound"
+animevent wounded_right 1 "randsound 2 /models/savageheroes/units/jeraziah/sound/wound"
+animevent wounded_fwd 1 "randsound 2 /models/savageheroes/units/jeraziah/sound/wound"
+animevent wounded_back 1 "randsound 2 /models/savageheroes/units/jeraziah/sound/wound"

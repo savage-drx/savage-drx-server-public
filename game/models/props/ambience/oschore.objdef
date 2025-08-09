@@ -1,0 +1,8 @@
+beginObjdef blocker Oschore
+  obj_editorCategory Ambience_Animal
+  obj_model null.model
+  obj_invisibleToGame 1
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_sound /sound/environment/ambient_oschore.wav
+endObjdef Oschore

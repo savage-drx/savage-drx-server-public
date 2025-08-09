@@ -1,0 +1,11 @@
+//first person view weapon animations
+makeanim idle mushrooms.clip 0 1 
+makeanim wpstate_switch mushrooms.clip
+makeanim wpstate_charge mushrooms.clip 
+makeanim wpstate_spinup mushrooms.clip 
+makeanim wpstate_spindown mushrooms.clip
+makeanim wpstate_overheat mushrooms.clip
+makeanim wpstate_fire mushrooms.clip 0 20
+
+animevent wpstate_fire 0 "sound /sound/human/weapons/regen_throw.wav"
+animevent wpstate_charge 9 "sound /sound/human/weapons/regen_pull.wav"

@@ -1,0 +1,8 @@
+beginObjdef blocker rope_bridge02
+  obj_editorCategory General_Bridges
+  obj_model rope_bridge02.model
+  obj_skin rope_bridge02.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef rope_bridge02

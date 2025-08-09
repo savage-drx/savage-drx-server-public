@@ -1,0 +1,159 @@
+//syntax:
+
+//makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+//common
+
+makeanim idle clip/idle.clip 
+//makeanim push  clip/push.clip
+//makeanim grab  clip/grab.clip
+//makeanim throw clip/throw.clip
+
+makeanim taunt_1 clip/taunt.clip
+makeanim taunt_2 clip/game_over.clip
+
+//melee combat
+
+makeanim melee_1 clip/melee_1.clip 0 55 30 
+makeanim melee_2 clip/melee_combo.clip 26 34 30
+
+//makeanim melee_move_1 clip/melee_move_1.clip 0 55 30
+makeanim melee_move_1 clip/melee_move_1.clip 0 55 30
+makeanim melee_move_2 clip/melee_move_2.clip 26 34 30
+
+//makeanim block clip/block.clip 0 17 72 0
+
+//general character animation
+
+makeanim walk_left clip/run_left.clip 0 0 20 1
+makeanim walk_right clip/run_right.clip 0 0 20 1
+makeanim walk_fwd clip/run_fw.clip 0 0 15 1
+makeanim walk_back clip/run_back.clip 0 0 30 1
+
+makeanim run_left clip/run_left.clip 0 0 30 1
+makeanim run_right clip/run_right.clip 0 0 30 1
+makeanim run_fwd clip/run_fw.clip 0 21 30 1
+makeanim run_back clip/run_back.clip 0 0 40 1
+
+makeanim sprint_left clip/run_left.clip 0 0 40 1
+makeanim sprint_right clip/run_right.clip 0 0 40 1
+makeanim sprint_fwd clip/sprint.clip 0 0 40 1 
+makeanim sprint_back clip/run_back.clip 0 0 50 1
+
+makeanim jump_start_left clip/jump.clip 0 1
+makeanim jump_start_right clip/jump.clip 0 1
+makeanim jump_start_fwd clip/jump.clip 0 1
+makeanim jump_start_back clip/jump.clip 0 1
+
+makeanim jump_mid_left clip/jump.clip 1 1
+makeanim jump_mid_right clip/jump.clip 1 1
+makeanim jump_mid_fwd clip/jump.clip 1 1
+makeanim jump_mid_back clip/jump.clip 1 1
+  
+makeanim jump_end_left clip/jump.clip 2 1
+makeanim jump_end_right clip/jump.clip 2 1
+makeanim jump_end_fwd clip/jump.clip 2 1
+makeanim jump_end_back clip/jump.clip 2 1
+  
+makeanim jump_up_start clip/jump.clip 0 1
+makeanim jump_up_mid clip/jump.clip 1 1
+makeanim jump_up_end clip/jump.clip 2 1
+makeanim jump_land clip/jump.clip 3 1
+
+makeanim wounded_left clip/wound.clip
+makeanim wounded_right clip/wound.clip
+makeanim wounded_fwd clip/wound.clip
+makeanim wounded_back clip/wound.clip
+
+makeanim death_generic clip/death.clip
+makeanim resurrected clip/revive.clip 0 0 20
+
+makeanim dodge_start_left clip/jump.clip 0 1
+makeanim dodge_start_right clip/jump.clip 0 1
+//makeanim dodge_start_fwd clip/dodge.clip 0 1
+makeanim dodge_start_fwd clip/jump.clip 0 1
+makeanim dodge_start_back clip/jump.clip 0 1
+
+makeanim dodge_mid_left clip/jump.clip 1 1
+makeanim dodge_mid_right clip/jump.clip 1 1
+//makeanim dodge_mid_fwd clip/dodge.clip 1 1
+makeanim dodge_mid_fwd clip/jump.clip 1 1
+makeanim dodge_mid_back clip/jump.clip 1 1
+  
+makeanim dodge_end_left clip/jump.clip 2 1
+makeanim dodge_end_right clip/jump.clip 2 1
+//makeanim dodge_end_fwd clip/dodge.clip 2 1
+makeanim dodge_end_fwd clip/jump.clip 2 1
+makeanim dodge_end_back clip/jump.clip 2 1
+
+
+//player holding weapon animations
+
+//+spell,ultimate,shoot
+
+makeanim weapon_charge_1 clip/weapon_charge.clip
+makeanim weapon_charge_2 clip/weapon_charge.clip 0 0 75
+makeanim weapon_charge_3 clip/throwitem.clip 0 30
+makeanim weapon_charge_4 clip/dropitem.clip
+makeanim weapon_charge_5 clip/ultimate.clip 0 105
+
+makeanim weapon_fire_1 clip/weapon_fire.clip 0 8
+makeanim weapon_fire_2 clip/weapon_fire.clip 0 0 30
+makeanim weapon_fire_3 clip/throwitem.clip 30 23
+makeanim weapon_fire_4 clip/dropitem.clip
+//makeanim weapon_fire_5 clip/ultimate.clip 105 165
+makeanim weapon_fire_5 clip/ultimate.clip 
+makeanim weapon_fire_6 clip/weapon_fire.clip 
+
+
+
+// Sound Events
+
+animevent grab   0  "randsound 4 /sound/physics/grab_throw"
+animevent throw 0  "randsound 4 /sound/physics/grab_throw"
+//animevent push  0  "randsound 3 /sound/human/units/legionnaire/attack_grunt"
+
+animevent run_left 10 "footstepleft"
+animevent run_left 15 "footstepright"
+
+animevent run_right 9 "footstepleft"
+animevent run_right 22 "footstepright"
+
+animevent run_fwd 8 "footstepleft"
+animevent run_fwd 22 "footstepright"
+
+animevent run_back 8 "footstepleft"
+animevent run_back 16 "footstepright"
+
+animevent walk_back 8 "footstepleft"
+animevent walk_back 16 "footstepright"
+
+animevent sprint_fwd 1 "footstepleft"
+animevent sprint_fwd 10 "footstepright"
+
+//animevent melee_1 8 "sound /models/savageheroes/units/ophelia/sound/grunt"
+//animevent melee_2 3 "sound /models/savageheroes/units/ophelia/grunt_3b.ogg"
+
+animevent melee_1 9 "randsound 5 /models/savageheroes/units/ophelia/sound/grunt"
+animevent melee_2 3 "randsound 5 /models/savageheroes/units/ophelia/sound/grunt"
+
+//animevent melee_move_1 8 "sound /models/savageheroes/units/ophelia/sound/grunt"
+//animevent melee_move_2 3 "sound /models/savageheroes/units/ophelia/grunt_2.ogg"
+
+animevent melee_move_1 9 "randsound 5 /models/savageheroes/units/ophelia/sound/grunt"
+animevent melee_move_2 3 "randsound 5 /models/savageheroes/units/ophelia/sound/grunt"
+
+animevent weapon_fire_5 20 "sound /models/savageheroes/units/ophelia/sound/teleport_2.wav"
+animevent weapon_fire_5 0 "sound /models/savageheroes/units/ophelia/sound/teleport_voice.wav"
+
+animevent taunt_2 30 "sound /models/savageheroes/units/ophelia/sound/game_over.wav"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent wounded_left 1 "randsound 6 /models/savageheroes/units/ophelia/sound/wound"
+animevent wounded_right 1 "randsound 6 /models/savageheroes/units/ophelia/sound/wound"
+animevent wounded_fwd 1 "randsound 6 /models/savageheroes/units/ophelia/sound/wound"
+animevent wounded_back 1 "randsound 6 /models/savageheroes/units/ophelia/sound/wound"

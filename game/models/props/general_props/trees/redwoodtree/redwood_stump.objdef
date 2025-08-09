@@ -1,0 +1,6 @@
+beginObjdef blocker redwood_stump
+  obj_editorCategory General_Trees
+  obj_model redwood_stump.model
+  obj_editorScaleRangeLo 4.000000
+  obj_editorScaleRangeHi 4.500000
+endObjdef redwood_stump

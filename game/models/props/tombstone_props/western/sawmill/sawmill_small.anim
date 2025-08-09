@@ -1,0 +1,3 @@
+makeanim idle sawmill.clip 0 45 30 1
+
+animevent idle 5 "effect smoke_sawmill _bone smoke"

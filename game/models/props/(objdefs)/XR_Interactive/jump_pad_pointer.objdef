@@ -1,0 +1,14 @@
+beginObjdef blocker jump_pad_pointer
+  obj_editorCategory XR_Interactive
+  obj_model models/props/xr_interactive/jump_pad/jump_pad_pointer.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_invisibleToGame 1
+  obj_isAttachment 1
+  obj_isAnchored 1
+  obj_trigSetType psphere
+  obj_trigSetControl obj_client onEnter
+  obj_trigSetBehaviour 30.000000
+  obj_trigSetScript jump_pad_trigger.gs
+  obj_trigSetParent this
+endObjdef jump_pad_pointer

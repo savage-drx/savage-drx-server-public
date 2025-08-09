@@ -1,0 +1,7 @@
+beginObjdef blocker teleport_node
+  obj_editorCategory XR_Interactive
+  obj_model models/props/xr_interactive/teleport/teleport_node.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_isAttachment 1
+endObjdef teleport_node

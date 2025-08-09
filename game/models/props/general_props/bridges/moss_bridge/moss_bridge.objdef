@@ -1,0 +1,8 @@
+beginObjdef blocker moss_bridge
+  obj_editorCategory General_Bridges
+  obj_model moss_bridge.model
+  obj_skin moss_bridge.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef moss_bridge

@@ -1,0 +1,109 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle oschore.clip 25 155 30 1
+
+// Melee Combat
+
+makeanim melee_1 oschore.clip 180 20 30 0
+makeanim melee_move_1 oschore.clip 30 67 30 0
+
+makeanim block clip/block.clip
+
+// General Character Animation
+
+//makeanim walk_left oschore.clip 132 39 45 
+//makeanim walk_right oschore.clip 132 39 45 1
+makeanim walk_left oschore.clip 0 20 30 1
+makeanim walk_right oschore.clip 0 20 30 1
+makeanim walk_fwd oschore.clip 0 20 30 1
+makeanim walk_back oschore.clip 132 39 45 1
+
+makeanim run_left oschore.clip 132 39 45 1
+makeanim run_right oschore.clip 132 39 45 1
+makeanim run_fwd oschore.clip 0 20 30 1
+makeanim run_back oschore.clip 132 39 45 1
+
+//<<<<<<< oschore.anim
+makeanim sprint_left clip/sidestep_left.clip 0 0 50
+makeanim sprint_right clip/sidestep_right.clip 0 0 50
+makeanim sprint_fwd clip/oschore_fwd.clip 0 20 30 1
+makeanim sprint_back clip/run_back.clip 0 0 70
+
+makeanim jump_start_left clip/jump_left.clip 0 1
+makeanim jump_start_right clip/jump_right.clip 0 1
+makeanim jump_start_fwd clip/jump_fwd.clip 0 1
+makeanim jump_start_back clip/jump_back.clip 0 1
+
+makeanim jump_mid_left clip/jump_left.clip 1 1
+makeanim jump_mid_right clip/jump_right.clip 1 1
+makeanim jump_mid_fwd clip/jump_fwd.clip 1 1
+makeanim jump_mid_back clip/jump_back.clip 1 1
+	
+makeanim jump_end_left clip/jump_left.clip 2 1
+makeanim jump_end_right clip/jump_right.clip 2 1
+makeanim jump_end_fwd clip/jump_fwd.clip 2 1
+makeanim jump_end_back clip/jump_back.clip 2 1
+	
+makeanim jump_up_start clip/jump_fwd.clip 0 1
+makeanim jump_up_mid clip/jump_fwd.clip 1 1
+makeanim jump_up_end clip/jump_fwd.clip 2 1
+
+makeanim jump_land clip/jump_fwd.clip 3
+
+makeanim crouch_idle clip/crouch_idle.clip
+
+makeanim crouch_left clip/crouch_left.clip
+makeanim crouch_right clip/crouch_right.clip
+makeanim crouch_fwd clip/crouch_fwd.clip
+makeanim crouch_back clip/crouch_back.clip
+
+makeanim walk_with_bag clip/walk_with_bag.clip
+
+makeanim mine clip/mine.clip
+makeanim repair clip/repair.clip
+makeanim construct clip/construct.clip
+
+makeanim wounded_left oschore.clip 200 20 30 
+makeanim wounded_right oschore.clip 200 20 30 
+makeanim wounded_fwd oschore.clip 200 20 30
+makeanim wounded_back oschore.clip 200 20 30
+
+makeanim death_generic oschore.clip 220 46 30 0
+makeanim death_left oschore.clip 220 46 30 0
+makeanim death_right oschore.clip 220 46 30 0
+makeanim death_fwd oschore.clip 220 46 30 0
+makeanim death_back oschore.clip 220 46 30 0
+//=======
+//makeanim wounded_left oschore.clip 181 17 30 
+//makeanim wounded_right oschore.clip 181 17 30 
+//makeanim wounded_fwd oschore.clip 181 17 30
+//makeanim wounded_back oschore.clip 181 17 30
+//
+//makeanim death_generic oschore.clip 198 24 30 0
+//makeanim death_left oschore.clip 198 24 30 0
+//makeanim death_right oschore.clip 198 24 30 0
+//makeanim death_fwd oschore.clip 198 24 30 0
+//makeanim death_back oschore.clip 198 24 30 0
+//>>>>>>> 1.2
+
+// Sound Events
+
+animevent melee_1 0 "sound /sound/npc/oschore_attack.wav"
+
+animevent melee_move_1 0 "sound /sound/npc/oschore_attack.wav"
+
+animevent wounded_left 0 "sound /sound/npc/oschore_wounded.wav"
+animevent wounded_right 0 "sound /sound/npc/oschore_wounded.wav"
+animevent wounded_fwd 0 "sound /sound/npc/oschore_wounded.wav"
+animevent wounded_back 0 "sound /sound/npc/oschore_wounded.wav"
+
+animevent death_generic 0 "sound /sound/npc/oschore_attack.wav"
+animevent death_left 0 "sound /sound/npc/oschore_attack.wav"
+animevent death_right 0 "sound /sound/npc/oschore_attack.wav"
+animevent death_fwd 0 "sound /sound/npc/oschore_attack.wav"
+animevent death_back 0 "sound /sound/npc/oschore_attack.wav"
+

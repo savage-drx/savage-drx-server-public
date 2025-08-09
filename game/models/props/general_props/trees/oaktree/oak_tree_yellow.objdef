@@ -1,0 +1,8 @@
+beginObjdef blocker oak_tree_yellow
+  obj_editorCategory XR_Nature
+  obj_model oak_tree_yellow.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.700000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef oak_tree_yellow

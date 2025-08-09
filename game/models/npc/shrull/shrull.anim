@@ -1,0 +1,52 @@
+// Syntax:
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+makeanim idle shrull.clip 0 45 15 1
+
+// Melee Combat
+makeanim melee_1 shrull.clip 48 24 40 0
+makeanim melee_move_1 shrull.clip 48 24 40 0
+
+// General Character Animation
+makeanim walk_left shrull.clip 102 20 15 1
+makeanim walk_right shrull.clip 102 20 15 1
+makeanim walk_fwd shrull.clip 102 20 15 1
+makeanim walk_back shrull.clip 102 20 15 1
+
+makeanim run_left shrull.clip 102 20 32 1
+makeanim run_right shrull.clip 102 20 32 1
+makeanim run_fwd shrull.clip 102 20 32 1
+makeanim run_back shrull.clip 102 20 32 1
+
+makeanim wounded_left shrull.clip 124 11 25 0
+makeanim wounded_right shrull.clip 124 11 25 0
+makeanim wounded_fwd shrull.clip 124 11 25 0
+makeanim wounded_back shrull.clip 124 11 25 0
+
+makeanim death_generic shrull.clip 74 26 35 0
+makeanim death_left shrull.clip 74 26 35 0
+makeanim death_right shrull.clip 74 26 35 0
+makeanim death_fwd shrull.clip 74 26 35 0
+makeanim death_back shrull.clip 74 26 35 0
+
+// Sound Events
+animevent melee_1 0 "sound /sound/npc/shrull_attack.mp3"
+
+animevent melee_move_1 0 "sound /sound/npc/shrull_attack.mp3"
+
+animevent run_left 0 "sound /sound/npc/shrull_hop.mp3"
+animevent run_right 0 "sound /sound/npc/shrull_hop.mp3"
+animevent run_fwd 0 "sound /sound/npc/shrull_hop.mp3"
+animevent run_back 0 "sound /sound/npc/shrull_hop.mp3"
+
+animevent wounded_left 0 "sound /sound/npc/shrull_hit.mp3"
+animevent wounded_right 0 "sound /sound/npc/shrull_hit.mp3"
+animevent wounded_fwd 0 "sound /sound/npc/shrull_hit.mp3"
+animevent wounded_back 0 "sound /sound/npc/shrull_hit.mp3"
+
+animevent death_generic 0 "sound /sound/npc/shrull_hit.mp3"
+animevent death_left 0 "sound /sound/npc/shrull_hit.mp3"
+animevent death_right 0 "sound /sound/npc/shrull_hit.mp3"
+animevent death_fwd 0 "sound /sound/npc/shrull_hit.mp3"
+animevent death_back 0 "sound /sound/npc/shrull_hit.mp3"

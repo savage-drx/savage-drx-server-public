@@ -1,0 +1,8 @@
+beginObjdef blocker wall_prop
+  obj_editorCategory General_Structures
+  obj_model wall_prop.model
+  obj_skin 
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 0.750000
+  obj_reference 1
+endObjdef wall_prop

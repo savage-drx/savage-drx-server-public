@@ -1,0 +1,7 @@
+beginObjdef blocker bridge_togetsukyou
+  obj_editorCategory Samurai_Props
+  obj_model bridge_togetsukyou.model
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 0.800000
+  obj_navBridge 1  
+endObjdef bridge_togetsukyou

@@ -1,0 +1,99 @@
+//syntax:
+
+//makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+//common
+
+makeanim idle idle.clip 0 0 30 1 
+
+makeanim melee_1 wound.clip
+makeanim melee_move_1 run.clip
+
+makeanim walk_fwd walk.clip 0 0 40 1
+makeanim walk_back back.clip 0 0 40 1
+
+makeanim run_fwd run.clip 0 0 50 1
+makeanim run_back back.clip 0 0 50 1
+
+makeanim sprint_fwd sprint.clip 0 0 80 1 
+makeanim sprint_back sprint.clip 0 0 80 1
+
+makeanim jump_start_fwd jump.clip 0 1
+makeanim jump_start_back jump.clip 0 1
+
+makeanim jump_mid_fwd jump.clip 1 1
+makeanim jump_mid_back jump.clip 1 1
+  
+makeanim jump_end_fwd jump.clip 2 1
+makeanim jump_end_back jump.clip 2 1
+  
+makeanim jump_up_end jump.clip 2 1
+makeanim jump_land jump.clip 3 1
+
+makeanim wounded_left wound.clip
+makeanim wounded_right wound.clip
+makeanim wounded_fwd wound.clip
+makeanim wounded_back wound.clip
+
+makeanim death_generic death.clip
+makeanim resurrected revive.clip 0 30 10
+
+makeanim dodge_start_left jump.clip 0 1
+makeanim dodge_start_right jump.clip 0 1
+makeanim dodge_start_fwd jump.clip 0 1
+makeanim dodge_start_back jump.clip 0 1
+
+makeanim dodge_mid_left jump.clip 1 1
+makeanim dodge_mid_right jump.clip 1 1
+makeanim dodge_mid_fwd jump.clip 1 1
+makeanim dodge_mid_back jump.clip 1 1
+  
+makeanim dodge_end_left jump.clip 2 1
+makeanim dodge_end_right jump.clip 2 1
+makeanim dodge_end_fwd jump.clip 2 1
+makeanim dodge_end_back jump.clip 2 1
+
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent walk_fwd 8 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"
+animevent walk_fwd 15 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent walk_fwd 24 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent walk_fwd 29 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+
+animevent walk_back 8 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"
+animevent walk_back 10 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent walk_back 19 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent walk_back 27 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+
+animevent run_fwd 14 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"
+animevent run_fwd 17 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent run_fwd 21 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent run_fwd 23 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+
+animevent run_back 8 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"
+animevent run_back 10 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent run_back 19 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent run_back 27 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+
+animevent sprint_fwd 3 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"
+animevent sprint_fwd 6 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent sprint_fwd 15 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent sprint_fwd 20 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+
+animevent sprint_back 8 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"
+animevent sprint_back 10 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent sprint_back 19 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent sprint_back 27 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+
+animevent death_generic 1 "randsound 2 /models/savageheroes/units/sheep/sound/sheep_death"
+
+animevent idle 245 "randsound 7 /models/savageheroes/units/sheep/sound/sheep"
+
+animevent jump_end_fwd 1 "sound /models/savageheroes/units/sheep/sound/hoof_4.wav"
+animevent jump_end_back 1 "sound /models/savageheroes/units/sheep/sound/hoof_3.wav"
+animevent jump_up_end 1 "sound /models/savageheroes/units/sheep/sound/hoof_2.wav"
+animevent jump_land 1 "sound /models/savageheroes/units/sheep/sound/hoof_1.wav"

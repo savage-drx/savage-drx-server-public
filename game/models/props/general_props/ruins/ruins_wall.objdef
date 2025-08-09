@@ -1,0 +1,7 @@
+beginObjdef blocker ruins_wall
+  obj_editorCategory General_Ruins
+  obj_model ruins_wall.model
+  obj_skin default
+  obj_editorScaleRangeLo .75
+  obj_editorScaleRangeHi .75
+endObjdef ruins_wall

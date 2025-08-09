@@ -1,0 +1,15 @@
+// Frost Bolts
+
+// First Person Anim Events
+
+makeanim wpstate_fire strata_staff.clip 88 32
+makeanim idle strata_staff.clip 122 78 30 1
+makeanim wpstate_charge strata_staff.clip 41 47
+makeanim wpstate_spinup strata_staff.clip 0 40
+
+// Sound Events
+
+
+
+
+

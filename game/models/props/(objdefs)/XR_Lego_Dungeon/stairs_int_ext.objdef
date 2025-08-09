@@ -1,0 +1,7 @@
+beginObjdef blocker stairs_int_ext
+  obj_navBridge 1
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/stairs_int_ext.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef stairs_int_ext

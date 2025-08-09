@@ -1,0 +1,6 @@
+beginObjdef blocker doors_large1
+  obj_editorCategory XR_Doors
+  obj_model models/props/doors/doors_large1.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef doors_large1

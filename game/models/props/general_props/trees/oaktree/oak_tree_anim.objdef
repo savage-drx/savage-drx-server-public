@@ -1,0 +1,8 @@
+beginObjdef blocker oak_tree_anim
+  obj_editorCategory XR_Nature
+  obj_model oak_tree_anim.model
+  obj_skin oak_tree_anim.skin
+  obj_editorScaleRangeLo 0.700000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef oak_tree_anim

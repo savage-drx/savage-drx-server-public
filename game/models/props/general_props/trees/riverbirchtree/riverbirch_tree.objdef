@@ -1,0 +1,8 @@
+beginObjdef blocker riverbirch_tree
+  obj_editorCategory XR_Nature
+  obj_model riverbirch_tree.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.300000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef riverbirch_tree

@@ -1,0 +1,9 @@
+// Land Mine
+
+// First Person Anim Events
+
+makeanim idle relocator_trigger.clip 50 30 30 1
+makeanim wpstate_fire relocator_trigger.clip 80 20
+
+// Sound Events
+

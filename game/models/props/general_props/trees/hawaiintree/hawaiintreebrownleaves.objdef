@@ -1,0 +1,8 @@
+beginObjdef blocker hawaiintreebrownleaves
+  obj_editorCategory XR_Nature
+  obj_model hawaiintree.model
+  obj_skin brownleaves
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef hawaiintreebrownleaves

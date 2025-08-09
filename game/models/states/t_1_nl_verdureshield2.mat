@@ -1,0 +1,40 @@
+set mat_doubleSided 1
+set mat_depthWrite 0
+
+set mat_fog 0
+
+set mat_shininess 10.000000
+set mat_specular 1.00000 1.00000 1.00000
+
+//set mat_vfunc linear_pan
+//set mat_vspeed -.5
+//set mat_vfunc linear_pan
+set mat_vspeed .05
+
+//set mat_depthWrite 0
+
+
+//set mat_ufunc SIN_PAN
+//set mat_uAmplitude 0.090
+//set mat_uPhase 3.0
+//set mat_uspeed 3.0
+//set mat_vOffset -0.007
+
+//set mat_vfunc SIN_PAN
+//set mat_vAmplitude 0.040
+//set mat_vPhase 1
+//set mat_vspeed 1.0
+//set mat_vOffset -0.007
+
+
+
+
+
+
+
+
+
+
+//set mat_doubleSided 1
+//set mat_vfunc linear_pan
+//set mat_vspeed -.5

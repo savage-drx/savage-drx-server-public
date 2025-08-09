@@ -1,0 +1,23 @@
+objSet objclass "building"
+objSet description "Log Pile"
+objSet race "race0"
+objSet model "/models/props/tombstone_props/western/lumber/lumber_pile_1.model"
+objSet scale 0.5
+objSet skin "default"
+objSet selectionIcon "/models/props/reference/mines/redstone_mine_icon.tga"
+objSet tooltip "info 117"
+objSet gridmenu "/gridmenus/layout_default.cfg"
+objSet proximityMessage ""
+objSet proximitySound "default"
+objSet proximity 100.000000
+objSet techType "NULL"
+objSet viewHeight 25.000000
+objSet fullHealth 100000
+objSet radiusState "state0"
+objSet backbone "bip01 spine2"
+objSet isMine 1
+objSet mineType "stone"
+objSet mineAmount 2500
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objSet isVulnerable 0

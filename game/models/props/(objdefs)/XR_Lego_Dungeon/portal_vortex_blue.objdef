@@ -1,0 +1,8 @@
+beginObjdef blocker portal_vortex_blue
+  obj_navBridge 1
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/portal_vortex_blue.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef portal_vortex_blue

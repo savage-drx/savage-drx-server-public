@@ -1,0 +1,24 @@
+makeanim idle jump_pad.clip 0 20 30 1
+makeanim eject jump_pad.clip 20 30 30 0
+
+animevent idle 0 "effect steam_leak _bone_steam_01"
+animevent idle 1 "effect steam_sound _bone_steam_01"
+animevent idle 5 "effect steam_leak _bone_steam_02"
+animevent idle 7 "effect steam_leak _bone_steam_03"
+animevent idle 8 "effect steam_leak _bone_steam_04"
+animevent idle 11 "effect steam_leak _bone_steam_05"
+animevent idle 14 "effect steam_leak _bone_steam_06"
+animevent idle 18 "effect steam_leak _bone_steam_07"
+animevent idle 19 "effect steam_leak _bone_steam_08"
+
+animevent eject 0 "effect steam_sound _bone_steam_01"
+animevent eject 1 "effect steam_leak _bone_steam_01"
+animevent eject 2 "effect steam_leak _bone_steam_02"
+animevent eject 3 "effect steam_leak _bone_steam_03"
+animevent eject 4 "effect steam_leak _bone_steam_04"
+animevent eject 5 "effect steam_leak _bone_steam_05"
+animevent eject 6 "effect steam_leak _bone_steam_06"
+animevent eject 7 "effect steam_leak _bone_steam_07"
+animevent eject 8 "effect steam_leak _bone_steam_08"
+
+

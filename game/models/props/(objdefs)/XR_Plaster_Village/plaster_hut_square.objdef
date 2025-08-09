@@ -1,0 +1,6 @@
+beginObjdef blocker plaster_hut_square
+  obj_editorCategory XR_Plaster_Village
+  obj_model models/props/plaster/plaster_hut_square.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef plaster_hut_square

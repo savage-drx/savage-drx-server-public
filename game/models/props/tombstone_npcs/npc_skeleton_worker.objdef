@@ -1,0 +1,8 @@
+beginObjdef blocker npc_skeleton_worker
+  obj_editorCategory Tombstone_NPCs
+  obj_model /models/npc/skeleton_worker/worker_undead.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.050000
+  obj_editorScaleRangeHi 1.050000
+  obj_reference 1
+endObjdef npc_skeleton_worker

@@ -1,0 +1,23 @@
+objSet objclass "building"
+objSet description "Barrel (EXPLOSIVE)"
+objSet race "race0"
+objSet drawTeamIcon 0
+objSet drawName 0
+objSet drawHealth 0
+objSet model "/models/props/tombstone_props/western/barrel_explode.model"
+objSet skin "default"
+objSet deathTime 1000
+objSet tooltip "info 170"
+objSet proximity 100.000000
+objSet techType "NULL"
+objSet viewHeight 25.000000
+objSet fullHealth 25
+objSet radiusState "state0"
+objSet mineType ""
+objSet healthStage1 100
+objSet healthStage3 25
+objSet explosionDamage 200
+objSet explosionRange 75
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objSet deathEffect "small_explosion"

@@ -1,0 +1,6 @@
+beginObjdef blocker plaster_windmill_blades
+  obj_editorCategory XR_Plaster_Village
+  obj_model models/props/plaster/plaster_windmill_blades.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef plaster_windmill_blades

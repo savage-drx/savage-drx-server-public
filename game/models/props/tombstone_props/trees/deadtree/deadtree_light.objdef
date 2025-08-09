@@ -1,0 +1,8 @@
+beginObjdef blocker deadtree_light
+  obj_editorCategory Tombstone_Trees
+  obj_model deadtree_light.model
+  obj_editorScaleRangeLo 4.000000
+  obj_editorScaleRangeHi 4.500000
+  obj_isNature 1
+endObjdef deadtree_light
+

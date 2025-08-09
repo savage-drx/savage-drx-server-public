@@ -1,0 +1,3 @@
+
+makeanim death_generic clip/stable_death.clip 0 17 10
+makeanim idle clip/stable_idle.clip 0 30 5

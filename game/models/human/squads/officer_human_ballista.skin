@@ -1,0 +1,17 @@
+skinName squad1
+skinRef flag01 cloth1.s2g
+
+skinName squad2
+skinRef flag01 cloth2.s2g
+
+skinName squad3
+skinRef flag01 cloth3.s2g
+
+skinName squad4
+skinRef flag01 cloth4.s2g
+
+skinName squad5
+skinRef flag01 cloth5.s2g
+
+skinName squad6
+skinRef flag01 cloth6.s2g

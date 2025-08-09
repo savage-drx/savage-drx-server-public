@@ -1,0 +1,9 @@
+// Mortar
+
+// Third Person Anim Events
+
+makeanim run mortar_third.clip 0 40
+makeanim wpstate_fire mortar_third.clip 1 12
+makeanim idle mortar_third.clip 0 1
+
+// Sound Events

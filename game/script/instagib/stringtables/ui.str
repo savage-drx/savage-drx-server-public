@@ -1,0 +1,15 @@
+textbuffer_notifications_1		obituary_panel:obituaries
+textbuffer_notifications_2		commander_notifications_panel:commander_notifications
+textbuffer_goldgain			player:goldgain
+graphic_money				player:money
+textbuffer_currentweapontext		player:currentweapontext
+panel_player_task			player_task_panel
+graphic_task_left			player_task_panel:task_left_graphic
+graphic_task_right			player_task_panel:task_right_graphic
+textbox_chat_1				player_chat_box_panel:player_input_textbox
+textbox_chat_2				3lobby_panel:lobby_input_textbox
+textbox_chat_3				endgame_chat_box_panel:endgame_input_textbox
+textbox_chat_4				commander_chat_box_panel:commander_input_textbox
+textbox_chat_5				loadout_chat:input
+textbox_chat_6				4lobby_panel:lobby_input_textbox
+textbox_chat_7				5lobby_panel:lobby_input_textbox

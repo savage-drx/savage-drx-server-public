@@ -1,0 +1,13 @@
+beginObjdef blocker dyn_column
+  obj_editorCategory XR_Physics
+  obj_reference 1
+  obj_model models/props/dynamic/stones/column.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_physicsDynamic 1
+  obj_physicsMass 250.0
+  obj_physicsGrab 0
+  obj_physicsThrow 0
+  obj_physicsPush 1
+  obj_physicsClimb 0
+endObjdef dyn_column

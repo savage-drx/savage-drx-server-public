@@ -1,0 +1,4 @@
+skinName flag2
+skinRef flag01 /models/states/cloth2.tga
+skinname flag3
+skinRef flag01 /models/states/cloth3.tga

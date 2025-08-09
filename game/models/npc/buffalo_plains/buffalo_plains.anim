@@ -1,0 +1,190 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle clip/idle.clip 0 0 30 1
+
+// Melee Combat
+
+makeanim melee_1 clip/charge_fwd.clip 0 0 70 1
+makeanim melee_2 clip/charge_fwd.clip 0 0 70 1
+makeanim melee_3 clip/charge_fwd.clip 0 0 70 1
+makeanim melee_4 clip/charge_fwd.clip 0 0 70 1
+
+makeanim bufcharge1 clip/charge_fwd.clip 0 0 70 1
+makeanim bufcharge2 clip/charge_fwd.clip 0 0 70 1
+makeanim bufcharge3 clip/charge_fwd.clip 0 0 70 1
+makeanim bufcharge4 clip/charge_fwd.clip 0 0 70 1
+
+makeanim melee_charge clip/charge_fwd.clip 0 0 70 1
+makeanim melee_release clip/charge_fwd.clip 0 0 70 1
+makeanim melee_move_charge clip/charge_fwd.clip 0 0 70 1
+makeanim melee_move_release clip/charge_fwd.clip 0 0 70 1
+makeanim melee_move_1 clip/charge_fwd.clip 0 0 70 1
+makeanim melee_move_2 clip/charge_fwd.clip 0 0 70 1
+makeanim melee_move_3 clip/charge_fwd.clip 0 0 70 1
+makeanim melee_move_4 clip/charge_fwd.clip 0 0 70 1
+
+// General Character Animation
+
+makeanim walk_left clip/walk_fwd.clip 0 0 45 1
+makeanim walk_right clip/walk_fwd.clip 0 0 45 1
+makeanim walk_fwd clip/walk_fwd.clip 0 0 45 1
+makeanim walk_back clip/walk_fwd.clip 0 0 45 1
+
+makeanim run_left clip/charge_fwd.clip 0 0 70 1
+makeanim run_right clip/charge_fwd.clip 0 0 70 1
+makeanim run_fwd clip/charge_fwd.clip 0 0 70 1
+makeanim run_back clip/charge_fwd.clip 0 0 70 1
+
+makeanim sprint_left clip/charge_fwd.clip 0 0 70 1
+makeanim sprint_right clip/charge_fwd.clip 0 0 70 1
+makeanim sprint_fwd clip/charge_fwd.clip 0 0 70 1
+makeanim sprint_back clip/charge_fwd.clip 0 0 70 1
+
+makeanim wounded_left clip/wounded_left.clip 0 0 30 1
+makeanim wounded_right clip/wounded.clip 0 0 30 1
+makeanim wounded_fwd clip/wounded.clip 0 0 30 1
+makeanim wounded_back clip/wounded.clip 0 0 30 1
+
+makeanim death_generic clip/death_generic.clip 0 0 30 0
+makeanim death_left clip/death_generic.clip 0 0 30 0
+makeanim death_right clip/death_generic.clip 0 0 30 0
+makeanim death_fwd clip/death_generic.clip 0 0 30 0
+makeanim death_back clip/death_generic.clip 0 0 30 0
+
+// Sound & Effect Events
+
+animevent walk_left 10 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_left 30 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_left 50 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_left 70 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+
+animevent walk_right 10 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_right 30 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_right 50 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_right 70 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+
+animevent walk_fwd 10 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_fwd 30 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_fwd 50 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_fwd 70 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+
+animevent walk_back 10 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_back 30 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_back 50 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+animevent walk_back 70 "randsound 8 /sound/general/footsteps/beast/grass_heavy"
+
+animevent run_left 0 "effect buffalo_charge"
+animevent run_left 10 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_left 11 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_left 30 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_left 31 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_left 50 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_left 51 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_left 70 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_left 90 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_left 91 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_left 110 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_left 130 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_left 131 "effect buffalo_charge_dust Bip01 R Hand"
+
+animevent run_right 0 "effect buffalo_charge"
+animevent run_right 10 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_right 11 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_right 30 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_right 31 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_right 50 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_right 51 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_right 70 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_right 71 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_right 90 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_right 91 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_right 110 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_right 111 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_right 130 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_right 131 "effect buffalo_charge_dust Bip01 R Hand"
+
+animevent run_fwd 0 "effect buffalo_charge"
+animevent run_fwd 10 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_fwd 11 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_fwd 30 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_fwd 31 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_fwd 50 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_fwd 51 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_fwd 70 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_fwd 71 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_fwd 90 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_fwd 91 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_fwd 110 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_fwd 111 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_fwd 130 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_fwd 131 "effect buffalo_charge_dust Bip01 R Hand"
+
+animevent run_back 0 "effect buffalo_charge"
+animevent run_back 10 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_back 11 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_back 30 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_back 31 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_back 50 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_back 51 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_back 70 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_back 71 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_back 90 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_back 91 "effect buffalo_charge_dust Bip01 R Hand"
+animevent run_back 110 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent run_back 111 "effect buffalo_charge_dust Bip01 L Foot"
+animevent run_back 130 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent run_back 131 "effect buffalo_charge_dust Bip01 R Hand"
+
+animevent melee_1 0 "sound /sound/npc/snowbeast_attack.wav"
+animevent melee_1 1 "effect buffalo_charge"
+animevent melee_1 10 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_1 11 "effect buffalo_charge_dust Bip01 R Hand"
+animevent melee_1 30 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent melee_1 31 "effect buffalo_charge_dust Bip01 L Foot"
+animevent melee_1 50 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_1 51 "effect buffalo_charge_dust Bip01 R Hand"
+animevent melee_1 70 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent melee_1 71 "effect buffalo_charge_dust Bip01 L Foot"
+animevent melee_1 90 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_1 91 "effect buffalo_charge_dust Bip01 R Hand"
+animevent melee_1 110 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent melee_1 111 "effect buffalo_charge_dust Bip01 L Foot"
+animevent melee_1 130 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_1 131 "effect buffalo_charge_dust Bip01 R Hand"
+
+animevent melee_move_1 0 "sound /sound/npc/snowbeast_attack.wav"
+animevent melee_move_1 1 "effect buffalo_charge"
+animevent melee_move_1 10 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_move_1 11 "effect buffalo_charge_dust Bip01 R Hand"
+animevent melee_move_1 30 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent melee_move_1 31 "effect buffalo_charge_dust Bip01 L Foot"
+animevent melee_move_1 50 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_move_1 51 "effect buffalo_charge_dust Bip01 R Hand"
+animevent melee_move_1 70 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent melee_move_1 71 "effect buffalo_charge_dust Bip01 L Foot"
+animevent melee_move_1 90 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_move_1 91 "effect buffalo_charge_dust Bip01 R Hand"
+animevent melee_move_1 110 "randsound 4 /sound/npc/buffalo_footstep_back"
+animevent melee_move_1 111 "effect buffalo_charge_dust Bip01 L Foot"
+animevent melee_move_1 130 "randsound 3 /sound/npc/buffalo_footstep_front"
+animevent melee_move_1 131 "effect buffalo_charge_dust Bip01 R Hand"
+
+animevent wounded_left 0 "randsound 3 /sound/npc/snowbeast_wounded"
+animevent wounded_right 0 "randsound 3 /sound/npc/snowbeast_wounded"
+animevent wounded_fwd 0 "randsound 3 /sound/npc/snowbeast_wounded"
+animevent wounded_back 0 "randsound 3 /sound/npc/snowbeast_wounded"
+
+animevent death_generic 0 "sound /sound/npc/buffalo_death_moan.wav"
+animevent death_generic 30 "effect buffalo_death_dust"
+animevent death_left 0 "sound /sound/npc/buffalo_death_moan.wav"
+animevent death_left 30 "effect buffalo_death_dust"
+animevent death_right 0 "sound /sound/npc/buffalo_death_moan.wav"
+animevent death_right 30 "effect buffalo_death_dust"
+animevent death_fwd 0 "sound /sound/npc/buffalo_death_moan.wav"
+animevent death_fwd 30 "effect buffalo_death_dust"
+animevent death_back 0 "sound /sound/npc/buffalo_death_moan.wav"
+animevent death_back 30 "effect buffalo_death_dust"

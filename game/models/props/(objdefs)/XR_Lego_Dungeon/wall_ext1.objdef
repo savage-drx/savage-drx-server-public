@@ -1,0 +1,7 @@
+beginObjdef blocker wall_ext1
+  obj_navBridge 1
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/wall_ext1.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef wall_ext1

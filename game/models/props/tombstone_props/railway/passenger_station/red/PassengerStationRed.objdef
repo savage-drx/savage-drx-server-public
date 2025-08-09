@@ -1,0 +1,6 @@
+beginObjdef blocker PassengerStationRed
+  obj_editorCategory Tombstone_Railway
+  obj_model PassengerStation.model
+  obj_editorScaleRangeLo 0.2500
+  obj_editorScaleRangeHi 0.2500
+endObjdef PassengerStationRed

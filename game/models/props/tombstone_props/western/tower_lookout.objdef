@@ -1,0 +1,6 @@
+beginObjdef blocker tower_lookout
+  obj_editorCategory Tombstone_Western
+  obj_model tower_lookout.model
+  obj_editorScaleRangeLo 0.6900
+  obj_editorScaleRangeHi 0.6900
+endObjdef tower_lookout

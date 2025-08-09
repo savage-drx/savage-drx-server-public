@@ -1,0 +1,90 @@
+// syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// common
+
+makeanim idle idle.clip 0 0 20 1
+
+// Melee Combat
+
+makeanim weapon_fire_1 cannon.clip 
+makeanim weapon_fire_2 block.clip 
+makeanim weapon_fire_3 cast.clip 
+makeanim weapon_fire_4 field.clip 
+
+
+makeanim melee_1 melee_1.clip 0 0 40
+makeanim melee_2 melee_2.clip 0 0 35
+makeanim melee_3 clip/ballista.clip
+makeanim melee_4 clip/ballista.clip
+
+//makeanim melee_move_1 melee_1.clip 0 0 54
+makeanim melee_move_1 melee_move_1.clip 0 0 40
+makeanim melee_move_2 melee_move_2.clip 0 0 35
+makeanim melee_move_3 clip/ballista.clip
+makeanim melee_move_4 clip/ballista.clip
+
+makeanim block block.clip
+
+makeanim wounded_left wounded.clip 0 10 60
+makeanim wounded_right wounded.clip 0 10 60
+makeanim wounded_fwd wounded.clip 0 10 60
+makeanim wounded_back wounded.clip 0 10 60
+
+// General Character Animation; Vehicle/mount: 40, 30, 30;
+
+makeanim walk_left run_fwd.clip 0 0 20
+makeanim walk_right run_fwd.clip 0 0 20
+makeanim walk_fwd run_fwd.clip 0 0 20
+makeanim walk_back run_back.clip 0 0 25
+
+makeanim run_left run_fwd.clip 0 0 30
+makeanim run_right run_fwd.clip 0 0 30
+makeanim run_fwd run_fwd.clip 0 0 30
+makeanim run_back run_back.clip 0 0 35
+
+makeanim sprint_left run_fwd.clip 0 0 40
+makeanim sprint_right run_fwd.clip 0 0 40
+makeanim sprint_fwd run_fwd.clip 0 0 40
+makeanim sprint_back run_back.clip 0 0 40
+
+
+makeanim death_generic death.clip 0 30 30 0
+makeanim death_left death.clip 0 30 30 0
+makeanim death_right death.clip 0 30 30 0
+makeanim death_fwd death.clip 0 30 30 0
+makeanim death_back death.clip 0 30 30 0
+
+// Sound Events
+
+animevent weapon_fire_1 0 "sound /models/human/units/mech/cannon1.ogg"
+animevent weapon_fire_2 0 "sound /models/human/units/mech/force_field_10s.mp3"
+animevent weapon_fire_3 4 "sound /models/human/units/mech/wave.mp3"
+animevent weapon_fire_4 0 "sound /models/human/units/mech/force_field_10s.mp3"
+
+animevent run_fwd 18 "sound /models/human/units/mech/mechstepsleft.ogg"
+animevent run_fwd 38 "sound /models/human/units/mech/mechstepsright.ogg"
+
+animevent sprint_fwd 18 "sound /models/human/units/mech/mechstepsleft.ogg"
+animevent sprint_fwd 38 "sound /models/human/units/mech/mechstepsright.ogg"
+
+animevent walk_fwd 18 "sound /models/human/units/mech/mechstepsleft.ogg"
+animevent walk_fwd 38  "sound /models/human/units/mech/mechstepsright.ogg"
+
+animevent walk_back 18 "sound /models/human/units/mech/mechstepsleft.ogg"
+animevent walk_back 38 "sound /models/human/units/mech/mechstepsright.ogg"
+
+animevent walk_left 18 "sound /models/human/units/mech/mechstepsleft.ogg"
+animevent walk_right 38 "sound /models/human/units/mech/mechstepsright.ogg"
+
+animevent run_left 18 "sound /models/human/units/mech/mechstepsleft.ogg"
+animevent run_right 38 "sound /models/human/units/mech/mechstepsright.ogg"
+
+animevent melee_1 0 "sound /models/human/units/mech/melee1a.mp3"
+animevent melee_2 0 "sound /models/human/units/mech/melee2.mp3"
+
+animevent melee_move_1 0 "sound /models/human/units/mech/melee1a.mp3"
+animevent melee_move_2 0 "sound /models/human/units/mech/melee2.mp3"
+
+

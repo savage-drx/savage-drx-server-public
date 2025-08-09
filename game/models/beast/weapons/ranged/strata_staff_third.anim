@@ -1,0 +1,14 @@
+// Frost Bolts
+
+// Third Person Anim Events
+
+makeanim wpstate_fire strata_staff_third.clip 1 2
+makeanim idle strata_staff_third.clip 0 0 0 1
+makeanim wpstate_charge strata_staff_third.clip 0 1
+makeanim wpstate_spinup strata_staff_third.clip 0 1
+
+// Sound Events
+
+
+
+

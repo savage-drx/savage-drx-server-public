@@ -1,0 +1,8 @@
+beginObjdef blocker npc_buffalo_waypoint
+  obj_editorCategory Tombstone_NPCs
+  obj_model null.model
+  obj_invisibleToGame 1
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_reference 1
+endObjdef npc_buffalo_waypoint

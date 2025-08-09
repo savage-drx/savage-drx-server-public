@@ -1,0 +1,6 @@
+beginObjdef blocker doors_small_frame
+  obj_editorCategory XR_Doors
+  obj_model models/props/doors/doors_small_frame.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef doors_small_frame

@@ -1,0 +1,7 @@
+beginObjdef blocker stockade_str_ang
+  obj_editorCategory XR_Catwalks
+  obj_model models/props/wooden/stockade_str_ang.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef stockade_str_ang

@@ -1,0 +1,14 @@
+// Discharger
+
+// Third Person Anim Events
+
+makeanim wpstate_fire discharger_third.clip 13 4
+makeanim idle discharger_third.clip 0 0 0 1
+makeanim wpstate_charge discharger_third.clip 0 12 10
+
+// Sound Events
+
+animevent wpstate_charge 0 "sound /sound/human/weapons/discharger_charge.wav"
+
+
+

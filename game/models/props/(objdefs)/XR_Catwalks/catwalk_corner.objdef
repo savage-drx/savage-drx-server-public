@@ -1,0 +1,7 @@
+beginObjdef blocker catwalk_corner
+  obj_editorCategory XR_Catwalks
+  obj_model models/props/wooden/catwalk_corner.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef catwalk_corner

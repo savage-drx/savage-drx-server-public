@@ -1,0 +1,11 @@
+//generic command center starting point.  can be used for both humans and beasts
+
+beginObjdef blocker command_center
+  obj_editorCategory Reference_Objects
+  obj_model /models/human/buildings/stronghold.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.75
+  obj_editorScaleRangeHi 0.75
+  obj_navFloodFillPoint 1
+  obj_reference 1
+endObjdef command_center

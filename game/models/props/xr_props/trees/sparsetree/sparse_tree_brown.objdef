@@ -1,0 +1,8 @@
+beginObjdef blocker sparse_tree_brown_xr
+  obj_editorCategory XR_Nature
+  obj_model sparse_tree_brown.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef sparse_tree_brown_xr

@@ -1,0 +1,11 @@
+//first person view weapon animations
+makeanim idle mistshroud.clip 0 74 30 1 
+makeanim wpstate_switch mistshroud.clip
+makeanim wpstate_charge mistshroud.clip 
+makeanim wpstate_spinup mistshroud.clip 
+makeanim wpstate_spindown mistshroud.clip
+makeanim wpstate_overheat mistshroud.clip
+makeanim wpstate_fire mistshroud.clip 75 24
+
+animevent wpstate_fire 0 "sound /sound/human/weapons/regen_throw.wav"
+animevent wpstate_charge 9 "sound /sound/human/weapons/regen_pull.wav"

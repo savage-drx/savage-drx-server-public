@@ -1,0 +1,13 @@
+//Dynamic Sawmill Prop
+
+beginObjdef blocker sawmill_small
+  obj_editorCategory Reference_Objects
+  obj_model sawmill.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.4725
+  obj_editorScaleRangeHi 0.4725
+  obj_reference 1
+  obj_sound /sound/general/buildings/sawmill_idle.ogg
+  obj_soundVolume 0.8
+  obj_soundMinFalloff 100
+endObjdef sawmill_small

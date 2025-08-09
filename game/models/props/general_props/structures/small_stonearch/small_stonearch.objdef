@@ -1,0 +1,8 @@
+beginObjdef blocker small_stonearch
+  obj_editorCategory General_Structures
+  obj_model small_stonearch.model
+  obj_skin small_stonearch.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef small_stonearch

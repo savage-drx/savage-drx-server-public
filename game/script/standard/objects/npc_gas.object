@@ -1,0 +1,142 @@
+objSet objclass "weapon"
+objSet description "Shrull Gas Cloud"
+objSet race "race0"
+objSet model ""
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet handModel ""
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 7.000000
+objSet projectileEffect ""
+objSet trailEffect "shrull_gas"
+objSet trailPeriod 10 10
+objSet flybyEffect ""
+objSet icon ""
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip ""
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 0
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet techType ""
+objSet ammoName ""
+objSet velocity 150.000000 150.000000
+objSet vertVelocity 0.000000 0.000000
+objSet count 1 1
+objSet accuracy 1.000000
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags +velocity -damage +range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 200
+objSet fireDelay 0
+objSet backfireTime 0
+objSet ammoMax 1
+objSet ammoStart -1
+objSet ammoGroup 0
+objSet ammoCost 0
+objSet twangAmount 0.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 1000.000000
+objSet gravity 0.000000
+objSet bounce 0.600000
+objSet accelerate -300.000000
+objSet fuseTime 200 200
+objSet muzzleRightOffset 3.000000
+objSet muzzleFwdOffset 3.000000
+objSet muzzleUpOffset -2.500000
+objSet weapPointValue 1
+objSet startFuseAtCharge 0
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "bounce"
+objSet damage 90
+objSet radius 15.000000 15.000000
+objSet unitpierce 1.000000
+objSet bldpierce 0.20000
+objSet siegepierce 0.300000
+objSet repeat 1
+objSet continuous 0
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 1.000000
+objSet focusDegraderate 0.500000
+objSet focusRecoverRate 0.500000
+objSet animGroup 1
+objSet inheritVelocity 1
+objSet cost NULL 0
+objSet cost stone 0
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 0
+objSet playerCost 0
+objSet attachBone "_boneHair"
+objSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event +no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 0
+objSet manaCost 0
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 0.000000
+objSet fullHealth 0
+objSet weapon ""
+objSet scanRange 0.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 1
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "flyby_ballista"
+objSet weaponFireEffect ""
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet projectileSound "/sound/human/items/smoke_loop.wav"
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

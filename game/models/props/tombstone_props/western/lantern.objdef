@@ -1,0 +1,7 @@
+beginObjdef blocker lantern
+  obj_editorCategory Tombstone_Western
+  obj_model lantern.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef lantern

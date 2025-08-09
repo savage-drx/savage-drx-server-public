@@ -1,0 +1,8 @@
+beginObjdef blocker cattail_reeds
+  obj_editorCategory Tombstone_Nature
+  obj_model cattail_reeds.model
+  obj_skin 
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.000000
+  obj_isNature 1
+endObjdef cattail_reeds

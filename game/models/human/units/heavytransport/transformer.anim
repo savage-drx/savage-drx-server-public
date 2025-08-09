@@ -1,0 +1,43 @@
+// Transformer
+
+makeanim idle roll.clip 0 1 1 1
+makeanim death_generic death.clip 0 11 30
+
+makeanim walk_left roll.clip 0 30 20 1
+makeanim walk_right roll.clip 0 30 20 1
+makeanim walk_fwd roll.clip 0 30 20 1
+makeanim walk_back roll.clip 0 30 20 1
+
+// Anim Events
+
+animevent walk_fwd 0 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 1 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 2 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 3 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 4 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 5 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 6 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 7 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 8 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 9 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 10 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 11 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 12 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 13 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 14 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 15 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 16 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 17 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 18 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 19 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 20 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 21 "effect exhaust_fumes Exhaust Tip"
+animevent walk_fwd 22 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 23 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 24 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 25 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 26 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 27 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 28 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 29 "effect exhaust_fumes Exhaust Tip" 
+animevent walk_fwd 30 "effect exhaust_fumes Exhaust Tip" 

@@ -1,0 +1,55 @@
+// Syntax:
+
+// makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+// Common
+
+makeanim idle monkit.clip 0 131 30 1
+
+// Melee Combat
+
+makeanim melee_1 monkit.clip 246 46 30 0
+
+makeanim melee_move_1 monkit.clip 246 46 30 0
+
+makeanim block clip/block.clip
+
+// General Character Animation
+
+makeanim walk_left monkit.clip 172 25 30 1
+makeanim walk_right monkit.clip 197 25 30 1
+makeanim walk_fwd monkit.clip 132 39 45 1
+makeanim walk_back monkit.clip 132 39 45 1
+
+makeanim run_left monkit.clip 132 39 45 1
+makeanim run_right monkit.clip 132 39 45 1
+makeanim run_fwd monkit.clip 132 39 45 1
+makeanim run_back monkit.clip 132 39 45 1
+
+makeanim wounded_left monkit.clip 292 20 30 1
+makeanim wounded_right monkit.clip 292 20 30 1
+makeanim wounded_fwd monkit.clip 292 20 30 1
+makeanim wounded_back monkit.clip 292 20 30 1
+
+makeanim death_generic monkit.clip 312 63 30 0
+makeanim death_left monkit.clip 312 63 30 0
+makeanim death_right monkit.clip 312 63 30 0
+makeanim death_fwd monkit.clip 312 63 30 0
+makeanim death_back monkit.clip 312 63 30 0
+
+// Sound Events
+
+animevent melee_1 0 "randsound 3 /sound/npc/monkit_attack"
+
+animevent melee_move_1 0 "randsound 3 /sound/npc/monkit_attack"
+
+animevent wounded_left 0 "randsound 3 /sound/npc/monkit_wounded"
+animevent wounded_right 0 "randsound 3 /sound/npc/monkit_wounded"
+animevent wounded_fwd 0 "randsound 3 /sound/npc/monkit_wounded"
+animevent wounded_back 0 "randsound 3 /sound/npc/monkit_wounded"
+
+animevent death_generic 0 "sound /sound/npc/monkit_attack_2.wav"
+animevent death_left 0 "sound /sound/npc/monkit_attack_2.wav"
+animevent death_right 0 "sound /sound/npc/monkit_attack_2.wav"
+animevent death_fwd 0 "sound /sound/npc/monkit_attack_2.wav"
+animevent death_back 0 "sound /sound/npc/monkit_attack_2.wav"

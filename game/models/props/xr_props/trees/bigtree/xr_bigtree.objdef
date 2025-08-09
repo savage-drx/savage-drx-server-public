@@ -1,0 +1,8 @@
+beginObjdef blocker bigtree_hi-poly_xr
+  obj_editorCategory XR_Nature
+  obj_model xr_bigtree.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.700000
+  obj_editorScaleRangeHi 1.300000
+  obj_isNature 1
+endObjdef bigtree_hi-poly_xr

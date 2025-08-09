@@ -1,0 +1,8 @@
+beginObjdef blocker savage_logo_chains
+  obj_navBridge 1
+  obj_editorCategory XR_Wood_Props
+  obj_model models/props/wooden/savage_logo_chains.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef savage_logo_chains

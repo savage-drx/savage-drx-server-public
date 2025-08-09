@@ -1,0 +1,25 @@
+makeanim death_generic clip/goldmine.clip 0 70 25 0
+
+//Sound Events
+animevent death_generic 0 "sound /sound/effects/bridge_collapse.ogg"
+animevent death_generic 10 "sound /sound/effects/fire_2.ogg"
+animevent death_generic 20 "sound /sound/effects/fire_2.ogg"
+animevent death_generic 45 "sound /sound/effects/fire_2.ogg"
+animevent death_generic 65 "sound /sound/effects/fire_2.ogg"
+
+//Anim Effects
+animevent death_generic 0 "effect mine_death _boneParticles"
+animevent death_generic 5 "effect mine_death _boneParticles"
+animevent death_generic 10 "effect mine_death _boneParticles"
+animevent death_generic 12 "effect mine_death _boneParticles"
+animevent death_generic 20 "effect mine_death _boneParticles"
+animevent death_generic 25 "effect mine_death _boneParticles"
+animevent death_generic 30 "effect mine_death _boneParticles"
+animevent death_generic 35 "effect mine_death _boneParticles"
+animevent death_generic 40 "effect mine_death _boneParticles"
+animevent death_generic 45 "effect mine_death _boneParticles"
+animevent death_generic 50 "effect mine_death _boneParticles"
+animevent death_generic 55 "effect mine_death _boneParticles"
+animevent death_generic 60 "effect mine_death _boneParticles"
+animevent death_generic 65 "effect mine_death _boneParticles"
+animevent death_generic 70 "effect mine_death _boneParticles"

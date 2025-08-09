@@ -1,0 +1,67 @@
+objSet objclass "dynamic"
+objSet description "Stone Column"
+objSet race "race0"
+objSet drawTeamIcon 0
+objSet model "models/props/dynamic/stones/column.model"
+objSet skin "default"
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet icon ""
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip ""
+objSet selectionSound ""
+objSet gridmenu "/gridmenus/layout_default.cfg"
+objSet proximityMessage ""
+objSet proximitySound ""
+objSet proximity 100.000000
+objSet techType "NULL"
+objSet accuracy 1.000000
+objSet refreshTime 500
+objSet viewHeight 25.000000
+objSet maxPopulation 0
+objSet fullHealth 1
+objSet weapon ""
+objSet radiusState "state0"
+objSet targetProjectiles 0
+objSet isMine 0
+objSet isClaimable 0
+objSet mineType ""
+objSet mineAmount 100000
+objSet dropoff 0
+objSet commandCenter 0
+objSet spawnFrom 0
+objSet canEnter 0
+objSet scanRange 0.000000
+objSet healthStage1 25
+objSet healthStage2 50
+objSet healthStage3 75
+objSet healthStage1Effect ""
+objSet healthStage2Effect ""
+objSet healthStage3Effect ""
+objSet healthStage1Period 500 500
+objSet healthStage2Period 500 500
+objSet healthStage3Period 500 500
+objSet linked 0
+objSet selfBuild 0
+objSet canBeRepaired 1
+objSet lifeSpan 0
+objSet anchorRange 0.000000
+objSet needsAnchor 0
+objSet expMult 1.000000
+objSet thornDamage 0
+objSet shiftProjAccel 0.000000
+objSet shiftProjGrav 0.000000
+objSet alwaysWaypoint 0
+objSet isVulnerable 1
+objSet meleeOnlyVulnerable 0
+objSet revealHidden 0
+objSet motionEffect "boulder_motion"
+objSet motionEffectPeriod 1000
+objSet motionEffectThresh 15
+objSet collideEffect "collision_stone"
+objSet collideEffectPeriod 500

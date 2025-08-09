@@ -1,0 +1,16 @@
+// Sacrifice
+
+// First Person Anim Events
+
+makeanim idle sacrifice.clip 0 74 
+makeanim wpstate_switch sacrifice.clip
+makeanim wpstate_charge sacrifice.clip 
+makeanim wpstate_spinup sacrifice.clip 
+makeanim wpstate_spindown sacrifice.clip
+makeanim wpstate_overheat sacrifice.clip
+makeanim wpstate_fire sacrifice.clip 75 24
+
+// Sound Events
+
+animevent wpstate_fire 5 "sound /sound/beast/items/sacrifice_charge.wav"
+

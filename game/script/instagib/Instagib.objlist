@@ -1,0 +1,120 @@
+/////////
+//human
+//
+
+//buildings
+objload human_stronghold
+objload human_stronghold2
+objload human_stronghold3
+
+//items
+objload human_motion_sensor
+objload human_relocater
+objload human_relocater_trigger
+
+//units
+objload human_nomad
+
+//weapons
+objload human_coilrifle
+objload human_nomad_melee
+
+/////////
+//beast
+//
+
+
+//items
+objload beast_tracking_sense
+objload beast_camouflage
+
+
+//////////////////////
+//non-race-specific
+//
+
+
+//npc
+//
+objload npc_kongor
+objload npc_hornman
+objload npc_hunchedbeast
+objload npc_chiprel
+objload npc_monkit
+objload npc_mudent
+objload npc_oschore
+objload npc_gerkat
+objload npc_bearloth
+objload npc_zizard
+
+// npc weapons
+//
+objload npc_boulder
+
+
+//spawnpoints
+//
+objload spawnflag
+
+
+// dynamic props
+objload pot_explode
+objload pot_tumble
+objload ruins_frontgate
+objload wall_prop
+
+
+// physics engine props
+objload dyn_boulder
+objload dyn_column
+objload dyn_ladder
+objload dyn_plank_short
+objload dyn_plank_long
+objload dyn_wood_panel
+objload dyn_barrel
+objload dyn_crate
+objload dyn_crate_box_plain
+objload dyn_crate_open_peaches
+objload dyn_crate_open_plain
+objload dyn_crate_rect_plain
+
+
+//goodie bag!
+objload goodiebag
+objload ammo_box
+objload mana_stone
+
+
+//XR content
+objload npc_lucy
+objload npc_shrull
+objload npc_gas
+
+
+//tombstone content
+objload barrel_explode
+objload lumber_pile_2500
+objload lumber_pile_2500_stand
+objload lumber_pile_7500
+objload lumber_pile_15000
+objload npc_buffalo_plains
+objload npc_buffalo_snow
+objload npc_buffalo_waypoint
+objload stables
+objload foundry
+objload infirmary
+objload sawmill
+objload sawmill_small
+objload whiskeygulch_bridge
+objload npc_terror
+objload npc_mercenary
+objload npc_berserker
+objload npc_skeleton_guard
+objload npc_skeleton_worker
+
+
+//evolution additions
+objload human_outpost
+objload beast_burrow
+objload health_vial
+objload stamina_stone

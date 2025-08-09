@@ -1,0 +1,6 @@
+beginObjdef blocker mossrock_flat
+  obj_editorCategory General_Nature
+  obj_model mossrock_flat.model
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.300000
+endObjdef mossrock_flat

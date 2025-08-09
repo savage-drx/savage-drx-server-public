@@ -1,0 +1,11 @@
+//nav flood fill point
+
+beginObjdef blocker navFloodFillPoint
+  obj_editorCategory Reference_Objects
+  obj_model models/waypointflag/waypointflag.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+  obj_navFloodFillPoint 1
+  obj_reference 1
+endObjdef navFloodFillPoint

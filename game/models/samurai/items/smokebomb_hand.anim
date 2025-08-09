@@ -1,0 +1,15 @@
+// Smoke Bomb
+
+// First Person Anim Events
+
+makeanim idle smokebomb_hand.clip 0 1 30 1
+makeanim wpstate_switch smokebomb_hand.clip
+makeanim wpstate_charge smokebomb_hand.clip 16 22
+makeanim wpstate_spinup smokebomb_hand.clip 1 15
+makeanim wpstate_spindown smokebomb_hand.clip
+makeanim wpstate_overheat smokebomb_hand.clip
+makeanim wpstate_fire smokebomb_hand.clip 38 7 18
+
+// Sound Events
+
+animevent wpstate_fire 0 "sound /sound/human/items/disrupter_throw.wav"

@@ -1,0 +1,15 @@
+// Bow
+
+// First Person Anim Events
+
+makeanim idle mbow.clip 62 20 15 1
+makeanim wpstate_switch bow.clip
+makeanim wpstate_charge bow.clip 7 30
+makeanim wpstate_spinup bow.clip 0 6
+makeanim wpstate_spindown bow.clip
+makeanim wpstate_overheat bow.clip
+makeanim wpstate_fire bow.clip 38 23
+
+// Sound Events
+
+animevent wpstate_spinup 4 "sound /sound/human/weapons/bow_pull.wav"

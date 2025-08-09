@@ -1,0 +1,13 @@
+// Coilrifle
+
+// First Person Anim Events
+
+makeanim idle coilrifle.clip 51 0
+makeanim wpstate_fire coilrifle.clip 0 50
+
+// Added for Coil Mark II
+
+makeanim wpstate_overheat coilrifle.clip 10 50
+makeanim wpstate_spindown coilrifle.clip 10 50
+
+// Sound Events

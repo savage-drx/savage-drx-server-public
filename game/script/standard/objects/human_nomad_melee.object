@@ -1,0 +1,78 @@
+objSet objclass "melee"
+objSet description "Hatchet"
+objSet race "human"
+objSet drawTeamIcon 0
+objSet model ""
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet icon "/models/human/weapons/melee/icons/hatchet"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "Nomad weapon"
+objSet builder1 ""
+objSet builder2 ""
+objSet requirement1 ""
+objSet requirement2 ""
+objSet needTechPoints 0
+objSet needBasePoints 0
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 1
+objSet techType "NULL"
+objSet weapPointValue 0
+objSet attachBone ""
+objSet attachBone2 ""
+objSet useDefaultMeleeModel 1
+objSet damage 80
+objSet useAltMelee 0
+objSet blockStunTime 650
+objSet cost NULL 0
+objSet cost stone 0
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 0
+objSet playerCost -1
+objSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event -no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 0
+objSet manaCost 0
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 1.000000
+objSet canBlock 1
+objSet fullHealth 100
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet spawnEffect ""
+objSet deathEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""

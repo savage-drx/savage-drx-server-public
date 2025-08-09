@@ -1,0 +1,6 @@
+beginObjdef blocker ohitsu
+  obj_editorCategory Samurai_Objects
+  obj_model ohitsu.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef ohitsu

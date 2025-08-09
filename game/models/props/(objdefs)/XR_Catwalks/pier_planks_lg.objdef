@@ -1,0 +1,7 @@
+beginObjdef blocker pier_planks_lg
+  obj_editorCategory XR_Catwalks
+  obj_model models/props/wooden/pier_planks_lg.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef pier_planks_lg

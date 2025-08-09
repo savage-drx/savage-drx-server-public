@@ -1,0 +1,8 @@
+// Fluxgun
+
+// First Person Anim Events
+
+makeanim idle fluxgun.clip 0 0 0 0
+makeanim wpstate_fire fluxgun.clip 2 22 35 1
+
+// Sound Events

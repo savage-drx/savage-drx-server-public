@@ -1,0 +1,6 @@
+beginObjdef blocker light_1rnd2sqr2
+  obj_editorCategory XR_Log_Cottages
+  obj_model models/props/cottages/light_1rnd2sqr2.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef light_1rnd2sqr2

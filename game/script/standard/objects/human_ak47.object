@@ -1,0 +1,150 @@
+objSet objclass "weapon"
+objSet description "AK-47"
+objSet race "race0"
+objSet shopIdOnly -2
+//objSet playerCost -1
+objSet playerCost 666
+objSet drawTeamIcon 1
+objSet model "/models/savageheroes/items/ak47_3rd.model"
+objSet skin ""
+objSet shader ""
+objSet effect ""
+objSet scale 1.000000
+objSet yaw 0.000000 0.000000
+objSet pitch 0.000000 0.000000
+objSet roll 0.000000 0.000000
+objSet handModel "/models/savageheroes/items/ak47_1st.model"
+objSet handSkin ""
+objSet handEffect ""
+objSet projectileModel ""
+objSet projectileSkin ""
+objSet projectileShader ""
+objSet projectileScale 1.000000
+objSet projectileRadius 0.000000
+objSet projectileEffect ""
+//objSet trailEffect "repeater_trail"
+objSet trailPeriod 200 200
+objSet flybyEffect "flyby_bullet"
+objSet icon "/models/savageheroes/items/ak47_icon"
+objSet selectionIcon ""
+objSet mapIcon ""
+objSet tooltip "This ancient technology was unearthed by accident, but it was quickly replicated once the weapon's reliability and firepower became obvious."
+objSet builder1 "human_arsenal"
+objSet builder2 ""
+objSet requirement1 "human_magnetic_factory"
+objSet requirement2 "human_scattergun"
+objSet needTechPoints 0
+objSet needBasePoints 2
+objSet techPointValue 0
+objSet basePointValue 0
+objSet alwaysAvailable 0
+objSet canBeSilenced 1
+objSet techType "magnetic"
+objSet ammoName "7.62 Rounds"
+objSet velocity 2000.000000 2000.000000
+objSet vertVelocity 0.000000 0.000000
+objSet count 1 1
+objSet accuracy 0.950000
+objSet chargeFlags -velocity -damage -range -accuracy -fusetime -blastradius -blastdamage -count -inverse 
+objSet heatFlags -velocity -damage -range +accuracy -fusetime -blastradius -blastdamage -count +inverse 
+objSet chargeTime 0
+objSet spinupTime 0
+objSet spindownTime 0
+objSet cooldownTime 0
+objSet overheatTime 0
+objSet refreshTime 120
+objSet fireDelay 0
+objSet backfireTime 500
+objSet ammoMax 30
+objSet ammoStart 30
+objSet ammoGroup 10
+objSet ammoCost 15
+objSet twangAmount 2.000000
+objSet twangTime 0.200000
+objSet twangPingPong 1
+objSet minVelocity 0.000000
+objSet maxVelocity 0.000000
+objSet gravity 0.000000
+objSet bounce 0.000000
+objSet accelerate 0.000000
+objSet fuseTime 0 0
+objSet muzzleRightOffset 2.500000
+objSet muzzleFwdOffset 3.000000
+objSet muzzleUpOffset -3.000000
+objSet weapPointValue 1
+objSet startFuseAtCharge 0
+objSet hitBuilding "die"
+objSet hitUnit "die"
+objSet hitWorld "die"
+objSet damage 32
+objSet radius 0.000000 0.000000
+objSet unitpierce 1.00000
+objSet bldpierce 0.200000
+objSet siegepierce 1.000000
+objSet repeat 1
+objSet continuous 0
+objSet continuousBeamShader ""
+objSet continuousBeamType 0
+objSet minfov 90.000000
+objSet focusPenalty 0.800000
+objSet focusDegraderate 0.2000000
+objSet focusRecoverRate 0.300000
+objSet animGroup 1
+objSet inheritVelocity 0
+objSet cost NULL 0
+objSet cost stone 300
+objSet cost gold 0
+objSet cost electric 0
+objSet cost magnetic 0
+objSet cost chemical 0
+objSet cost fire 0
+objSet cost strata 0
+objSet cost entropy 0
+objSet researchTime 30000
+objSet attachBone "_boneRangedR"
+objSet damageFlags -no_knockback -no_air -no_ground -no_block -self_none -self_half -no_falloff -no_structures -quake_event +no_reaction -strip_states -explosive -burning -electrical 
+objSet useMana 0
+objSet manaCost 0
+objSet transferHealth 0.000000
+objSet staminaDrain 0.000000
+objSet speedPenalty 0.900000
+objSet fullHealth 0
+objSet weapon ""
+objSet scanRange 0.000000
+objSet expMult 1.000000
+objSet alwaysWaypoint 0
+objSet maxHold 1
+objSet isVulnerable 1
+objSet isSelectable 1
+objSet spawnEffect ""
+objSet deathEffect "weapon_repeater_impact"
+objSet weaponFireEffect "weapon_ak47_fire"
+objSet bounceEffect ""
+objSet stopEffect ""
+objSet backfireEffect ""
+objSet projectileSound ""
+objSet constructionSound ""
+objSet idleSound ""
+objSet walkLeftSound ""
+objSet walkRightSound ""
+objSet walkFwdSound ""
+objSet walkBackSound ""
+objSet runLeftSound ""
+objSet runRightSound ""
+objSet runFwdSound ""
+objSet runBackSound ""
+objSet sprintLeftSound ""
+objSet sprintRightSound ""
+objSet sprintFwdSound ""
+objSet sprintBackSound ""
+objSet wpIdleSound ""
+objSet wpChargeSound ""
+objSet wpSpinupSound ""
+objSet wpOverheatSound ""
+objSet wpFiringSound ""
+objSet itemSleepSound ""
+objSet itemActiveSound ""
+
+// XR Additions
+objset canpickup 1
+objset pickupGive human_repeater

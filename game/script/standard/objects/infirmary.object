@@ -1,0 +1,17 @@
+objSet objclass "building"
+objSet description "Infirmary"
+objSet race "race0"
+objSet model "/models/props/tombstone_props/western/infirmary.model"
+objSet skin "default"
+objSet tooltip "The mercenaries' horses stay here, ready to go at any time."
+objSet proximityMessage ""
+objSet techPointValue 1
+objSet techType "stone"
+objSet viewHeight 25.000000
+objSet fullHealth 100000
+objSet radiusState ""
+objSet isClaimable 1
+objSet isVulnerable 0
+objSet radiusState "infirmary_heal"
+objset scanrange 175
+objSet drawHealth 0

@@ -1,0 +1,6 @@
+beginObjdef blocker iceplane
+  obj_editorCategory XR_Various
+  obj_model models/props/xr_props/misc/iceplane.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+endObjdef iceplane

@@ -1,0 +1,6 @@
+beginObjdef blocker aztec_wall_stairs
+  obj_editorCategory XR_Aztec
+  obj_model models/props/xr_props/aztec/aztec_wall_stairs.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+endObjdef aztec_wall_stairs

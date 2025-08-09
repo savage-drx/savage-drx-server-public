@@ -1,0 +1,11 @@
+//first person view weapon animations
+makeanim idle snare.clip 58 74 30 1 
+makeanim wpstate_switch snare.clip
+makeanim wpstate_charge snare.clip 7 30
+makeanim wpstate_spinup snare.clip 0 6
+makeanim wpstate_spindown snare.clip
+makeanim wpstate_overheat snare.clip
+makeanim wpstate_fire snare.clip 38 23
+
+animevent wpstate_fire 0 "sound /sound/human/weapons/regen_throw.wav"
+animevent wpstate_charge 9 "sound /sound/human/weapons/regen_pull.wav"

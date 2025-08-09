@@ -1,0 +1,147 @@
+//voice chat config for beast commander
+
+//voice chats are specified first by issuing a category name, then listing individual items
+
+//syntax:
+//voiceCategory <Number> <Description>
+//voiceItem <Number> <Description>
+//voiceSound <WavFile> <ChatText>
+//voiceMore <Number> <Description> <CategoryNumber>
+//voiceFlag <team | global>
+
+//voiceSound may be specified up to 4 times for the same item (for multiple versions of the same voice chat)
+//voiceItem can be specified up to 10 times per voiceCategory
+//voiceMore allows sub menus to be specified
+//voiceFlag specifies team or global chat
+
+
+voiceCommander beast		//specifies that this is the commander voice chat menu belonging to the beast race
+
+voiceDirectory sound/beast/commander	//base directory to look for WAV files (specify once per file)
+
+//
+// GENERAL ORDERS
+//
+
+voiceCategory 1
+
+voiceItem 1 "Destroy the Enemy Lair" 
+voiceSound destroy_lair_1.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_2.ogg "Destroy the Enemy Lair"
+voiceSound destroy_lair_3.ogg "Destroy the Enemy Lair"
+
+voiceItem 2 "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_1.ogg "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_2.ogg "Destroy the enemy Stronghold"
+voiceSound destroy_stronghold_3.ogg "Destroy the enemy Stronghold"
+
+voiceItem 3 "Capture the spawn flag"
+voiceSound capture_flag_1.ogg "Capture the Spawn Flag"
+voiceSound capture_flag_2.ogg "Capture the Spawn Flag"
+
+voiceItem 4 "Return to base"
+voiceSound return_base_1.ogg "Return to base"
+voiceSound return_base_2.ogg "Return to base"
+voiceSound return_base_3.ogg "Return to base"
+
+voiceItem 5 "Scout for resources" 
+voiceSound scout_resources_1.ogg "Scout for resources"
+voiceSound scout_resources_2.ogg "Scout for resources"
+
+voiceItem 6 "Scout for enemies" 
+voiceSound scout_enemies_1.ogg "Scout for enemies"
+voiceSound scout_enemies_2.ogg "Scout for enemies"
+
+voiceItem 7 "We need more gold"
+voiceSound need_gold_1.ogg "We need more Gold"
+voiceSound need_gold_2.ogg "We need more Gold"
+
+voiceItem 8 "We need more redstone"
+voiceSound need_redstone_1.ogg "We need more Redstone"
+voiceSound need_redstone_2.ogg "We need more Redstone"
+
+voiceItem 9 "Cancel orders"
+voiceSound nevermind_1.ogg "Nevermind"
+voiceSound nevermind_2.ogg "Nevermind"
+voiceSound nevermind_3.ogg "Nevermind"
+voicesound disregard_order_1.ogg "Disregard that order"
+voicesound disregard_order_2.ogg "Disregard that order"
+
+voiceMore 0 "More Orders" 2
+
+//
+// MORE ORDERS
+//
+
+voiceCategory 2
+
+voiceItem 1 "Deploy Fire Wards"
+voiceSound deploy_firewards_1.ogg "Deploy Fire Wards"
+voiceSound deploy_firewards_2.ogg "Deploy Fire Wards"
+
+voiceItem 2 "Clear the enemy Mine field"
+voiceSound clear_minefield_1.ogg "Clear the enemy Mine field"
+voiceSound clear_minefield_2.ogg "Clear the enemy Mine field"
+
+voiceItem 3 "Clear the enemy Fire Wards"
+voiceSound clear_firewards_1.ogg "Clear the enemy Fire Wards"
+voiceSound clear_firewards_2.ogg "Clear the enemy Fire Wards"
+
+voiceItem 4 "Reminder"
+voiceSound gave_command_1.ogg "I gave you a command"
+voiceSound fool_obey_2.ogg "Fool, obey my command"
+voiceSound obey_order_1.ogg "Obey my order"
+voiceSound must_obey_2.ogg "You must obey my order!"
+voiceSound gave_command_2.ogg "I gave you a command"
+voiceSound other_way_2.ogg "No... the other way!"
+voiceSound must_obey_1.ogg "You must obey my order!"
+
+voiceItem 5 "To battle!"
+voiceSound ../worker/to_battle_1.ogg "To battle!"
+voiceSound ../worker/to_battle_1.ogg "To battle!"
+
+//
+// MISC COMMUNICATION
+//
+
+voiceCategory 3
+
+voiceItem 1 "Thank you"
+voiceSound thank_you_1.ogg "Thank you"
+voiceSound thank_you_2.ogg "Thank you"
+
+voiceItem 2 "Wait for my command!"
+voiceSound wait_command_2.ogg "Wait for my command!"
+voiceSound wait_command_1.ogg "Wait for my command!"
+voiceSound wait_command_2.ogg "Wait for my command!"
+
+voiceItem 3 "Report your situation"
+voiceSound report_situation_1.ogg "Report your situation"
+
+voiceItem 4 "Well done"
+voiceSound well_done_1.ogg "Well done"
+voiceSound well_done_2.ogg "Well done"
+voiceSound well_done_3.ogg "Well done"
+voiceSound well_done_4.ogg "Excellent work"
+voiceSound well_done_5.ogg "Excellent work"
+
+voiceItem 5 "We're being attacked!"
+voiceSound ../worker/being_attacked_1.ogg "We're being attacked!"
+voiceSound ../worker/being_attacked_2.ogg "We're being attacked!"
+
+voiceItem 6 "Depends on you"
+voiceSound horde_depends_1.ogg "The survival of the horde depends on you"
+voiceSound horde_depends_2.ogg "The survival of the horde depends on you"
+
+//
+// MAIN
+//
+
+//each voice config must have a 0 category set in order to display the initial voice chat menu
+
+voiceCategory 0
+
+voiceMore 1 "General Orders" 1
+voiceMore 2 "Misc Communication" 3
+voiceMore 3 "More Orders" 2
+

@@ -1,0 +1,6 @@
+beginObjdef blocker wood_wheel_thin
+  obj_editorCategory XR_Modular
+  obj_model models/props/wooden/woden_wheel_thin.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef wood_wheel_thin

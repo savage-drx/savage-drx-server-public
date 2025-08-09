@@ -1,0 +1,8 @@
+beginObjdef blocker snowtunnel
+  obj_editorCategory General_Structures
+  obj_model snowtunnel.model
+  obj_skin snowtunnel.skin
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef snowtunnel

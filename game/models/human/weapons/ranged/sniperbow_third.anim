@@ -1,0 +1,15 @@
+// Marksman Bow
+
+// Third Person Anim Events
+
+makeanim wpstate_idle sniperbow_third.clip 141 21 10 1
+makeanim wpstate_switch sniperbow_third.clip 141 21 10 1
+makeanim wpstate_charge sniperbow_third.clip 41 43 
+makeanim wpstate_spinup sniperbow_third.clip 0 40
+makeanim wpstate_spindown clip/wpstate_spindown.clip
+makeanim wpstate_overheat clip/wpstate_overheat.clip
+makeanim wpstate_fire sniperbow_third.clip 88 32
+
+// Sound Events
+
+animevent wpstate_spinup 0 "sound /sound/human/weapons/marksmanbow_pull.wav"

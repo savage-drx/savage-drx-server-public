@@ -1,0 +1,22 @@
+// Catapult
+
+// Anim Events
+
+makeanim idle catapult.clip 0 1 30 1
+makeanim death_generic catapult.clip 120 31 20
+makeanim weapon_fire_1 catapult.clip 30 60 20
+
+makeanim walk_left catapult.clip 90 31 20 1
+makeanim walk_right catapult.clip 90 31 20 1
+makeanim walk_fwd catapult.clip 90 30 20 1
+makeanim walk_back catapult.clip 0 21 15 1
+
+makeanim run_left catapult.clip 90 31 20 1
+makeanim run_right catapult.clip 90 31 20 1
+makeanim run_fwd catapult.clip 90 31 20 1
+makeanim run_back catapult.clip 0 21 15 1
+
+// Sound Events
+
+animevent weapon_fire_1 4 "sound /sound/human/weapons/catapult_fire.wav"
+animevent weapon_fire_1 20 "sound /sound/human/weapons/catapult_reload.wav"

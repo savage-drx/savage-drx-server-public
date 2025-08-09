@@ -1,0 +1,7 @@
+beginObjdef blocker wood_beam_int_surf
+  obj_navBridge 1
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/wood_beam_int_surf.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef wood_beam_int_surf

@@ -1,0 +1,94 @@
+//common
+
+makeanim idle clip/peasant_idle.clip
+
+//melee combat
+
+makeanim melee_1 clip/peasant_build.clip
+makeanim melee_2 clip/peasant_build.clip
+makeanim melee_3 clip/peasant_build.clip
+makeanim melee_4 clip/peasant_build.clip
+makeanim melee_charge clip/peasant_build.clip
+makeanim melee_release clip/peasant_build.clip
+
+makeanim melee_move_1 clip/peasant_build.clip
+makeanim melee_move_2 clip/peasant_build.clip
+makeanim melee_move_3 clip/peasant_build.clip
+makeanim melee_move_4 clip/peasant_build.clip
+makeanim melee_move_charge clip/peasant_build.clip
+makeanim melee_move_release clip/peasant_build.clip
+
+//makeanim block clip/block.clip
+
+//general character animation
+
+makeanim walk_left clip/peasant_walk.clip
+makeanim walk_right clip/peasant_walk.clip
+makeanim walk_fwd clip/peasant_walk.clip
+makeanim walk_back clip/peasant_walk.clip
+
+makeanim run_left clip/peasant_walk.clip
+makeanim run_right clip/peasant_walk.clip
+makeanim run_fwd clip/peasant_walk.clip
+makeanim run_back clip/peasant_walk.clip
+
+makeanim sprint_left clip/peasant_walk.clip
+makeanim sprint_right clip/peasant_walk.clip
+makeanim sprint_fwd clip/peasant_walk.clip
+makeanim sprint_back clip/peasant_walk.clip
+
+//makeanim jump_start_left clip/jump_start_left.clip
+//makeanim jump_start_right clip/jump_start_right.clip
+//makeanim jump_start_fwd clip/jump_start_fwd.clip
+//makeanim jump_start_back clip/jump_start_back.clip
+
+//makeanim jump_mid_left clip/jump_mid_left.clip
+//makeanim jump_mid_right clip/jump_mid_right.clip
+//makeanim jump_mid_fwd clip/jump_mid_fwd.clip
+//makeanim jump_mid_back clip/jump_mid_back.clip
+	
+//makeanim jump_end_left clip/jump_end_left.clip
+//makeanim jump_end_right clip/jump_end_right.clip
+//makeanim jump_end_fwd clip/jump_end_fwd.clip
+//makeanim jump_end_back clip/jump_end_back.clip
+	
+//makeanim jump_up_start clip/jump_up_start.clip
+//makeanim jump_up_mid clip/jump_up_mid.clip
+//makeanim jump_up_end clip/jump_up_end.clip
+
+//makeanim jump_land clip/jump_land.clip
+
+//makeanim crouch_idle clip/crouch_idle.clip
+
+//makeanim crouch_left clip/crouch_left.clip
+//makeanim crouch_right clip/crouch_right.clip
+//makeanim crouch_fwd clip/crouch_fwd.clip
+//makeanim crouch_back clip/crouch_back.clip
+
+makeanim walk_with_bag clip/peasant_carry.clip
+
+makeanim mine clip/peasant_build.clip
+makeanim repair clip/peasant_build.clip 0 20 15 1
+makeanim construct clip/peasant_build.clip 0 20 15 1
+
+makeanim wounded_left clip/damage_front.clip
+makeanim wounded_right clip/damage_front.clip
+makeanim wounded_fwd clip/damage_front.clip
+makeanim wounded_back clip/damage_front.clip
+
+makeanim death_generic clip/peasant_death.clip
+makeanim death_left clip/peasant_death.clip
+makeanim death_right clip/peasant_death.clip
+makeanim death_fwd clip/peasant_death.clip
+makeanim death_back clip/peasant_death.clip
+
+// Sound Events
+
+animevent mine 15 "effect mineresources"
+animevent repair 15 "effect repair"
+animevent construct 15 "effect repair"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"

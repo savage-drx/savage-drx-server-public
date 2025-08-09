@@ -1,0 +1,17 @@
+beginObjdef blocker dyn_plank_long
+  obj_editorCategory XR_Physics
+  obj_reference 1
+  obj_model models/props/dynamic/construct/plank_long.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_physicsDynamic 1
+  obj_physicsMass 10.0
+  obj_physicsGrab 1
+  obj_physicsThrow 1
+  obj_physicsPush 0
+  obj_physicsFlammable 1  
+  obj_physicsGrabOffsetX 40.0
+  obj_physicsGrabOffsetZ 7.5
+  obj_physicsGrabRotateX 0.0
+  obj_physicsGrabRotateZ 0.0
+endObjdef dyn_plank_long

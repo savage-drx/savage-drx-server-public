@@ -1,0 +1,27 @@
+objSet objclass "building"
+objSet description "desc 163"
+objSet race "race0"
+objSet drawTeamIcon 0
+objSet drawHealth 0
+objSet model "/models/props/ambience/null.model"
+objSet skin "default"
+objSet noRender 1
+objSet tooltip "info 163"
+objSet proximity 100.000000
+objSet techType "NULL"
+objSet viewHeight 25.000000
+objSet fullHealth 10000
+objSet radiusState "state0"
+objSet mineType ""
+objSet healthStage1 75
+objSet healthStage2 35
+objSet healthStage3 25
+objSet healthStage2Effect "bridge_smoke_large"
+objSet healthStage3Effect "bridge_fire_large"
+objSet healthStage1Period 200 200
+objSet healthStage2Period 140 140
+objSet healthStage3Period 100 100
+objSet forcedRadiusState "state0"
+objSet insideState "state0"
+objset WaitTime 10000
+objSet isVulnerable 0

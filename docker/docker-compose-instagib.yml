@@ -1,0 +1,29 @@
+version: '3.9'
+services:
+  drx-instagib:
+    build:
+      context: .
+      args:
+        DOCKER_SERVER_ROOT_DIR: ${DOCKER_SERVER_ROOT_DIR}
+      dockerfile: Dockerfile
+    image: drx-instagib
+    container_name: ${CONTAINER_NAME}
+    volumes:
+      - ${HOST_SERVER_ROOT_DIR}:${DOCKER_SERVER_HOST_DIR}
+      - ${HOST_SERVER_MAPS_DIR}:${DOCKER_SERVER_MAPS_DIR}
+      - ${HOST_SERVER_PERSISTENT_VOLUME}:${DOCKER_SERVER_HOME_DIR}
+      - ${HOST_SERVER_BINS_DIR}:${DOCKER_SERVER_BINS_DIR}
+    environment:
+      TZ: Europe/Kiev
+    command: bash -c "
+                ${DOCKER_SERVER_HOST_DIR}/docker/copy_files.sh \
+                ${DOCKER_SERVER_ROOT_DIR} ${DOCKER_SERVER_HOST_DIR} \
+                && ${DOCKER_SERVER_ROOT_DIR}/start_server.sh \
+                ${RUN_WITH_DEBUG} ${DOCKER_SERVER_HOME_DIR} ${DOCKER_SERVER_ROOT_DIR}/game
+      "
+    tty: true
+    stdin_open: true
+    ports:
+      - "11240:11240/udp"
+      - "11240:11240/tcp"
+    restart: unless-stopped

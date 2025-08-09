@@ -1,0 +1,111 @@
+makeanim idle  zizard.clip 0 19 20 1
+
+makeanim melee_1 zizard.clip 59 25 30 1
+
+makeanim melee_move_1 zizard.clip 59 25 30 1
+
+makeanim walk_fwd zizard.clip  37 22 20 1
+makeanim walk_left zizard.clip  22 16 20 1
+makeanim walk_right zizard.clip  22 16 20 1 
+makeanim walk_back zizard.clip  37 22 20 1
+
+makeanim run_fwd  zizard.clip  37 22 20 1
+makeanim run_left zizard.clip  22 16 20 1
+makeanim run_right zizard.clip  22 16 20 1 
+makeanim run_back zizard.clip  37 22 20 1
+
+makeanim sprint_fwd zizard.clip 37 22 30 1
+makeanim sprint_left zizard.clip  22 16 30 1
+makeanim sprint_right zizard.clip  22 16 30 1
+makeanim sprint_back zizard.clip  37 22 30 1
+
+makeanim wounded_left zizard.clip  84 10 20 
+makeanim wounded_right zizard.clip  84 10 20 
+makeanim wounded_fwd zizard.clip  84 10 20 
+makeanim wounded_back zizard.clip  84 10 20 
+
+
+makeanim jump_start_left zizard.clip 107 4 20 1 
+makeanim jump_start_right zizard.clip 94 4 20 1
+makeanim jump_start_fwd  zizard.clip 117 5 20 1
+makeanim jump_start_back zizard.clip 117 5 20 1 1
+
+makeanim jump_mid_left zizard.clip 112 3 20 1 
+makeanim jump_mid_right zizard.clip 99 3 20 1
+makeanim jump_mid_fwd  zizard.clip 122 6 20 1
+makeanim jump_mid_back zizard.clip 122 6 20 1 1
+	
+makeanim jump_end_left zizard.clip 116 4 20 1 
+makeanim jump_end_right zizard.clip 103 4 20 1
+makeanim jump_end_fwd zizard.clip 128 6 20 1
+makeanim jump_end_back zizard.clip 128 6 20 1 1
+
+makeanim jump_up_start zizard.clip 117 5 20 1
+makeanim jump_up_mid zizard.clip 122 6 20 1
+makeanim jump_up_end zizard.clip 128 6 20 1
+
+makeanim weapon_idle_1 zizard.clip 0 19 20 1
+makeanim weapon_idle_2 zizard.clip 0 19 20 1
+makeanim weapon_idle_3 zizard.clip 0 19 20 1
+makeanim weapon_idle_4 zizard.clip 0 19 20 1
+
+makeanim weapon_fire_1 zizard.clip 59 25 30 1
+makeanim weapon_fire_2 zizard.clip 59 25 30 1
+makeanim weapon_fire_3 zizard.clip 59 25 30 1
+makeanim weapon_fire_4 zizard.clip 59 25 30 1
+makeanim weapon_fire_5 zizard.clip 59 25 30 1
+
+makeanim death_generic zizard.clip 134 25 30 
+makeanim death_left zizard.clip 134 25 30 
+makeanim death_right zizard.clip 134 25 30 
+makeanim death_fwd zizard.clip 134 25 30 
+makeanim death_back zizard.clip 134 25 30 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fixed by Mchief
+

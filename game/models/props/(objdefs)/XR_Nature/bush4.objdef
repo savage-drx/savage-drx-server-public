@@ -1,0 +1,7 @@
+beginObjdef blocker bush4
+  obj_editorCategory XR_Nature
+  obj_model models/props/xr_props/nature/bush4.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+  obj_isNature 1
+endObjdef bush4

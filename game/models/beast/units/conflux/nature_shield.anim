@@ -1,0 +1,9 @@
+makeanim idle nature_shield_idle.clip 0 60 10 1
+makeanim walk_fwd nature_shield_walk.clip 0 60 15 1
+makeanim run_fwd nature_shield_walk.clip 0 60 15 1
+makeanim death_generic nature_shield_death.clip 
+
+makeanim wounded_left nature_shield_walk.clip 5 1 0 0
+makeanim wounded_right nature_shield_walk.clip 5 1 0 0
+makeanim wounded_fwd nature_shield_walk.clip 5 1 0 0
+makeanim wounded_back nature_shield_walk.clip 5 1 0 0

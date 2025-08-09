@@ -1,0 +1,13 @@
+beginObjdef blocker dyn_boulder
+  obj_editorCategory XR_Physics
+  obj_reference 1
+  obj_model models/props/dynamic/stones/boulder.model
+  obj_editorScaleRangeLo 0.900000
+  obj_editorScaleRangeHi 1.100000
+  obj_physicsDynamic 1
+  obj_physicsMass 250.0
+  obj_physicsGrab 0
+  obj_physicsThrow 0
+  obj_physicsPush 1
+  obj_physicsClimb 0
+endObjdef dyn_boulder

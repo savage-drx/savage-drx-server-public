@@ -1,0 +1,8 @@
+beginObjdef blocker bamboo_dense_xr
+  obj_editorCategory XR_Nature
+  obj_model xr_bamboo_dense.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.400000
+  obj_isNature 1
+endObjdef bamboo_dense_xr

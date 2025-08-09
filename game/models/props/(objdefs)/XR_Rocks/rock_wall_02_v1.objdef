@@ -1,0 +1,8 @@
+beginObjdef blocker rock_group_02_v1
+  obj_editorCategory XR_Large_Rocks
+  obj_model models/props/xr_props/large_rocks/Rocks_02.model
+  obj_skin rock_group_02_v1
+  obj_editorScaleRangeLo 0.800000
+  obj_editorScaleRangeHi 1.200000
+endObjdef rock_group_02_v1
+          

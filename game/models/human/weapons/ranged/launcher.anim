@@ -1,0 +1,11 @@
+// Launcher
+
+// First Person Anim Events
+
+makeanim idle launcher.clip 0 1
+makeanim wpstate_fire launcher.clip 0 40 28 
+makeanim run launcher.clip 0 1
+
+// Sound Events
+
+animevent wpstate_fire 26 "sound /sound/human/weapons/launcher_reload.wav"

@@ -1,0 +1,8 @@
+beginObjdef blocker stairs
+  obj_editorCategory General_Structures
+  obj_model stairs.model
+  obj_skin default
+  obj_editorScaleRangeLo 0.500000
+  obj_editorScaleRangeHi 1.500000
+  obj_navbridge 1
+endObjdef stairs

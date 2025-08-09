@@ -1,0 +1,89 @@
+//common
+
+makeanim idle heavytransport.clip 0 1 55
+
+//melee combat
+
+makeanim melee_1 heavytransport.clip 0 199 55 
+makeanim melee_2 heavytransport.clip 0 199 55 
+makeanim melee_3 heavytransport.clip 0 199 55 
+makeanim melee_4 heavytransport.clip 0 199 55 
+makeanim melee_charge clip/melee_charge.clip
+makeanim melee_release clip/melee_release.clip
+
+makeanim melee_move_1 heavytransport.clip 0 199 55
+makeanim melee_move_2 heavytransport.clip 0 199 55 
+makeanim melee_move_3 heavytransport.clip 0 199 55 
+makeanim melee_move_4 heavytransport.clip 0 199 55 
+makeanim melee_move_charge clip/melee_move_charge.clip
+makeanim melee_move_release clip/melee_move_release.clip
+
+makeanim block clip/block.clip
+
+//general character animation
+
+makeanim walk_left heavytransport.clip 0 199 55 
+makeanim walk_right heavytransport.clip 0 199 55 
+makeanim walk_fwd heavytransport.clip 0 199 55 
+makeanim walk_back heavytransport.clip 0 199 55 
+
+makeanim run_left heavytransport.clip 0 199 55 
+makeanim run_right heavytransport.clip 0 199 55 
+makeanim run_fwd heavytransport.clip 0 199 55 
+makeanim run_back heavytransport.clip 0 199 55 
+
+makeanim sprint_left heavytransport.clip 0 199 55 
+makeanim sprint_right heavytransport.clip 0 199 55 
+makeanim sprint_fwd heavytransport.clip 0 199 55 
+makeanim sprint_back heavytransport.clip 0 199 55 
+
+makeanim jump_start_left clip/jump_start_left.clip
+makeanim jump_start_right clip/jump_start_right.clip
+makeanim jump_start_fwd clip/jump_start_fwd.clip
+makeanim jump_start_back clip/jump_start_back.clip
+
+makeanim jump_mid_left clip/jump_mid_left.clip
+makeanim jump_mid_right clip/jump_mid_right.clip
+makeanim jump_mid_fwd clip/jump_mid_fwd.clip
+makeanim jump_mid_back clip/jump_mid_back.clip
+	
+makeanim jump_end_left clip/jump_end_left.clip
+makeanim jump_end_right clip/jump_end_right.clip
+makeanim jump_end_fwd clip/jump_end_fwd.clip
+makeanim jump_end_back clip/jump_end_back.clip
+	
+makeanim jump_up_start clip/jump_up_start.clip
+makeanim jump_up_mid clip/jump_up_mid.clip
+makeanim jump_up_end clip/jump_up_end.clip
+
+makeanim jump_land clip/jump_land.clip
+
+makeanim crouch_idle clip/crouch_idle.clip
+
+makeanim crouch_left clip/crouch_left.clip
+makeanim crouch_right clip/crouch_right.clip
+makeanim crouch_fwd clip/crouch_fwd.clip
+makeanim crouch_back clip/crouch_back.clip
+
+makeanim walk_with_bag heavytransport.clip 551 55 55 
+
+makeanim mine heavytransport.clip 0 199 55 
+makeanim repair heavytransport.clip 0 199 55 1
+makeanim construct heavytransport.clip 0 199 55 1 
+
+makeanim wounded_left clip/wounded_left.clip
+makeanim wounded_right clip/wounded_right.clip
+makeanim wounded_fwd clip/wounded_fwd.clip
+makeanim wounded_back clip/wounded_back.clip
+
+makeanim death_generic heavytransport.clip 200 60 50 0
+makeanim death_left heavytransport.clip 200 60 50 0
+makeanim death_right heavytransport.clip 200 60 50 0
+makeanim death_fwd heavytransport.clip 200 60 50 0
+makeanim death_back heavytransport.clip 200 60 50 0
+
+// Sound Events
+
+animevent mine 15 "effect mineresources"
+animevent repair 15 "effect repair"
+animevent construct 15 "effect repair"

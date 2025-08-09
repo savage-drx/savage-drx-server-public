@@ -1,0 +1,8 @@
+beginObjdef blocker npc_lucy
+  obj_editorCategory XR_NPCs
+  obj_model models/npc/lucy/lucy.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.500000
+  obj_editorScaleRangeHi 1.500000
+  obj_reference 1
+endObjdef npc_lucy

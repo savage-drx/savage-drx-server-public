@@ -1,0 +1,7 @@
+beginObjdef blocker barricade
+  obj_editorCategory Samurai_Props
+  obj_model barricade.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_reference 1
+endObjdef barricade

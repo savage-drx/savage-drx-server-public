@@ -1,0 +1,8 @@
+beginObjdef blocker pinetree2
+  obj_editorCategory XR_Nature
+  obj_model pinetree2.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.600000
+  obj_isNature 1
+endObjdef pinetree2

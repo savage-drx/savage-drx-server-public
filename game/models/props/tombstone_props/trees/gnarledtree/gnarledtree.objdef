@@ -1,0 +1,8 @@
+beginObjdef blocker gnarledtree
+  obj_editorCategory Tombstone_Trees
+  obj_model gnarledtree.model
+  obj_skin default
+  obj_editorScaleRangeLo 2.500000
+  obj_editorScaleRangeHi 3.000000
+  obj_isNature 1
+endObjdef gnarledtree

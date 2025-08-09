@@ -1,0 +1,67 @@
+//voice chats are specified first by issuing a category name, then listing individual items
+//syntax:
+//voiceCategory <Number> <Description>
+//voiceItem <Number> <Description>
+//voiceSound <WavFile> <ChatText>
+//voiceMore <Number> <Description> <CategoryNumber>
+//voiceFlag <team | global> [blip]
+
+//voiceSound may be specified up to 4 times for the same item (for multiple versions of the same voice chat)
+//voiceItem can be specified up to 10 times per voiceCategory
+//voiceMore allows sub menus to be specified
+//voiceFlag specifies team or global chat
+
+
+voiceDirectory /models/savageheroes/units/sheep/sound/	//base directory to look for WAV files (specify once per file)
+
+
+voiceCategory 0
+
+
+//
+//  TEAM
+//
+
+voiceCategory 1
+
+voiceItem 1 "Baa!" 
+voiceSound sheep_0.ogg "Baa!"
+voiceSound sheep_1.ogg "Baa!"
+voiceSound sheep_2.ogg "Baa!"
+voiceSound sheep_3.ogg "Baa!"
+voiceSound sheep_4.ogg "Baa!"
+voiceSound sheep_5.ogg "Baa!"
+voiceSound sheep_6.ogg "Baa!"
+voiceSound sheep_7.ogg "Baa!"
+voiceSound sheep_8.ogg "Baa!"
+
+//
+//  GLOBAL
+//
+
+voiceCategory 2
+
+voiceItem 1 "Baa!" 
+voiceSound sheep_0.ogg "Baa!"
+voiceSound sheep_1.ogg "Baa!"
+voiceSound sheep_2.ogg "Baa!"
+voiceSound sheep_3.ogg "Baa!"
+voiceSound sheep_4.ogg "Baa!"
+voiceSound sheep_5.ogg "Baa!"
+voiceSound sheep_6.ogg "Baa!"
+voiceSound sheep_7.ogg "Baa!"
+voiceSound sheep_8.ogg "Baa!"
+voiceFlag global
+
+//
+// MAIN
+//
+
+//each voice config must have a 0 category set in order to display the initial voice chat menu
+
+voiceCategory 0
+
+voiceMore 1 "Team" 1
+voiceMore 2 "Global" 2
+
+

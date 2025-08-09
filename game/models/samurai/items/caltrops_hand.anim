@@ -1,0 +1,9 @@
+// Land Mine
+
+// First Person Anim Events
+
+makeanim idle caltrops_hand.clip 0 30 30 1
+makeanim wpstate_fire caltrops_hand.clip 30 10
+
+// Sound Events
+

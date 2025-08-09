@@ -1,0 +1,7 @@
+beginObjdef blocker combo_platform_wide
+  obj_editorCategory XR_Modular
+  obj_model models/props/wooden/combo_platform_wide.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_navBridge 1
+endObjdef combo_platform_wide

@@ -1,0 +1,8 @@
+beginObjdef blocker npc_chiprel
+  obj_editorCategory General_NPCs
+  obj_model /models/npc/chiprel/chiprel.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+  obj_reference 1
+endObjdef npc_chiprel

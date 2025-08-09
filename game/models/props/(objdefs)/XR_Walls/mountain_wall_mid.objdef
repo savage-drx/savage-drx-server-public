@@ -1,0 +1,6 @@
+beginObjdef blocker mountain_wall_mid
+  obj_editorCategory XR_Walls
+  obj_model models/props/xr_modular/mountain_wall_mid.model
+  obj_editorScaleRangeLo 1.0
+  obj_editorScaleRangeHi 1.0
+endObjdef mountain_wall_mid

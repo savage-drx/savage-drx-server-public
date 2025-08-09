@@ -1,0 +1,7 @@
+beginObjdef blocker crate_open_peaches  
+  obj_editorCategory Tombstone_Western
+  obj_model crate_open_peaches.model
+  obj_skin default
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef crate_open_peaches

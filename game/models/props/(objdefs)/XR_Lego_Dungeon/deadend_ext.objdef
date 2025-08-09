@@ -1,0 +1,7 @@
+beginObjdef blocker deadend_ext
+  obj_navBridge 1
+  obj_editorCategory XR_Lego_Dungeon
+  obj_model models/props/plaster/deadend_ext.model
+  obj_editorScaleRangeLo 1.000000
+  obj_editorScaleRangeHi 1.000000
+endObjdef deadend_ext

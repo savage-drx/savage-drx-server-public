@@ -1,0 +1,6 @@
+beginObjdef blocker lantern
+  obj_editorCategory Samurai_Objects
+  obj_model lantern.model
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 0.750000
+endObjdef lantern

@@ -1,0 +1,6 @@
+beginObjdef blocker mizuoke
+  obj_editorCategory Samurai_Objects
+  obj_model mizuoke.model
+  obj_editorScaleRangeLo 0.750000
+  obj_editorScaleRangeHi 0.750000
+endObjdef mizuoke

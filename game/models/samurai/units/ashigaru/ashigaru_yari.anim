@@ -1,0 +1,157 @@
+//syntax:
+
+//makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
+
+//common
+
+makeanim idle clip/ashigaru_idle.clip
+
+//melee combat
+
+makeanim melee_1 clip/ashigaru_yari_attack.clip 0 11
+makeanim melee_2 clip/ashigaru_yari_attack.clip 11 10
+makeanim melee_3 clip/ashigaru_yari_attack.clip 21 9
+
+makeanim melee_move_1 clip/ashigaru_yari_attack.clip 0 11
+makeanim melee_move_2 clip/ashigaru_yari_attack.clip 11 10
+makeanim melee_move_3 clip/ashigaru_yari_attack.clip 21 9
+
+makeanim block clip/ashigaru_block.clip
+
+//general character animation
+
+makeanim walk_left clip/ashigaru_strafe_left.clip 0 0 15 1
+makeanim walk_right clip/ashigaru_strafe_right.clip 0 0 15 1
+makeanim walk_fwd clip/ashigaru_walk.clip
+makeanim walk_back clip/ashigaru_walkbackward.clip 0 0 15 1
+
+makeanim run_left clip/ashigaru_strafe_left.clip
+makeanim run_right clip/ashigaru_strafe_right.clip
+makeanim run_fwd clip/ashigaru_run.clip
+makeanim run_back clip/ashigaru_walkbackward.clip 0 0 50
+
+makeanim sprint_left clip/ashigaru_strafe_left.clip 0 0 50
+makeanim sprint_right clip/ashigaru_strafe_right.clip 0 0 50
+makeanim sprint_fwd clip/ashigaru_sprint.clip 
+makeanim sprint_back clip/ashigaru_walkbackward.clip 0 0 70
+
+makeanim jump_start_left clip/ashigaru_jump.clip 0 1
+makeanim jump_start_right clip/ashigaru_jump.clip 0 1
+makeanim jump_start_fwd clip/ashigaru_jump.clip 0 1
+makeanim jump_start_back clip/ashigaru_jump.clip 0 1
+
+makeanim jump_mid_left clip/ashigaru_jump.clip 1 1
+makeanim jump_mid_right clip/ashigaru_jump.clip 1 1
+makeanim jump_mid_fwd clip/ashigaru_jump.clip 1 1
+makeanim jump_mid_back clip/ashigaru_jump.clip 1 1
+	
+makeanim jump_end_left clip/ashigaru_jump.clip 2 1
+makeanim jump_end_right clip/ashigaru_jump.clip 2 1
+makeanim jump_end_fwd clip/ashigaru_jump.clip 2 1
+makeanim jump_end_back clip/ashigaru_jump.clip 2 1
+	
+makeanim jump_up_start clip/ashigaru_jump.clip 0 1
+makeanim jump_up_mid clip/ashigaru_jump.clip 1 1
+makeanim jump_up_end clip/ashigaru_jump.clip 2 1
+
+makeanim jump_land clip/ashigaru_jump.clip 3 1
+
+//makeanim crouch_idle clip/crouch_idle.clip
+
+//makeanim crouch_left clip/crouch_left.clip
+//makeanim crouch_right clip/crouch_right.clip
+//makeanim crouch_fwd clip/crouch_fwd.clip
+//makeanim crouch_back clip/crouch_back.clip
+
+//makeanim walk_with_bag clip/walk_with_bag.clip
+
+//makeanim mine clip/mine.clip
+//makeanim repair clip/repair.clip
+//makeanim construct clip/construct.clip
+
+makeanim wounded_left clip/damage_front.clip
+makeanim wounded_right clip/damage_front.clip
+makeanim wounded_fwd clip/damage_front.clip
+makeanim wounded_back clip/damage_front.clip
+
+makeanim death_generic clip/ashigaru_death1.clip
+makeanim death_left clip/ashigaru_death1.clip
+makeanim death_right clip/ashigaru_death1.clip
+makeanim death_fwd clip/ashigaru_death1.clip
+makeanim death_back clip/ashigaru_death2.clip
+
+//player holding weapon animations
+makeanim weapon_idle_1 clip/ashigaru_idle.clip
+//makeanim weapon_idle_2 clip/bow.clip 0 1
+//makeanim weapon_idle_3 clip/sniperbow.clip 0 1 
+makeanim weapon_idle_4 clip/weapon_idle_4.clip
+
+makeanim weapon_charge_1 clip/ashigaru_idle.clip 
+//makeanim weapon_charge_2 clip/bow.clip 0 37
+//makeanim weapon_charge_3 clip/sniperbow.clip 0 87 
+makeanim weapon_charge_4 clip/throw.clip 15 22
+makeanim weapon_charge_5 clip/weapon_charge_5.clip
+
+makeanim weapon_fire_1 clip/ashigaru_idle.clip 
+//makeanim weapon_fire_2 clip/bow.clip 38 34
+//makeanim weapon_fire_3 clip/sniperbow.clip 88 33 
+makeanim weapon_fire_4 clip/throw.clip 37 50
+makeanim weapon_fire_5 clip/drop.clip 
+
+//makeanim weapon_reload_1 clip/weapon_reload_1.clip
+//makeanim weapon_reload_2 clip/weapon_reload_2.clip
+//makeanim weapon_reload_3 clip/weapon_reload_3.clip
+//makeanim weapon_reload_4 clip/weapon_reload_4.clip
+
+//makeanim resurrected  clip/resurrected.clip
+
+// Sound Events
+
+animevent run_left 7 "footstepleft"
+animevent run_left 14 "footstepright"
+
+animevent run_right 7 "footstepleft"
+animevent run_right 14 "footstepright"
+
+animevent run_fwd 7 "footstepleft"
+animevent run_fwd 19 "footstepright"
+
+animevent walk_back 7 "footstepleft"
+animevent walk_back 13 "footstepright"
+
+animevent run_back 7 "footstepleft"
+animevent run_back 13 "footstepright"
+
+animevent sprint_fwd 1 "footstepleft"
+animevent sprint_fwd 10 "footstepright"
+
+animevent sprint_left 2 10 "randsound 8 /sound/general/footsteps/human/grass_light"
+animevent sprint_left 2 10 "randsound 8 /sound/general/footsteps/human/grass_light"
+animevent sprint_right 4 14 "randsound 8 /sound/general/footsteps/human/grass_light"
+animevent sprint_right 4 14 "randsound 8 /sound/general/footsteps/human/grass_light"
+
+animevent sprint_back 7 19 "randsound 8 /sound/general/footsteps/human/grass_light"
+
+animevent melee_1 0 "sound /sound/human/units/nomad/attack_1.wav"
+animevent melee_2 0 "sound /sound/human/units/nomad/attack_2.wav"
+animevent melee_3 0 "sound /sound/human/units/nomad/attack_3.wav"
+animevent melee_4 0 "sound /sound/human/units/nomad/attack_4.wav"
+
+animevent melee_1 1 "randsound 4 /sound/human/units/nomad/attack_grunt"
+
+animevent melee_move_1 0 "sound /sound/human/units/nomad/attack_1.wav"
+animevent melee_move_2 0 "sound /sound/human/units/nomad/attack_2.wav"
+animevent melee_move_3 0 "sound /sound/human/units/nomad/attack_3.wav"
+animevent melee_move_4 0 "sound /sound/human/units/nomad/attack_4.wav"
+
+animevent melee_move_1 1 "randsound 4 /sound/human/units/nomad/attack_grunt"
+
+animevent wounded_left 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_right 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_fwd 0 "randsound 5 /sound/general/impact/melee/flesh"
+animevent wounded_back 0 "randsound 5 /sound/general/impact/melee/flesh"
+
+animevent wounded_left 1 "randsound 3 /sound/human/units/nomad/grunt"
+animevent wounded_right 1 "randsound 3 /sound/human/units/nomad/grunt"
+animevent wounded_fwd 1 "randsound 3 /sound/human/units/nomad/grunt"
+animevent wounded_back 1 "randsound 3 /sound/human/units/nomad/grunt"
