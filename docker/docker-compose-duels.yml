@@ -15,13 +15,43 @@ services:
       - ${HOST_SERVER_BINS_DIR}:${DOCKER_SERVER_BINS_DIR}
     environment:
       TZ: Europe/Kiev
-    command: bash -c "
-                ${DOCKER_SERVER_HOST_DIR}/docker/copy_files.sh \
-                ${DOCKER_SERVER_ROOT_DIR} ${DOCKER_SERVER_HOST_DIR} \
-                && ${DOCKER_SERVER_ROOT_DIR}/start_server.sh \
-                ${RUN_WITH_DEBUG} ${DOCKER_SERVER_HOME_DIR} ${DOCKER_SERVER_ROOT_DIR}/game
+
+    command: >
+      chrt -f 20 bash -c "
+        ${DOCKER_SERVER_HOST_DIR}/docker/copy_files.sh ${DOCKER_SERVER_ROOT_DIR} ${DOCKER_SERVER_HOST_DIR} &&
+        ${DOCKER_SERVER_ROOT_DIR}/start_server.sh ${RUN_WITH_DEBUG} ${DOCKER_SERVER_HOME_DIR} ${DOCKER_SERVER_ROOT_DIR}/game
       "
+
+    # Bypasses Docker’s bridge/NAT
+    # Container shares host network stack, minimal overhead
     network_mode: host
+
+    # Pin container to specific CPUs
+    # Avoids CPU migration and context switches
+    # Keeps your latency measurements stable
+    # ex.: cpuset: "2,3", cpuset: "1", cpuset: "1-4"
+    # ...
+    # Always check the host CPU count before setting cpuset
+    # nproc - Returns number of cores/threads.
+    # cpuset: "1"
+
+    # Disable CPU throttling (CFS quota)
+    # By default, Docker limits CPU for cgroup; disabling quota avoids artificial delays
+    cpu_quota: -1
+
+    # Raises process priority to reduce latency spikes
+    cap_add:
+      - SYS_NICE
+
+    # Increase memory limits
+    # Avoids swapping under load
+    mem_limit: 4g
+
+    # Use tmpfs for temporary data
+    # Memory-backed FS avoids disk latency
+    tmpfs:
+      - /dev/shm:size=1g
+
     tty: true
     stdin_open: true
     restart: unless-stopped
