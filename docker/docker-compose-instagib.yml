@@ -21,6 +21,7 @@ services:
                 && ${DOCKER_SERVER_ROOT_DIR}/start_server.sh \
                 ${RUN_WITH_DEBUG} ${DOCKER_SERVER_HOME_DIR} ${DOCKER_SERVER_ROOT_DIR}/game
       "
+    network_mode: host
     tty: true
     stdin_open: true
     ports:
