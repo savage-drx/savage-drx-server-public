@@ -24,7 +24,4 @@ services:
     network_mode: host
     tty: true
     stdin_open: true
-    ports:
-      - "11235:11235/udp"
-      - "11235:11235/tcp"
     restart: unless-stopped
