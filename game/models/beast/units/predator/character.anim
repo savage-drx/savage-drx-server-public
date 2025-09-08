@@ -2,6 +2,8 @@
 
 //makeanim AnimName ClipFile StartFrame NumFrames FPS Loop(0 or 1) Loopbackframe
 
+makeanim taunt_1 clip/gangnam.clip 0 372 30 1
+
 //common
 
 makeanim idle  clip/idle.clip

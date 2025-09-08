@@ -235,6 +235,8 @@ objSet itemActiveSound ""
 //XR Additions:
 objSet canPush 1
 objSet canGrab 1
+objSet taunt1Time 12400
+objSet taunt1Flags -rmelee -lmelee -weapon -item +officerflag -dead
 
 //Attacks:
 atkEdit melee_1
