@@ -49,7 +49,7 @@ objSet proximity 0.000000
 objSet builder1 "beast_arcana"
 objSet builder2 ""
 objSet requirement1 "beast_fire_shrine"
-objSet requirement2 ""
+objSet requirement2 "beast_immolate"
 objSet requirement3 ""
 objSet partialRequirement1 ""
 objSet partialRequirement2 ""
@@ -78,7 +78,7 @@ objSet requirement1c ""
 objSet requirement2c ""
 objSet requirement3c ""
 objSet needTechPoints 0
-objSet needBasePoints 1
+objSet needBasePoints 2
 objSet techPointValue 0
 objSet basePointValue 0
 objSet alwaysAvailable 0
