@@ -38,7 +38,7 @@ def init():
         try:
             trigger_list[index] = __import__(os.path.splitext(file_list[index])[0], globals(), locals(),
                                              ['check', 'execute'], 0)
-            log.info("Loading %s" % file_list[index])
+            log.info(" * Loading %s" % file_list[index])
         except:
             sh_custom_utils.get_and_log_exception_info()
 

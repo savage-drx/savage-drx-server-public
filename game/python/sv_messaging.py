@@ -60,13 +60,8 @@ class MessageSettings:
         if python_config.getboolean('Python_Bans', 'IS_CHAT_BAN_ENABLED', fallback=False):
             banned_words_file_name = python_config.get('Python_Bans', 'BANNED_WORDS_FILE_NAME')
             initial_file_path = f"./config/{banned_words_file_name}"
-            persistent_file_path = f"{core.CvarGetString('homedir')}/data/{banned_words_file_name}"
 
-            # check if it's a first run and there is no banned_words.cfg inside the HOST folder then copy it
-            if os.path.isfile(initial_file_path) and not os.path.isfile(persistent_file_path):
-                shutil.copyfile(initial_file_path, os.path.join(persistent_file_path))
-
-            with open(persistent_file_path) as f:
+            with open(initial_file_path) as f:
                 for line in set([c.strip() for c in f.readlines()]):
                     if line != '' and not line.startswith(('#', ';')):
                         lines.add(line)

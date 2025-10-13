@@ -6,9 +6,9 @@
 *.log
 
 # Savage
-/game/python/logs
 /silverback.bin
 /game/game64.so
+/bin/*debug*
 
 # Python
 *.pyc

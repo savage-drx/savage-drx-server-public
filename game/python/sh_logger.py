@@ -36,6 +36,14 @@ class _Colors:
     ANSI_WHITE = "\u001B[37m"
 
 
+class LogLevel:
+    INFO = "INFO"
+    DEBUG = "DEBUG"
+    WARN = "WARN"
+    ERROR = "ERROR"
+    CHAT = "CHAT"
+
+
 def log_debug_info(func):
     @wraps(func)
     def wrapper(*args, **kwargs):
@@ -62,30 +70,25 @@ def log_debug_info(func):
     return wrapper
 
 
-def info(message, indent=False):
-    log_level = "INFO"
-    sh_executor.submit_task(_log, log_level, message, indent)
+def info(message, indent=False, use_colors=False):
+    sh_executor.submit_task(_log, LogLevel.INFO, message, indent, use_colors)
 
 
 def debug(message, indent=False):
     if LogContext.IS_DEBUG_ENABLED:
-        log_level = "DEBUG"
-        sh_executor.submit_task(_log, log_level, message, indent, True)
+        sh_executor.submit_task(_log, LogLevel.DEBUG, message, indent, True)
 
 
-def warn(message, indent=False):
-    log_level = "WARN"
-    sh_executor.submit_task(_log, log_level, message, indent)
+def warn(message, indent=False, use_colors=False):
+    sh_executor.submit_task(_log, LogLevel.WARN, message, indent, use_colors)
 
 
 def error(message, indent=False):
-    log_level = "ERROR"
-    sh_executor.submit_task(_log, log_level, message, indent)
+    sh_executor.submit_task(_log, LogLevel.ERROR, message, indent, True)
 
 
-def chat(message, indent=False):
-    log_level = "CHAT"
-    sh_executor.submit_task(_log, log_level, message, indent, True)
+def chat(message, indent=False, use_colors=True):
+    sh_executor.submit_task(_log, LogLevel.CHAT, message, indent, use_colors)
 
 
 def custom(prefix, message, indent=False):
@@ -108,13 +111,15 @@ def _log(log_level, message, indent=False, use_colors=False):
 
             message = f"{formatted_log_level}[{date_template}]   {message}\n"
             if use_colors:
-                if log_level == 'INFO':
-                    message = f'{_Colors.ANSI_GREEN}{message}{_Colors.ANSI_RESET}'
-                if log_level == 'DEBUG':
+                if log_level == LogLevel.INFO:
+                    message = f'{_Colors.ANSI_CYAN}{message}{_Colors.ANSI_RESET}'
+                if log_level == LogLevel.DEBUG:
                     message = f'{_Colors.ANSI_YELLOW}{message}{_Colors.ANSI_RESET}'
-                if log_level == 'WARN':
+                if log_level == LogLevel.WARN:
+                    message = f'{_Colors.ANSI_PURPLE}{message}{_Colors.ANSI_RESET}'
+                if log_level == LogLevel.ERROR:
                     message = f'{_Colors.ANSI_RED}{message}{_Colors.ANSI_RESET}'
-                if log_level == 'CHAT':
+                if log_level == LogLevel.CHAT:
                     message = f'{_Colors.ANSI_GREEN}{message}{_Colors.ANSI_RESET}'
 
             core.ConsolePrint(message)
@@ -126,9 +131,13 @@ def check_visual_formatting():
     if LogContext.is_logging_enabled:
         unformatted("-----Python loggers------------------------------------------------\n")
         message = "Logger formatting self-check"
-        info(message)
+        info(message, use_colors=True)
+
+        LogContext.IS_DEBUG_ENABLED = True
         debug(message)
-        warn(message)
+        LogContext.IS_DEBUG_ENABLED = False
+
+        warn(message, use_colors=True)
         error(message)
         chat(message)
         unformatted("-------------------------------------------------------------------\n")

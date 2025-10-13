@@ -20,12 +20,9 @@ import json
 # fix for: 'unknown encoding: idna'
 import encodings.idna
 
-CONFIG_FILE_PATH = './..'
-
-PYTHON_CONFIG_NAME = 'config.ini'
-PYTHON_CONFIG_DEV_NAME = 'config.dev.ini'
+CONFIG_FILE_PATH = './../config'
+PYTHON_CONFIG_NAME = core.CvarGetString('py_config')
 PYTHON_CONFIG_FILE = f'{CONFIG_FILE_PATH}/{PYTHON_CONFIG_NAME}'
-PYTHON_CONFIG_DEV_FILE = f'{CONFIG_FILE_PATH}/{PYTHON_CONFIG_DEV_NAME}'
 
 
 # Called directly from the game engine
@@ -61,18 +58,7 @@ def init_paths():
 def init_python_config():
     config = configparser.RawConfigParser(strict=False, allow_no_value=True)
     config.read(PYTHON_CONFIG_FILE)
-    log.info(f"Loading config: {PYTHON_CONFIG_NAME}")
-
-    dev_config = configparser.RawConfigParser(strict=False, allow_no_value=True)
-    dev_config.read(PYTHON_CONFIG_DEV_FILE)
-    is_dev_mode = dev_config.getboolean('Python_Config', 'IS_DEV_MODE', fallback=0)
-
-    # dev-config will overwrite the same values in the base-config
-    if is_dev_mode:
-        config.read(PYTHON_CONFIG_DEV_FILE)
-        log.info(f"Loading DEV config: {PYTHON_CONFIG_DEV_NAME}")
-
-    log.LogContext.IS_DEBUG_ENABLED = bool(dev_config.getboolean('Python_Config', 'IS_DEBUG_ENABLED', fallback=0))
+    log.info(f"Loading config: {PYTHON_CONFIG_NAME}", use_colors=True)
 
     init_silverback(config)
 

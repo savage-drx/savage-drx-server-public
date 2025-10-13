@@ -32,7 +32,6 @@ def update_players_stats():
 class _PublisherContext:
     STATS_PUBLISHER_END_GAME_URL = core.CvarGetString('sv_authserver') + "history/results"
     players_by_uids = dict()
-    players_by_ips = dict()
 
 
 def __update_players_stats():
@@ -61,23 +60,15 @@ def __update_players_stats():
         if not _PublisherContext.players_by_uids:
             for current_uid, current_player in current_players.items():
                 _PublisherContext.players_by_uids[current_uid] = current_player
-                _PublisherContext.players_by_ips[current_player.ip_address] = current_player
             return
 
         for current_uid, current_player in current_players.items():
             # if it is the same player then we simply update him
             if current_uid in _PublisherContext.players_by_uids:
                 _PublisherContext.players_by_uids[current_uid] = current_player
-            # now we have to check is it the same player or newly connected:
-            elif current_player.ip_address in _PublisherContext.players_by_ips:
-                cached_player_by_ip = _PublisherContext.players_by_ips[current_player.ip_address]
-                del _PublisherContext.players_by_uids[cached_player_by_ip.uid]
-                _PublisherContext.players_by_uids[current_uid] = current_player
-                _PublisherContext.players_by_ips[current_player.ip_address] = current_player
             # it is not an old player, so we have to add him
             else:
                 _PublisherContext.players_by_uids[current_uid] = current_player
-                _PublisherContext.players_by_ips[current_player.ip_address] = current_player
 
     except:
         sh_custom_utils.get_and_log_exception_info()

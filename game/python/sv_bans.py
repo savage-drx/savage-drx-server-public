@@ -25,7 +25,6 @@ class BansSettings:
     IS_BAN_ENABLED = python_config.getboolean('Python_Bans', 'IS_BAN_ENABLED', fallback=False)
     BANNED_IPS_FILE_NAME = python_config.get('Python_Bans', 'BANNED_IPS_FILE_NAME')
     BANNED_IPS_INITIAL_FILE_PATH = f'./config/{BANNED_IPS_FILE_NAME}'
-    BANNED_IPS_PERSISTENT_FILE_PATH = f"{core.CvarGetString('homedir')}/data/{BANNED_IPS_FILE_NAME}"
 
 
 class BansContext:
@@ -90,15 +89,9 @@ def unban_ip(client_index, ip):
 
 def init_banned():
     if BansSettings.IS_BAN_ENABLED:
-        # check if it's a first run and there is no banned_ip.cfg inside the HOST folder then copy it
-        if os.path.isfile(BansSettings.BANNED_IPS_INITIAL_FILE_PATH) \
-                and not os.path.isfile(BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH):
-            shutil.copyfile(BansSettings.BANNED_IPS_INITIAL_FILE_PATH,
-                            os.path.join(BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH))
-
         BansContext.banned_ips = set()
         try:
-            with open(BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH) as f:
+            with open(BansSettings.BANNED_IPS_INITIAL_FILE_PATH) as f:
                 unfiltered = [c.strip() for c in f.readlines()]
             for ip in unfiltered:
                 if ip != '' and not ip.startswith(('#', ';')):
@@ -113,7 +106,7 @@ def update_banned_ips(ip, ban=False, unban=False) -> bool:
     try:
         if ban:
             if ip not in BansContext.banned_ips:
-                with open(BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH, 'a') as f:
+                with open(BansSettings.BANNED_IPS_INITIAL_FILE_PATH, 'a') as f:
                     f.write(f'{ip}\n')
                     f.truncate()
                     f.close()
@@ -137,11 +130,11 @@ def update_banned_ips(ip, ban=False, unban=False) -> bool:
 
         if unban:
             if ip in BansContext.banned_ips:
-                with open(BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH, 'r') as f:
+                with open(BansSettings.BANNED_IPS_INITIAL_FILE_PATH, 'r') as f:
                     content = [c.strip() for c in f.readlines()]
                     f.close()
 
-                with open(BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH, 'w') as f:
+                with open(BansSettings.BANNED_IPS_INITIAL_FILE_PATH, 'w') as f:
                     # Save any comments in the header of the file before saving new ip-list
                     for comment in content:
                         if comment == '' or comment.startswith(('#', ';')):
@@ -159,7 +152,7 @@ def update_banned_ips(ip, ban=False, unban=False) -> bool:
                 return False
 
     except:
-        log.info(f"Failed to update {BansSettings.BANNED_IPS_PERSISTENT_FILE_PATH}")
+        log.info(f"Failed to update {BansSettings.BANNED_IPS_INITIAL_FILE_PATH}")
         sh_custom_utils.get_and_log_exception_info()
 
     return False
