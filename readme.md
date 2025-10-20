@@ -1,8 +1,3 @@
-## Requirements (knowledge):
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
-- [Git](https://git-scm.com/)
-
 ## Initial Setup:
 1. **Clone the Repositories**  
 Clone the main server repository and the maps repository:
@@ -10,9 +5,8 @@ Clone the main server repository and the maps repository:
 git clone https://github.com/savage-drx/savage-drx-server-public.git
 git clone https://github.com/savage-drx/savage-drx-maps.git
 ```
-Rename `savage-drx-server-public` to `savage-drx-server`
 
-Ensure that both `savage-drx-server` and `savage-drx-maps` are located at the same directory level.  
+Ensure that both `savage-drx-server-public` and `savage-drx-maps` are located at the same directory level.  
 Verify that the `world` symlink in the server project correctly points to the `maps` repository:
 ```bash
 world -> ../../savage-drx-maps/
@@ -34,17 +28,15 @@ Update `config.ini` with your credentials
 - `sv_motd1` to `sv_motd6` set your message of the day lines.  
 -  any other additional configuration values as needed.
 
-5. **Start the Server**  
-Use the provided `start_server.sh` script to launch your server.  
-You can leave or remove the detached mode with a `-d` flag for `docker compose`:
-```bash
-docker compose -f ${DOCKER_PATH}/docker-compose-main.yml --env-file ${DOCKER_PATH}/.env-main up -d
-```
+5. **Prepare your environment**  
+   Run `install_dependencies.sh`
 
-6. **Running Alternative Game Modes**  
-   Edit `start_server.sh` and swap `docker-compose-main.yml` with `docker-compose-duels.yml` or `docker-compose-instagib.yml` if you want to run different mods.  
+6. **Run the Server**  
+Use the provided `start_server.sh` or `start_server_nohup.sh` script to launch your server.  
 
+7. **Running Multiple Game Servers**  
+Create and use a copy of the `shell` script together with its own `custom_config.ini` for each server
 
-7. **Accessing Logs and Config Files**  
+8. **Accessing Logs and Config Files**  
 Server logs and temporary configuration files will be available in the `/drx` directory (by default).
 

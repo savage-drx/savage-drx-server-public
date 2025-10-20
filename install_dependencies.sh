@@ -19,8 +19,6 @@ function install_packages() {
   info "Installing required packages..."
   sudo apt-get install -y \
       gdb \
-      expect-dev \
-      zip \
       libcurl4-gnutls-dev \
       libphysfs-dev
 

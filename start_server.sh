@@ -1,23 +1,28 @@
 #!/bin/bash
 
-# ----------------------------------------------------------------------------------------------------------------------
-DEFAULT_SERVER_PY_CONFIG="config.ini"
-SERVER_PY_CONFIG="${1:-$DEFAULT_SERVER_PY_CONFIG}"
+# ----- CONFIGURATION --------------------------------------------------------------------------------------------------
+# Environment variables:
+# - SERVER_NAME (keep a unique and simple name without any special symbols for each server on the same host)
+# - SERVER_PY_CONFIG_FILE
+# - RUN_WITH_DEBUG (requires silverback.bin.debug and game64.so.debug to be present in the "bin" directory)
 
-# Requires silverback.bin.debug and game64.so.debug to be present in the "bin" directory
-DEFAULT_RUN_WITH_DEBUG=0
-RUN_WITH_DEBUG="${2:-$DEFAULT_RUN_WITH_DEBUG}"
+SERVER_NAME="${SERVER_NAME:-drx-server}"
+SERVER_PY_CONFIG_FILE="${SERVER_PY_CONFIG_FILE:-config.ini}"
+RUN_WITH_DEBUG="${RUN_WITH_DEBUG:-0}"
 
-# fyi: Negative priority requires sudo
+# requires sudo to run with negative NICE_PRIORITY: sudo bash -c "..."
 NICE_PRIORITY=0
 
 # keep an own SERVER_HOME_DIR for each server on the same host
-SERVER_HOME_DIR="/drx/drx-public"
-#SERVER_HOME_DIR="/home/igor/drx/drx-public"
+SERVER_HOME_DIR="/drx/$SERVER_NAME"
 
 SERVER_ROOT_DIR="$(pwd)/game"
 BINS_DIR="$(pwd)/bin"
 LIBS_DIR="$(pwd)/libs"
+
+# stdbuf:
+# -oL = line-buffer stdout
+# -eL = line-buffer stderr
 
 # ----------------------------------------------------------------------------------------------------------------------
 
@@ -29,15 +34,17 @@ function run_server() {
   cp -f "$BINS_DIR"/silverback.bin ./silverback.bin
   cp -f "$BINS_DIR"/game64.so ./game/game64.so
 
-  ARGS="set homedir $SERVER_HOME_DIR/;\
-        set rootdir $SERVER_ROOT_DIR/;\
-        set py_config $SERVER_PY_CONFIG;\
-        set sys_allowSymLinks 1"
+  arg_home_dir=";set homedir ${SERVER_HOME_DIR}/"
+  arg_root_dir=";set rootdir ${SERVER_ROOT_DIR}/"
+  arg_py_config=";set py_config ${SERVER_PY_CONFIG_FILE}"
+  arg_server_tag=";set server_tag ${SERVER_NAME}-tag"
+  arg_symlinks=";set sys_allowSymLinks 1"
 
-  # requires sudo to run with negative NICE_PRIORITY: sudo bash -c "..."
+  ARGS="${arg_home_dir} ${arg_root_dir} ${arg_py_config} ${arg_server_tag} ${arg_symlinks}"
+
   bash -c "LD_LIBRARY_PATH='$LD_LIBRARY_PATH:$LIBS_DIR' \
            nice -n $NICE_PRIORITY \
-           expect_unbuffer -p ./silverback.bin '$ARGS'"
+           stdbuf -oL -eL ./silverback.bin '$ARGS' 2>&1"
 }
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -52,10 +59,13 @@ function run_server_with_debug() {
 
   LOG_FILE="$SERVER_HOME_DIR/logs/gdb/gdb-$(date +%Y.%m.%d-%H:%M:%S).log"
 
-  ARGS="set homedir ${SERVER_HOME_DIR}/;\
-        set rootdir ${SERVER_ROOT_DIR}/;\
-        set py_config $SERVER_PY_CONFIG;\
-        set sys_allowSymLinks 1"
+  arg_home_dir=";set homedir ${SERVER_HOME_DIR}/"
+  arg_root_dir=";set rootdir ${SERVER_ROOT_DIR}/"
+  arg_py_config=";set py_config ${SERVER_PY_CONFIG_FILE}"
+  arg_server_tag=";set server_tag ${SERVER_NAME}-tag"
+  arg_symlinks=";set sys_allowSymLinks 1"
+
+  ARGS="${arg_home_dir} ${arg_root_dir} ${arg_py_config} ${arg_server_tag} ${arg_symlinks}"
 
   GDB_COMMAND="gdb ./silverback.bin \
                     -ex 'set args \"$ARGS\"' \
@@ -67,10 +77,10 @@ function run_server_with_debug() {
                     -ex bt \
                     -ex quit"
 
-  # requires sudo to run with negative NICE_PRIORITY: sudo bash -c "..."
+
   bash -c "LD_LIBRARY_PATH='$LD_LIBRARY_PATH:$LIBS_DIR' \
            nice -n $NICE_PRIORITY \
-           expect_unbuffer -p $GDB_COMMAND" | tee "$LOG_FILE"
+           stdbuf -oL -eL $GDB_COMMAND" 2>&1 | tee "$LOG_FILE"
 }
 
 # ----------------------------------------------------------------------------------------------------------------------
@@ -103,15 +113,23 @@ function rotate_logs() {
 
 # ----------------------------------------------------------------------------------------------------------------------
 
-
 create_dirs
-rotate_logs
 
-if [ $RUN_WITH_DEBUG -eq 1 ]; then
-  run_server_with_debug
-else
-  run_server
-fi
+# While loop to restart server on crash or exit
+while :; do
 
+  rotate_logs
 
-# todo: nohup, restart-loop
+  if [ "$RUN_WITH_DEBUG" -eq 1 ]; then
+    run_server_with_debug
+  else
+    run_server
+  fi
+
+	# Wait to restart in case of a fatal restart loop
+	echo
+	echo "Restarting, Ctrl-C to exit"
+	echo
+	sleep 5
+
+done

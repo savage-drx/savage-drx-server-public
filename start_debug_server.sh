@@ -1,7 +1,6 @@
 #!/bin/bash
 
-SERVER_PY_CONFIG="config_dev.ini"
-RUN_WITH_DEBUG=1
+SERVER_PY_CONFIG_FILE="config_dev.ini"
 
 BINS_DIR="$(pwd)/bin"
 SILVERBACK_DEBUG_FILE_NAME="silverback.bin.debug"
@@ -17,4 +16,8 @@ if [ ! -f "$BINS_DIR"/"$GAME_DEBUG_FILE_NAME" ]; then
   exit 1
 fi
 
-./start_server.sh $SERVER_PY_CONFIG $RUN_WITH_DEBUG
+
+SERVER_NAME=drx-server \
+SERVER_PY_CONFIG_FILE=$SERVER_PY_CONFIG_FILE \
+RUN_WITH_DEBUG=1 \
+./start_server.sh
