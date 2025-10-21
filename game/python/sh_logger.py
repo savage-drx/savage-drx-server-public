@@ -21,7 +21,7 @@ class LogContext:
     # Don't pass messages with '%' inside
     is_logging_enabled = True
     MAX_PREFIX_SIZE = 5
-    IS_DEBUG_ENABLED = False
+    IS_DEBUG_ENABLED = python_config.getboolean('Python_General', 'IS_DEBUG_ENABLED')
 
 
 class _Colors:

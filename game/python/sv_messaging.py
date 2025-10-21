@@ -28,11 +28,12 @@ from sv_permissions import PermissionsContext as pc
 
 
 class MessageSettings:
-    # Accessible UIDS for admin stuff
     PYTHON_ADMIN_IDS = list(
         [int(i) for i in json.loads(python_config.get('Python_Referees', 'PYTHON_ADMIN_IDS'))])
-    # Accessible UIDS for 3rd party REF stuff
-    PYTHON_REF_IDS = list([int(i) for i in json.loads(python_config.get('Python_Referees', 'PYTHON_REF_IDS'))])
+
+    # PYTHON_REF_IDS = list([int(i) for i in json.loads(python_config.get('Python_Referees', 'PYTHON_REF_IDS'))])
+    PYTHON_REF_IDS = list()
+
     # Will replace all symbols from the input string that are not: ':.?!0-9A-Za-z-_() /'
     REGEX_FOR_INPUT = '[^:.?!0-9A-Za-z\-_()@ /]'
     # Will replace all symbols from the name that are not: '0-9A-Za-z-_() '
