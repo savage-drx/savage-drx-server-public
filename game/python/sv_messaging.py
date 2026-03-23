@@ -77,6 +77,11 @@ def process_chat_message(client_index, message_type, message):
     client_name = server.GetClientInfo(client_index, INFO_NAME)
     team = int(server.GetClientInfo(client_index, INFO_TEAM))
 
+    if uid == 0:
+        client_index = server.GetIndexFromUID(uid)
+        server.Notify(client_index, "You are not allowed to chat")
+        return MessageSettings.FORBIDDEN
+
     try:
         # Logging a message to the file
         client_name = re.sub(MessageSettings.REGEX_FOR_NAME, '', client_name)
@@ -146,6 +151,11 @@ def process_chat_message(client_index, message_type, message):
 def process_private_message(sender_idx, receiver_idx, message):
     uid = server.GetClientInfo(sender_idx, INFO_UID)
     if not pc.has_privilege('CAN_CHAT_PRIVATE', uid):
+        return MessageSettings.FORBIDDEN
+
+    if uid == 0:
+        client_index = server.GetIndexFromUID(uid)
+        server.Notify(client_index, "You are not allowed to chat")
         return MessageSettings.FORBIDDEN
 
     try:
