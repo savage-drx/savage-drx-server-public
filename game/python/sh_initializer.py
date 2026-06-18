@@ -41,6 +41,11 @@ def init():
         if sv_discord.DiscordSettings.DISCORD_IS_ENABLED:
             sv_discord.init()
 
+        # Delayed import since python_config is present inside sh_scheduler
+        if python_config.getboolean('Python_General', 'IS_SCHEDULER_ENABLED'):
+            from sh_scheduler import _Context
+            _Context.init()
+
     except Exception as e:
         print(f'Exception on init: {e}')
         sh_custom_utils.get_and_log_exception_info()

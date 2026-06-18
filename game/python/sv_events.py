@@ -141,6 +141,8 @@ def client_connected_extended(client_index, ip, cn):
     try:
         uid = server.GetClientInfo(client_index, INFO_UID)
         name = server.GetClientInfo(client_index, INFO_NAME)
+        cn_bin = bin(int(binascii.hexlify(cn.encode()), 16))
+        md5 = hashlib.md5(cn_bin.encode()).hexdigest()
 
         msg = f'Auth info: {ip}; {name}; idx:{client_index}; uid:{uid}'
         log.info(msg)
@@ -148,7 +150,24 @@ def client_connected_extended(client_index, ip, cn):
         msg_with_date = f'[{strftime(EventsSettings.DATE_FORMAT, localtime())}]   {msg}'
         sh_io.save_to_file("connected_clients", msg_with_date)
 
-        sv_bans.check_banned(name, ip, uid)
+        client_dict = {
+            'timestamp': int(time()),
+            'ip_address': ip,
+            'user_name': name,
+            'user_id': uid,
+            'client_computer_name': cn,
+            'client_computer_hash': md5
+        }
+
+        connected_clients_list = SharedContext.get('connected_clients')
+        if connected_clients_list:
+            connected_clients_list.append(client_dict)
+        else:
+            connected_clients_list = list()
+            connected_clients_list.append(client_dict)
+            SharedContext.set('connected_clients', connected_clients_list)
+
+            sv_bans.check_banned(name, ip, uid)
     except:
         sh_custom_utils.get_and_log_exception_info()
 

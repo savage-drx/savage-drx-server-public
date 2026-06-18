@@ -19,6 +19,7 @@ function install_packages() {
   info "Installing required packages..."
   sudo apt-get install -y \
       gdb \
+      git \
       libcurl4-gnutls-dev \
       libphysfs-dev
 
