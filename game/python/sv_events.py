@@ -5,6 +5,7 @@
 
 # Savage API
 import server
+import core
 
 # External modules
 import sv_defs
@@ -24,6 +25,7 @@ import sv_warmup
 import sv_bans
 from sv_permissions import PermissionsContext as pc
 from sv_context import SharedContext
+from enum import Enum
 
 # fix for: 'unknown encoding: idna'
 import encodings.idna
@@ -32,6 +34,8 @@ import encodings.idna
 class EventsSettings:
     # Date format
     DATE_FORMAT = "%Y.%m.%d - %H:%M:%S"
+    class NotificationCode(Enum):
+        UPDATE_AUTHORITIES = 1
 
 
 class EventsContext:
@@ -324,3 +328,11 @@ def is_build_allowed(uid):
 @log.log_debug_info
 def name_change(uid: int, name: str) -> str:
     return name
+
+
+@log.log_debug_info
+def update_available():
+    api_code = int(core.CvarGetValue('svr_apiCode'))
+    if api_code == EventsSettings.NotificationCode.UPDATE_AUTHORITIES.value:
+        if pc.GAME_PRIVILEGES_ARE_ENABLED:
+            pc.update_privileges()

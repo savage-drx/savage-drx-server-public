@@ -152,8 +152,6 @@ class PermissionsContext:
             'utf-8')
         PermissionsContext.update_privileges()
 
-    # todo: Sync updating of the Roles using api-callback (svr_apiToken)
-    #       currently update happens only during the change of the map
     @staticmethod
     def update_privileges():
         version = PermissionsContext.get_remote_privileges_version()
