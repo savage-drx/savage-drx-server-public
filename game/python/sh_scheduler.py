@@ -23,6 +23,10 @@ class _Context:
                                                                     'PUBLISH_CLIENT_ACTIVITY_INTERVAL_SECONDS')
     URL_SEND_CLIENT_ACTIVITY = core.CvarGetString('sv_authserver') + "audit/connected-clients"
 
+    STATS_DUELS_PUBLISHER_ENABLED = python_config.getboolean('Python_Stats', 'STATS_DUELS_PUBLISHER_ENABLED')
+    PUBLISH_STATS_DUELS_INTERVAL_SECONDS = python_config.getint('Python_Stats', 'PUBLISH_STATS_DUELS_INTERVAL_SECONDS')
+    URL_SEND_DUEL_STATS = core.CvarGetString('sv_authserver') + "history/duels"
+
     @staticmethod
     def init():
         log.info("Initializing Scheduler...")
@@ -36,6 +40,7 @@ class _Context:
     @staticmethod
     def start():
         send_client_activity()
+        send_duel_stats()
         _Context.SCHEDULER.run()
 
 
@@ -46,9 +51,24 @@ def send_client_activity():
             try:
                 body = '{"connected_clients": %s}' % json.dumps(connected_clients_list)
                 sv_requests.post_request(_Context.URL_SEND_CLIENT_ACTIVITY, body)
-                log.info(f'Sent client activity (connections: {len(connected_clients_list)})')
+                log.info(f'Sent client activities: {len(connected_clients_list)}')
                 connected_clients_list.clear()
             except:
-                log.info(f'Failed to send client activity (connections: {len(connected_clients_list)})')
+                log.info(f'Failed to send client activity (len: {len(connected_clients_list)})')
 
         _Context.SCHEDULER.enter(_Context.PUBLISH_CLIENT_ACTIVITY_INTERVAL_SECONDS, 1, send_client_activity)
+
+
+def send_duel_stats():
+    if _Context.STATS_DUELS_PUBLISHER_ENABLED:
+        duel_stats = SharedContext.get('duel_stats')
+        if duel_stats and len(duel_stats) > 0:
+            try:
+                body = '{"duels": %s}' % json.dumps(duel_stats)
+                sv_requests.post_request(_Context.URL_SEND_DUEL_STATS, body)
+                log.info(f'Sent duel results: {len(duel_stats)}')
+                duel_stats.clear()
+            except:
+                log.info(f'Failed to send duel stats (duel_stats: {len(duel_stats)})')
+
+    _Context.SCHEDULER.enter(_Context.PUBLISH_STATS_DUELS_INTERVAL_SECONDS, 1, send_duel_stats)

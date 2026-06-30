@@ -1,6 +1,6 @@
 # ---------------------------------------------------------------------------
 #           Name: sv_events_handler.py
-#    Description: respawn handlers
+#    Description: Event Handlers
 # ---------------------------------------------------------------------------
 
 
@@ -12,9 +12,58 @@ import sh_logger as log
 import sv_utils
 import sv_discord
 import sh_custom_utils
+from sv_context import SharedContext
+from time import time
+
+
+def handle_duels_tracking(client_index, killer_index):
+    if 'DUEL' == core.CvarGetString('sv_map_gametype'):
+        killer_object_name = sv_defs.objectList_Name[killer_index]
+        dead_object_name = sv_defs.objectList_Name[client_index]
+        if killer_object_name in EventsHandlerSettings.DUEL_STATS_ACCEPTABLE_UNITS and \
+                dead_object_name in EventsHandlerSettings.DUEL_STATS_ACCEPTABLE_UNITS and \
+                killer_object_name != dead_object_name:
+
+            winner_race = 'human' if killer_object_name == 'human_legionnaire' else 'beast'
+            winner_uid = server.GetClientInfo(killer_index, INFO_UID)
+            winner_name = server.GetClientInfo(killer_index, INFO_NAME)
+            winner_clan_id = server.GetClientInfo(killer_index, INFO_CLANID)
+
+            loser_race = 'human' if dead_object_name == 'human_legionnaire' else 'beast'
+            loser_uid = server.GetClientInfo(client_index, INFO_UID)
+            loser_name = server.GetClientInfo(client_index, INFO_NAME)
+            loser_clan_id = server.GetClientInfo(client_index, INFO_CLANID)
+
+            if winner_uid == 0 or loser_uid == 0:
+                return
+
+            duel_stat = {
+                'timestamp': int(time()),
+                'winnerId': winner_uid,
+                'winnerName': winner_name,
+                'winnerRace': winner_race,
+                'loserId': loser_uid,
+                'loserName': loser_name,
+                'loserRace': loser_race,
+            }
+
+            if winner_clan_id > 0:
+                duel_stat['winnerClanId'] = winner_clan_id
+            if loser_clan_id > 0:
+                duel_stat['loserClanId'] = loser_clan_id
+
+            duel_stats = SharedContext.get('duel_stats')
+            if duel_stats:
+                duel_stats.append(duel_stat)
+            else:
+                duel_stats = list()
+                duel_stats.append(duel_stat)
+                SharedContext.set('duel_stats', duel_stats)
 
 
 def check_banned_units(client_index):
+    if 'RTSS' != core.CvarGetString('sv_map_gametype'):
+        pass
     # Don't log bot's actions
     if not sv_defs.clientList_Bot[client_index]:
         uid = server.GetClientInfo(client_index, INFO_UID)
@@ -39,6 +88,8 @@ def warn_and_change_unit(client_index):
 
 
 def process_death_from_siege(client_index, killer_index):
+    if 'RTSS' != core.CvarGetString('sv_map_gametype'):
+        return
     killer_object_name = sv_defs.objectList_Name[killer_index]
     dead_object_name = sv_defs.objectList_Name[client_index]
     if killer_object_name in EventsHandlerSettings.PAYBACK_SIEGE and dead_object_name in \
@@ -96,6 +147,8 @@ def apply_high_online_settings(online_state: sv_utils.OnlineState, max_active_pl
 
 
 def on_spawn(client_index, spawned_clients):
+    if 'RTSS' != core.CvarGetString('sv_map_gametype'):
+        return
     object_name = sv_defs.objectList_Name[client_index]
     if object_name == EventsHandlerSettings.BEAST_BEHEMOTH:
         return
@@ -184,3 +237,8 @@ class EventsHandlerSettings:
     HERO_OPHELIA_CRYSTAL = 'hero_ophelia_crystal'
     ON_SPAWN_BEHEMOTH_UPROOTED_TREE_COOLDOWN_SEC = 5
     ON_SPAWN_HERO_OPHELIA_CRYSTAL_COOLDOWN_SEC = 10
+
+    DUEL_STATS_ACCEPTABLE_UNITS = {
+        'human_legionnaire',
+        'beast_predator'
+    }

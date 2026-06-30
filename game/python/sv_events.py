@@ -171,7 +171,7 @@ def client_connected_extended(client_index, ip, cn):
             connected_clients_list.append(client_dict)
             SharedContext.set('connected_clients', connected_clients_list)
 
-            sv_bans.check_banned(name, ip, uid)
+        sv_bans.check_banned(name, ip, uid)
     except:
         sh_custom_utils.get_and_log_exception_info()
 
@@ -212,6 +212,7 @@ def player_killed(client_index, killer_index):
 
         sv_events_handler.process_death_from_siege(client_index, killer_index)
         sv_warmup.on_death(client_index)
+        sv_events_handler.handle_duels_tracking(client_index, killer_index)
     except:
         sh_custom_utils.get_and_log_exception_info()
 
@@ -225,6 +226,9 @@ def commander_set(team, uid):
 @log.log_debug_info
 def on_team_switch(uid, old_team, new_team):
     log.info(f'Team switch uid: {uid}, old team: {old_team}, new team: {new_team}')
+
+    if 'RTSS' != core.CvarGetString('sv_map_gametype'):
+        return
 
     try:
         online_state = sv_utils.OnlineState()
