@@ -4,16 +4,17 @@
 # ---------------------------------------------------------------------------
 
 
-import core
+import json
 import sched
 import time
 from typing import Optional
 
+import core
+
 import sh_executor
 import sh_logger as log
-from sv_context import SharedContext
 import sv_requests
-import json
+from sv_context import SharedContext
 
 
 class _Context:
@@ -39,40 +40,56 @@ class _Context:
 
     @staticmethod
     def start():
-        send_client_activity()
-        send_duel_stats()
+        schedule_client_activity()
+        schedule_duel_stats()
         _Context.SCHEDULER.run()
 
 
-def send_client_activity():
-    if _Context.PUBLISH_CLIENT_ACTIVITY:
-        connected_clients_list = SharedContext.get('connected_clients')
-        if connected_clients_list and len(connected_clients_list) > 0:
-            try:
-                body = '{"connected_clients": %s}' % json.dumps(connected_clients_list)
-                sv_requests.post_request(_Context.URL_SEND_CLIENT_ACTIVITY, body)
-                log.info(f'Sent client activities: {len(connected_clients_list)}')
-                connected_clients_list.clear()
-            except:
-                log.info(f'Failed to send client activity (len: {len(connected_clients_list)})')
+def schedule_client_activity():
+    sh_executor.submit_task(send_client_activity)
+    _Context.SCHEDULER.enter(_Context.PUBLISH_CLIENT_ACTIVITY_INTERVAL_SECONDS, 1, schedule_client_activity)
 
-        _Context.SCHEDULER.enter(_Context.PUBLISH_CLIENT_ACTIVITY_INTERVAL_SECONDS, 1, send_client_activity)
+
+def schedule_duel_stats():
+    sh_executor.submit_task(send_duel_stats)
+    _Context.SCHEDULER.enter(_Context.PUBLISH_STATS_DUELS_INTERVAL_SECONDS, 1, schedule_duel_stats)
+
+
+def send_client_activity():
+    try:
+        if not _Context.PUBLISH_CLIENT_ACTIVITY:
+            return
+
+        connected_clients = SharedContext.get('connected_clients')
+
+        if connected_clients:
+            body = '{"connected_clients": %s}' % json.dumps(connected_clients)
+            sv_requests.post_request(_Context.URL_SEND_CLIENT_ACTIVITY, body)
+            log.info(f'Sent client activities: {len(connected_clients)}')
+            connected_clients.clear()
+        else:
+            # todo remove debug logs
+            log.info('Client activity: nothing to send')
+
+    except Exception as e:
+        log.info(f'Failed to send client activity: {e}')
 
 
 def send_duel_stats():
-    if _Context.STATS_DUELS_PUBLISHER_ENABLED:
+    try:
+        if not _Context.STATS_DUELS_PUBLISHER_ENABLED:
+            return
+
         duel_stats = SharedContext.get('duel_stats')
-        body = None
-        if duel_stats and len(duel_stats) > 0:
-            try:
-                body = '{"duels": %s}' % json.dumps(duel_stats)
-                sv_requests.post_request(_Context.URL_SEND_DUEL_STATS, body)
-                log.info(f'Sent duel results: {len(duel_stats)}')
-                duel_stats.clear()
-            except:
-                log.info(f'Failed to send duel stats: {body})')
-                duel_stats.clear()
+
+        if duel_stats:
+            body = '{"duels": %s}' % json.dumps(duel_stats)
+            sv_requests.post_request(_Context.URL_SEND_DUEL_STATS, body)
+            log.info(f'Sent duel results: {len(duel_stats)}')
+            duel_stats.clear()
         else:
+            # todo remove debug logs
             log.info('duel stats: nothing to send')
 
-    _Context.SCHEDULER.enter(_Context.PUBLISH_STATS_DUELS_INTERVAL_SECONDS, 1, send_duel_stats)
+    except Exception as e:
+        log.info(f'Failed to send duel stats: {e}')
