@@ -62,6 +62,7 @@ def send_client_activity():
 def send_duel_stats():
     if _Context.STATS_DUELS_PUBLISHER_ENABLED:
         duel_stats = SharedContext.get('duel_stats')
+        body = None
         if duel_stats and len(duel_stats) > 0:
             try:
                 body = '{"duels": %s}' % json.dumps(duel_stats)
@@ -69,6 +70,9 @@ def send_duel_stats():
                 log.info(f'Sent duel results: {len(duel_stats)}')
                 duel_stats.clear()
             except:
-                log.info(f'Failed to send duel stats (duel_stats: {len(duel_stats)})')
+                log.info(f'Failed to send duel stats: {body})')
+                duel_stats.clear()
+        else:
+            log.info('duel stats: nothing to send')
 
     _Context.SCHEDULER.enter(_Context.PUBLISH_STATS_DUELS_INTERVAL_SECONDS, 1, send_duel_stats)
