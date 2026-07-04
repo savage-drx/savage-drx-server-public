@@ -41,8 +41,11 @@ def init():
         if sv_discord.DiscordSettings.DISCORD_IS_ENABLED:
             sv_discord.init()
 
-        # Delayed import since python_config is present inside sh_scheduler
-        if python_config.getboolean('Python_General', 'IS_SCHEDULER_ENABLED'):
+        is_client_activity_enabled = python_config.getboolean('Python_General', 'PUBLISH_CLIENT_ACTIVITY')
+        is_duel_stats_enabled = python_config.getboolean('Python_Stats', 'STATS_DUELS_PUBLISHER_ENABLED')
+
+        if is_client_activity_enabled or is_duel_stats_enabled:
+            # Delayed import since python_config is present inside sh_scheduler
             from sh_scheduler import _Context
             _Context.init()
 
