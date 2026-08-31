@@ -69,7 +69,7 @@ objSet dropoff 0
 objSet commandCenter 0
 objSet spawnFrom 0
 objSet canEnter 0
-objSet scanRange 650.000000
+objSet scanRange 600.000000
 objSet healthStage1 75
 objSet healthStage2 50
 objSet healthStage3 25
