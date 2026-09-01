@@ -74,6 +74,7 @@ objSet startFuseAtCharge 0
 objSet hitBuilding "die"
 objSet hitUnit "die"
 objSet hitWorld "die"
+objSet hitBlock "absorb"
 objSet damage 103
 objSet radius 0.000000 0.000000
 objSet unitpierce 1.000000
