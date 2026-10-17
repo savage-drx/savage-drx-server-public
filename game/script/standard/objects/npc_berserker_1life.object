@@ -1,0 +1,4 @@
+// Old TS maps refer to this name. The existing Berserker already has one life.
+// Reuse its definition rather than inventing new combat or reward values.
+exec /script/standard/objects/npc_berserker.object
+objSet totalLives 1

@@ -342,3 +342,6 @@ objload beast_sheepify
 
 objload npc_melee
 //===========256 OBJECTS LIMIT =============
+
+// TS compatibility: append only; preserve all existing object IDs.
+objload npc_berserker_1life
