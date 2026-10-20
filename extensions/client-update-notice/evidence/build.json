@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "engineChanged": false,
+  "recipe": "CMake Release, BUILD_CLIENT=OFF, DEPLOY=OFF; game_dedicated only",
+  "originalBuildDates": [
+    "XR Sep  6 2026 19:30:04"
+  ],
+  "parentGameSHA256": "7bccbfeb393226f5db3228c21607546e4176d9ff2668b07f7057ae8bd5325385",
+  "publicGameSHA256": "7bccbfeb393226f5db3228c21607546e4176d9ff2668b07f7057ae8bd5325385",
+  "parentByteIdentical": true,
+  "gameSHA256": "8b13e41ee095766d22631dfd61df38dfb756bfae4a92206f2b08417fa3109879"
+}

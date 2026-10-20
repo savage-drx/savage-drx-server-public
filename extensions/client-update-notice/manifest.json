@@ -1,0 +1,26 @@
+{
+  "feature": "private-client-update-notice",
+  "date": "2026-10-20",
+  "publicBase": "7a44482a720f101d91270552e51834c02bd62b5c",
+  "sourceCommit": "51870d5d9b06edd73267fc746edc69618f540e17",
+  "buildsCommit": "77e3001c7f5785b7f7f8d74632112e8965a1972e",
+  "sourceArchiveSHA256": "35fd0bc10ac17b9067a4497684721c8e856c7a58539aaa0284d2d9f5ae112677",
+  "builder": "igorzy/drx-builder@sha256:9b7a51451c540f2b5ea197e5d92abcf42e3b98cf8e09e94f466b8eddeb2b1079",
+  "parentGameSHA256": "7bccbfeb393226f5db3228c21607546e4176d9ff2668b07f7057ae8bd5325385",
+  "gameSHA256": "8b13e41ee095766d22631dfd61df38dfb756bfae4a92206f2b08417fa3109879",
+  "engineSHA256": "f1e1a7b18ba24f038abe11c2c4e89453a06918101ce7f34db97184f16b6c5fc6",
+  "engineUnchanged": true,
+  "parentByteIdentical": true,
+  "patchSHA256": "bb849856e2dec54b2d67c41ca596a4dfe0c0bbd8c3ebe2a5786aa83dde97f9bc",
+  "normalizedSourceSHA256": {
+    "CMakeLists.txt": "9422f274184ad891f7f87b71c5c946dde857264c7cfc5704ec4b6a9e7062c1d9",
+    "Game/sv_auth.cpp": "7ae1b013c8106cc4fdfb05266693a2ca5b1886d396e6f08ff9ace1053e59d274",
+    "Game/sv_main.cpp": "2eefc41d3ae3ec2fbf78c199e2d764c5e2ca4e0889d799bc194b65955e7ca995",
+    "Game/dllentry.cpp": "d58fbb007479244f57e185c1384ca50a371798ff04c6f2982b895efbe8f573ba",
+    "Game/client_update_notice.h": "efcef157f54ea89691df81cf74545bb05ab3d920fd480c8145547e5ca2c7f8e9",
+    "Game/client_update_notice_game.h": "9502086c4a05cd80a97f2d8ee115ebdafc2edf5e72c4b2bb889648f7ac8afe98"
+  },
+  "nativeRuntimeAcceptance": "Passed exact public Engine with loopback protocol peers and minimal test Python hooks; see evidence/native-runtime.json; not full production Python-hook or graphical acceptance",
+  "graphicalAcceptance": false,
+  "coreAPILayoutChanged": false
+}

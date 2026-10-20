@@ -1,0 +1,36 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "mode": "normal",
+      "checks": 39
+    },
+    {
+      "mode": "asan",
+      "checks": 39
+    },
+    {
+      "mode": "ubsan",
+      "checks": 39
+    }
+  ],
+  "http": "mocked libcurl, no network",
+  "graphicalAcceptance": false,
+  "abi": {
+    "GLIBC": "2.14",
+    "GLIBCXX": "3.4.22",
+    "CXXABI": "1.3.9"
+  },
+  "portablePolicy": true,
+  "proxyOrderingSourceOnly": true,
+  "baselineExportsPreserved": true,
+  "gameSHA256": "8b13e41ee095766d22631dfd61df38dfb756bfae4a92206f2b08417fa3109879",
+  "sourceSHA256": {
+    "CMakeLists.txt": "3435c511c371869d53b0f62343d05fc8f267cee2c0e5772c98059133cdd3999f",
+    "Game/sv_auth.cpp": "b6614965371b2bf53e4bd35043a396f3f0d1999601fb3a7d972f4f7855ddf272",
+    "Game/sv_main.cpp": "c51479b1bdb31408d3f11e082e008d8e07176da97339f7fdfbaa9de82cce2794",
+    "Game/dllentry.cpp": "1e981984437f67f9d5c90cea206910d449a7176bb82725d7e7abcfd26cf763db",
+    "Game/client_update_notice.h": "efcef157f54ea89691df81cf74545bb05ab3d920fd480c8145547e5ca2c7f8e9",
+    "Game/client_update_notice_game.h": "9502086c4a05cd80a97f2d8ee115ebdafc2edf5e72c4b2bb889648f7ac8afe98"
+  }
+}

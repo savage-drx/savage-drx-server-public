@@ -40,3 +40,10 @@ Create and use a copy of the `shell` script together with its own `custom_config
 8. **Accessing Logs and Config Files**  
 Server logs and temporary configuration files will be available in the `/drx` directory (by default).
 
+## Private client-update reminders
+
+The shipped Linux Game module now privately reminds authenticated players whose
+client reports an older stable version. No new client/backend protocol, kicks,
+inbound ports or gameplay changes are required. See
+[settings, provenance, tests, installation and rollback](extensions/client-update-notice/README.md).
+

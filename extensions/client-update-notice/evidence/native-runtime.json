@@ -1,0 +1,22 @@
+{
+  "passed": true,
+  "exactPublicEngine": true,
+  "realServer": true,
+  "graphicalClient": false,
+  "realAccounts": false,
+  "network": "loopback only",
+  "engineSHA256": "f1e1a7b18ba24f038abe11c2c4e89453a06918101ce7f34db97184f16b6c5fc6",
+  "gameSHA256": "8b13e41ee095766d22631dfd61df38dfb756bfae4a92206f2b08417fa3109879",
+  "oldMessage": "echo ^yClient update available:^w your client reports version 779; latest stable is 833. Please exit and run the Savage updater when convenient.\n",
+  "oldWarnedPrivately": true,
+  "currentAndNewerNoWarning": true,
+  "unknownAndMalformedNoWarning": true,
+  "mapResetDidNotRepeat": true,
+  "reconnectWarnedOnce": true,
+  "disabledNoQuery": true,
+  "otherPlayersNoWarning": true,
+  "proxyLiveTested": false,
+  "backendRoutes": [
+    "/user/verify-user-proof"
+  ]
+}

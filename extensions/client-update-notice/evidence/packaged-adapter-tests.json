@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "http": "mocked libcurl",
+  "cases": [
+    {
+      "mode": "normal",
+      "checks": 39
+    },
+    {
+      "mode": "asan",
+      "checks": 39
+    },
+    {
+      "mode": "ubsan",
+      "checks": 39
+    }
+  ],
+  "portablePolicy": true
+}
