@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "publicBase": "7a44482a720f101d91270552e51834c02bd62b5c",
+  "buildsCommit": "77e3001c7f5785b7f7f8d74632112e8965a1972e",
+  "buildsMessage": "github.ci - Use durations correctly so we're not memory bound on most platforms - 51870d5d9b06edd73267fc746edc69618f540e17",
+  "binaries": [
+    {
+      "path": "bin/game64.so",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52a4d3185a548575941dc74f356b0e23e17cd8f1",
+      "size": 1853960,
+      "url": "https://api.github.com/repos/savage-drx/savage-drx-builds/git/blobs/52a4d3185a548575941dc74f356b0e23e17cd8f1"
+    },
+    {
+      "path": "bin/silverback.bin",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "0ae6af4375ec86aabc346b9d0509aecd9b34dc13",
+      "size": 935640,
+      "url": "https://api.github.com/repos/savage-drx/savage-drx-builds/git/blobs/0ae6af4375ec86aabc346b9d0509aecd9b34dc13"
+    }
+  ],
+  "source": "51870d5d9b06edd73267fc746edc69618f540e17",
+  "builder": "igorzy/drx-builder@sha256:9b7a51451c540f2b5ea197e5d92abcf42e3b98cf8e09e94f466b8eddeb2b1079"
+}

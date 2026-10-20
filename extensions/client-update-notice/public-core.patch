@@ -1,0 +1,375 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f8ceccbb..986265bf 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -189,6 +189,11 @@ target_link_libraries(silverback_dedicated ${SSL_LIBRARIES} crypto)
+ target_compile_options(silverback_dedicated PUBLIC ${SSL_CFLAGS_OTHER})
+ ##curl
+ pkg_search_module(CURL REQUIRED libcurl)
++
++# Optional public-version lookup uses bounded libcurl directly, preserving the
++# existing CoreAPI layout and the already shipped dedicated Engine binary.
++target_include_directories(game_dedicated PUBLIC ${CURL_INCLUDE_DIRS})
++target_link_libraries(game_dedicated ${CURL_LIBRARIES} pthread)
+ target_include_directories(silverback PUBLIC ${CURL_INCLUDE_DIRS})
+ link_directories(silverback ${CURL_LIBRARY_DIRS})
+ target_link_libraries(silverback ${CURL_LIBRARIES})
+diff --git a/Game/client_update_notice.h b/Game/client_update_notice.h
+new file mode 100644
+index 00000000..f2c3d724
+--- /dev/null
++++ b/Game/client_update_notice.h
+@@ -0,0 +1,57 @@
++#ifndef DRX_CLIENT_UPDATE_NOTICE_H
++#define DRX_CLIENT_UPDATE_NOTICE_H
++#include <cstdint>
++#include <cstring>
++
++namespace drx_update {
++static const int maxVersion = 1000000;
++static const uint64_t replyTimeoutMs = 30000;
++static inline bool space(char c) { return c==' ' || c=='\t' || c=='\r' || c=='\n'; }
++// Accept the updater's plain positive integer, never atoi's partial/overflowed value.
++static inline int version(const char* text) {
++    if (!text) return 0;
++    while (space(*text)) ++text;
++    int value=0, digits=0;
++    while (*text>='0' && *text<='9') {
++        if (++digits>7 || value>(maxVersion-(*text-'0'))/10) return 0;
++        value=value*10+(*text++-'0');
++    }
++    while (space(*text)) ++text;
++    return !*text && value>0 && value<=maxVersion ? value : 0;
++}
++static inline const char* answer(const char* message) {
++    const char prefix[]="ca client_version_local";
++    if (!message || std::strncmp(message,prefix,sizeof(prefix)-1)) return nullptr;
++    const char* value=message+sizeof(prefix)-1;
++    return !*value || space(*value) ? value : nullptr;
++}
++struct Slot {
++    bool queried=false, pending=false, notified=false;
++    unsigned int uid=0;
++    uint64_t requestedAt=0;
++    int reportedVersion=0;
++    void reset(bool sameTransport) {
++        if (!sameTransport) *this=Slot{};
++        else pending=false; // Never accept a response crossing a map transition.
++    }
++    bool begin(unsigned int account, uint64_t now) {
++        if (queried || !account) return false;
++        queried=true; pending=true; uid=account; requestedAt=now;
++        return true;
++    }
++    bool receive(const char* message,unsigned int account,uint64_t now) {
++        const char* value=answer(message);
++        if (!value || !queried) return false; // Leave other/manual CVar checks alone.
++        if (!pending) return true; // Automatic response already consumed; no spam.
++        pending=false;
++        if (account!=uid || now<requestedAt || now-requestedAt>replyTimeoutMs) return true;
++        reportedVersion=version(value); // Missing/invalid/unknown values never imply old.
++        return true;
++    }
++    bool shouldNotify(unsigned int account,int latest) const {
++        return !notified && account==uid && reportedVersion>0 && latest>0 &&
++            latest<=maxVersion && reportedVersion<latest;
++    }
++};
++}
++#endif
+diff --git a/Game/client_update_notice_game.h b/Game/client_update_notice_game.h
+new file mode 100644
+index 00000000..2dfa3fae
+--- /dev/null
++++ b/Game/client_update_notice_game.h
+@@ -0,0 +1,191 @@
++#ifndef DRX_CLIENT_UPDATE_NOTICE_GAME_H
++#define DRX_CLIENT_UPDATE_NOTICE_GAME_H
++#if defined(DEDICATED_SERVER) && defined(__linux__)
++void SV_ClientUpdateInit();
++void SV_ClientUpdateShutdown();
++void SV_ClientUpdateReset(int clientnum,bool sameTransport);
++void SV_ClientUpdateAccepted(int clientnum);
++bool SV_ClientUpdateMessage(int clientnum,const char* message);
++void SV_ClientUpdateFrame();
++
++#ifdef DRX_CLIENT_UPDATE_NOTICE_IMPLEMENTATION
++#include "client_update_notice.h"
++#include <atomic>
++#include <chrono>
++#include <condition_variable>
++#include <mutex>
++#include <thread>
++#include <curl/curl.h>
++namespace {
++cvar_t sv_clientUpdateNotice={"sv_clientUpdateNotice","1"};
++// Zero uses the cached official stable updater target; positive pins a release.
++cvar_t sv_clientUpdateLatest={"sv_clientUpdateLatest","0"};
++drx_update::Slot updateSlots[MAX_CLIENTS];
++std::atomic<int> updateLatest{0};
++std::atomic<uint64_t> updateLatestAt{0};
++std::atomic<bool> updatePublished{false};
++std::mutex updateMutex;
++std::condition_variable updateCondition;
++std::thread updateWorker;
++bool updateStarted=false,updateStop=false,updateRequested=false;
++bool updateCurlReady=false;
++uint64_t updateAttemptAt=0;
++uint64_t UpdateNow() {
++    return static_cast<uint64_t>(std::chrono::duration_cast<std::chrono::milliseconds>(
++        std::chrono::steady_clock::now().time_since_epoch()).count());
++}
++struct UpdateResponse {
++    char text[32]={};
++    size_t used=0;
++};
++size_t UpdateWrite(char* bytes,size_t size,size_t count,void* opaque) {
++    UpdateResponse& response=*static_cast<UpdateResponse*>(opaque);
++    // libcurl normally passes size=1, but reject multiplication overflow too.
++    if (size && count>(sizeof(response.text)-1-response.used)/size) return 0;
++    const size_t length=size*count;
++    if (length) std::memcpy(response.text+response.used,bytes,length);
++    response.used+=length;
++    return length;
++}
++int UpdateFetch() {
++    // Do not use the old CoreAPI HTTP_Rest: it has no response/timeout bound and
++    // accesses engine allocators/CVars. This needs no CoreAPI or Engine change.
++    CURL* curl=curl_easy_init();
++    if (!curl) return 0;
++    UpdateResponse response;
++    long status=0;
++    bool configured=true;
++#define DRX_UPDATE_OPTION(key,value) configured=(curl_easy_setopt(curl,key,value)==CURLE_OK)&&configured
++    DRX_UPDATE_OPTION(CURLOPT_URL,"https://api.savagedrx.com/updater/v2/client/version");
++    DRX_UPDATE_OPTION(CURLOPT_HTTPGET,1L);
++    DRX_UPDATE_OPTION(CURLOPT_NOSIGNAL,1L);
++    DRX_UPDATE_OPTION(CURLOPT_CONNECTTIMEOUT_MS,1000L);
++    DRX_UPDATE_OPTION(CURLOPT_TIMEOUT_MS,2000L);
++    DRX_UPDATE_OPTION(CURLOPT_FOLLOWLOCATION,0L);
++    DRX_UPDATE_OPTION(CURLOPT_SSL_VERIFYPEER,1L);
++    DRX_UPDATE_OPTION(CURLOPT_SSL_VERIFYHOST,2L);
++    DRX_UPDATE_OPTION(CURLOPT_PROTOCOLS,static_cast<long>(CURLPROTO_HTTPS));
++    DRX_UPDATE_OPTION(CURLOPT_WRITEFUNCTION,UpdateWrite);
++    DRX_UPDATE_OPTION(CURLOPT_WRITEDATA,&response);
++#undef DRX_UPDATE_OPTION
++    const bool received=configured && curl_easy_perform(curl)==CURLE_OK &&
++        curl_easy_getinfo(curl,CURLINFO_RESPONSE_CODE,&status)==CURLE_OK;
++    curl_easy_cleanup(curl);
++    // Embedded NUL bytes cannot turn an invalid body into a valid prefix.
++    return received && status==200 && !std::memchr(response.text,0,response.used)
++        ? drx_update::version(response.text) : 0;
++}
++void UpdateWorkerMain() {
++    for (;;) {
++        {
++            std::unique_lock<std::mutex> lock(updateMutex);
++            updateCondition.wait(lock,[]{return updateStop || updateRequested;});
++            if (updateStop) return;
++            updateRequested=false;
++        }
++        // Public metadata only. No user credentials, backend audit calls, redirects,
++        // client-supplied URL, CVar access or game/network callbacks on this thread.
++        const int target=UpdateFetch();
++        if (target) {
++            updateLatest.store(target);
++            updateLatestAt.store(UpdateNow());
++        }
++        updatePublished.store(true,std::memory_order_release);
++    }
++}
++void UpdateRefresh() {
++    if (!updateStarted || sv_clientUpdateLatest.integer) return;
++    const uint64_t now=UpdateNow();
++    {
++        std::lock_guard<std::mutex> lock(updateMutex);
++        // Includes failed requests: many joins cannot hammer an unavailable API.
++        if (updateAttemptAt && now-updateAttemptAt<300000) return;
++        updateAttemptAt=now; updateRequested=true;
++    }
++    updateCondition.notify_one();
++}
++int UpdateTarget() {
++    const int configured=sv_clientUpdateLatest.integer;
++    if (configured) return configured>0 && configured<=drx_update::maxVersion ? configured : 0;
++    const uint64_t now=UpdateNow(), at=updateLatestAt.load();
++    return at && now>=at && now-at<=900000 ? updateLatest.load() : 0;
++}
++bool UpdateEligible(int clientnum) {
++    return clientnum>=0 && clientnum<MAX_CLIENTS && sv_clientUpdateNotice.integer &&
++        sl.clients[clientnum].active && !sl.clients[clientnum].isVirtual &&
++        sl.clients[clientnum].auth_state==AUTH_AUTHED;
++}
++void UpdateNotify(int clientnum) {
++    if (!UpdateEligible(clientnum)) return;
++    drx_update::Slot& slot=updateSlots[clientnum];
++    const int latest=UpdateTarget();
++    if (!slot.shouldNotify(sl.clients[clientnum].info.uid,latest)) return;
++    // Native equivalent of server.Notify(slot,message); never an account-ID target.
++    slot.notified=true;
++    char message[256];
++    snprintf(message,sizeof(message),
++        "^yClient update available:^w your client reports version %d; latest stable is %d. "
++        "Please exit and run the Savage updater when convenient.\n",slot.reportedVersion,latest);
++    SV_ClientEcho(clientnum,message);
++}
++}
++void SV_ClientUpdateInit() {
++    cores.Cvar_Register(&sv_clientUpdateNotice);
++    cores.Cvar_Register(&sv_clientUpdateLatest);
++    if (updateStarted) return;
++    // The legacy dedicated Engine skips HTTP_Init. Initialize on the main
++    // thread before either our worker or the retained auth worker can use curl.
++    // Keep the shared library initialized for the process lifetime: the legacy
++    // auth transport also uses it and does not own a matching cleanup reference.
++    if (!updateCurlReady) updateCurlReady=curl_global_init(CURL_GLOBAL_DEFAULT)==CURLE_OK;
++    if (!updateCurlReady) return;
++    updateStop=false; updateRequested=false;
++    try { updateWorker=std::thread(UpdateWorkerMain); updateStarted=true; }
++    catch (...) { /* Optional advisory; a worker failure must not prevent joining. */ }
++}
++void SV_ClientUpdateShutdown() {
++    if (!updateStarted) return;
++    {
++        std::lock_guard<std::mutex> lock(updateMutex);
++        updateStop=true; updateRequested=false;
++    }
++    updateCondition.notify_one();
++    updateWorker.join();
++    updateStarted=false;
++}
++void SV_ClientUpdateReset(int clientnum,bool sameTransport) {
++    if (clientnum>=0 && clientnum<MAX_CLIENTS) updateSlots[clientnum].reset(sameTransport);
++}
++void SV_ClientUpdateAccepted(int clientnum) {
++    if (!UpdateEligible(clientnum)) return;
++    drx_update::Slot& slot=updateSlots[clientnum];
++    if (slot.begin(sl.clients[clientnum].info.uid,UpdateNow())) {
++        UpdateRefresh();
++        // Existing read-only request supported by the old client. Not cmdexec.
++        cores.Server_SendMessage(-1,clientnum,"sca client_version_local");
++    }
++    UpdateNotify(clientnum);
++}
++bool SV_ClientUpdateMessage(int clientnum,const char* message) {
++    if (clientnum<0 || clientnum>=MAX_CLIENTS || !sl.clients[clientnum].active ||
++        sl.clients[clientnum].isVirtual) return false;
++    if (!updateSlots[clientnum].receive(message,sl.clients[clientnum].info.uid,UpdateNow())) return false;
++    UpdateNotify(clientnum);
++    return true;
++}
++void SV_ClientUpdateFrame() {
++    // One atomic event check; no per-frame HTTP, timers, slot scans or queries.
++    if (!updatePublished.exchange(false,std::memory_order_acquire)) return;
++    for (int i=0;i<MAX_CLIENTS;++i) UpdateNotify(i);
++}
++#endif
++#else
++// This advisory is a Linux dedicated-server feature, not a client ABI change.
++inline void SV_ClientUpdateInit() {}
++inline void SV_ClientUpdateShutdown() {}
++inline void SV_ClientUpdateReset(int,bool) {}
++inline void SV_ClientUpdateAccepted(int) {}
++inline bool SV_ClientUpdateMessage(int,const char*) { return false; }
++inline void SV_ClientUpdateFrame() {}
++#endif
++#endif
+diff --git a/Game/dllentry.cpp b/Game/dllentry.cpp
+index 74d0edde..8f45ed83 100644
+--- a/Game/dllentry.cpp
++++ b/Game/dllentry.cpp
+@@ -2,6 +2,7 @@
+ 
+ // dllentry.c
+ #include "game.h"
++#include "client_update_notice_game.h"
+ #ifndef _WIN32
+ #include <signal.h>
+ #endif
+@@ -90,6 +91,7 @@ SilverbackDllExport int	InitGameDLL(coreAPI_shared_t *core_api_shared)
+ 
+ void	ShutdownGameDLL()
+ {
++	SV_ClientUpdateShutdown();
+ 	Python_Shutdown();
+ }
+ 
+diff --git a/Game/sv_auth.cpp b/Game/sv_auth.cpp
+index ac0baa5a..e37582e4 100644
+--- a/Game/sv_auth.cpp
++++ b/Game/sv_auth.cpp
+@@ -8,6 +8,10 @@
+ 
+ #include "server_game.h"
+ 
++#define DRX_CLIENT_UPDATE_NOTICE_IMPLEMENTATION
++#include "client_update_notice_game.h"
++#undef DRX_CLIENT_UPDATE_NOTICE_IMPLEMENTATION
++
+ #include "../Core/savage_endian.h"
+ #include "../Core/version.h"
+ 
+@@ -59,6 +63,7 @@ void SV_Auth_ClientAuthed(int index)
+ 	// UTTAR: Hack to always add the abbrev to the name
+ 	//SV_ClientRename(index, sl.clients[index].info.name);
+ 	SV_RefreshClientInfo(index);
++	SV_ClientUpdateAccepted(index);
+ }
+ 
+ void SV_Auth_ValidateClan(int index, int clan_id)
+@@ -228,6 +233,7 @@ void SV_Auth_Update()
+ //main thread part of auth
+ void SV_Auth_Frame()
+ {
++	SV_ClientUpdateFrame();
+ 	//_send_heartbeat = (cores.Cvar_GetInteger("svr_broadcast") != 0);
+ 	cores.Cvar_Set("svr_id", sv_authid.string);
+ 
+@@ -261,6 +267,7 @@ void SV_Auth_Frame()
+ 
+ void SV_Auth_Init()
+ {
++	SV_ClientUpdateInit();
+ 	cores.Cvar_Register(&sv_authdisable);
+ 	cores.Cvar_Register(&sv_authrefresh);
+ 	cores.Cvar_Register(&sv_authserver);
+@@ -276,6 +283,7 @@ void SV_Auth_Init()
+ 
+ void SV_Auth_Shutdown()
+ {
++	SV_ClientUpdateShutdown();
+ 	cores.Cvar_SetVarValue(&sv_authdisable, 1);
+ 	std::this_thread::sleep_for(std::chrono::milliseconds(sv_authrefresh.integer+500));
+ }
+diff --git a/Game/sv_main.cpp b/Game/sv_main.cpp
+index 2ce57db6..2d86e024 100644
+--- a/Game/sv_main.cpp
++++ b/Game/sv_main.cpp
+@@ -4344,8 +4344,10 @@ extern cvar_t sv_clientVoteTime;
+ extern cvar_t sv_skillCheckFrequency;
+ extern cvar_t sv_joinTeamPassword;
+ extern cvar_t sv_commanderPassword;
++#include "client_update_notice_game.h"
+ void	SV_InitClientData(int clientnum, char *netsettings, unsigned int clan_id, bool restarting, bool virtualClient)
+ {
++	SV_ClientUpdateReset(clientnum,restarting && !virtualClient);
+ 	client_t	*client;
+ 	int			index;
+ 
+@@ -5054,6 +5056,7 @@ void	SV_ClientDisconnect(int clientnum, const char *reason)
+ 
+ 	client = &sl.clients[clientnum];
+ 	clientGUID = SV_GetClientUID(clientnum);
++	SV_ClientUpdateReset(clientnum,false);
+ 
+ 
+ /*
+@@ -7426,6 +7429,8 @@ uint8_t	SV_ClientMessage(int clientnum, char *msg)
+ 	else
+ 		client = &sl.clients[clientnum];
+ 
++	// Version responses belong to the actual sender, never its input proxy.
++	if (SV_ClientUpdateMessage(clientnum,msg)) return true;
+ 	// UTTAR: Used to know when to send "this is a SEP server" messages
+ 	if(client->gotMessage == 0)
+ 		client->gotMessage = 1;
