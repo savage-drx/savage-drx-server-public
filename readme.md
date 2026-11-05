@@ -13,7 +13,7 @@ world -> ../../savage-drx-maps/
 ```
 
 2. **Register Your Server**  
-Go to https://savagedrx.com/user/servers and register your server.  
+Go to https://savagedrx.com/user/settings and register your server.  
 > Note: This functionality is available only for users in the `USER_REGULAR` group. New users are assigned to the `USER_NEWCOMER` group by default.
 
 3. **Configure Your Server**  
